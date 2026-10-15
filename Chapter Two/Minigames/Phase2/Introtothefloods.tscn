@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://bie87ho6rohej"]
+
+[ext_resource type="Texture2D" uid="uid://vf8bei33jdrd" path="res://Chapter Two/Assets/LVL 2 QTE EVENT/SECTON 3 PHASE 2/SECTION3_TREE.png" id="1_lx2vm"]
+[ext_resource type="Script" uid="uid://26lqgklhprpg" path="res://Chapter Two/Scripts/1st phase/Dialogue/parents_arguement.gd" id="1_lxnxg"]
+[ext_resource type="Texture2D" uid="uid://cvj0gaj10tmsw" path="res://Redundant Assets/Character/AssetsDump/OllieSprites_Scared.png" id="2_kylg1"]
+[ext_resource type="Resource" uid="uid://vlx7d1vr75ev" path="res://Chapter Two/Dialogues/Phase2/Flood.dialogue" id="2_lxnxg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lxnxg"]
+atlas = ExtResource("2_kylg1")
+region = Rect2(0, 0, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w2gxl"]
+atlas = ExtResource("2_kylg1")
+region = Rect2(1440, 0, 1440, 1640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lxnxg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w2gxl")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Introtothefloods" type="Node2D" unique_id=1904316396]
+script = ExtResource("1_lxnxg")
+dialogue = ExtResource("2_lxnxg")
+next_scene = "uid://cmamw26x8s4vu"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1988300307]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_lx2vm")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=336883613]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 1963.0
+offset_bottom = 1124.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.24313726, 0.24313726, 0.24313726, 0.48235294)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1041318436]
+position = Vector2(920, 750)
+scale = Vector2(0.6770833, 0.6770833)
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+autoplay = "default"
+
+[node name="FadeLayer" type="CanvasLayer" parent="." unique_id=840680895]
+layer = 20
+
+[node name="Fade" type="ColorRect" parent="FadeLayer" unique_id=757924972]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="FaultLabel" type="Label" parent="FadeLayer" unique_id=1254469208]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 75
+text = "The floods are rising"

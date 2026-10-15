@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://b8vvccvxxhh5v"
+path="res://.godot/imported/Safe.dialogue-b84af64b0b7c340555879d7d8cdb2e02.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase3/Safe.dialogue"
+dest_files=["res://.godot/imported/Safe.dialogue-b84af64b0b7c340555879d7d8cdb2e02.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://qybdpgc6fvkv"]
+
+[ext_resource type="Texture2D" uid="uid://berty13p3qiyx" path="res://Redundant Assets/Inventory/Assets proper/Assets_Object_PileOfClothes.png" id="1_tvjad"]
+[ext_resource type="Script" uid="uid://mi4gyrxda1nk" path="res://Redundant Assets/Inventory/item_data.gd" id="2_lmw4h"]
+
+[resource]
+script = ExtResource("2_lmw4h")
+id = &"clothes"
+display_name = "Clothes"
+description = "A stack of clothes"
+icon = ExtResource("1_tvjad")
+insanity_on_pickup = -1
+insanity_if_missing = 1
+metadata/_custom_type_script = "uid://mi4gyrxda1nk"

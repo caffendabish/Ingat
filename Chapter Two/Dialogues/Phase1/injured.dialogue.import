@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dbhawjh7d38k7"
+path="res://.godot/imported/injured.dialogue-fef4c78545eea4e3407c37ae89bb0be8.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase1/injured.dialogue"
+dest_files=["res://.godot/imported/injured.dialogue-fef4c78545eea4e3407c37ae89bb0be8.tres"]
+
+[params]
+
+defaults=true

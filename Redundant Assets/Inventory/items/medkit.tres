@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://bwqyapwhipy3w"]
+
+[ext_resource type="Texture2D" uid="uid://b2kq6q7i3oose" path="res://Redundant Assets/Inventory/Assets proper/Assets_Object_Medkit.png" id="1_8xppa"]
+[ext_resource type="Script" uid="uid://mi4gyrxda1nk" path="res://Redundant Assets/Inventory/item_data.gd" id="2_i5m2r"]
+
+[resource]
+script = ExtResource("2_i5m2r")
+id = &"Medkit"
+display_name = "First Aid Kit"
+description = "To treat wounds and injuries "
+icon = ExtResource("1_8xppa")
+insanity_on_pickup = -5
+insanity_if_missing = 10
+metadata/_custom_type_script = "uid://mi4gyrxda1nk"

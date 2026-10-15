@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cmamw26x8s4vu"]
+
+[ext_resource type="Texture2D" uid="uid://dsvkrph1d3p6x" path="res://Chapter Two/Assets/LVL 2 QTE EVENT/SECTION 1 PHASE 1/SECTION1.png" id="1_ajh8p"]
+[ext_resource type="Script" uid="uid://cv1pwr7io00oa" path="res://Chapter Two/Scripts/2nd Phase/flood_minigame.gd" id="1_f5a3y"]
+[ext_resource type="Resource" uid="uid://c8fbm1s5e7vi2" path="res://Chapter Two/Dialogues/Phase3/DodgeInstruc.dialogue" id="2_0ubsx"]
+[ext_resource type="PackedScene" uid="uid://cwphsp8fveijh" path="res://Chapter Two/Minigames/Phase2/flood_player.tscn" id="2_tauxo"]
+[ext_resource type="Script" uid="uid://dwp730jij6ou4" path="res://Chapter Two/Scripts/2nd Phase/debris_spawner.gd" id="4_0ubsx"]
+[ext_resource type="PackedScene" uid="uid://hf4t1ncqlqu5" path="res://Chapter Two/Minigames/Phase2/debris.tscn" id="5_6uwgg"]
+
+[node name="FloodMinigame" type="Node2D" unique_id=1054838750]
+script = ExtResource("1_f5a3y")
+intro_dialogue = ExtResource("2_0ubsx")
+safe_scene = "uid://npdi6ilp16h0"
+special_qte_scene = "uid://dk0ljpypx5y70"
+washed_away_scene = "uid://dj4qpbfymd7aj"
+duration = 30.0
+insanity_per_hit = 20
+
+[node name="Background" type="TextureRect" parent="." unique_id=1209701755]
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource("1_ajh8p")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=851565997]
+offset_top = 769.0
+offset_right = 1920.0
+offset_bottom = 1169.0
+mouse_filter = 2
+color = Color(0.24313726, 0.22352941, 0.20392157, 1)
+
+[node name="Player" parent="." unique_id=763054807 instance=ExtResource("2_tauxo")]
+position = Vector2(913, 1075)
+
+[node name="DebrisSpawner" type="Node2D" parent="." unique_id=1769290119]
+script = ExtResource("4_0ubsx")
+debris_scene = ExtResource("5_6uwgg")

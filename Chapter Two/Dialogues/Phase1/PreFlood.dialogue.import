@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://ch5unfk7ul1p8"
+path="res://.godot/imported/PreFlood.dialogue-9a83f9ac956888a34b0fc03669637584.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase1/PreFlood.dialogue"
+dest_files=["res://.godot/imported/PreFlood.dialogue-9a83f9ac956888a34b0fc03669637584.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bo73bign716ag"
+path="res://.godot/imported/safenoni.dialogue-ee3ced704ddf0a2bb2938cef4cf10684.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase1/safenoni.dialogue"
+dest_files=["res://.godot/imported/safenoni.dialogue-ee3ced704ddf0a2bb2938cef4cf10684.tres"]
+
+[params]
+
+defaults=true

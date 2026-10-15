@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://bj1p7wxium5ln"]
+
+[ext_resource type="Texture2D" uid="uid://pr6vgcehkesj" path="res://Redundant Assets/Inventory/Assets proper/Assets_Object_HygieneKit.png" id="1_3hpyp"]
+[ext_resource type="Script" uid="uid://mi4gyrxda1nk" path="res://Redundant Assets/Inventory/item_data.gd" id="2_d82hf"]
+
+[resource]
+script = ExtResource("2_d82hf")
+id = &"Sanitary"
+display_name = "Hygeine Pack"
+description = "Bag filled with stuff used for Hygeine "
+icon = ExtResource("1_3hpyp")
+insanity_on_pickup = -2
+metadata/_custom_type_script = "uid://mi4gyrxda1nk"

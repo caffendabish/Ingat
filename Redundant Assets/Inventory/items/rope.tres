@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://cj4074eupyg88"]
+
+[ext_resource type="Texture2D" uid="uid://bagunn5rmrxfo" path="res://Redundant Assets/Inventory/Assets proper/Assets_Object_Rope.png" id="1_8lrdf"]
+[ext_resource type="Script" uid="uid://mi4gyrxda1nk" path="res://Redundant Assets/Inventory/item_data.gd" id="2_5mapa"]
+
+[resource]
+script = ExtResource("2_5mapa")
+id = &"rope"
+display_name = "Rope"
+description = "Can be use to pull something up
+"
+icon = ExtResource("1_8lrdf")
+insanity_on_pickup = -5
+insanity_if_missing = 5
+metadata/_custom_type_script = "uid://mi4gyrxda1nk"

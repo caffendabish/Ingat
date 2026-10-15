@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://dtvkwxgwghjnj"]
+
+[ext_resource type="Texture2D" uid="uid://cvj0gaj10tmsw" path="res://Redundant Assets/Character/AssetsDump/OllieSprites_Scared.png" id="1_oaybx"]
+[ext_resource type="Script" uid="uid://c1j56v8ajps0b" path="res://Chapter Two/Scripts/1st phase/Dialogue/insanity_intro.gd" id="1_r223r"]
+[ext_resource type="Resource" uid="uid://cmvoms55p0qln" path="res://Chapter Two/Dialogues/Phase1/InsanityIntro .dialogue" id="2_36urk"]
+[ext_resource type="Texture2D" uid="uid://dr0p0afe1r8pb" path="res://Redundant Assets/UI/InsanityMeter/insanitymeter_1.png" id="3_36urk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pt1es"]
+atlas = ExtResource("1_oaybx")
+region = Rect2(0, 0, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r223r"]
+atlas = ExtResource("1_oaybx")
+region = Rect2(1440, 0, 1440, 1640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
+animations = [{
+"frames": [{
+"duration": 5.0,
+"texture": SubResource("AtlasTexture_pt1es")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r223r")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="InsanityIntro" type="Node2D" unique_id=451344713]
+script = ExtResource("1_r223r")
+dialogue = ExtResource("2_36urk")
+
+[node name="Dim" type="ColorRect" parent="." unique_id=354738107]
+offset_right = 1933.0
+offset_bottom = 1082.0
+color = Color(0, 0, 0, 1)
+
+[node name="TraumaOllie" type="AnimatedSprite2D" parent="." unique_id=485063768]
+position = Vector2(1006.00006, 712.00006)
+scale = Vector2(0.45104167, 0.45104164)
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+autoplay = "default"
+frame_progress = 0.4485644
+
+[node name="InsanityBar" type="TextureRect" parent="." unique_id=253170425]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 989.0
+offset_top = 47.0
+offset_right = 1889.0
+offset_bottom = 197.0
+grow_horizontal = 0
+texture = ExtResource("3_36urk")
+expand_mode = 1

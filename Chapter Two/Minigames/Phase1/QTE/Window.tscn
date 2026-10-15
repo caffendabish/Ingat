@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://c1wnpqaw8h6os"]
+
+[ext_resource type="Script" uid="uid://ddgwhxud6ey5t" path="res://Chapter Two/Minigames/Phase1/QTE/window.gd" id="1_6pfjo"]
+[ext_resource type="Texture2D" uid="uid://b23a75o2sra42" path="res://Redundant Assets/Character/AssetsDump/INGAT_SpritesZ_Phase1_ErnestoPullingWindowGrill.png" id="1_lst72"]
+[ext_resource type="Resource" uid="uid://cj4074eupyg88" path="res://Redundant Assets/Inventory/items/rope.tres" id="2_k0you"]
+[ext_resource type="Resource" uid="uid://dn4j6mxpgqyy5" path="res://Chapter Two/Dialogues/Phase2/Window.dialogue" id="3_i1rkm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6pfjo"]
+atlas = ExtResource("1_lst72")
+region = Rect2(0, 0, 1000, 1200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k0you"]
+atlas = ExtResource("1_lst72")
+region = Rect2(1000, 0, 1000, 1200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6pfjo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k0you")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="Window" type="Node2D" unique_id=1236790264]
+script = ExtResource("1_6pfjo")
+required_item = ExtResource("2_k0you")
+dialogue = ExtResource("3_i1rkm")
+scene_if_has = "uid://h5wrbfrx2len"
+scene_if_missing = "uid://b80w1k7qdbpp8"
+flag_if_has = &"noni_safe"
+flag_if_missing = &"noni_injured"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1580404947]
+offset_right = 1924.0
+offset_bottom = 1082.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=918802194]
+position = Vector2(891.99994, 633)
+scale = Vector2(0.9315, 0.86541665)
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+autoplay = "default"
+frame_progress = 0.4783522

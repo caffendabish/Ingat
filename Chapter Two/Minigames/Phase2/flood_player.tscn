@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://cwphsp8fveijh"]
+
+[ext_resource type="Script" uid="uid://dvl2l7k1jcr8y" path="res://Chapter Two/Scripts/2nd Phase/click_mover.gd" id="1_2t55v"]
+[ext_resource type="Texture2D" uid="uid://c5kawdgwl4e1r" path="res://Redundant Assets/Character/AssetsDump/OllieSprites_BackviewFloating.png" id="2_d10r5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixvjf"]
+atlas = ExtResource("2_d10r5")
+region = Rect2(0, 0, 1000, 1200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oy81q"]
+atlas = ExtResource("2_d10r5")
+region = Rect2(1000, 0, 1000, 1200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
+animations = [{
+"frames": [{
+"duration": 5.0,
+"texture": SubResource("AtlasTexture_ixvjf")
+}, {
+"duration": 3.5,
+"texture": SubResource("AtlasTexture_oy81q")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yf5fn"]
+radius = 154.02922
+
+[node name="FloodPlayer" type="CharacterBody2D" unique_id=763054807]
+motion_mode = 1
+script = ExtResource("1_2t55v")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1566140530]
+position = Vector2(-10, 3)
+scale = Vector2(0.575, 0.575)
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+autoplay = "default"
+frame_progress = 0.36941606
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1534616432]
+position = Vector2(-6, -164)
+shape = SubResource("CircleShape2D_yf5fn")

@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://bepjwdvq674uu"]
+
+[ext_resource type="Script" uid="uid://bqt6kqtrk2xlb" path="res://Chapter Two/Scripts/1st phase/Minigame/living_room_c.gd" id="1_6vrvg"]
+[ext_resource type="Texture2D" uid="uid://cp5qw6n3vekit" path="res://Chapter Two/Assets/LVL1 FLOOD HOUSE/LIVINGROOM_BDAY LVL FLOODDED.png" id="1_7ew1a"]
+[ext_resource type="PackedScene" uid="uid://c5jvs4k7h2f3a" path="res://Redundant Assets/Inventory/pick_up.tscn" id="2_fq1r8"]
+[ext_resource type="Resource" uid="uid://cj4074eupyg88" path="res://Redundant Assets/Inventory/items/rope.tres" id="3_53bl7"]
+[ext_resource type="Resource" uid="uid://bwqyapwhipy3w" path="res://Redundant Assets/Inventory/items/medkit.tres" id="4_y0aw4"]
+[ext_resource type="Resource" uid="uid://qybdpgc6fvkv" path="res://Redundant Assets/Inventory/items/clothes.tres" id="5_d4u0l"]
+[ext_resource type="Resource" uid="uid://dnjebdstrnay2" path="res://Redundant Assets/Inventory/items/candle.tres" id="6_53bl7"]
+[ext_resource type="Resource" uid="uid://cdacqttcgwmkn" path="res://Redundant Assets/Inventory/items/file.tres" id="7_y0aw4"]
+[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="8_d4u0l"]
+[ext_resource type="Texture2D" uid="uid://cnm5rfb0ou2i1" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_UP.png" id="9_1l7qs"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+radius = 53.460266
+
+[node name="living_room" type="Node2D" unique_id=1795632119]
+script = ExtResource("1_6vrvg")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1952701162]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_7ew1a")
+
+[node name="PickUp" type="Node2D" parent="." unique_id=1550100161]
+
+[node name="Rope" parent="PickUp" unique_id=392040893 instance=ExtResource("2_fq1r8")]
+position = Vector2(1603, 930)
+item = ExtResource("3_53bl7")
+display_size = 500.0
+
+[node name="Medkit" parent="PickUp" unique_id=9376310 instance=ExtResource("2_fq1r8")]
+position = Vector2(2042, 981)
+item = ExtResource("4_y0aw4")
+pickup_id = &"heal"
+display_size = 150.0
+
+[node name="Clothes" parent="PickUp" unique_id=1595473088 instance=ExtResource("2_fq1r8")]
+position = Vector2(2323, 781)
+item = ExtResource("5_d4u0l")
+pickup_id = &"bayu"
+display_size = 300.0
+
+[node name="Candle" parent="PickUp" unique_id=1604477609 instance=ExtResource("2_fq1r8")]
+position = Vector2(3390, 581)
+item = ExtResource("6_53bl7")
+pickup_id = &"kandila"
+display_size = 150.0
+
+[node name="File" parent="PickUp" unique_id=739947832 instance=ExtResource("2_fq1r8")]
+position = Vector2(2014, 654)
+item = ExtResource("7_y0aw4")
+pickup_id = &"documents"
+display_size = 200.0
+
+[node name="Dining" type="Area2D" parent="." unique_id=1580105165]
+position = Vector2(3166, 681)
+
+[node name="Sprite2D" type="Sprite2D" parent="Dining" unique_id=570105639]
+scale = Vector2(0.1824744, 0.1824744)
+texture = ExtResource("9_1l7qs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dining" unique_id=1286781432]
+shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("8_d4u0l")]
+position = Vector2(3276, 871)
+
+[connection signal="body_entered" from="Dining" to="." method="_on_dining_body_entered"]

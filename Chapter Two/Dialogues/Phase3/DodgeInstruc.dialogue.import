@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://c8fbm1s5e7vi2"
+path="res://.godot/imported/DodgeInstruc.dialogue-48107e9c67a4e6e452954303155034bc.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase3/DodgeInstruc.dialogue"
+dest_files=["res://.godot/imported/DodgeInstruc.dialogue-48107e9c67a4e6e452954303155034bc.tres"]
+
+[params]
+
+defaults=true

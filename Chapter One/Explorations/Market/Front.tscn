@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://iinw6jv2nujm"]
+
+[ext_resource type="Texture2D" uid="uid://b8k7lpwccwtqo" path="res://Chapter One/Assets/PlaceholderDump/Market/market_frint.png" id="1_1uu11"]
+[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_3sa3x"]
+
+[node name="Node2D" type="Node2D" unique_id=1394459037]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1546623994]
+offset_left = -4.0
+offset_top = 9.0
+offset_right = 4438.495
+offset_bottom = 1115.0
+texture = ExtResource("1_1uu11")
+
+[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("2_3sa3x")]
+position = Vector2(2307, 837)

@@ -1,0 +1,130 @@
+[gd_scene format=3 uid="uid://cpa0sv2rq8l7w"]
+
+[ext_resource type="Texture2D" uid="uid://g2mqg6tlyfb2" path="res://Redundant Assets/Character/AssetsDump/ErnestoSpritesheet.png" id="1_ipytw"]
+[ext_resource type="Script" uid="uid://26lqgklhprpg" path="res://Chapter Two/Scripts/1st phase/Dialogue/parents_arguement.gd" id="1_ndpji"]
+[ext_resource type="Resource" uid="uid://bh2i5a2ep887u" path="res://Chapter Two/Dialogues/Phase1/Argue.dialogue" id="2_7reaf"]
+[ext_resource type="Texture2D" uid="uid://cgefj64mgvkjo" path="res://Redundant Assets/Character/AssetsDump/PiliSpritesheet.png" id="2_se8o2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_se8o2"]
+atlas = ExtResource("1_ipytw")
+region = Rect2(0, 6560, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ndpji"]
+atlas = ExtResource("1_ipytw")
+region = Rect2(1440, 6560, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7reaf"]
+atlas = ExtResource("1_ipytw")
+region = Rect2(0, 8200, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ijukf"]
+atlas = ExtResource("1_ipytw")
+region = Rect2(1440, 8200, 1440, 1640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_se8o2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ndpji")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7reaf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ijukf")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_47yhm"]
+atlas = ExtResource("2_se8o2")
+region = Rect2(0, 6560, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5cyoq"]
+atlas = ExtResource("2_se8o2")
+region = Rect2(1440, 6560, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5k5td"]
+atlas = ExtResource("2_se8o2")
+region = Rect2(1440, 8200, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_22cbu"]
+atlas = ExtResource("2_se8o2")
+region = Rect2(0, 8200, 1440, 1640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yf5fn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_47yhm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5cyoq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5k5td")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_22cbu")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ParentsArguement" type="Node2D" unique_id=467702641]
+script = ExtResource("1_ndpji")
+dialogue = ExtResource("2_7reaf")
+next_scene = "uid://ddrcocm4j0vbk"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2051066860]
+offset_right = 1923.0
+offset_bottom = 1093.0
+color = Color(0, 0, 0, 1)
+
+[node name="Angry Ernesto" type="AnimatedSprite2D" parent="." unique_id=510939803]
+position = Vector2(1509, 672.5835)
+scale = Vector2(0.67777765, 0.67777765)
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+autoplay = "default"
+frame = 2
+frame_progress = 0.58683074
+
+[node name="Angry Pili" type="AnimatedSprite2D" parent="." unique_id=1692959676]
+position = Vector2(458.00003, 775.00006)
+scale = Vector2(0.715625, 0.7156249)
+sprite_frames = SubResource("SpriteFrames_yf5fn")
+autoplay = "default"
+flip_h = true
+
+[node name="FadeLayer" type="CanvasLayer" parent="." unique_id=32694676]
+layer = 20
+
+[node name="Fade" type="ColorRect" parent="FadeLayer" unique_id=50202898]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="FaultLabel" type="Label" parent="FadeLayer" unique_id=1940835516]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 75
+text = "It's your Fault!"

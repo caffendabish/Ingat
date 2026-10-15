@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://b7f2kjgkvch87"
+path="res://.godot/imported/SCENE 10.dialogue-b25a3feeed8deb6057cf76330b89be87.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/SCENE 10.dialogue"
+dest_files=["res://.godot/imported/SCENE 10.dialogue-b25a3feeed8deb6057cf76330b89be87.tres"]
+
+[params]
+
+defaults=true

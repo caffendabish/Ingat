@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://coppkh4qw0ivd"]
+
+[ext_resource type="Texture2D" uid="uid://dd3lel5mp65ve" path="res://Chapter Two/Assets/SPECIALQTE/NoniVerChoicesPapa.png" id="1_pclk8"]
+[ext_resource type="Script" uid="uid://cfywed3q7r6ry" path="res://Chapter Two/Scripts/2nd Phase/washedaway_pn.gd" id="1_sifxm"]
+[ext_resource type="Resource" uid="uid://p41pmsiniiuf" path="res://Chapter Two/Dialogues/Phase2/WashedawayPN.dialogue" id="2_goen3"]
+
+[node name="WashedawayPn" type="Node2D" unique_id=780353075]
+script = ExtResource("1_sifxm")
+dialogue = ExtResource("2_goen3")
+next_scene = "uid://bp3h4hgp33abj"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1801398566]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_pclk8")
+
+[node name="FadeLayer" type="CanvasLayer" parent="." unique_id=682003079]
+layer = 20
+
+[node name="Fade" type="ColorRect" parent="FadeLayer" unique_id=743933935]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="FaultLabel" type="Label" parent="FadeLayer" unique_id=1058870147]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 75
+text = "It's your Fault!"

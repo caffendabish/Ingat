@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://h5wrbfrx2len"]
+
+[ext_resource type="Script" uid="uid://dy7xn8lg78oh3" path="res://Chapter Two/Minigames/Phase1/QTE/safe_noni.gd" id="1_67p4h"]
+[ext_resource type="Texture2D" uid="uid://fd4qyjs3jiyj" path="res://Redundant Assets/Character/AssetsDump/INGAT_SpritesZ_Phase1_OlliePullingUpNoni.png" id="1_pyuma"]
+[ext_resource type="Resource" uid="uid://bo73bign716ag" path="res://Chapter Two/Dialogues/Phase1/safenoni.dialogue" id="2_tf4dv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tf4dv"]
+atlas = ExtResource("1_pyuma")
+region = Rect2(0, 0, 1000, 1200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hvb4c"]
+atlas = ExtResource("1_pyuma")
+region = Rect2(1000, 0, 1000, 1200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_67p4h"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tf4dv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hvb4c")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.0
+}]
+
+[node name="SafeNoni" type="Node2D" unique_id=113837115]
+script = ExtResource("1_67p4h")
+dialogue = ExtResource("2_tf4dv")
+next_scene = "uid://bie87ho6rohej"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=889607409]
+offset_right = 1924.0
+offset_bottom = 1082.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1532336628]
+position = Vector2(879.99994, 593)
+scale = Vector2(0.9315, 0.86541665)
+sprite_frames = SubResource("SpriteFrames_67p4h")
+autoplay = "default"
+frame_progress = 0.8237857

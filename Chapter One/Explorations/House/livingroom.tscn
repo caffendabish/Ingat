@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dnjj57s3ln5pc"]
+
+[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_slxlb"]
+
+[node name="Node2D" type="Node2D" unique_id=603335698]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1999012871]
+offset_left = -11.0
+offset_top = -17.0
+offset_right = 4431.495
+offset_bottom = 1089.0
+
+[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("2_slxlb")]
+position = Vector2(2344, 797)

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://bbp5s56talmfw"]
+
+[ext_resource type="Texture2D" uid="uid://cfq8vpu0ooli5" path="res://Redundant Assets/Inventory/Assets proper/Assets_Object_Flashlight.png" id="1_r0of4"]
+[ext_resource type="Script" uid="uid://mi4gyrxda1nk" path="res://Redundant Assets/Inventory/item_data.gd" id="2_s7fbh"]
+
+[resource]
+script = ExtResource("2_s7fbh")
+id = &"torch"
+display_name = "Flashlight"
+description = "A perfect tool to illuminate a dark place"
+icon = ExtResource("1_r0of4")
+insanity_on_pickup = -4
+insanity_if_missing = 5
+metadata/_custom_type_script = "uid://mi4gyrxda1nk"

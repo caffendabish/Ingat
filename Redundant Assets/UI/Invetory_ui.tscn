@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://5k7s4vtv0y4q"]
+
+[ext_resource type="Script" uid="uid://bywhtwgsaclr3" path="res://Redundant Assets/UI/invetory_ui.gd" id="1_tqduk"]
+[ext_resource type="Texture2D" uid="uid://byr2c2w163fk6" path="res://Redundant Assets/UI/inventory_UPDATED.png" id="2_35o5q"]
+
+[node name="InventoryUI" type="Control" unique_id=1108188488]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tqduk")
+
+[node name="Dim" type="ColorRect" parent="." unique_id=1422822809]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.5999706, 0.7314745, 1, 0.27058825)
+
+[node name="Backpack" type="TextureRect" parent="." unique_id=1968764468]
+custom_minimum_size = Vector2(700, 600)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -962.0
+offset_top = -611.0
+offset_right = 992.16675
+offset_bottom = 1064.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_35o5q")
+expand_mode = 1
+
+[node name="Slots" type="Control" parent="Backpack" unique_id=575468797]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="CloseButton" type="Button" parent="Backpack" unique_id=482091645]
+layout_mode = 0
+offset_left = 1640.0
+offset_top = 714.0
+offset_right = 1742.0
+offset_bottom = 810.0
+flat = true
+
+[node name="DescLabel" type="Label" parent="Backpack" unique_id=479064865]
+layout_mode = 0
+offset_left = 934.0
+offset_top = 896.0
+offset_right = 1417.0
+offset_bottom = 1074.0
+rotation = -0.099128015

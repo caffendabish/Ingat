@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://baiy6nhv7mnty"
+path="res://.godot/imported/Ernesto.dialogue-0cfe335de9c8444bcde44c8ed3625e22.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/Ernesto.dialogue"
+dest_files=["res://.godot/imported/Ernesto.dialogue-0cfe335de9c8444bcde44c8ed3625e22.tres"]
+
+[params]
+
+defaults=true

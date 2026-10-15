@@ -1,0 +1,17 @@
+~ start
+
+Ollie: The water's at the stairs! The window, now!
+Noni: It's too high! I can't reach the ledge!
+Ollie: I'll lift you. Hold on to me.
+
+if Inventory.has_item("rope")
+	Ollie: The rope. Good thing I grabbed it.
+	Ollie: Tie it around your waist. I won't let you fall.
+else
+	Ollie: No rope. I never thought to bring one...
+	Ollie: Okay. Okay. Then I'll have to pull you up myself.
+
+Noni: Ollie... the roof is slippery.
+Ollie: Look at me, not down. Ready?
+
+=> END

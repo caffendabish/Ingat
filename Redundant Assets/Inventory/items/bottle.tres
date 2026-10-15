@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://crmm40t83m5ae"]
+
+[ext_resource type="Texture2D" uid="uid://bbwifbpwxk018" path="res://Redundant Assets/Inventory/Assets proper/Assets_Object_Water.png" id="1_tpfef"]
+[ext_resource type="Script" uid="uid://mi4gyrxda1nk" path="res://Redundant Assets/Inventory/item_data.gd" id="2_17lfw"]
+
+[resource]
+script = ExtResource("2_17lfw")
+id = &"water"
+display_name = "Water Bottle"
+description = "Dont forget to Hydrate
+"
+icon = ExtResource("1_tpfef")
+insanity_on_pickup = -2
+insanity_if_missing = 3
+metadata/_custom_type_script = "uid://mi4gyrxda1nk"

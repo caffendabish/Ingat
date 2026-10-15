@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://c5jvs4k7h2f3a"]
+
+[ext_resource type="Script" uid="uid://dh7efpexirytc" path="res://Redundant Assets/Inventory/pick_up.gd" id="1_fteio"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yf5fn"]
+radius = 60.63827
+
+[node name="PickUp" type="Area2D" unique_id=392040893]
+script = ExtResource("1_fteio")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1624091207]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=19817056]
+shape = SubResource("CircleShape2D_yf5fn")

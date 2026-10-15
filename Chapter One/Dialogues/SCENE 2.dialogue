@@ -1,0 +1,111 @@
+~ start
+I want to go home. 
+
+RITCHIE: Hey!
+
+RITCHIE: Ollie!
+
+OLLIE: ...Huh?
+
+RITCHIE: There you are! Why are you just standing there?
+
+OLLIE: Ritchie...? You're... you're real?
+
+RITCHIE: Duh, of course it's me. Who else? Your imaginary friend? Or did you see a ghost?
+
+OLLIE: Where did everyone go? We were just playing Langit, Lupa a second ago...and then the sky went dark...
+
+RITCHIE: Huh? What are you talking about?
+RITCHIE: The game ended like ten minutes ago! 
+RITCHIE: They all ran to the canteen to buy ice candy but the line was suuuuuper long so I just came back here to find you.
+RITCHIE: ...
+RITCHIE: Hmm… You look weird.
+RITCHIE: Hey, don't tell me your tummy is hurting because of that whole bag of chicharon I gave you earlier?
+
+OLLIE: No, it's not.
+
+RITCHIE: Wow. Your nose is gonna reach the ceiling from lying.
+
+OLLIE: I'm not lying!
+
+RITCHIE: Really? Are you sure? When you ate that last piece earlier, your face looked like you were gonna cry.
+RICTHIE: Like a...deflated fishball!
+
+- I saw something else...
+	OLLIE: It's not my tummy! It's just... didn't you see them, Ritchie? 
+	OLLIE: Everything just froze! The sky turned completely black. That swing? It was moving by itself! and the water... there was water everywhere! And-
+	RITCHIE: What are you talking about? You're daydreaming again! There's no one here but us. See?
+	RITCHIE: Besides, your eyes are already watery from the chili powder anyway!
+
+- It's just a headache.
+	OLLIE: My tummy is fine, my head just hurts a little bit because of the Math quiz earlier. I just wanted to stand still for a second.
+	RITCHIE: I know, right? Argh! Math always makes my brain explode too. 
+	RITCHIE: Besides, your eyes are already watery from the chili powder anyway!
+
+OLLIE: Hey! Well, your face looks like a stepped-on piece of chicharon!
+
+RITCHIE: That's mean! I’m telling Lola on you!
+RITCHIE: But it's okay, at least I have backup.
+
+OLLIE: You still have more?
+
+RITCHIE: Bleeeh! I got 3 packs for only P20 from Aling Nena earlier using my extra baon! Gave you only one pack.
+
+OLLIE: No fair! I thought we share everything!
+
+RITCHIE: I saved this one.
+
+OLLIE: For what?
+
+RITCHIE: For me, duh. I bought it.
+
+OLLIE: Hmp!
+
+RITCHIE: Change topic! Your birthday is on November 8, right?
+
+OLLIE: Yeah, I know. I'm old already.
+
+RITCHIE: That's in a few days! Are you having a birthday party? Will there be sweet spaghetti with hotdogs?
+
+OLLIE: I don't know. Nanay hasn't told me yet. Maybe it's just simple or we'll just have to order Jabi for this year again.
+
+RITCHIE: How do you not know?
+
+- I don't want to ask.
+	OLLIE: Parties cost too much money and I don't even care about a party anyway. I'm already too big for balloons.
+	RICTHIE: We're just kids! You're never too old for hotdogs on a stick with marshmallows!
+ 
+- I really want to have one...
+	OLLIE: I actually secretly drew a picture of my dream birthday party in my notebook last night. It had a big chocolate cake and everything but I hid it so Nanay wouldn't see it.
+	RITCHIE: See? I knew it! Okay, if you share your snacks with me next time, I'll pray super hard to the angels to make your party happen!
+
+RITCHIE: Well, if you do have a party, you have to invite me, okay? I'm your best friend after all. Heh.
+
+OLLIE: Of course! Obviously you're invited.
+
+RITCHIE: Hehe. I'm expecting chocolate cake! The one with marshmallows on top.
+
+OLLIE: You just want cake!
+
+RITCHIE: Obviously! That's free food, duh.
+RITCHIE: But seriously, what do you really want for your birthday anyway?
+
+OLLIE: I don't know. I really don't know.
+
+RITCHIE: You always say "I don't know." Fine, I'll just pick something for you.
+
+OLLIE: What is it?
+
+RITCHIE: It's a secret! No clues so it's a surprise.
+
+OLLIE: Hey, that's unfair! Tell me!
+
+RITCHIE: I don't want to. Too bad!
+ 
+#BELL RINGS
+
+RITCHIE: Oh no, we're dead! That's the bell! We're gonna be late, Ma'am Santos is gonna get us!
+
+OLLIE: Hey, wait! Don't leave me!
+
+=> END

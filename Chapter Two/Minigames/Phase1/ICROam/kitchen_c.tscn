@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://b4ur8ugc128bu"]
+
+[ext_resource type="Texture2D" uid="uid://cvl721ulu3ohx" path="res://Chapter Two/Assets/LVL1 FLOOD HOUSE/KITCHEN LVL 1 FLOODDED.png" id="1_6ctxw"]
+[ext_resource type="Script" uid="uid://qlabdsssm6es" path="res://Chapter Two/Scripts/1st phase/Minigame/kitchen_c.gd" id="1_podpw"]
+[ext_resource type="PackedScene" uid="uid://c5jvs4k7h2f3a" path="res://Redundant Assets/Inventory/pick_up.tscn" id="2_8p2p7"]
+[ext_resource type="Resource" uid="uid://crmm40t83m5ae" path="res://Redundant Assets/Inventory/items/bottle.tres" id="3_o2x27"]
+[ext_resource type="Resource" uid="uid://bbiyfykv1vwf" path="res://Redundant Assets/Inventory/items/biscuit.tres" id="4_o2x27"]
+[ext_resource type="Resource" uid="uid://b4ja2eqw6yq40" path="res://Redundant Assets/Inventory/items/canned.tres" id="5_htm2w"]
+[ext_resource type="Resource" uid="uid://lhe28hh0bol7" path="res://Redundant Assets/Inventory/items/radio.tres" id="6_rry3k"]
+[ext_resource type="Resource" uid="uid://bbp5s56talmfw" path="res://Redundant Assets/Inventory/items/flashlight.tres" id="7_inlhk"]
+[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="8_456ej"]
+[ext_resource type="Texture2D" uid="uid://cv3nkfeb17avg" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_RIGHT.png" id="10_2exlc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+radius = 92.021736
+
+[node name="KitchenC" type="Node2D" unique_id=670821651]
+script = ExtResource("1_podpw")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=12053628]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_6ctxw")
+metadata/_edit_lock_ = true
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1518295523]
+
+[node name="Water" parent="Node2D" unique_id=367909553 instance=ExtResource("2_8p2p7")]
+position = Vector2(1809, 407)
+item = ExtResource("3_o2x27")
+pickup_id = &"Bottle"
+display_size = 100.0
+
+[node name="Biscuits" parent="Node2D" unique_id=392040893 instance=ExtResource("2_8p2p7")]
+position = Vector2(629, 827)
+item = ExtResource("4_o2x27")
+pickup_id = &"Marie"
+display_size = 100.0
+
+[node name="Canned" parent="Node2D" unique_id=1290797797 instance=ExtResource("2_8p2p7")]
+position = Vector2(936, 501)
+item = ExtResource("5_htm2w")
+pickup_id = &"cornbeef"
+display_size = 150.0
+
+[node name="Radio" parent="Node2D" unique_id=1428123750 instance=ExtResource("2_8p2p7")]
+position = Vector2(465, 928)
+item = ExtResource("6_rry3k")
+pickup_id = &"dzmm"
+display_size = 300.0
+
+[node name="Flashlight]" parent="Node2D" unique_id=1396554246 instance=ExtResource("2_8p2p7")]
+position = Vector2(1528, 238)
+item = ExtResource("7_inlhk")
+pickup_id = &"torchs"
+display_size = 250.0
+
+[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("8_456ej")]
+position = Vector2(3019, 744)
+
+[node name="Dining" type="Area2D" parent="." unique_id=303886765]
+position = Vector2(3346, 698)
+
+[node name="Sprite2D" type="Sprite2D" parent="Dining" unique_id=1124878680]
+position = Vector2(0.9999962, 0)
+scale = Vector2(0.36092982, 0.36092982)
+texture = ExtResource("10_2exlc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dining" unique_id=1266127029]
+shape = SubResource("CircleShape2D_g4v7s")
+
+[connection signal="body_entered" from="Dining" to="." method="_on_dining_body_entered"]

@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://b80w1k7qdbpp8"]
+
+[ext_resource type="Script" uid="uid://dy7xn8lg78oh3" path="res://Chapter Two/Minigames/Phase1/QTE/safe_noni.gd" id="1_gqgby"]
+[ext_resource type="Resource" uid="uid://dcuiq3iory3lv" path="res://Chapter Two/Dialogues/Phase1/injurednoni.dialogue" id="2_ddvyh"]
+[ext_resource type="Texture2D" uid="uid://fd4qyjs3jiyj" path="res://Redundant Assets/Character/AssetsDump/INGAT_SpritesZ_Phase1_OlliePullingUpNoni.png" id="2_w8411"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t32wk"]
+atlas = ExtResource("2_w8411")
+region = Rect2(0, 1200, 1000, 1200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gqgby"]
+atlas = ExtResource("2_w8411")
+region = Rect2(1000, 1200, 1000, 1200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ddvyh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t32wk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gqgby")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.0
+}]
+
+[node name="InjuredNoni" type="Node2D" unique_id=862321756]
+script = ExtResource("1_gqgby")
+dialogue = ExtResource("2_ddvyh")
+next_scene = "uid://bie87ho6rohej"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=40111797]
+offset_right = 1924.0
+offset_bottom = 1082.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=433982759]
+position = Vector2(879.99994, 593)
+scale = Vector2(0.9315, 0.86541665)
+sprite_frames = SubResource("SpriteFrames_ddvyh")
+autoplay = "default"

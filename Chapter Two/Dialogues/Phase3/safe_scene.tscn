@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://npdi6ilp16h0"]
+
+[ext_resource type="Script" uid="uid://mjh3hhkx1lw3" path="res://Chapter Two/Scripts/3rd Phase/safe_scene.gd" id="1_qdhb5"]
+[ext_resource type="Texture2D" uid="uid://cvj0gaj10tmsw" path="res://Redundant Assets/Character/AssetsDump/OllieSprites_Scared.png" id="1_ted2r"]
+[ext_resource type="Resource" uid="uid://b8vvccvxxhh5v" path="res://Chapter Two/Dialogues/Phase3/Safe.dialogue" id="2_rbekg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qdhb5"]
+atlas = ExtResource("1_ted2r")
+region = Rect2(0, 0, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rbekg"]
+atlas = ExtResource("1_ted2r")
+region = Rect2(1440, 0, 1440, 1640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qdhb5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rbekg")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="SafeScene" type="Node2D" unique_id=1579987229]
+script = ExtResource("1_qdhb5")
+dialogue = ExtResource("2_rbekg")
+next_scene = "uid://bie87ho6rohej"
+
+[node name="Dim" type="ColorRect" parent="." unique_id=235143248]
+offset_right = 1921.0
+offset_bottom = 1086.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1428764920]
+position = Vector2(943, 611)
+scale = Vector2(0.536632, 0.536632)
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+autoplay = "default"
+
+[node name="FadeLayer" type="CanvasLayer" parent="." unique_id=812466023]
+layer = 20
+
+[node name="Fade" type="ColorRect" parent="FadeLayer" unique_id=228644222]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="FaultLabel" type="Label" parent="FadeLayer" unique_id=1806776342]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 75
+text = "Later that Night"

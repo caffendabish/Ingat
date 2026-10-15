@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bcecalc2rtmvn"
+path="res://.godot/imported/Rescue.dialogue-0aae52386e00b117733f724fbb8b7bed.tres"
+
+[deps]
+
+source_file="res://Chapter Three/Dialogues/Rescue.dialogue"
+dest_files=["res://.godot/imported/Rescue.dialogue-0aae52386e00b117733f724fbb8b7bed.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://b75wy3yp8t03k"]
+
+[ext_resource type="Script" uid="uid://bx2d4q2tybr6w" path="res://Chapter Two/Scripts/1st phase/Explorations/living_room.gd" id="1_gm5dx"]
+[ext_resource type="Texture2D" uid="uid://bb5vpltwin532" path="res://Chapter One/Assets/Finalize/HOUSE/DINING/BDAYDREAM.png" id="1_m2nc3"]
+[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_8115s"]
+[ext_resource type="Texture2D" uid="uid://b5oem10thp2ff" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_LEFT.png" id="3_lqkhh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+radius = 113.110565
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(3910, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gm5dx"]
+size = Vector2(28, 482)
+
+[node name="LivingRoom" type="Node2D" unique_id=1595806651]
+script = ExtResource("1_gm5dx")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2116559823]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_m2nc3")
+metadata/_edit_lock_ = true
+
+[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("2_8115s")]
+position = Vector2(3550, 904)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1026219696]
+position = Vector2(261, 787)
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=1464203119]
+scale = Vector2(0.44948527, 0.44948527)
+texture = ExtResource("3_lqkhh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=125193449]
+shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1067926453]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1743527166]
+position = Vector2(1911, 650.5)
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1694385416]
+position = Vector2(3693, 893)
+shape = SubResource("RectangleShape2D_gm5dx")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

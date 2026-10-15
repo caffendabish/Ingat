@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cmvoms55p0qln"
+path="res://.godot/imported/InsanityIntro .dialogue-4972cc924d9d6428e46cf31992d893c8.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase1/InsanityIntro .dialogue"
+dest_files=["res://.godot/imported/InsanityIntro .dialogue-4972cc924d9d6428e46cf31992d893c8.tres"]
+
+[params]
+
+defaults=true

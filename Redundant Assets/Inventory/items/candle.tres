@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://dnjebdstrnay2"]
+
+[ext_resource type="Texture2D" uid="uid://5p5o0st21icc" path="res://Redundant Assets/Inventory/Assets proper/Assets_Object_CandlesMatchsticks.png" id="1_dj3uh"]
+[ext_resource type="Script" uid="uid://mi4gyrxda1nk" path="res://Redundant Assets/Inventory/item_data.gd" id="2_1l6ah"]
+
+[resource]
+script = ExtResource("2_1l6ah")
+id = &"candle"
+display_name = "Candle"
+description = "Wax n wick"
+icon = ExtResource("1_dj3uh")
+insanity_on_pickup = -3
+insanity_if_missing = 1
+metadata/_custom_type_script = "uid://mi4gyrxda1nk"

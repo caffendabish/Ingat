@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://cfgg6hxy0byvv"]
+
+[ext_resource type="Texture2D" uid="uid://ch55eajvegn76" path="res://Chapter Two/Assets/LVL1 FLOOD HOUSE/DINING LVL 1 FLOODDED.png" id="1_0avfh"]
+[ext_resource type="Script" uid="uid://d2mue3g3s4sua" path="res://Chapter Two/Scripts/1st phase/Minigame/dining.gd" id="1_stra1"]
+[ext_resource type="PackedScene" uid="uid://c5jvs4k7h2f3a" path="res://Redundant Assets/Inventory/pick_up.tscn" id="2_5ouip"]
+[ext_resource type="Resource" uid="uid://bwqyapwhipy3w" path="res://Redundant Assets/Inventory/items/medkit.tres" id="3_qgiba"]
+[ext_resource type="Resource" uid="uid://bkayehwe5kc7d" path="res://Redundant Assets/Inventory/items/wallet.tres" id="4_ucewa"]
+[ext_resource type="Resource" uid="uid://dyb7helegyaib" path="res://Redundant Assets/Inventory/items/plastic.tres" id="5_xji8x"]
+[ext_resource type="Resource" uid="uid://b12s2l4l3g2n8" path="res://Redundant Assets/Inventory/items/whistle.tres" id="6_nckhb"]
+[ext_resource type="Resource" uid="uid://bj1p7wxium5ln" path="res://Redundant Assets/Inventory/items/sanitary.tres" id="7_gr35w"]
+[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="8_nckhb"]
+[ext_resource type="Texture2D" uid="uid://b5oem10thp2ff" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_LEFT.png" id="9_gr35w"]
+[ext_resource type="Texture2D" uid="uid://t73g7iob1xru" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_DOWN.png" id="11_3ub43"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+radius = 106.320274
+
+[node name="Dining" type="Node2D" unique_id=1955163007 groups=["player"]]
+script = ExtResource("1_stra1")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=871666472]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_0avfh")
+metadata/_edit_lock_ = true
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1003477975]
+
+[node name="Medkit" parent="Node2D" unique_id=392040893 instance=ExtResource("2_5ouip")]
+position = Vector2(2761, 490)
+item = ExtResource("3_qgiba")
+
+[node name="Wallet" parent="Node2D" unique_id=1150198066 instance=ExtResource("2_5ouip")]
+position = Vector2(1881, 583)
+item = ExtResource("4_ucewa")
+
+[node name="Plastic" parent="Node2D" unique_id=1927162 instance=ExtResource("2_5ouip")]
+position = Vector2(3054, 755)
+rotation = 1.3089969
+item = ExtResource("5_xji8x")
+pickup_id = &"plastic"
+display_size = 350.0
+
+[node name="Whistle" parent="Node2D" unique_id=1948987321 instance=ExtResource("2_5ouip")]
+position = Vector2(942, 527)
+item = ExtResource("6_nckhb")
+display_size = 150.0
+
+[node name="Sanitary" parent="Node2D" unique_id=1539292066 instance=ExtResource("2_5ouip")]
+position = Vector2(1147, 583)
+item = ExtResource("7_gr35w")
+display_size = 100.0
+
+[node name="To Kitchen" type="Area2D" parent="." unique_id=1907965009]
+position = Vector2(382, 764)
+
+[node name="Sprite2D" type="Sprite2D" parent="To Kitchen" unique_id=185256978]
+scale = Vector2(0.40497553, 0.40497553)
+texture = ExtResource("9_gr35w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="To Kitchen" unique_id=1000297284]
+shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="Sala" type="Area2D" parent="." unique_id=1375128581]
+position = Vector2(3272, 954)
+
+[node name="Sprite2D" type="Sprite2D" parent="Sala" unique_id=576389755]
+scale = Vector2(0.40497553, 0.40497553)
+texture = ExtResource("11_3ub43")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sala" unique_id=949081467]
+shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("8_nckhb")]
+position = Vector2(2062, 801)
+scale = Vector2(0.6085651, 0.6085651)
+
+[connection signal="body_entered" from="To Kitchen" to="." method="_on_to_kitchen_body_entered"]
+[connection signal="body_entered" from="Sala" to="." method="_on_sala_body_entered"]

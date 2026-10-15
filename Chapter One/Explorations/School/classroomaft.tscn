@@ -1,0 +1,183 @@
+[gd_scene format=3 uid="uid://8kf6r8xpcxr0"]
+
+[ext_resource type="Script" uid="uid://doc44eigfgnji" path="res://Chapter One/Scripts/Explore/TriggersforScene/School/classroomaft.gd" id="1_t17np"]
+[ext_resource type="Texture2D" uid="uid://c1b3b3m1yskft" path="res://Chapter One/Assets/PlaceholderDump/School/school_classroom.png" id="2_coonx"]
+[ext_resource type="Texture2D" uid="uid://cntc0c0wxhq3" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM/MAINCLASSROOM.png" id="3_8col5"]
+[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="3_ajw6v"]
+[ext_resource type="Texture2D" uid="uid://c8ldpr6dmfult" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM/CHAIR1.png" id="4_5o84h"]
+[ext_resource type="Texture2D" uid="uid://t73g7iob1xru" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_DOWN.png" id="4_mm87n"]
+[ext_resource type="Texture2D" uid="uid://djw6fsxqibfe2" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM/CHAIR2.png" id="5_nnxry"]
+[ext_resource type="Texture2D" uid="uid://bl42yghcbb6s8" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM/CHAIR3.png" id="8_sqiry"]
+[ext_resource type="Texture2D" uid="uid://cavnlvltcxpe3" path="res://Chapter One/Assets/Finalize/SCHOOL/RIGHT_VENDOR/OVERLAY_NOON.png" id="9_8col5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8col5"]
+size = Vector2(4431, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5o84h"]
+size = Vector2(20, 1116.5)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_g4v7s"]
+a = Vector2(1727, 541)
+b = Vector2(1360, 540)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_yf5fn"]
+a = Vector2(173, 243)
+b = Vector2(0, 4)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_5o84h"]
+a = Vector2(-508, -289)
+b = Vector2(-346, 3)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_nnxry"]
+a = Vector2(-508, -289)
+b = Vector2(-672, -6)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_sqiry"]
+a = Vector2(-515, 96)
+b = Vector2(-672, -6)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_ksddw"]
+a = Vector2(-515, 96)
+b = Vector2(-629, 546)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_8col5"]
+a = Vector2(728, 376)
+b = Vector2(13, 15)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_57qmd"]
+a = Vector2(1884, 752)
+b = Vector2(3554, 713)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+radius = 3.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fo7ib"]
+radius = 84.17244
+
+[node name="Node2D" type="Node2D" unique_id=1439513069]
+script = ExtResource("1_t17np")
+
+[node name="World Borda" type="StaticBody2D" parent="." unique_id=731752434]
+disable_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World Borda" unique_id=1051640976]
+position = Vector2(2194, 0)
+shape = SubResource("RectangleShape2D_8col5")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="World Borda" unique_id=690200514]
+position = Vector2(2191, 1054)
+shape = SubResource("RectangleShape2D_8col5")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="World Borda" unique_id=1513476220]
+position = Vector2(0, 539.5)
+shape = SubResource("RectangleShape2D_5o84h")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="World Borda" unique_id=1824327752]
+position = Vector2(4403, 541.75)
+shape = SubResource("RectangleShape2D_5o84h")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="World Borda" unique_id=1437266245]
+position = Vector2(6, -26)
+shape = SubResource("SegmentShape2D_g4v7s")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="World Borda" unique_id=1271695867]
+position = Vector2(1713, 510)
+shape = SubResource("SegmentShape2D_yf5fn")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="World Borda" unique_id=845685463]
+position = Vector2(1713, 510)
+shape = SubResource("SegmentShape2D_5o84h")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="World Borda" unique_id=219561131]
+position = Vector2(1713, 510)
+shape = SubResource("SegmentShape2D_nnxry")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="World Borda" unique_id=1990895230]
+position = Vector2(1713, 510)
+shape = SubResource("SegmentShape2D_sqiry")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="World Borda" unique_id=1378604312]
+position = Vector2(1713, 510)
+shape = SubResource("SegmentShape2D_ksddw")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="World Borda" unique_id=1719981555]
+position = Vector2(3538, 698)
+shape = SubResource("SegmentShape2D_8col5")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="World Borda" unique_id=1039576479]
+shape = SubResource("SegmentShape2D_57qmd")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="World Borda" unique_id=1337824152]
+position = Vector2(1885, 751)
+shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=456723710]
+offset_left = -11.0
+offset_top = -17.0
+offset_right = 4431.495
+offset_bottom = 1089.0
+texture = ExtResource("2_coonx")
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect" unique_id=519172513]
+layout_mode = 0
+offset_left = -11.0
+offset_top = -17.0
+offset_right = 4431.495
+offset_bottom = 1089.0
+texture = ExtResource("3_8col5")
+metadata/_edit_lock_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect" unique_id=180714566]
+layout_mode = 0
+offset_left = -11.0
+offset_top = -17.0
+offset_right = 4431.495
+offset_bottom = 1089.0
+texture = ExtResource("4_5o84h")
+metadata/_edit_lock_ = true
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect" unique_id=2109033022]
+layout_mode = 0
+offset_left = -11.0
+offset_top = -17.0
+offset_right = 4431.495
+offset_bottom = 1089.0
+texture = ExtResource("5_nnxry")
+metadata/_edit_lock_ = true
+
+[node name="HallwayaFT" type="Area2D" parent="." unique_id=1361781092]
+position = Vector2(1209, 477)
+rotation = 3.0785918
+scale = Vector2(0.8078345, 0.8078345)
+
+[node name="Sprite2D" type="Sprite2D" parent="HallwayaFT" unique_id=263591648]
+scale = Vector2(0.3376753, 0.3334061)
+texture = ExtResource("4_mm87n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HallwayaFT" unique_id=210374526]
+shape = SubResource("CircleShape2D_fo7ib")
+
+[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("3_ajw6v")]
+position = Vector2(1634, 742)
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="TextureRect4" type="TextureRect" parent="." unique_id=1801665859]
+offset_left = -22.0
+offset_top = -34.0
+offset_right = 4521.0
+offset_bottom = 1072.0
+texture = ExtResource("8_sqiry")
+metadata/_edit_lock_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1714068378]
+modulate = Color(1, 1, 1, 0.5254902)
+offset_left = -11.0
+offset_top = -17.0
+offset_right = 4532.0
+offset_bottom = 1089.0
+texture = ExtResource("9_8col5")
+metadata/_edit_lock_ = true
+
+[connection signal="body_entered" from="HallwayaFT" to="." method="_on_hallwaya_ft_body_entered"]

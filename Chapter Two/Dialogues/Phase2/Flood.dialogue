@@ -1,0 +1,25 @@
+~ start
+The water has already swallowed the street.
+Ollie: ...It's everywhere.
+Ollie: The walls, the stairs. Even the sound of it feels like it's coming from inside my head.
+
+if GameState.has_flag("noni_injured")
+	Ollie: Noni is still holding her arm. I couldn't even do that right.
+elif GameState.has_flag("noni_safe")
+	Ollie: Noni is still shaking, but she's safe. At least I did that much.
+elif GameState.has_flag("dodong_injured")
+	Ollie: Dodong's leg is still bleeding through the cloth. I should have done more.
+elif GameState.has_flag("dodong_safe")
+	Ollie: Dodong is still clinging to my shirt. His leg is wrapped. He has to be okay.
+else
+	Ollie: My sibling is right behind me. I have to keep them close.
+
+Papa: Ollie! Over here! Don't just stand there!
+Ollie: Papa...
+Papa is holding on to the railing with one hand, shouting over the roar of the water.
+Ollie: They kept saying it was somebody's fault. Now there's no one left to blame but the water.
+Ollie: I can't stay here. If I stay, we all go under.
+Ollie: Anything it carries can hurt me. I have to dodge it, keep moving, and reach them.
+Ollie: Okay... go.
+
+=> END

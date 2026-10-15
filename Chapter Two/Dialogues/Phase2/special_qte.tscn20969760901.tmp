@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://dk0ljpypx5y70"]
+
+[ext_resource type="Script" uid="uid://cq7qvpjlrgxlr" path="res://Chapter Two/Scripts/2nd Phase/special_qte.gd" id="1_qrobv"]
+[ext_resource type="Texture2D" uid="uid://oxx702t7gc21" path="res://Chapter Two/Assets/SPECIALQTE/NoniVerChoices0.png" id="2_ni03l"]
+[ext_resource type="Texture2D" uid="uid://cacjy20kfgnxk" path="res://Chapter Two/Assets/SPECIALQTE/DodongVerChoices0.png" id="3_0mrg1"]
+
+[node name="SpecialQTE" type="Control" unique_id=644250084]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qrobv")
+saved_noni_scene = "uid://coppkh4qw0ivd"
+saved_dodong_scene = "uid://dj2unone5cqxb"
+saved_papa_noni_scene = "uid://du6k0xo3h73cp"
+saved_papa_dodong_scene = "uid://dshqw2d7yiio7"
+both_lost_scene = "uid://drtdwaumtpdkq"
+
+[node name="Noni" type="TextureRect" parent="." unique_id=305740993]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_ni03l")
+
+[node name="Dodong" type="TextureRect" parent="." unique_id=1657478470]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_0mrg1")
+
+[node name="PromptLabel" type="Label" parent="." unique_id=2046741291]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 90
+text = "Who Do You Save?"
+horizontal_alignment = 1
+
+[node name="TimeBar" type="ProgressBar" parent="." unique_id=25085568]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -441.0
+offset_top = 140.0
+offset_right = 450.0
+offset_bottom = 167.0
+grow_horizontal = 2
+
+[node name="Sibling" type="Button" parent="." unique_id=886681342]
+layout_mode = 0
+offset_left = 440.0
+offset_top = 365.0
+offset_right = 743.0
+offset_bottom = 641.0
+flat = true
+
+[node name="Papa" type="Button" parent="." unique_id=1630032629]
+layout_mode = 0
+offset_left = 1212.0
+offset_top = 217.0
+offset_right = 1596.0
+offset_bottom = 513.0
+flat = true
+
+[node name="FadeLayer" type="CanvasLayer" parent="." unique_id=1168380947]
+layer = 20
+
+[node name="Fade" type="ColorRect" parent="FadeLayer" unique_id=1177223436]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="FaultLabel" type="Label" parent="FadeLayer" unique_id=54740510]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 75
+text = "Oh no..."

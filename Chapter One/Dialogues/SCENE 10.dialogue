@@ -1,0 +1,90 @@
+~ start
+#INTERACTION: Valerie
+
+VALERIE: There. This latch just needed a good push.
+
+OLLIE: Ate Valerie? Are you okay?
+
+VALERIE: Ollie! Susmariosep! You always walk around like a ghost. Stop blending into the wall and help me check the other windows.
+
+VALERIE: I'm fine, Ollie. I'm just making sure everything inside is perfect. I was talking to Nanay earlier and once the Millgate deal goes through, we are definitely baking you that special cake for your birthday on Sunday. We might even have enough left over for new backpacks for school!
+
+VALERIE: Tatay is right, our coconut trees have always protected us. We just need to do our part and keep the house tidy tonight. Go help Dodong so they can secure the shed, okay? Everything is going to be totally fine.
+
+
+#INTERACTION: Noni
+
+NONI: Kuya Ollie! Ate Valerie said there are no classes tomorrow but she looked serious when she said it. Why is everyone's face so serious?
+NONI: If there’s no school, that means we can play in the rain and catch frogs tomorrow, right? 
+
+OLLIE: Can you find your slippers and keep them on?
+
+NONI: Okay... okay, I’ll find them. I’ll keep them real tight.
+
+NONI: Kuya... the TV woman said the big wind is coming on your birthday. Do you think the storm will be finished by morning? Nanay said we are still going to bake your favorite cake anyway.  
+
+NONI: Tatay said our coconut trees will protect us so the rain can't even touch our roof. Nothing can mess up your birthday! 
+
+
+#INTERACTION: Pili
+Nanay is packing the leftovers. She looks too stressed right now...
+I shouldn't bother her. 
+
+
+#INTERACTION: Ernesto
+Tatay is leaning against the doorframe while waiting impatiently for Dodong. He looks so tired again...
+It's best if I don't bother him.
+
+
+
+#INTERACTION: KIKI
+
+Our Kiki keeps giggling. To her, tonight is just an extra-long playtime. 
+
+KIKI: Vroom vroom!
+
+
+#IMPORTANT INTERACTION: Dodong
+
+DODONG: Hey, slowpoke. Tatay wants me to go out to the tool shed to get the blue tarpaulins but it's pitch black out there and the wind is already howling through the coconut leaves.
+
+OLLIE: Are you scared, Kuya?
+
+DODONG: Who, me? Scared of a little wind? No way! I'm the second oldest, remember? Besides, Tatay said the trees will block the storm. We just have to tie down those roofs so the copra stays completely dry. 
+
+DODONG: Hey, if you find Tatay's rubber boots by the kitchen door, bring them to me. The wind is throwing branches around out there and my slippers will just slow me down. 
+
+OLLIE: Okay, I'll look for the boots for you.
+
+DODONG: Hurry up, okay? Also look for anything useful. I'll wait right here by the door until you get them.
+
+
+#AFTER FINDING THE BOOTS
+
+DODONG: Nice! I knew you'd find them. Thanks, Ollie!
+DODONG: Look at that, perfect fit. Well, okay, they're still giant but my slippers would've been flying off my feet the second I stepped out.
+
+OLLIE: Is the wind really bad outside?
+
+DODONG: Nah, it's alright.
+DODONG: Tatay knows what he's doing. We're going to be rich and Friday is still going to be your best birthday yet! Just stay inside and play with Noni or something.
+
+OLLIE: Be careful out there, Kuya.
+
+
+#IF PLAYER IS NEAR THE BEDROOM DOOR
+
+- SLEEP 
+	#Player can explore the environment more until they press the GO TO SLEEP option.
+
+- GO TO SLEEP
+	#FADE OUT TO BLACK
+	OLLIE: Angel of God, my guardian dear,
+	OLLIE: To whom God's love commits me here,
+	OLLIE: Ever this day be at my side,
+	OLLIE: To light and guard, to rule and guide.
+	OLLIE: Amen.
+	OLLIE: ...
+	OLLIE: Goodnight, world. 
+
+=> END

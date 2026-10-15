@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://p0vfc8fnj8es"
+path="res://.godot/imported/Living.dialogue-3317c9f913bab84b62bb41d845b54343.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Scripts/1st phase/Dialogue/Living.dialogue"
+dest_files=["res://.godot/imported/Living.dialogue-3317c9f913bab84b62bb41d845b54343.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://c72tfpke74ftn"
+path="res://.godot/imported/Pili.dialogue-1e4c7f9a37fce5114a94a03a087d1b8e.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/Pili.dialogue"
+dest_files=["res://.godot/imported/Pili.dialogue-1e4c7f9a37fce5114a94a03a087d1b8e.tres"]
+
+[params]
+
+defaults=true

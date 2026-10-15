@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://bp3h4hgp33abj"]
+
+[ext_resource type="Script" uid="uid://c7al1arvx4lbo" path="res://Chapter Three/Scripts/rescue.gd" id="1_26koc"]
+[ext_resource type="Texture2D" uid="uid://dwi3k60rqaypw" path="res://Chapter Three/Assets/Placeholder/rescueboat.png" id="2_26koc"]
+[ext_resource type="Resource" uid="uid://bcecalc2rtmvn" path="res://Chapter Three/Dialogues/Rescue.dialogue" id="2_dis6x"]
+
+[node name="Rescue" type="Node2D" unique_id=858936221]
+script = ExtResource("1_26koc")
+dialogue = ExtResource("2_dis6x")
+safe_ending_scene = "uid://rap2pepsrj2n"
+separated_ending_scene = "uid://dj4qpbfymd7aj"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=567932210]
+offset_right = 1937.0
+offset_bottom = 1097.0
+texture = ExtResource("2_26koc")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1529094839]
+offset_left = -32.0
+offset_top = -53.0
+offset_right = 1966.0
+offset_bottom = 1128.0
+color = Color(0.23529412, 0.16862746, 0.11372549, 0.6117647)
+
+[node name="FadeLayer" type="CanvasLayer" parent="." unique_id=1285503328]
+layer = 20
+
+[node name="Fade" type="ColorRect" parent="FadeLayer" unique_id=1206460978]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="FaultLabel" type="Label" parent="FadeLayer" unique_id=131742568]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 75
+text = "Is that a..."

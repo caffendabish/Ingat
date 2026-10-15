@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cdlup515gg1jy"]
+
+[ext_resource type="Script" uid="uid://b73yokly1ktry" path="res://Chapter Two/Scripts/1st phase/Minigame/item_collection.gd" id="1_tk7oy"]
+
+[node name="ItemCollection" type="Node2D" unique_id=1791641197]
+script = ExtResource("1_tk7oy")
+
+[node name="SceneContainer" type="Node2D" parent="." unique_id=801925024]
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=141917057]
+
+[node name="TimerLabel" type="Label" parent="HUD" unique_id=546703624]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="InventoryButton" type="TextureButton" parent="HUD" unique_id=1659063758]
+offset_right = 40.0
+offset_bottom = 40.0

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://b4ja2eqw6yq40"]
+
+[ext_resource type="Texture2D" uid="uid://c5761aw471nyd" path="res://Redundant Assets/Inventory/Assets proper/Assets_Object_CannedGoods.png" id="1_qkpy5"]
+[ext_resource type="Script" uid="uid://mi4gyrxda1nk" path="res://Redundant Assets/Inventory/item_data.gd" id="2_abl0m"]
+
+[resource]
+script = ExtResource("2_abl0m")
+id = &"canned"
+display_name = "Canned Food"
+description = "I like star chunky cheese cornbeef"
+icon = ExtResource("1_qkpy5")
+insanity_on_pickup = -4
+insanity_if_missing = 2
+metadata/_custom_type_script = "uid://mi4gyrxda1nk"

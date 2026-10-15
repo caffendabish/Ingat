@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://c13h0a60emu5q"]
+
+[ext_resource type="Script" uid="uid://hshqgpyeibre" path="res://Chapter Three/Scripts/phase_three_qte.gd" id="1_i4op7"]
+[ext_resource type="Texture2D" uid="uid://dcx30nb0y57yh" path="res://Chapter Two/Assets/LVL 2 QTE EVENT/SCHOOL PHASE 3/SCHOOLFLOOD_CUPBOARD.png" id="1_sus24"]
+
+[node name="PhaseThreeQte" type="Control" unique_id=658488162]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i4op7")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=825624461]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_sus24")
+
+[node name="TargetContainer" type="Control" parent="." unique_id=1743849678]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TimerLabel" type="Label" parent="." unique_id=956227444]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 57.0
+grow_horizontal = 2
+
+[node name="ProgressLabel" type="Label" parent="." unique_id=931958879]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = -87.0
+offset_right = -2.0
+offset_bottom = -19.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="TimeLimit" type="Timer" parent="." unique_id=181540477]
+one_shot = true

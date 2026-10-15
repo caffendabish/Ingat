@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://bn4veovkhi31v"]
+
+[ext_resource type="Texture2D" uid="uid://c7hp3josqlqvo" path="res://Redundant Assets/Character/AssetsDump/TeacherSpritesheet.png" id="1_3xw18"]
+[ext_resource type="Script" uid="uid://dn8m2supbsvog" path="res://Chapter One/Dialogues/Scenes/after_activity_.gd" id="1_8gbje"]
+[ext_resource type="Texture2D" uid="uid://cntc0c0wxhq3" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM/MAINCLASSROOM.png" id="2_nfmnj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8gbje"]
+atlas = ExtResource("1_3xw18")
+region = Rect2(0, 0, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nfmnj"]
+atlas = ExtResource("1_3xw18")
+region = Rect2(1440, 0, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ahyxd"]
+atlas = ExtResource("1_3xw18")
+region = Rect2(1440, 1640, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_now4o"]
+atlas = ExtResource("1_3xw18")
+region = Rect2(0, 1640, 1440, 1640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8gbje")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nfmnj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ahyxd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_now4o")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="AfterActivity" type="Node2D" unique_id=1187004465]
+script = ExtResource("1_8gbje")
+next_scene = "uid://8kf6r8xpcxr0"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=499768511]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_nfmnj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=971661399]
+position = Vector2(525, 728)
+scale = Vector2(0.71649307, 0.716493)
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+autoplay = "default"
+frame_progress = 0.35999358
+flip_h = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2143383835]
+offset_right = 1934.0
+offset_bottom = 1101.0
+color = Color(0.74509805, 0.53333336, 0.2901961, 0.5019608)
+
+[node name="FadeLayer" type="CanvasLayer" parent="." unique_id=358511077]
+
+[node name="Fade" type="ColorRect" parent="FadeLayer" unique_id=1042892141]
+offset_right = 1941.0
+offset_bottom = 1103.0
+color = Color(0, 0, 0, 1)
+
+[node name="FaultLabel" type="Label" parent="FadeLayer" unique_id=133951702]
+offset_left = 394.0
+offset_top = 514.0
+offset_right = 1493.0
+offset_bottom = 589.0

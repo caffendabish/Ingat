@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://cug84r4p04ukw"]
+
+[ext_resource type="Script" uid="uid://dy7xn8lg78oh3" path="res://Chapter Two/Minigames/Phase1/QTE/safe_noni.gd" id="1_8musd"]
+[ext_resource type="Resource" uid="uid://d0pc8iqekukay" path="res://Chapter Two/Dialogues/Phase1/treated.dialogue" id="2_7vrf4"]
+[ext_resource type="Texture2D" uid="uid://c2g8ephh62n3e" path="res://Redundant Assets/Character/AssetsDump/DodongSpritesheet.png" id="2_v00jg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7vrf4"]
+atlas = ExtResource("2_v00jg")
+region = Rect2(0, 4920, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xopsv"]
+atlas = ExtResource("2_v00jg")
+region = Rect2(1440, 4920, 1440, 1640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7vrf4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7vrf4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xopsv")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.0
+}]
+
+[node name="TreateDodong" type="Node2D" unique_id=1477837031]
+script = ExtResource("1_8musd")
+dialogue = ExtResource("2_7vrf4")
+next_scene = "uid://bie87ho6rohej"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1395750275]
+offset_right = 1924.0
+offset_bottom = 1082.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=895523107]
+position = Vector2(915.57996, 646.16046)
+scale = Vector2(0.7269722, 0.6758054)
+sprite_frames = SubResource("SpriteFrames_7vrf4")
+autoplay = "default"
+frame_progress = 0.07504338

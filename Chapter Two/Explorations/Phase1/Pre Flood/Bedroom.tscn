@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://iglrlwr4cnnu"]
+
+[ext_resource type="Texture2D" uid="uid://bahkygssf26yj" path="res://Chapter One/Assets/Finalize/HOUSE/BEDROOM/CHILDRENBEDROOM.png" id="1_l1cqs"]
+[ext_resource type="Script" uid="uid://c7lwtcuitgq61" path="res://Chapter Two/Scripts/1st phase/Explorations/bedroom.gd" id="1_ob3sx"]
+[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_e8iky"]
+[ext_resource type="Texture2D" uid="uid://b5oem10thp2ff" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_LEFT.png" id="4_inrwy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+radius = 96.77293
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(24, 1157)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ob3sx"]
+size = Vector2(1382, 15.5)
+
+[node name="Bedroom" type="Node2D" unique_id=366921345]
+script = ExtResource("1_ob3sx")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1327403405]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_l1cqs")
+metadata/_edit_lock_ = true
+
+[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("2_e8iky")]
+position = Vector2(1832, 764)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=62837173]
+position = Vector2(1076, 844)
+scale = Vector2(0.65491945, 0.65491945)
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=894690489]
+scale = Vector2(0.47185966, 0.47185972)
+texture = ExtResource("4_inrwy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1236613992]
+shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="BOrger" type="StaticBody2D" parent="." unique_id=915728671]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BOrger" unique_id=1040431598]
+position = Vector2(829, 574)
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="BOrger" unique_id=233623760]
+position = Vector2(1969, 574)
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="BOrger" unique_id=422948123]
+position = Vector2(1499, 646)
+shape = SubResource("RectangleShape2D_ob3sx")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="BOrger" unique_id=73194992]
+position = Vector2(1499, 1080)
+shape = SubResource("RectangleShape2D_ob3sx")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

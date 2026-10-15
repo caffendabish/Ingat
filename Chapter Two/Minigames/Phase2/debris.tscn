@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://hf4t1ncqlqu5"]
+
+[ext_resource type="Script" uid="uid://cjvda2mbh7ije" path="res://Chapter Two/Scripts/2nd Phase/debris.gd" id="1_pagv5"]
+[ext_resource type="Texture2D" uid="uid://bk30yesmvo3ex" path="res://Redundant Assets/Character/PlaceholderDump/insanitymeter_notsane.png" id="2_f03rc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+radius = 78.64477
+
+[node name="Debris" type="Area2D" unique_id=456593191]
+script = ExtResource("1_pagv5")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1514165142]
+position = Vector2(-2.0000005, 0.99999905)
+scale = Vector2(0.928, 0.928)
+texture = ExtResource("2_f03rc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1160694499]
+shape = SubResource("CircleShape2D_g4v7s")

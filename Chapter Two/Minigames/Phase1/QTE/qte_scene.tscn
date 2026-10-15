@@ -1,0 +1,167 @@
+[gd_scene format=3 uid="uid://ddrcocm4j0vbk"]
+
+[ext_resource type="Script" uid="uid://diy0fy8bpf8nb" path="res://Chapter Two/Scripts/1st phase/Minigame/qte_scene.gd" id="1_6k0ll"]
+[ext_resource type="Texture2D" uid="uid://qshxlu3r6jjr" path="res://Chapter One/Assets/Finalize/HOUSE/DINING/DINING_NIGHT.png" id="2_4fblx"]
+[ext_resource type="Texture2D" uid="uid://g2mqg6tlyfb2" path="res://Redundant Assets/Character/AssetsDump/ErnestoSpritesheet.png" id="3_42pma"]
+[ext_resource type="Texture2D" uid="uid://cgefj64mgvkjo" path="res://Redundant Assets/Character/AssetsDump/PiliSpritesheet.png" id="4_xobpj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h5hh5"]
+atlas = ExtResource("3_42pma")
+region = Rect2(0, 6560, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ljwm"]
+atlas = ExtResource("3_42pma")
+region = Rect2(1440, 6560, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fnlhe"]
+atlas = ExtResource("3_42pma")
+region = Rect2(0, 8200, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oeji0"]
+atlas = ExtResource("3_42pma")
+region = Rect2(1440, 8200, 1440, 1640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h5hh5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ljwm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fnlhe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oeji0")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y3fsm"]
+atlas = ExtResource("4_xobpj")
+region = Rect2(0, 6560, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_np521"]
+atlas = ExtResource("4_xobpj")
+region = Rect2(1440, 6560, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l2ach"]
+atlas = ExtResource("4_xobpj")
+region = Rect2(1440, 8200, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dehy1"]
+atlas = ExtResource("4_xobpj")
+region = Rect2(0, 8200, 1440, 1640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5peom"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y3fsm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_np521")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l2ach")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dehy1")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.0
+}]
+
+[node name="QteScene" type="Control" unique_id=48424390]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6k0ll")
+window_scene = "uid://c1wnpqaw8h6os"
+attic_scene = "uid://bqcciw5dshhjy"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1545949891]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_4fblx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=429413830]
+position = Vector2(1595, 644)
+scale = Vector2(0.69166666, 0.6916666)
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+autoplay = "default"
+frame_progress = 0.18664628
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=244252980]
+position = Vector2(363, 698)
+scale = Vector2(0.69166666, 0.6916666)
+sprite_frames = SubResource("SpriteFrames_5peom")
+autoplay = "default"
+flip_h = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1849399844]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = 1.0
+offset_right = -1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.4825002, 0.4825002, 0.4825002, 0.77254903)
+
+[node name="WindowButton" type="Button" parent="." unique_id=221947155]
+layout_mode = 0
+offset_left = 339.0
+offset_top = 532.0
+offset_right = 895.0
+offset_bottom = 633.0
+theme_override_font_sizes/font_size = 44
+text = "Window"
+
+[node name="AtticButton" type="Button" parent="." unique_id=1412369620]
+layout_mode = 0
+offset_left = 1029.0
+offset_top = 531.0
+offset_right = 1606.0
+offset_bottom = 635.0
+theme_override_font_sizes/font_size = 44
+text = "Attic"
+
+[node name="TimeBar" type="ProgressBar" parent="." unique_id=1090504382]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 261.0
+offset_top = -300.0
+offset_right = -305.0
+offset_bottom = -242.87811
+grow_horizontal = 2
+grow_vertical = 0
+show_percentage = false
+
+[node name="PromptLabel" type="Label" parent="." unique_id=362017237]
+layout_mode = 0
+offset_left = 464.0
+offset_top = 302.0
+offset_right = 1506.0
+offset_bottom = 398.0
+theme_override_font_sizes/font_size = 44
+text = "Where do you escape?"
+horizontal_alignment = 1

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://b12s2l4l3g2n8"]
+
+[ext_resource type="Texture2D" uid="uid://bd3kyqo6gxaeq" path="res://Redundant Assets/Inventory/Assets proper/Assets_Object_Whistle.png" id="1_ectrk"]
+[ext_resource type="Script" uid="uid://mi4gyrxda1nk" path="res://Redundant Assets/Inventory/item_data.gd" id="2_bikeb"]
+
+[resource]
+script = ExtResource("2_bikeb")
+id = &"whistle"
+display_name = "Whistle"
+description = "Noise when you blew it "
+icon = ExtResource("1_ectrk")
+insanity_on_pickup = -5
+insanity_if_missing = 2
+metadata/_custom_type_script = "uid://mi4gyrxda1nk"

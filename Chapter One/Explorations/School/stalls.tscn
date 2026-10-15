@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://d1v7n1aicxx6e"]
+
+[ext_resource type="Script" uid="uid://dox3vma0m4u3s" path="res://Chapter One/Scripts/Explore/TriggersforScene/School/stalls.gd" id="1_vljny"]
+[ext_resource type="Texture2D" uid="uid://8un433elk4se" path="res://Chapter One/Assets/Finalize/SCHOOL/RIGHT_VENDOR/VENDOR_RIGHT_BG_DAY.png" id="2_kt1rl"]
+[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_w5moa"]
+[ext_resource type="Texture2D" uid="uid://cukel3x8uy5mg" path="res://Chapter One/Assets/Finalize/SCHOOL/RIGHT_VENDOR/VENDOR_STALL_FG.png" id="3_q2le5"]
+[ext_resource type="Texture2D" uid="uid://b5oem10thp2ff" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_LEFT.png" id="4_kt1rl"]
+[ext_resource type="Texture2D" uid="uid://cavnlvltcxpe3" path="res://Chapter One/Assets/Finalize/SCHOOL/RIGHT_VENDOR/OVERLAY_NOON.png" id="5_q2le5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_q2le5"]
+radius = 71.021126
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q2le5"]
+size = Vector2(4431, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dd6ij"]
+size = Vector2(20, 1116.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(4431, 20)
+
+[node name="Node2D" type="Node2D" unique_id=1238433570]
+script = ExtResource("1_vljny")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1449215584]
+offset_left = -11.0
+offset_top = -17.0
+offset_right = 4431.495
+offset_bottom = 1089.0
+texture = ExtResource("2_kt1rl")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1306168572]
+offset_left = -11.0
+offset_top = -17.0
+offset_right = 4431.495
+offset_bottom = 1089.0
+texture = ExtResource("3_q2le5")
+
+[node name="gate" type="Area2D" parent="." unique_id=1723249406]
+position = Vector2(140, 765)
+
+[node name="Sprite2D" type="Sprite2D" parent="gate" unique_id=415781184]
+position = Vector2(2, -3)
+scale = Vector2(0.34849104, 0.34849104)
+texture = ExtResource("4_kt1rl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="gate" unique_id=1576227336]
+shape = SubResource("CircleShape2D_q2le5")
+
+[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("2_w5moa")]
+position = Vector2(744, 763)
+
+[node name="TextureRect4" type="TextureRect" parent="." unique_id=1931054216]
+modulate = Color(1, 1, 1, 0.5254902)
+offset_left = -11.0
+offset_top = -17.0
+offset_right = 4532.0
+offset_bottom = 1089.0
+texture = ExtResource("5_q2le5")
+metadata/_edit_lock_ = true
+
+[node name="World Borda" type="StaticBody2D" parent="." unique_id=1897451727]
+visible = false
+position = Vector2(-11, -17)
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World Borda" unique_id=341136043]
+position = Vector2(2194, 0)
+shape = SubResource("RectangleShape2D_q2le5")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="World Borda" unique_id=268091490]
+position = Vector2(2172, 1035)
+shape = SubResource("RectangleShape2D_q2le5")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="World Borda" unique_id=2016249441]
+position = Vector2(0, 539.5)
+shape = SubResource("RectangleShape2D_dd6ij")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="World Borda" unique_id=182316673]
+position = Vector2(4403, 541.75)
+shape = SubResource("RectangleShape2D_dd6ij")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="World Borda" unique_id=1225375782]
+position = Vector2(2206, 459)
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[connection signal="body_entered" from="gate" to="." method="_on_gate_body_entered"]

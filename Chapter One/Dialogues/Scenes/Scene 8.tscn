@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://chbx7xttma0k8"]
+
+[ext_resource type="Script" path="res://Chapter One/Scripts/Dialogues/FamilyDinner.gd" id="1_u0omd"]
+[ext_resource type="Texture2D" uid="uid://qshxlu3r6jjr" path="res://Chapter One/Assets/Finalize/HOUSE/DINING/DINING_NIGHT.png" id="1_wt1mj"]
+[ext_resource type="Resource" uid="uid://o7uyqj6imbbs" path="res://Chapter One/Dialogues/SCENE 8.dialogue" id="2_fbjkx"]
+[ext_resource type="Texture2D" uid="uid://ljyov55d5kow" path="res://Chapter One/Assets/Finalize/HOUSE/KITCHEN/KITCHEN_LIGHT_OVERLAY.png" id="3_fbjkx"]
+[ext_resource type="Texture2D" uid="uid://bofyjtxcvo4et" path="res://Redundant Assets/Character/AssetsDump/dinnertable_.png" id="4_lfcoo"]
+
+[node name="Scene8" type="Node2D" unique_id=2020362630]
+script = ExtResource("1_u0omd")
+dialogue = ExtResource("2_fbjkx")
+next_scene = "uid://cbkswc45aamvh"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=362397012]
+offset_left = -614.0
+offset_right = 3834.0
+offset_bottom = 1080.0
+texture = ExtResource("1_wt1mj")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1108812544]
+offset_left = 70.208496
+offset_top = 263.0
+offset_right = 1870.1421
+offset_bottom = 934.0
+texture = ExtResource("4_lfcoo")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=387129729]
+offset_right = 1928.0
+offset_bottom = 1100.0
+color = Color(0.0777085, 0.10744068, 0.23094364, 0.61960787)
+
+[node name="TextureRect3" type="TextureRect" parent="." unique_id=1194539724]
+offset_left = -1260.0
+offset_top = 14.0
+offset_right = 3188.0
+offset_bottom = 1094.0
+texture = ExtResource("3_fbjkx")
+
+[node name="FadeLayer" type="CanvasLayer" parent="." unique_id=649257138]
+layer = 20
+
+[node name="Fade" type="ColorRect" parent="FadeLayer" unique_id=1620020233]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="FaultLabel" type="Label" parent="FadeLayer" unique_id=1619665489]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 75
+text = "Later that Night"

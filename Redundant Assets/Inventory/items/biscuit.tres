@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://bbiyfykv1vwf"]
+
+[ext_resource type="Texture2D" uid="uid://c6xqabdu848er" path="res://Redundant Assets/Inventory/Assets proper/Assets_Object_Biscuits.png" id="1_ieiyl"]
+[ext_resource type="Script" uid="uid://mi4gyrxda1nk" path="res://Redundant Assets/Inventory/item_data.gd" id="2_rpdlk"]
+
+[resource]
+script = ExtResource("2_rpdlk")
+id = &"food"
+display_name = "Bioscuit"
+description = "Crackers sealed on fancy plastic"
+icon = ExtResource("1_ieiyl")
+insanity_on_pickup = -3
+insanity_if_missing = 1
+metadata/_custom_type_script = "uid://mi4gyrxda1nk"

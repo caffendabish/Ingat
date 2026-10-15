@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://cbkswc45aamvh"]
+
+[ext_resource type="Script" uid="uid://ekgdh5x4mic4" path="res://Chapter One/Scripts/Dialogues/scene_9.gd" id="1_qtby8"]
+[ext_resource type="Resource" uid="uid://c4uoi7dun6p3j" path="res://Chapter One/Dialogues/SCENE 9.dialogue" id="2_57g2o"]
+[ext_resource type="Texture2D" uid="uid://cexd0mmfc3ry1" path="res://Chapter One/Assets/Finalize/HOUSE/Forecast.png" id="3_hl7yw"]
+[ext_resource type="Texture2D" uid="uid://dp572hceq12ln" path="res://Chapter One/Assets/Finalize/HOUSE/ForecastO.png" id="4_pnfx5"]
+[ext_resource type="Texture2D" uid="uid://disinns254b53" path="res://Chapter Two/Assets/LVL 2 FLOOD HOUSE/LIVING_WINDOWFLASH.png" id="5_d2wbi"]
+
+[node name="Scene9" type="Node2D" unique_id=1370121111]
+script = ExtResource("1_qtby8")
+dialogue = ExtResource("2_57g2o")
+next_scene = "uid://celis7jxv0xgv"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=74753068]
+offset_right = 1932.0
+offset_bottom = 1091.0
+texture = ExtResource("3_hl7yw")
+
+[node name="FadeLayer" type="CanvasLayer" parent="." unique_id=1491577171]
+layer = 20
+
+[node name="Fade" type="ColorRect" parent="FadeLayer" unique_id=411972238]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.7176471)
+
+[node name="FaultLabel" type="Label" parent="FadeLayer" unique_id=647612389]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 75
+text = "Later that Night"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=246154409]
+offset_right = 2166.0
+offset_bottom = 1126.0
+color = Color(0.11981062, 0.19444832, 0.31465486, 0.6431373)
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1514329780]
+offset_left = 567.0
+offset_top = 171.0
+offset_right = 792.0
+offset_bottom = 465.0
+texture = ExtResource("4_pnfx5")
+
+[node name="TextureRect3" type="TextureRect" parent="." unique_id=1851968990]
+offset_left = -1892.0
+offset_top = -350.0
+offset_right = 3124.0
+offset_bottom = 1144.0
+texture = ExtResource("5_d2wbi")

@@ -1,0 +1,96 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="IngatProper"
+run/main_scene="uid://cnwpodhy135r4"
+config/features=PackedStringArray("4.7", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+GameState="*uid://nbbt7hk1kc1j"
+Inventory="*uid://xvulsrxc46i6"
+MinigameTimer="*uid://ulaip7tl5qtd"
+QuestLog="*uid://c3hxiajxggk8h"
+GameHUD="*uid://61hlkk76vun2"
+MinigameHud="*uid://dsljgg4ylhcy5"
+SceneFlow="*uid://dkmqnod8vqhj4"
+DialogueManager="*uid://c3rodes2l3gxb"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://Chapter One/": "blue",
+"res://Chapter Three/": "teal",
+"res://Chapter Two/": "purple",
+"res://Main Menu/": "yellow",
+"res://Redundant Assets/": "red"
+}
+
+[input]
+
+ui_left={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":16,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194319,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":13,"pressure":0.0,"pressed":false,"script":null)
+, Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":-1,"axis":0,"axis_value":-1.0,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":65,"key_label":0,"unicode":97,"location":0,"echo":false,"script":null)
+]
+}
+ui_right={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":16,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194321,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":14,"pressure":0.0,"pressed":false,"script":null)
+, Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":-1,"axis":0,"axis_value":1.0,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":68,"key_label":0,"unicode":100,"location":0,"echo":false,"script":null)
+]
+}
+ui_up={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":16,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194320,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":11,"pressure":0.0,"pressed":false,"script":null)
+, Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":-1,"axis":1,"axis_value":-1.0,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":87,"key_label":0,"unicode":119,"location":0,"echo":false,"script":null)
+]
+}
+ui_down={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":16,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194322,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":12,"pressure":0.0,"pressed":false,"script":null)
+, Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":-1,"axis":1,"axis_value":1.0,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":83,"key_label":0,"unicode":115,"location":0,"echo":false,"script":null)
+]
+}
+
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://Chapter One/Dialogues/Test .dialogue", "res://Chapter One/Dialogues/Scene1.dialogue", "res://Chapter One/Dialogues/SCENE 10.dialogue", "res://Chapter One/Dialogues/SCENE 11.dialogue", "res://Chapter One/Dialogues/SCENE 12.dialogue", "res://Chapter One/Dialogues/SCENE 13.dialogue", "res://Chapter One/Dialogues/SCENE 14.dialogue", "res://Chapter One/Dialogues/SCENE 16.dialogue", "res://Chapter One/Dialogues/SCENE 17.dialogue", "res://Chapter One/Dialogues/SCENE 18.dialogue", "res://Chapter One/Dialogues/SCENE 19.dialogue", "res://Chapter One/Dialogues/SCENE 2.dialogue", "res://Chapter One/Dialogues/SCENE 20.dialogue", "res://Chapter One/Dialogues/SCENE 3.dialogue", "res://Chapter One/Dialogues/SCENE 4.dialogue", "res://Chapter One/Dialogues/SCENE 5.dialogue", "res://Chapter One/Dialogues/SCENE 6.dialogue", "res://Chapter One/Dialogues/SCENE 7.dialogue", "res://Chapter One/Dialogues/SCENE 8.dialogue", "res://Chapter One/Dialogues/SCENE 9.dialogue", "res://Chapter Two/Dialogues/Phase1/Argue.dialogue", "res://Chapter Two/Dialogues/Phase1/InsanityIntro .dialogue", "res://Chapter Two/Dialogues/Phase1/PreFlood.dialogue", "res://Chapter Two/Dialogues/Phase1/Nanay.dialogue", "res://Chapter One/Dialogues/NPCRitchie.dialogue", "res://Chapter One/Dialogues/Minigame.dialogue", "res://Chapter One/Dialogues/AftMinigame.dialogue", "res://Chapter One/Dialogues/Valerie.dialogue", "res://Chapter Two/Dialogues/Phase3/DodgeInstruc.dialogue", "res://Chapter Two/Dialogues/Phase3/Safe.dialogue", "res://Chapter Two/Dialogues/Phase2/WashedawayPN.dialogue", "res://Chapter Two/Dialogues/Phase2/WashedawayPD.dialogue", "res://Chapter Two/Dialogues/Phase2/WashedawayN.dialogue", "res://Chapter Two/Dialogues/Phase2/WashedawayD.dialogue", "res://Chapter Two/Dialogues/Phase2/Bothwashed.dialogue", "res://Chapter One/Dialogues/Noni.dialogue", "res://Chapter One/Dialogues/Pili.dialogue", "res://Chapter One/Dialogues/Kiki.dialogue", "res://Chapter One/Dialogues/Ernesto.dialogue", "res://Chapter Two/Dialogues/Phase2/Window.dialogue", "res://Chapter Two/Dialogues/Phase1/Attic.dialogue", "res://Chapter Two/Dialogues/Phase1/safenoni.dialogue", "res://Chapter Two/Dialogues/Phase1/injurednoni.dialogue", "res://Chapter Two/Dialogues/Phase1/treated.dialogue", "res://Chapter Two/Dialogues/Phase1/injured.dialogue", "res://Chapter Two/Dialogues/Phase2/Flood.dialogue", "res://Chapter Three/Dialogues/Rescue.dialogue", "res://Chapter Three/Dialogues/SafeEnd.dialogue", "res://Chapter Three/Dialogues/SeperatedEnd.dialogue", "res://Chapter Three/Dialogues/IsolatedEnding.dialogue", "res://Chapter One/Dialogues/Bedtime.dialogue", "res://Chapter One/Dialogues/Nightmare.dialogue", "res://Chapter One/Dialogues/RuinedBday.dialogue", "res://Chapter Two/Scripts/1st phase/Dialogue/Living.dialogue")
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"

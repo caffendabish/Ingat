@@ -1,0 +1,136 @@
+[gd_scene format=3 uid="uid://dkdilisc1np28"]
+
+[ext_resource type="Texture2D" uid="uid://6frlq5ww5j50" path="res://Chapter One/Assets/Finalize/HOUSE/KITCHEN/KITCHEN.png" id="1_2swxd"]
+[ext_resource type="Script" uid="uid://b2lhndqfr83ad" path="res://Chapter Two/Scripts/1st phase/Dialogue/nanay.gd" id="2_6maec"]
+[ext_resource type="Texture2D" uid="uid://d1d6wwj4o5mal" path="res://Chapter One/Assets/Finalize/HOUSE/KITCHEN/KITCHEN_FG.png" id="2_lh751"]
+[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="3_04ckn"]
+[ext_resource type="Texture2D" uid="uid://cgefj64mgvkjo" path="res://Redundant Assets/Character/AssetsDump/PiliSpritesheet.png" id="4_3wt03"]
+[ext_resource type="Texture2D" uid="uid://v03o6udgh7vb" path="res://Redundant Assets/Character/AssetsDump/PiliSpaghetti.png" id="4_gyqe5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_us8ia"]
+atlas = ExtResource("4_gyqe5")
+region = Rect2(0, 0, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6maec"]
+atlas = ExtResource("4_gyqe5")
+region = Rect2(1440, 0, 1440, 1640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
+animations = [{
+"frames": [{
+"duration": 10.0,
+"texture": SubResource("AtlasTexture_us8ia")
+}, {
+"duration": 5.0,
+"texture": SubResource("AtlasTexture_6maec")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yf5fn"]
+size = Vector2(251.5, 449)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lrtyq"]
+atlas = ExtResource("4_3wt03")
+region = Rect2(0, 0, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7s1nb"]
+atlas = ExtResource("4_3wt03")
+region = Rect2(1440, 0, 1440, 1640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yf5fn"]
+animations = [{
+"frames": [{
+"duration": 5.0,
+"texture": SubResource("AtlasTexture_lrtyq")
+}, {
+"duration": 2.5,
+"texture": SubResource("AtlasTexture_7s1nb")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(1878.5, 14)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gyqe5"]
+size = Vector2(9, 638)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_57qmd"]
+size = Vector2(493, 658)
+
+[node name="Kitchen" type="Node2D" unique_id=525211597]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=15399275]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_2swxd")
+metadata/_edit_lock_ = true
+
+[node name="Nanay" type="Area2D" parent="." unique_id=407853306]
+position = Vector2(3266, 754)
+script = ExtResource("2_6maec")
+next_scene_path = "uid://dbj46x3prm73u"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Nanay" unique_id=1828971995]
+position = Vector2(-1933, -190)
+scale = Vector2(0.48053738, 0.48053738)
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+autoplay = "default"
+frame_progress = 0.14089835
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nanay" unique_id=1563342177]
+position = Vector2(-1948.75, -132.5)
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="DialogueOverlay" type="CanvasLayer" parent="Nanay" unique_id=1192189162]
+unique_name_in_owner = true
+layer = 5
+visible = false
+
+[node name="Blur" type="ColorRect" parent="Nanay/DialogueOverlay" unique_id=138696182]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(3.779548, 2.858743, 2.3304126, 0.5372549)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Nanay/DialogueOverlay" unique_id=425969471]
+position = Vector2(1492, 708)
+scale = Vector2(0.7118056, 0.7118055)
+sprite_frames = SubResource("SpriteFrames_yf5fn")
+autoplay = "default"
+frame_progress = 0.0016723154
+
+[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("3_04ckn")]
+position = Vector2(3266, 754)
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1998636590]
+offset_right = 4448.0
+offset_bottom = 1080.0
+texture = ExtResource("2_lh751")
+metadata/_edit_lock_ = true
+
+[node name="Border" type="StaticBody2D" parent="." unique_id=740544584]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border" unique_id=867232438]
+position = Vector2(2429, 622)
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Border" unique_id=1015904579]
+position = Vector2(3365.5, 876)
+shape = SubResource("RectangleShape2D_gyqe5")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Border" unique_id=772222150]
+position = Vector2(1109, 876)
+shape = SubResource("RectangleShape2D_gyqe5")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Border" unique_id=2927270]
+position = Vector2(1228, 564)
+shape = SubResource("RectangleShape2D_57qmd")

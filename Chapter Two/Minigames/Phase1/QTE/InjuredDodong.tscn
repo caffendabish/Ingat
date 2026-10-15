@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://c5qnwogcfex5y"]
+
+[ext_resource type="Script" uid="uid://dy7xn8lg78oh3" path="res://Chapter Two/Minigames/Phase1/QTE/safe_noni.gd" id="1_n1jh8"]
+[ext_resource type="Resource" uid="uid://dbhawjh7d38k7" path="res://Chapter Two/Dialogues/Phase1/injured.dialogue" id="2_0jk2c"]
+[ext_resource type="Texture2D" uid="uid://ddowvp7qlbe5c" path="res://Redundant Assets/Character/AssetsDump/INGAT_SpritesZ_Phase1_DodongOpenWound.png" id="2_d2vdw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0jk2c"]
+atlas = ExtResource("2_d2vdw")
+region = Rect2(0, 0, 1000, 1200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3pe53"]
+atlas = ExtResource("2_d2vdw")
+region = Rect2(1000, 0, 1000, 1200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tbdqk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0jk2c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3pe53")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.0
+}]
+
+[node name="InjuredDodong" type="Node2D" unique_id=1787815098]
+script = ExtResource("1_n1jh8")
+dialogue = ExtResource("2_0jk2c")
+next_scene = "uid://bie87ho6rohej"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=28066274]
+offset_right = 1924.0
+offset_bottom = 1082.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=136948867]
+position = Vector2(879.99994, 593)
+scale = Vector2(0.9315, 0.86541665)
+sprite_frames = SubResource("SpriteFrames_tbdqk")
+autoplay = "default"
+frame_progress = 0.3702563

@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://v2llu5ig6fc2"]
+
+[ext_resource type="Script" uid="uid://df2gd57nqg0cg" path="res://Chapter One/Scripts/Explore/TriggersforScene/School/hallway.gd" id="1_ffmh0"]
+[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_ffmh0"]
+[ext_resource type="Texture2D" uid="uid://gm1tm2534sxc" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM HALLWAY/HALL_BG.png" id="2_so1de"]
+[ext_resource type="Texture2D" uid="uid://cnm5rfb0ou2i1" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_UP.png" id="4_eh5fq"]
+[ext_resource type="Texture2D" uid="uid://cx8fliw41kkhq" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM HALLWAY/HALL_FG.png" id="5_27crj"]
+[ext_resource type="Texture2D" uid="uid://t73g7iob1xru" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_DOWN.png" id="5_x63g3"]
+[ext_resource type="Texture2D" uid="uid://dwsnojum8vnqi" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM HALLWAY/HALL_OVERLAY_DAY.png" id="6_27crj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x63g3"]
+radius = 66.48876
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_so1de"]
+radius = 69.065186
+
+[node name="Node2D" type="Node2D" unique_id=1631470028]
+script = ExtResource("1_ffmh0")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1990674763]
+offset_left = -11.0
+offset_top = -17.0
+offset_right = 4532.0
+offset_bottom = 1089.0
+texture = ExtResource("2_so1de")
+
+[node name="Classroom" type="Area2D" parent="." unique_id=760637307]
+position = Vector2(2335.0002, 578.00006)
+scale = Vector2(0.61682767, 0.61682767)
+
+[node name="Sprite2D" type="Sprite2D" parent="Classroom" unique_id=2143959633]
+position = Vector2(0, -2)
+scale = Vector2(0.28000015, 0.28000015)
+texture = ExtResource("4_eh5fq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Classroom" unique_id=1832258318]
+scale = Vector2(1.0040506, 1)
+shape = SubResource("CircleShape2D_x63g3")
+debug_color = Color(0.6740521, 0.31719407, 0.32129896, 0.41960785)
+
+[node name="Field" type="Area2D" parent="." unique_id=1112079992]
+position = Vector2(895, 763)
+
+[node name="Sprite2D" type="Sprite2D" parent="Field" unique_id=1881671459]
+position = Vector2(0, -2)
+scale = Vector2(0.321192, 0.321192)
+texture = ExtResource("5_x63g3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Field" unique_id=589410419]
+shape = SubResource("CircleShape2D_so1de")
+
+[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("2_ffmh0")]
+position = Vector2(1884, 644)
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=811777164]
+offset_left = -10.0
+offset_top = -21.0
+offset_right = 4533.0
+offset_bottom = 1085.0
+texture = ExtResource("5_27crj")
+metadata/_edit_lock_ = true
+
+[node name="TextureRect5" type="TextureRect" parent="TextureRect2" unique_id=185237734]
+layout_mode = 0
+offset_left = -11.0
+offset_top = -17.0
+offset_right = 4532.0
+offset_bottom = 1089.0
+texture = ExtResource("6_27crj")
+metadata/_edit_lock_ = true
+
+[connection signal="body_entered" from="Classroom" to="." method="_on_classroom_body_entered"]
+[connection signal="body_entered" from="Field" to="." method="_on_field_body_entered"]
