@@ -4,6 +4,21 @@ extends CanvasLayer
 @onready var tint: ColorRect = $ColorRect
 @onready var gather_label: Label = $Label
 
+const GATHER_PHRASES := [
+	"Kids! Hurry! Get your things!",
+	"Nay! The water's coming in!",
+	"I'm scared",
+	"Forget the things! Just Get Outside!",
+	"Oh. God! What's happening!?",
+	"Tay! The coconuts!",
+	"Hurry! It's getting higher!",
+	"Grab the bag! Leave everything else!",
+	"We have to go! NOW!"
+]
+
+var _phrase_timer: float = 0.0
+const PHRASE_INTERVAL := 4.0   # seconds between phrase changes
+
 
 func _ready() -> void:
 	tint.mouse_filter = Control.MOUSE_FILTER_IGNORE      # never block clicks on pickups
@@ -15,7 +30,6 @@ func _ready() -> void:
 	timer_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 
 	# Gather text setup
-	gather_label.text = "G A T H E R   T H E M   A L L . . ."
 	gather_label.add_theme_color_override("font_color", Color(1.0, 1.0, 1.0, 1.0))
 	gather_label.add_theme_font_size_override("font_size", 46)
 	gather_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
@@ -33,10 +47,15 @@ func _ready() -> void:
 
 func show_gather_text() -> void:
 	gather_label.visible = true
+	_set_random_phrase()
 
 
 func hide_gather_text() -> void:
 	gather_label.visible = false
+
+
+func _set_random_phrase() -> void:
+	gather_label.text = GATHER_PHRASES.pick_random()
 
 
 func _process(_delta: float) -> void:
@@ -55,3 +74,10 @@ func _process(_delta: float) -> void:
 	var center := get_viewport().get_visible_rect().size / 2.0
 	timer_label.modulate = base_color * 0.45
 	timer_label.position = center - (timer_label.size / 2.0) + shake
+
+	# Cycle through random phrases while the gather text is visible
+	if gather_label.visible:
+		_phrase_timer += _delta
+		if _phrase_timer >= PHRASE_INTERVAL:
+			_phrase_timer = 0.0
+			_set_random_phrase()

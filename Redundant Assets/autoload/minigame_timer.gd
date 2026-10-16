@@ -88,16 +88,20 @@ func _process(delta: float) -> void:
 	# Spooky flicker + shake + random jumps on the gather text
 	var gather_label: Label = MinigameHud.gather_label
 	if gather_label.visible:
-		# Jump to a new random spot every interval
+		# Jump to a new random spot + new phrase every interval
 		_gather_move_timer += delta
 		if _gather_move_timer >= GATHER_MOVE_INTERVAL:
 			_gather_move_timer = 0.0
 			_gather_base_pos = _pick_random_gather_position()
+			MinigameHud._set_random_phrase()
 
+		# Spooky pulse: erratic alpha flicker that speeds up as time runs out
 		var t = Time.get_ticks_msec() / 1000.0
-		gather_label.modulate.a = 0.5 + 0.5 * sin(t * 7.0)
-		var shake_x = sin(t * 23.0) * 4.0
-		var shake_y = cos(t * 17.0) * 4.0
+		var panic: float = 1.0 - clamp(time_left / DEFAULT_TIME, 0.0, 1.0)
+		var pulse_speed: float = 6.0 + panic * 14.0
+		gather_label.modulate.a = 0.3 + 0.7 * sin(t * pulse_speed)
+		var shake_x = sin(t * 28.0 + panic * 10.0) * 5.0
+		var shake_y = cos(t * 21.0 + panic * 8.0) * 5.0
 		gather_label.position = _gather_base_pos + Vector2(shake_x, shake_y)
 
 	# If the bag is full (10 items), push to the next scene immediately
