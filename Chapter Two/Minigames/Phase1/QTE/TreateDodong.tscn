@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cug84r4p04ukw"]
 
 [ext_resource type="Script" uid="uid://dy7xn8lg78oh3" path="res://Chapter Two/Minigames/Phase1/QTE/safe_noni.gd" id="1_8musd"]
-[ext_resource type="Resource" uid="uid://d0pc8iqekukay" path="res://Chapter Two/Dialogues/Phase1/14.3 - SAFE_Dodong.dialogue" id="2_7vrf4"]
+[ext_resource type="Resource" uid="uid://d0pc8iqekukay" path="res://Chapter Two/Dialogues/Phase1/13.1.2B - SAFE_Dodong.dialogue" id="2_7vrf4"]
 [ext_resource type="Texture2D" uid="uid://c2g8ephh62n3e" path="res://Redundant Assets/Character/AssetsDump/DodongSpritesheet.png" id="2_v00jg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7vrf4"]

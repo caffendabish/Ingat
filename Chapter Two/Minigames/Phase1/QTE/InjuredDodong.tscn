@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c5qnwogcfex5y"]
 
 [ext_resource type="Script" uid="uid://dy7xn8lg78oh3" path="res://Chapter Two/Minigames/Phase1/QTE/safe_noni.gd" id="1_n1jh8"]
-[ext_resource type="Resource" uid="uid://dbhawjh7d38k7" path="res://Chapter Two/Dialogues/Phase1/14.2 - INJURED_Dodong.dialogue" id="2_0jk2c"]
+[ext_resource type="Resource" uid="uid://dbhawjh7d38k7" path="res://Chapter Two/Dialogues/Phase1/13.1.2A - INJURED_Dodong.dialogue" id="2_0jk2c"]
 [ext_resource type="Texture2D" uid="uid://ddowvp7qlbe5c" path="res://Redundant Assets/Character/AssetsDump/INGAT_SpritesZ_Phase1_DodongOpenWound.png" id="2_d2vdw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0jk2c"]

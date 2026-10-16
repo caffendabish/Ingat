@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cu6nckcf0le84" path="res://Redundant Assets/Character/AssetsDump/INGAT_SpritesZ_Phase1_ErnestoPullingPlywood.png" id="1_dcyj0"]
 [ext_resource type="Script" uid="uid://bg6hpj3q52ty5" path="res://Chapter Two/Minigames/Phase1/QTE/attic.gd" id="1_tvmod"]
 [ext_resource type="Resource" uid="uid://bwqyapwhipy3w" path="res://Redundant Assets/Inventory/items/medkit.tres" id="2_xmqqm"]
-[ext_resource type="Resource" uid="uid://x7bcwgq1glmd" path="res://Chapter Two/Dialogues/Phase1/14 - TO ATTIC.dialogue" id="3_cby8r"]
+[ext_resource type="Resource" uid="uid://x7bcwgq1glmd" path="res://Chapter Two/Dialogues/Phase1/13.1.1 - TO ATTIC.dialogue" id="3_cby8r"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tvmod"]
 atlas = ExtResource("1_dcyj0")

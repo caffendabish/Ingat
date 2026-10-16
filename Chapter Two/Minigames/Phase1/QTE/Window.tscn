@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://ddgwhxud6ey5t" path="res://Chapter Two/Minigames/Phase1/QTE/window.gd" id="1_6pfjo"]
 [ext_resource type="Texture2D" uid="uid://b23a75o2sra42" path="res://Redundant Assets/Character/AssetsDump/INGAT_SpritesZ_Phase1_ErnestoPullingWindowGrill.png" id="1_lst72"]
 [ext_resource type="Resource" uid="uid://cj4074eupyg88" path="res://Redundant Assets/Inventory/items/rope.tres" id="2_k0you"]
-[ext_resource type="Resource" uid="uid://dn4j6mxpgqyy5" path="res://Chapter Two/Dialogues/Phase2/Window.dialogue" id="3_i1rkm"]
+[ext_resource type="Resource" uid="uid://dn4j6mxpgqyy5" path="res://Chapter Two/Dialogues/Phase1/13.2.2 - ROOF_Noni.dialogue" id="3_i1rkm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6pfjo"]
 atlas = ExtResource("1_lst72")
