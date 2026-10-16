@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b80w1k7qdbpp8"]
 
 [ext_resource type="Script" uid="uid://dy7xn8lg78oh3" path="res://Chapter Two/Minigames/Phase1/QTE/safe_noni.gd" id="1_gqgby"]
-[ext_resource type="Resource" uid="uid://dcuiq3iory3lv" path="res://Chapter Two/Dialogues/Phase1/15..dialogue" id="2_ddvyh"]
+[ext_resource type="Resource" uid="uid://dcuiq3iory3lv" path="res://Chapter Two/Dialogues/Phase1/13.2.2A- INJURED_Noni.dialogue" id="2_ddvyh"]
 [ext_resource type="Texture2D" uid="uid://fd4qyjs3jiyj" path="res://Redundant Assets/Character/AssetsDump/INGAT_SpritesZ_Phase1_OlliePullingUpNoni.png" id="2_w8411"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t32wk"]

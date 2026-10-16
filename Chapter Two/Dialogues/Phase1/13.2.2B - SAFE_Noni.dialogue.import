@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bo73bign716ag"
+path="res://.godot/imported/13.2.2B - SAFE_Noni.dialogue-b3a0c0a34740dfa06d5b205fdc4744c6.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase1/13.2.2B - SAFE_Noni.dialogue"
+dest_files=["res://.godot/imported/13.2.2B - SAFE_Noni.dialogue-b3a0c0a34740dfa06d5b205fdc4744c6.tres"]
+
+[params]
+
+defaults=true

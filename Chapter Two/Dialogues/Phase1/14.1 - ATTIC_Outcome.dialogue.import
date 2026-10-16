@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bkf11u8pcmfm4"
+path="res://.godot/imported/14.1 - ATTIC_Outcome.dialogue-d87a620a04b257bf722b9a00e1ad7e93.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase1/14.1 - ATTIC_Outcome.dialogue"
+dest_files=["res://.godot/imported/14.1 - ATTIC_Outcome.dialogue-d87a620a04b257bf722b9a00e1ad7e93.tres"]
+
+[params]
+
+defaults=true

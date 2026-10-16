@@ -1,0 +1,63 @@
+~ start
+…
+NONI: [speed=0.7][shake rate=3 level=2]Kuya Ollie... are we safe now?[/shake][/speed]
+
+OLLIE: [speed=0.7]I... I think so.[/speed]
+
+[speed=0.6]The water's everywhere...[/speed] 
+
+VALERIE: [speed=0.8]Nay, Kiki's shaking. She's so cold.[/speed]
+
+PILI: [speed=0.8]Come here, anak. Stay close to me.[/speed]
+
+DODONG: [speed=0.7]Tay... how long do we have to stay up here?[/speed]
+
+ERNESTO: [speed=0.7]Until the water goes down. Or until someone comes to get us.[/speed]
+
+DODONG: [speed=0.7]What if nobody comes?[/speed]
+
+[speed=0.6]Tatay didn't say anything...[/speed]
+
+NONI: [speed=0.8][shake rate=5 level=3]What's that sound?[/shake][/speed]
+
+VALERIE: [speed=0.7]Was that the roof?[/speed]
+
+ERNESTO: [speed=0.8]Everyone, stay away from the walls.[/speed]
+
+PILI: [speed=1.0][shake rate=5 level=3]Ernesto... the roof is leaking.[/shake][/speed]
+
+ERNESTO: [speed=0.8][shake rate=4 level=2]It's alright. It's just a little water.[/shake][/speed]
+
+OLLIE: [speed=0.6][shake rate=4 level=3]Tatay...?[/shake][/speed]
+
+#[His expression changes as he notices the beam bending.]
+
+ERNESTO: …
+
+ERNESTO: [speed=1.0][shake rate=7 level=4][b]We can't stay here.[/b][/shake][/speed]
+
+PILI: [speed=1.0][shake rate=6 level=4]What? Where are we supposed to go?[/shake][/speed]
+
+ERNESTO: [speed=1.0][shake rate=7 level=4]The roof. We need to get outside before this gives way.[/shake][/speed]
+
+DODONG: [speed=0.8][shake rate=4 level=2]Outside?! In this wind?![/shake][/speed]
+
+ERNESTO: [speed=1.0][shake rate=8 level=5][b]We don't have a choice! The attic won't hold if the roof collapses![/b][/shake][/speed]
+
+PILI: [speed=0.9][shake rate=5 level=3]Then how do we get everyone across safely?[/shake][/speed]
+
+ERNESTO: [speed=0.9]One at a time. I'll go first and help everyone across.[/speed]
+
+VALERIE: [speed=0.9]What about Kiki, Nay?[/speed]
+
+PILI: [speed=0.8]I'll carry her. Just stay close to me, anak.[/speed]
+
+NONI: [speed=0.7][shake rate=4 level=2]Kuya... I don't want to go outside.[/shake][/speed]
+
+OLLIE: [speed=0.8][shake rate=3 level=2]Me neither... but we have to.[/shake][/speed]
+
+#[A loud CRASH shakes the attic.]
+
+ERNESTO: [speed=1.2][shake rate=12 level=7][b]Everyone, move! Stay together![/b][/shake][/speed]
+
+=> END

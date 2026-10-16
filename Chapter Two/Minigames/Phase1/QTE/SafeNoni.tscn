@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dy7xn8lg78oh3" path="res://Chapter Two/Minigames/Phase1/QTE/safe_noni.gd" id="1_67p4h"]
 [ext_resource type="Texture2D" uid="uid://fd4qyjs3jiyj" path="res://Redundant Assets/Character/AssetsDump/INGAT_SpritesZ_Phase1_OlliePullingUpNoni.png" id="1_pyuma"]
-[ext_resource type="Resource" uid="uid://bo73bign716ag" path="res://Chapter Two/Dialogues/Phase1/safenoni.dialogue" id="2_tf4dv"]
+[ext_resource type="Resource" uid="uid://bo73bign716ag" path="res://Chapter Two/Dialogues/Phase1/13.2.2B - SAFE_Noni.dialogue" id="2_tf4dv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tf4dv"]
 atlas = ExtResource("1_pyuma")
