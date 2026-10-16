@@ -1,10 +1,10 @@
 ~ start
-…
+
 NONI: [speed=0.7][shake rate=3 level=2]Kuya Ollie... are we safe now?[/shake][/speed]
 
 OLLIE: [speed=0.7]I... I think so.[/speed]
 
-[speed=0.6]The water's everywhere...[/speed] 
+[speed=0.6]The water's everywhere...[/speed]
 
 VALERIE: [speed=0.8]Nay, Kiki's shaking. She's so cold.[/speed]
 
@@ -16,7 +16,9 @@ ERNESTO: [speed=0.7]Until the water goes down. Or until someone comes to get us.
 
 DODONG: [speed=0.7]What if nobody comes?[/speed]
 
-[speed=0.6]Tatay didn't say anything...[/speed]
+[speed=0.6]Tatay didn't answer...[/speed]
+
+#[A loud creak echoes above them.]
 
 NONI: [speed=0.8][shake rate=5 level=3]What's that sound?[/shake][/speed]
 
@@ -29,8 +31,6 @@ PILI: [speed=1.0][shake rate=5 level=3]Ernesto... the roof is leaking.[/shake][/
 ERNESTO: [speed=0.8][shake rate=4 level=2]It's alright. It's just a little water.[/shake][/speed]
 
 OLLIE: [speed=0.6][shake rate=4 level=3]Tatay...?[/shake][/speed]
-
-#[His expression changes as he notices the beam bending.]
 
 ERNESTO: …
 
@@ -56,8 +56,5 @@ NONI: [speed=0.7][shake rate=4 level=2]Kuya... I don't want to go outside.[/shak
 
 OLLIE: [speed=0.8][shake rate=3 level=2]Me neither... but we have to.[/shake][/speed]
 
-#[A loud CRASH shakes the attic.]
-
 ERNESTO: [speed=1.2][shake rate=12 level=7][b]Everyone, move! Stay together![/b][/shake][/speed]
-
 => END

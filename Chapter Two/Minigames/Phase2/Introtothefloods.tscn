@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://vf8bei33jdrd" path="res://Chapter Two/Assets/LVL 2 QTE EVENT/SECTON 3 PHASE 2/SECTION3_TREE.png" id="1_lx2vm"]
 [ext_resource type="Script" uid="uid://26lqgklhprpg" path="res://Chapter Two/Scripts/1st phase/Dialogue/parents_arguement.gd" id="1_lxnxg"]
 [ext_resource type="Texture2D" uid="uid://cvj0gaj10tmsw" path="res://Redundant Assets/Character/AssetsDump/OllieSprites_Scared.png" id="2_kylg1"]
-[ext_resource type="Resource" uid="uid://vlx7d1vr75ev" path="res://Chapter Two/Dialogues/Phase2/Flood.dialogue" id="2_lxnxg"]
+[ext_resource type="Resource" uid="uid://vlx7d1vr75ev" path="res://Chapter Two/Dialogues/Phase2/15 - Swimming in the Flood.dialogue" id="2_lxnxg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lxnxg"]
 atlas = ExtResource("2_kylg1")
