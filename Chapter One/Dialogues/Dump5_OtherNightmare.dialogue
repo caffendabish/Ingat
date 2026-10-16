@@ -1,0 +1,143 @@
+~ start
+
+
+???: Run... little one... you must run...
+
+???: The sea... it's coming to claim the valley!
+
+???: It's angry... and nothing here can stop it.
+
+???: The shelter will not hold. The trees cannot protect you.
+
+OLLIE: Who's there?
+
+???: Ollie...
+
+OLLIE: How do you know my name?
+
+???: I've been watching... listening...
+
+???: The water is rising. It won't stop until everything is swallowed.
+
+OLLIE: No... That's not true.
+
+OLLIE: The rescuers will come. They always come.
+
+???: They will come... but will they come in time?
+
+OLLIE: Stop it! Tatay said our trees would keep us safe!
+
+???: The trees...
+
+???: They will bend. They will break.
+
+???: And when the water comes, they will be swallowed whole.
+
+OLLIE: No! You're lying!
+
+???: Then listen, little one.
+
+#[A faint rumbling grows louder in the distance.]
+
+OLLIE: ...
+
+OLLIE: I can hear something...
+
+???: Take your siblings and run to the hills... before the dawn breaks!
+
+???: Don't wait for the water to reach your door.
+
+???: Don't wait for someone to tell you it's time.
+
+???: Run...
+
+OLLIE: The sea?
+
+OLLIE: But the sea is far away...
+
+OLLIE: It's behind the highway. How can it come all the way here?
+
+OLLIE: But Tatay said the trees are strong...
+
+OLLIE: They're protecting us...
+
+OLLIE: ...Right?
+
+#[The rumbling grows into the sound of rushing water. The floor trembles beneath Ollie's feet.]
+
+OLLIE: Make it stop...
+
+OLLIE: Please...
+
+#[The sound of rushing water swells, drowning out everything else.]
+
+Who is telling the truth?
+
+#[FADE TO BLACK]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Entity: [shake rate=18 level=6]...O...llie...[/shake]
+
+Ollie: Who's there?
+
+Entity: [shake rate=20 level=8]You can hear me.[/shake] [wait=0.8]That is... [shake rate=30 level=12]unfortunate.[/shake]
+
+Ollie: Show yourself!
+
+Entity: [shake rate=15 level=5]I have been here since before the rain.[/shake]
+Entity: [shake rate=15 level=5]I am in the walls. In the pipes. In the water.[/shake]
+
+Ollie: What do you want?
+
+Entity: [shake rate=22 level=7]To warn you.[/shake]
+Entity: [shake rate=25 level=10]The water is not done rising.[/shake]
+Entity: [speed=0.4]It never is.[/speed]
+
+Ollie: The rescuers will come. They always come.
+
+Entity: [shake rate=18 level=6]They will come.[/shake] [wait=1.0][shake rate=35 level=14]Late.[/shake]
+Entity: [shake rate=18 level=6]Everyone who waited... [/shake][wait=0.6][shake rate=40 level=16]was late.[/shake]
+
+Ollie: Stop it. You're not real.
+
+Entity: [shake rate=12 level=4]Am I not?[/shake]
+Entity: [shake rate=12 level=4]Then who is whispering in your ear?[/shake]
+
+# Optional: raises insanity when the player hears this
+# do GameState.add_insanity(5, "entity warning")
+
+Entity: [shake rate=28 level=10]Find a light.[/shake]
+Entity: [shake rate=28 level=10]Find a sound.[/shake]
+Entity: [shake rate=22 level=8]Something that cuts through the dark.[/shake]
+Entity: [shake rate=45 level=18]Or you will be forgotten.[/shake]
+
+Ollie: ...What does that mean?
+
+Entity: [speed=0.3][shake rate=10 level=3]Listen.[/shake][/speed]
+
+Ollie: ...I can hear it. The water. It's getting louder.
+
+=> END

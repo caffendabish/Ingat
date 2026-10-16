@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://b7f2kjgkvch87"
+path="res://.godot/imported/Dump1_All Interactions for Dinner Table.dialogue-e3e2c51a8704c627221a652e92d16b50.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/Dump1_All Interactions for Dinner Table.dialogue"
+dest_files=["res://.godot/imported/Dump1_All Interactions for Dinner Table.dialogue-e3e2c51a8704c627221a652e92d16b50.tres"]
+
+[params]
+
+defaults=true

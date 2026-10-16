@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bfnr6bb2xdt41"
+path="res://.godot/imported/3 - OUTSIDE SCHOOL_After Classes.dialogue-ed2ed795c0bb66be91ed5cf6df8a4e7e.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/3 - OUTSIDE SCHOOL_After Classes.dialogue"
+dest_files=["res://.godot/imported/3 - OUTSIDE SCHOOL_After Classes.dialogue-ed2ed795c0bb66be91ed5cf6df8a4e7e.tres"]
+
+[params]
+
+defaults=true

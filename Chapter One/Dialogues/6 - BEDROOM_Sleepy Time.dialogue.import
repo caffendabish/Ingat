@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://c7pb3yfx2o3k0"
+path="res://.godot/imported/6 - BEDROOM_Sleepy Time.dialogue-ca537f58f64ecfaf9943547b9b0919bc.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/6 - BEDROOM_Sleepy Time.dialogue"
+dest_files=["res://.godot/imported/6 - BEDROOM_Sleepy Time.dialogue-ca537f58f64ecfaf9943547b9b0919bc.tres"]
+
+[params]
+
+defaults=true

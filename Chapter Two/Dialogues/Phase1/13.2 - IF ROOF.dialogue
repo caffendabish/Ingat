@@ -1,0 +1,44 @@
+~ start
+OLLIE: [speed=0.9][shake rate=4 level=2]Tatay... what about the window? We could climb onto the roof![/shake][/speed]
+
+PILI: [speed=1.0][shake rate=8 level=5][b]Ollie might be right. We could get onto the roof and call for help![/b][/shake][/speed]
+
+ERNESTO: [speed=1.0][shake rate=11 level=7][b]That side faces the wind! Opening that window could let the storm tear right through the room![/b][/shake][/speed]
+
+PILI: [speed=1.1][shake rate=13 level=8][b]Then what choice do we have?! The water's getting higher![/b][/shake][/speed]
+
+NONI: [speed=0.8][shake rate=5 level=3]Kuya Ollie... are we gonna be okay?[/shake][/speed]
+
+OLLIE: [speed=0.7][shake rate=4 level=2]I... I don't know.[/shake][/speed]
+
+ERNESTO: [speed=0.8][shake rate=5 level=3][b]...Alright. We'll try the window. But nobody moves until I tell you to![/b][/shake][/speed]
+
+PILI: [speed=1.0][shake rate=6 level=4]I'll help you get it open.[/shake][/speed]
+
+ERNESTO: [speed=1.2][shake rate=12 level=7][b]It's stuck![/b][/shake][/speed]
+
+PILI: [speed=1.2][shake rate=13 level=8][b]Push harder! Ernesto, please![/b][/shake][/speed]
+
+NONI: [speed=1.2][shake rate=20 level=9][b]AHH![/b][/shake][/speed]
+
+VALERIE: [speed=1.1][shake rate=10 level=6][b]Noni, hold on to me![/b][/shake][/speed]
+
+ERNESTO: [speed=1.2][shake rate=13 level=8][b]One at a time! I'll go first and help you across. Keep low and hold on tight![/b][/shake][/speed]
+
+PILI: [speed=1.1][shake rate=11 level=7][b]What about Kiki?![/b][/shake][/speed]
+
+ERNESTO: [speed=1.2][shake rate=12 level=7][b]Give her to me once I'm outside! I'll help you both![/b][/shake][/speed]
+
+OLLIE: [speed=0.6]It's so loud...[/speed]
+
+OLLIE: [speed=0.6]I can't even hear Tatay properly.[/speed]
+
+ERNESTO: [speed=1.2][shake rate=13 level=8][b]Ollie! Come on, anak! Give me your hand![/b][/shake][/speed]
+
+OLLIE: [speed=0.6]I don't want to go out there...[/speed]
+
+OLLIE: [speed=0.6]But I don't want to stay here either.[/speed]
+
+OLLIE: [speed=0.8][shake rate=3 level=2]...I'm coming, Tatay.[/shake][/speed]
+
+=> END

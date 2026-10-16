@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://b5oem10thp2ff" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_LEFT.png" id="4_hqvnr"]
 [ext_resource type="Texture2D" uid="uid://cv3nkfeb17avg" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_RIGHT.png" id="5_rbevu"]
 [ext_resource type="Script" uid="uid://cv4ptpbisdm24" path="res://Chapter One/Scripts/Dialogues/test.gd" id="6_rbevu"]
-[ext_resource type="Resource" uid="uid://dqebcyodwwtnp" path="res://Chapter One/Dialogues/SCENE 6.dialogue" id="6_vtsm0"]
+[ext_resource type="Resource" uid="uid://dqebcyodwwtnp" path="res://Chapter One/Dialogues/3.1 - OUTSIDE SCHOOL_Tatay Pick Up.dialogue" id="6_vtsm0"]
 [ext_resource type="Texture2D" uid="uid://c2g8ephh62n3e" path="res://Redundant Assets/Character/AssetsDump/DodongSpritesheet.png" id="7_vtsm0"]
 [ext_resource type="Texture2D" uid="uid://xy7p3fnwoxvf" path="res://Redundant Assets/Character/AssetsDump/NoniSpritesheet.png" id="8_77tpg"]
 [ext_resource type="Texture2D" uid="uid://bk30yesmvo3ex" path="res://Redundant Assets/Character/PlaceholderDump/insanitymeter_notsane.png" id="9_bqnfx"]

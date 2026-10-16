@@ -1,0 +1,89 @@
+~ start
+
+OLLIE: [speed=0.8]Huh?[/speed]
+
+#[Cue Distorted Birthday Party Ambience]
+
+#[The birthday scenes repeat, but the guests are blurred, the colors are faded, and the decorations hang limply.]
+
+OLLIE: [speed=0.8][shake rate=4 level=3]I can't move my legs...[/shake][/speed]
+
+OLLIE: [speed=0.9][shake rate=6 level=5]What's happening?[/shake][/speed]
+
+OLLIE: [speed=1.1][shake rate=8 level=8][b]Stop shouting! It hurts![/b][/shake][/speed]
+
+OLLIE: [speed=1.1][shake rate=8 level=8][b]Don't hurt me![/b][/shake][/speed]
+
+#[Cue Eerie, Distorted Birthday Song]
+
+#[The song suddenly cuts out. Silence, except for the faint dripping of floodwater inside the living room.]
+
+#[The blurred guests slowly turn their heads in unison to stare at Ollie.]
+
+#[The turtle on the melting cake twists its neck upward and looks directly at him.]
+
+#[THUNDER]
+
+#[FADE TO BLACK]
+
+[speed=0.6]...[/speed]
+
+???: [speed=0.6][shake rate=20 level=2][b]Run...[/b][/shake][/speed]
+
+???: [speed=0.7][shake rate=20 level=2][b]Run, little one... you must run...[/b][/shake][/speed]
+
+???: [speed=0.8][shake rate=25 level=5][b]The sea is coming to claim the valley![/b][/shake][/speed]
+
+???: [speed=0.8][shake rate=20 level=2][b]The shelter will not hold. The trees cannot protect you.[/b][/shake][/speed]
+
+OLLIE: [speed=0.9][shake rate=3 level=3]Who's there?[/shake][/speed]
+
+???: [shake rate=18 level=4][b]...O...llie...[/b][/shake]
+
+OLLIE: [speed=0.9][shake rate=6 level=5]H-how do you know my name?[/shake][/speed]
+
+???: [speed=0.7][shake rate=20 level=2][b]I've been watching... listening...[/b][/shake][/speed]
+
+???: [speed=0.9][shake rate=20 level=2][b]The water is rising. It won't stop until everything is swallowed.[/b][/shake][/speed]
+
+OLLIE: [speed=1.0][shake rate=10 level=3]No... Tatay said we'd be safe here![/shake][/speed]
+
+???: [speed=0.8][shake rate=20 level=2][b]The trees will bend. They will break.[/b][/shake][/speed]
+
+???: [speed=0.8][shake rate=20 level=2][b]The water will swallow them whole.[/b][/shake][/speed]
+
+OLLIE: [speed=1.0][shake rate=15 level=5]No! You're lying![/shake][/speed]
+
+#[A faint rumbling grows louder.]
+
+???: [speed=0.9][shake rate=20 level=2][b]Take your family and run to the hills... before the dawn breaks![/b][/shake][/speed]
+
+???: [speed=0.9][shake rate=20 level=2][b]Don't wait for the water to reach your door.[/b][/shake][/speed]
+
+???: [speed=0.6][shake rate=25 level=5][b]Run...[/b][/shake][/speed]
+
+OLLIE: [speed=0.8][shake rate=8 level=3]The sea?[/shake][/speed]
+
+OLLIE: [speed=0.8][shake rate=8 level=3]But it's so far away...[/shake][/speed]
+
+OLLIE: [speed=0.7][shake rate=10 level=3]Tatay said the trees would protect us...[/shake][/speed]
+
+OLLIE: [speed=0.6][shake rate=15 level=4]...Right?[/shake][/speed]
+
+#[The floor trembles as the rumbling becomes a roar of rushing water.]
+
+...
+
+OLLIE: [speed=0.8][shake rate=20 level=3][b]Make it stop...[/b][/shake][/speed]
+
+OLLIE: [speed=0.7][shake rate=23 level=3][b]Please...[/b][/shake][/speed]
+
+#[The rushing water drowns out everything.]
+
+[speed=0.5][shake rate=30 level=10][b]Who is telling the truth?[/b][/shake][/speed]
+
+#[FADE TO BLACK]
+
+
+
+=> END

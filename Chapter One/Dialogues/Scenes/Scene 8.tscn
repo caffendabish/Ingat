@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://chbx7xttma0k8"]
 
-[ext_resource type="Script" path="res://Chapter One/Scripts/Dialogues/FamilyDinner.gd" id="1_u0omd"]
+[ext_resource type="Script" uid="uid://y4vfllc1km4j" path="res://Chapter One/Scripts/Dialogues/FamilyDinner.gd" id="1_u0omd"]
 [ext_resource type="Texture2D" uid="uid://qshxlu3r6jjr" path="res://Chapter One/Assets/Finalize/HOUSE/DINING/DINING_NIGHT.png" id="1_wt1mj"]
-[ext_resource type="Resource" uid="uid://o7uyqj6imbbs" path="res://Chapter One/Dialogues/SCENE 8.dialogue" id="2_fbjkx"]
+[ext_resource type="Resource" uid="uid://o7uyqj6imbbs" path="res://Chapter One/Dialogues/4 - HOME_Family Dinner Table.dialogue" id="2_fbjkx"]
 [ext_resource type="Texture2D" uid="uid://ljyov55d5kow" path="res://Chapter One/Assets/Finalize/HOUSE/KITCHEN/KITCHEN_LIGHT_OVERLAY.png" id="3_fbjkx"]
 [ext_resource type="Texture2D" uid="uid://bofyjtxcvo4et" path="res://Redundant Assets/Character/AssetsDump/dinnertable_.png" id="4_lfcoo"]
 

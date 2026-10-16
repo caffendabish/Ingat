@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dilmsbh3dorq3"
+path="res://.godot/imported/13.2 - IF ROOF.dialogue-32fe4eae5d3383baef2887bf9acc89c7.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase1/13.2 - IF ROOF.dialogue"
+dest_files=["res://.godot/imported/13.2 - IF ROOF.dialogue-32fe4eae5d3383baef2887bf9acc89c7.tres"]
+
+[params]
+
+defaults=true

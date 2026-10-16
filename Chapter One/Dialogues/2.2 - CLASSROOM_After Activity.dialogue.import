@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://ct2w2bxvhuaj2"
+path="res://.godot/imported/2.2 - CLASSROOM_After Activity.dialogue-e413b4ca50c388816afefbcdc72e4490.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/2.2 - CLASSROOM_After Activity.dialogue"
+dest_files=["res://.godot/imported/2.2 - CLASSROOM_After Activity.dialogue-e413b4ca50c388816afefbcdc72e4490.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,113 @@
+~ start
+
+??? (OVER MEGAPHONE): [speed=1.1][b]Anunsyo sa lahat ng residente ng Zone 4![/b] [shake rate=10 level=8][b]Mandatong paglikas! EVACUATE IMMEDIATELY![/b][/shake][/speed]
+
+??? (OVER MEGAPHONE): [speed=1.1]Bring your important documents and proceed to the central public elementary school or the barangay hall! [shake rate=10 level=8][b]A STORM SURGE IS HEADING TOWARD OUR AREA! LEAVE YOUR HOMES NOW![/b][/shake][/speed]
+
+...
+
+PILI: [speed=0.7]Ernesto...[/speed]
+
+PILI: [speed=1.0]That's your sister Mercy outside. She's the one with the megaphone.[/speed]
+
+MERCY (OUTSIDE): [speed=1.1][shake rate=5 level=3]Susmariosep! Pili! Ernesto![/shake] Why are you still putting up birthday decorations?[/speed]
+
+#[Mercy enters, out of breath. She looks around at the children and the unfinished decorations.]
+
+MERCY: [speed=1.0]Look at these children! Why aren't they packed yet? [speed=1.1]Noni, put that crayon down, anak! Go find your slippers![/speed][/speed]
+
+ERNESTO: [speed=1.0]Mercy, sit down first. You've been running around the barangay since dawn.[/speed]
+
+ERNESTO: [speed=1.0]Those officials love throwing around big English words like [b]"storm surge"[/b] just to scare people. They're making this sound worse than it is.[/speed]
+
+ERNESTO: [speed=1.0]It's just a high tide and some strong wind. We've been through five typhoons this year already, haven't we?[/speed]
+
+MERCY: [speed=1.1][b]The mayor called all 138 barangay captains to an emergency meeting, Ernesto![/b] [shake rate=10 level=8][b]THIS ISN'T AN ORDINARY STORM![/b][/shake][/speed]
+
+MERCY: [speed=1.0]I don't even fully understand what a storm surge is, but the Coast Guard has already ordered the fishermen to haul their boats up to the national highway![/speed]
+
+MERCY: [speed=1.1][b]They're telling everyone to evacuate to sturdier buildings![/b] We're going door to door for a final sweep! [shake rate=4 level=3][b]Pack your bags and let Andrei help get the children onto the municipal truck![/b][/shake][/speed]
+
+ERNESTO: [speed=1.0][shake rate=13 level=10]I AM NOT MOVING MY FAMILY TO SOME CROWDED SCHOOL BUILDING NEAR THE COAST![/shake][/speed]
+
+ERNESTO: [speed=1.0]Our family has lived in Taklub for three generations![/speed]
+
+ERNESTO: [speed=1.0][shake rate=13 level=10][b]IF I LEAVE THIS HOUSE TONIGHT, WHO'S GOING TO WATCH OVER OUR COPRA BEDS?![/b][/shake][/speed]
+
+ERNESTO: [speed=1.0]Three months of blood and sweat could go to waste in a single night![/speed]
+
+ERNESTO: [speed=0.8]...[/speed]
+
+ERNESTO: [speed=0.9]The Millgate deal is our only chance to pay off what we owe this year. It's how I'm going to buy school supplies for next term and put food on this table![/speed]
+
+ERNESTO: [speed=1.0][shake rate=13 level=10][b]I'M NOT THROWING AWAY EVERYTHING WE'VE WORKED FOR JUST BECAUSE THEY'VE SCARED YOU![/b][/shake][/speed]
+
+ERNESTO: [speed=0.8][b]We're staying.[/b][/speed]
+
+ERNESTO: [speed=0.6][shake rate=13 level=10][b]RIGHT HERE.[/b][/shake][/speed]
+
+MERCY: [speed=1.0][shake rate=13 level=10][b]PRIDE WON'T KEEP THE WATER OUT OF YOUR HOUSE, BROTHER![/b][/shake][/speed]
+
+MERCY: [speed=1.0]Every family on this lane is giving me the same excuse! Everyone thinks their home and their belongings are worth staying for![/speed]
+
+MERCY: [speed=1.0][shake rate=13 level=10][b]I'M TRYING TO SAVE YOUR LIVES, ERNESTO! WHY WON'T YOU LISTEN?![/b][/shake][/speed]
+
+MERCY: [speed=1.0]Pili, please! Look at your children! Look at Kiki! TELL HIM![/speed]
+
+PILI: [speed=0.8]...[/speed]
+
+PILI: [speed=0.8]Mercy...[/speed]
+
+PILI: [speed=0.9]Ernesto is right. The old trees have always kept us safe before.[/speed]
+
+PILI: [speed=0.9]God wouldn't give us such a blessing, only to take it away right before our boy's eighth birthday.[/speed]
+
+MERCY: [speed=0.9]You two are going to drive me crazy...[/speed]
+
+MERCY: [speed=0.9]Andrei, check on the kids. We still have the rest of the zone to get through before midnight.[/speed]
+
+ANDREI: [speed=1.0]Hey, chief. Turning eight tomorrow?[/speed]
+
+ANDREI: [speed=1.0][wave amp=2 freq=2]Wow, you're almost as tall as your Kuya Dodong now![/wave][/speed]
+
+ANDREI: [speed=1.0]Don't mind your Tatay and my mom arguing. They always get like this when they're worried.[/speed]
+
+...
+
+ANDREI: [speed=0.9][b]But listen to me carefully, okay, Ollie?[/b][/speed]
+
+ANDREI: [speed=0.9]My mom thinks the concrete school will protect everyone from the wind. But the river runs right behind those classrooms.[/speed]
+
+ANDREI: [speed=0.8]If the wind gets really loud tonight, and you see water coming over these floorboards, DON'T HIDE UNDER THE BED. Understand?[/speed]
+
+ANDREI: [speed=0.8]Grab Kiki and stay with Ate Valerie and Kuya Dodong. Don't stop to get your toys. Just get your sister and stay together.[/speed]
+
+ANDREI: [speed=0.8][b]Can you do that for me, Ollie?[/b][/speed]
+
+- I understand, Kuya. I’ll keep Kiki safe.
+	OLLIE: [speed=1.0]I’ll hold onto Ate Valerie's hand if the water comes inside.[/speed]
+	ANDREI: [speed=1.0]That’s my boy. A real nurse's assistant. Valerie, keep the flashlights close to the door.[/speed]
+	VALERIE: [speed=1.0]We’ll stay together, Kuya Andrei. I won't let go of them.[/speed]
+	[speed=0.8]I don't know who is telling the truth anymore...[/speed]
+	[speed=0.6][shake rate=2 level=2]but my chest feels very heavy... and so, so cold.[/shake][/speed]
+
+- But Tatay said our coconut trees will keep us all safe.
+	OLLIE: [speed=1.0]Tatay said they're like strong umbrellas. He said the rain can't even touch us here.[/speed]
+	ANDREI: [speed=0.9]Your Tatay loves those trees, Ollie but even the strongest umbrellas can tear when the storm is too big.[/speed]
+	ANDREI: [speed=0.9]Just... promise me you’ll be safe. Be ready to move if your Ate tells you to. You too, Dodong, Noni and Kiki. [shake rate=3 level=2][b]Don't hesitate. Just run.[/b][/shake][/speed]
+	VALERIE: [speed=1.0]We’ll be ready, Kuya Andrei. I’ll hold onto them.[/speed]
+	DODONG: [speed=1.0]I’ll carry Kiki, Kuya. I won't let go of her.[/speed]
+	NONI: [speed=0.9]Okay, Kuya Andrei... I’ll keep my shoes on.[/speed]
+	[speed=0.8]I don't know who is telling the truth...[/speed]
+	[speed=0.6][shake rate=2 level=2]but my chest feels very heavy... and so, so cold.[/shake][/speed]
+
+MERCY: [speed=0.9]We have to go. We’ll pray for you tonight, Ernesto.[/speed]
+
+MERCY: [speed=0.9][shake rate=5 level=3]I hope to God you are right about those trees. If things get bad, get to the roof. [b]Do you hear me? THE ROOF![/b][/shake][/speed]
+
+ERNESTO: [speed=1.0]We'll be fine. Tell the barangay council we are secure here.[/speed]
+
+PILI: [speed=0.7]...[/speed]
+
+
+=> END

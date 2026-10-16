@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bspcxqhblymwe"
+path="res://.godot/imported/14.1 - ATTIC_Dodong .dialogue-3a0300dabee99f0ab72cbff4d20d5f4d.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase1/14.1 - ATTIC_Dodong .dialogue"
+dest_files=["res://.godot/imported/14.1 - ATTIC_Dodong .dialogue-3a0300dabee99f0ab72cbff4d20d5f4d.tres"]
+
+[params]
+
+defaults=true

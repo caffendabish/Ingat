@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dv0r534767to1"
+path="res://.godot/imported/Dump4_Thirsty But Got Jumpscared.dialogue-b0a7baf1b534c8d0fcdf47f70ce31833.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/Dump4_Thirsty But Got Jumpscared.dialogue"
+dest_files=["res://.godot/imported/Dump4_Thirsty But Got Jumpscared.dialogue-b0a7baf1b534c8d0fcdf47f70ce31833.tres"]
+
+[params]
+
+defaults=true

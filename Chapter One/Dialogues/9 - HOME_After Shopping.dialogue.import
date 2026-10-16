@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://3rlp1gnxmkru"
+path="res://.godot/imported/9 - HOME_After Shopping.dialogue-771f0404a7e14b726d0bbe7187d32ab3.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/9 - HOME_After Shopping.dialogue"
+dest_files=["res://.godot/imported/9 - HOME_After Shopping.dialogue-771f0404a7e14b726d0bbe7187d32ab3.tres"]
+
+[params]
+
+defaults=true

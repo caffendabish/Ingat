@@ -1,0 +1,49 @@
+~ start
+OLLIE: [speed=0.8][shake rate=4 level=2]Tatay... what about the attic?[/shake][/speed]
+
+PILI: [speed=1.1][shake rate=10 level=6][b]The attic! Ernesto, we can climb through the hatch and get onto the roof![/b][/shake][/speed]
+
+ERNESTO: [speed=1.0][shake rate=11 level=7][b]Pili, I already told you! If the water reaches the second floor, we could get trapped up there![/b][/shake][/speed]
+
+PILI: [speed=1.1][shake rate=12 level=7][b]And if we stay down here, we'll be trapped by the flood anyway! At least on the roof, the rescuers might see us![/b][/shake][/speed]
+
+NONI: [speed=1.2][shake rate=15 level=8][b]Nanay! I wanna go![/b][/shake][/speed]
+
+PILI: [speed=0.9][shake rate=5 level=3]I know, anak. Come here. Stay with me.[/shake][/speed]
+
+ERNESTO: [speed=0.8][shake rate=4 level=2]Fine. We'll try the attic.[/shake][/speed]
+
+ERNESTO: [speed=1.2][shake rate=12 level=7][b]Everyone, listen! Stay together. Nobody goes ahead alone, understood?[/b][/shake][/speed]
+
+VALERIE: [speed=1.1][shake rate=5 level=3]Yes, Tay![/shake][/speed]
+
+DODONG: [speed=1.1][shake rate=5 level=3]Come on, Noni. Hold my hand.[/shake][/speed]
+
+ERNESTO: [speed=1.2][shake rate=10 level=6][b]Valerie, help your mother with Kiki. Dodong, stay close to your sisters. Ollie, you stay right beside me![/b][/shake][/speed]
+
+OLLIE: [speed=1.1][shake rate=4 level=2]Okay, Tatay![/shake][/speed]
+
+PILI: [speed=1.1][shake rate=9 level=5][b]Ernesto... hurry![/b][/shake][/speed]
+
+ERNESTO: [speed=1.2][shake rate=10 level=6][b]I'm coming! Just get everyone to the stairs![/b][/shake][/speed]
+
+OLLIE: [speed=0.6]I hope this works...[/speed]
+
+OLLIE: [speed=0.5][shake rate=2 level=1]Please... let us be safe.[/shake][/speed]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=> END
