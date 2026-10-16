@@ -1,6 +1,6 @@
 extends Node2D
 
-const INTRO_DIALOGUE := preload("res://Chapter One/Dialogues/Bedtime.dialogue")
+const INTRO_DIALOGUE := preload("res://Chapter One/Dialogues/6 - BEDROOM_Sleepy Time.dialogue")
 
 static var intro_played := false
 

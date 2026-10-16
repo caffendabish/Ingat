@@ -1,10 +1,125 @@
 [gd_scene format=3 uid="uid://dnjj57s3ln5pc"]
 
 [ext_resource type="Texture2D" uid="uid://bqyn2xxsqdbhe" path="res://Chapter One/Assets/Finalize/HOUSE/LIVING ROOM/LIVINGROOM.png" id="1_68duu"]
+[ext_resource type="Script" uid="uid://b13we5fdn7kph" path="res://Chapter One/Explorations/House/livingroom.gd" id="1_n0t6t"]
 [ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_slxlb"]
 [ext_resource type="Texture2D" uid="uid://b1eabynm72fe5" path="res://Chapter One/Assets/Finalize/HOUSE/LIVING ROOM/LIVINGROOM_FG1.png" id="2_uf241"]
+[ext_resource type="Script" uid="uid://dx4726065bv37" path="res://Redundant Assets/Character/Scripts/TalkableArea.gd" id="4_o8qj7"]
+[ext_resource type="Resource" uid="uid://cg4m3e00wo2x4" path="res://Chapter One/Dialogues/5.1 - NPC_Kiki.dialogue" id="5_c4vm3"]
+[ext_resource type="Resource" uid="uid://dlh6c1ml75kop" path="res://Chapter One/Dialogues/5.1 - NPC_Dodong.dialogue" id="6_4hcgu"]
+[ext_resource type="Texture2D" uid="uid://4r8k8mw33bpb" path="res://Redundant Assets/Character/AssetsDump/INGAT_FamilySprites_DodongUniform.png" id="6_c4vm3"]
+[ext_resource type="Texture2D" uid="uid://d2w5dtlo0ipc7" path="res://Redundant Assets/Character/AssetsDump/KikiSpritesheet.png" id="6_cv8wh"]
+[ext_resource type="Texture2D" uid="uid://cnm5rfb0ou2i1" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_UP.png" id="9_4hcgu"]
+[ext_resource type="Texture2D" uid="uid://cv3nkfeb17avg" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_RIGHT.png" id="11_rercr"]
 
-[node name="Node2D" type="Node2D" unique_id=603335698]
+[sub_resource type="AtlasTexture" id="AtlasTexture_mvpr5"]
+atlas = ExtResource("6_cv8wh")
+region = Rect2(0, 0, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o0mks"]
+atlas = ExtResource("6_cv8wh")
+region = Rect2(1440, 0, 1440, 1640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4hcgu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mvpr5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o0mks")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n0t6t"]
+size = Vector2(948.5, 1212.9785)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tquus"]
+atlas = ExtResource("6_cv8wh")
+region = Rect2(0, 0, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tsscx"]
+atlas = ExtResource("6_cv8wh")
+region = Rect2(1440, 0, 1440, 1640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rercr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tquus")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tsscx")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cv8wh"]
+atlas = ExtResource("6_c4vm3")
+region = Rect2(0, 0, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4hcgu"]
+atlas = ExtResource("6_c4vm3")
+region = Rect2(1440, 0, 1440, 1640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n0t6t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cv8wh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4hcgu")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c4vm3"]
+size = Vector2(981.416, 2053.3208)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n0t6t"]
+atlas = ExtResource("6_c4vm3")
+region = Rect2(0, 0, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rercr"]
+atlas = ExtResource("6_c4vm3")
+region = Rect2(1440, 0, 1440, 1640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o5cst"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n0t6t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rercr")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yp26a"]
+size = Vector2(114, 48)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o5cst"]
+radius = 68.24954
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nkg7s"]
+size = Vector2(1868, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cv8wh"]
+size = Vector2(641.50946, 20)
+
+[node name="LivingRoom" type="Node2D" unique_id=603335698]
+script = ExtResource("1_n0t6t")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1999012871]
 offset_left = -11.0
@@ -21,11 +136,125 @@ offset_right = 4432.0
 offset_bottom = 1101.0
 texture = ExtResource("2_uf241")
 
-[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("2_slxlb")]
+[node name="Kiki" type="Area2D" parent="." unique_id=1594899796 node_paths=PackedStringArray("overlay")]
+position = Vector2(1959.0001, 695.00006)
+scale = Vector2(0.1153939, 0.117169194)
+script = ExtResource("4_o8qj7")
+dialogue_resource = ExtResource("5_c4vm3")
+overlay = NodePath("DialogueOverlay")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Kiki" unique_id=1275565720]
+position = Vector2(241.45068, -326.96582)
+scale = Vector2(1.4206094, 1.4206094)
+sprite_frames = SubResource("SpriteFrames_4hcgu")
+autoplay = "default"
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Kiki" unique_id=413706813]
+position = Vector2(307.84998, -303.1864)
+shape = SubResource("RectangleShape2D_n0t6t")
+
+[node name="DialogueOverlay" type="CanvasLayer" parent="Kiki" unique_id=1840736587]
+layer = 5
+visible = false
+
+[node name="Blur" type="ColorRect" parent="Kiki/DialogueOverlay" unique_id=1306990537]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.17266177, 0.3701843, 0.31223854, 0.67058825)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Kiki/DialogueOverlay" unique_id=2033805208]
+position = Vector2(1562, 683)
+scale = Vector2(0.52465713, 0.524657)
+sprite_frames = SubResource("SpriteFrames_rercr")
+autoplay = "default"
+
+[node name="Dodong" type="Area2D" parent="." unique_id=44096739 node_paths=PackedStringArray("overlay")]
+position = Vector2(2160, 754)
+scale = Vector2(0.1153939, 0.117169194)
+script = ExtResource("4_o8qj7")
+dialogue_resource = ExtResource("6_4hcgu")
+overlay = NodePath("DialogueOverlay")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Dodong" unique_id=1372665126]
+position = Vector2(225.31624, -162.15881)
+scale = Vector2(2.133645, 2.133645)
+sprite_frames = SubResource("SpriteFrames_n0t6t")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dodong" unique_id=1291138713]
+position = Vector2(291.39453, 116.98486)
+scale = Vector2(0.9999999, 0.9999999)
+shape = SubResource("RectangleShape2D_c4vm3")
+
+[node name="DialogueOverlay" type="CanvasLayer" parent="Dodong" unique_id=1359684839]
+layer = 5
+visible = false
+
+[node name="Blur" type="ColorRect" parent="Dodong/DialogueOverlay" unique_id=1959775885]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.17266177, 0.3701843, 0.31223854, 0.67058825)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Dodong/DialogueOverlay" unique_id=805594134]
+position = Vector2(1562, 683)
+scale = Vector2(0.52465713, 0.524657)
+sprite_frames = SubResource("SpriteFrames_o5cst")
+autoplay = "default"
+frame_progress = 0.45549
+
+[node name="Dining" type="Area2D" parent="." unique_id=937489186]
+position = Vector2(3070, 768)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dining" unique_id=1170915871]
+position = Vector2(2, -28)
+shape = SubResource("RectangleShape2D_yp26a")
+
+[node name="Sprite2D" type="Sprite2D" parent="Dining" unique_id=420720240]
+position = Vector2(0.9048815, -5.5626097)
+scale = Vector2(0.28201434, 0.2820143)
+texture = ExtResource("9_4hcgu")
+
+[node name="Bedroom" type="Area2D" parent="." unique_id=1749759095]
+position = Vector2(3070, 768)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bedroom" unique_id=839638518]
+position = Vector2(612, 113)
+shape = SubResource("CircleShape2D_o5cst")
+
+[node name="Sprite2D" type="Sprite2D" parent="Bedroom" unique_id=1118467628]
+position = Vector2(631, 117)
+scale = Vector2(0.29771617, 0.29771614)
+texture = ExtResource("11_rercr")
+
+[node name="Olliee2" parent="." unique_id=530691139 instance=ExtResource("2_slxlb")]
 position = Vector2(2344, 797)
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1619702433]
 offset_top = -17.0
 offset_right = 4437.0
 offset_bottom = 1089.0
+mouse_filter = 2
 color = Color(0.21568628, 0.33333334, 0.3882353, 0.58431375)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1122326655]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1630284974]
+position = Vector2(2572, 690)
+shape = SubResource("RectangleShape2D_nkg7s")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=79533137]
+position = Vector2(1458, 915)
+rotation = -0.8525282
+shape = SubResource("RectangleShape2D_cv8wh")
+
+[connection signal="body_entered" from="Dining" to="." method="_on_dining_body_entered"]
+[connection signal="body_entered" from="Bedroom" to="." method="_on_bedroom_body_entered"]
