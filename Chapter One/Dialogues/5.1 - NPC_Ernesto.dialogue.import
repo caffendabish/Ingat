@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://baiy6nhv7mnty"
+path="res://.godot/imported/5.1 - NPC_Ernesto.dialogue-7cb9a49c562df224b650d1f99c322d4f.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/5.1 - NPC_Ernesto.dialogue"
+dest_files=["res://.godot/imported/5.1 - NPC_Ernesto.dialogue-7cb9a49c562df224b650d1f99c322d4f.tres"]
+
+[params]
+
+defaults=true

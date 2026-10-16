@@ -1,0 +1,19 @@
+~ start
+OLLIE: [speed=0.8]What a strange dream...[/speed]
+
+OLLIE: [speed=0.8]The water... that voice...[/speed]
+
+OLLIE: [speed=0.8]It felt so real.[/speed]
+
+OLLIE: [speed=0.7][shake rate=2 level=1]...But it was just a dream, right?[/shake][/speed]
+
+OLLIE: ...
+
+OLLIE: [speed=1.1]No! Focus! Today's my birthday![/speed]
+
+OLLIE: [speed=1.0]I shouldn't worry about silly dreams. [wave amp=1.5 freq=2]Nanay promised to make my chocolate cake and some spaghetti![/wave][/speed]
+
+OLLIE: [speed=0.9]I wonder if everyone has something planned for me...[/speed]
+
+OLLIE: [speed=1.2][wave amp=2 freq=3]I better hurry to the kitchen![/wave][/speed]
+=> END

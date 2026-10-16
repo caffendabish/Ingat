@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://7jbucxkmnnco"]
 
 [ext_resource type="Script" uid="uid://y4vfllc1km4j" path="res://Chapter One/Scripts/Dialogues/FamilyDinner.gd" id="1_paeo7"]
-[ext_resource type="Resource" uid="uid://c1a4umwpay1ph" path="res://Chapter One/Dialogues/Nightmare.dialogue" id="2_cf5pw"]
+[ext_resource type="Resource" uid="uid://c1a4umwpay1ph" path="res://Chapter One/Dialogues/Dump5_OtherNightmare.dialogue" id="2_cf5pw"]
 [ext_resource type="Texture2D" uid="uid://bn3qhfb504fee" path="res://Chapter Two/Assets/LVL 2 QTE EVENT/JUMPSCARE4.png" id="2_paeo7"]
 
 [node name="Dream" type="Node2D" unique_id=951468599]

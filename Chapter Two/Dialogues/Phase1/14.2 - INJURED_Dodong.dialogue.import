@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dbhawjh7d38k7"
+path="res://.godot/imported/14.2 - INJURED_Dodong.dialogue-21d2005c291ba80acb9380afd0943c84.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase1/14.2 - INJURED_Dodong.dialogue"
+dest_files=["res://.godot/imported/14.2 - INJURED_Dodong.dialogue-21d2005c291ba80acb9380afd0943c84.tres"]
+
+[params]
+
+defaults=true

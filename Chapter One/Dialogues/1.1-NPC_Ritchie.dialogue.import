@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://ui603ygtrrw8"
+path="res://.godot/imported/1.1-NPC_Ritchie.dialogue-3bb1f8affa231a42c92f9bff487fb1a5.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/1.1-NPC_Ritchie.dialogue"
+dest_files=["res://.godot/imported/1.1-NPC_Ritchie.dialogue-3bb1f8affa231a42c92f9bff487fb1a5.tres"]
+
+[params]
+
+defaults=true

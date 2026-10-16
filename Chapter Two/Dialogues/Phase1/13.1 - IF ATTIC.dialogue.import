@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://c6v8712c28s1q"
+path="res://.godot/imported/13.1 - IF ATTIC.dialogue-f79325bc7ce608a5189a6d53c751067d.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase1/13.1 - IF ATTIC.dialogue"
+dest_files=["res://.godot/imported/13.1 - IF ATTIC.dialogue-f79325bc7ce608a5189a6d53c751067d.tres"]
+
+[params]
+
+defaults=true

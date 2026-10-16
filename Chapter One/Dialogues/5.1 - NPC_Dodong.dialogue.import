@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dlh6c1ml75kop"
+path="res://.godot/imported/5.1 - NPC_Dodong.dialogue-f261b478c8b4c504fa7fc6dd05526bca.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/5.1 - NPC_Dodong.dialogue"
+dest_files=["res://.godot/imported/5.1 - NPC_Dodong.dialogue-f261b478c8b4c504fa7fc6dd05526bca.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://3ol2mb6misvj"
+path="res://.godot/imported/9.1 - HOME_Setting Up The Banner.dialogue-4b0172ce383d5fb30e45b6663ea02a99.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/9.1 - HOME_Setting Up The Banner.dialogue"
+dest_files=["res://.godot/imported/9.1 - HOME_Setting Up The Banner.dialogue-4b0172ce383d5fb30e45b6663ea02a99.tres"]
+
+[params]
+
+defaults=true

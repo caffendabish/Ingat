@@ -1,0 +1,34 @@
+~ start
+
+Shopping took a long time! But we got almost everything we needed for tomorrow.
+
+I can't wait!
+
+NONI: [speed=1.0][wave amp=2 freq=3]Shhhw-vroom![/wave] Look, Kuya Ollie! My rocket balloon is faster than the wind! If the bagyo comes here, I'll blast it all the way to the moon!
+
+VALERIE: [speed=1.0][shake rate=3 level=2]Noni, stop running around![/shake] If you pop that balloon before the party even starts, you're blowing up the next ten packs yourself!
+
+KIKI: [speed=1.0][wave amp=2 freq=3]Uya! Blow! Blow balloon! Yay-yay![/wave][/speed]
+
+ERNESTO: [speed=0.9]Phew... The wind's really picking up out there.[/speed] But look at this! It's already starting to look like a real birthday party.
+
+ERNESTO: [speed=1.0]Dodong! Put that Game Boy down for a minute and come here.[/speed]
+
+DODONG: [speed=1.0]Yes, Tay?[/speed]
+
+ERNESTO: [speed=1.0]Grab that chair and the box of thumbtacks. We need to hang Ollie's birthday banner before it gets too dark.[/speed]
+
+ERNESTO: [speed=1.0]Ollie, come help your Kuya hold the string steady.[/speed]
+
+- I'll hold it, Tay! 
+	OLLIE: I can't wait to see Ritchie's face when he comes over tomorrow!
+	ERNESTO: That's the spirit, chief! Hand me those thumbtacks. Dodong, stretch the cord across that beam.
+	DODONG: Keep it straight, Ollie! Don't let the banner droop. You're making us look bad!
+	OLLIE: I'm holding it!
+
+- Tay... is the wind getting bad? The windows are rattling.
+	ERNESTO: Don't worry about that, anak. It's just the wind picking up before a storm. Our coconut trees have stood through worse. We're safe inside.
+	OLLIE: ...Okay, Tay.
+	DODONG: See? Nothing to worry about, little bro. Now hold that corner straight so Tatay can tack it down.
+
+=> END

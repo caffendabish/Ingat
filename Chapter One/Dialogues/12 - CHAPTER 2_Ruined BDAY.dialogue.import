@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dcutxsri6y23n"
+path="res://.godot/imported/12 - CHAPTER 2_Ruined BDAY.dialogue-36bc17c7226c6cf7b217a7dddce34b66.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/12 - CHAPTER 2_Ruined BDAY.dialogue"
+dest_files=["res://.godot/imported/12 - CHAPTER 2_Ruined BDAY.dialogue-36bc17c7226c6cf7b217a7dddce34b66.tres"]
+
+[params]
+
+defaults=true

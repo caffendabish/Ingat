@@ -4,11 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://6frlq5ww5j50" path="res://Chapter One/Assets/Finalize/HOUSE/KITCHEN/KITCHEN.png" id="1_ves6a"]
 [ext_resource type="Script" uid="uid://dx4726065bv37" path="res://Redundant Assets/Character/Scripts/TalkableArea.gd" id="2_4dlqq"]
 [ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_ves6a"]
-[ext_resource type="Resource" uid="uid://c72tfpke74ftn" path="res://Chapter One/Dialogues/Pili.dialogue" id="3_4dlqq"]
+[ext_resource type="Resource" uid="uid://c72tfpke74ftn" path="res://Chapter One/Dialogues/5.1 - NPC_Pili.dialogue" id="3_4dlqq"]
 [ext_resource type="Texture2D" uid="uid://d1d6wwj4o5mal" path="res://Chapter One/Assets/Finalize/HOUSE/KITCHEN/KITCHEN_FG.png" id="3_qxprx"]
 [ext_resource type="Texture2D" uid="uid://cgefj64mgvkjo" path="res://Redundant Assets/Character/AssetsDump/PiliSpritesheet.png" id="4_mvpr5"]
 [ext_resource type="Texture2D" uid="uid://ljyov55d5kow" path="res://Chapter One/Assets/Finalize/HOUSE/KITCHEN/KITCHEN_LIGHT_OVERLAY.png" id="4_qxprx"]
-[ext_resource type="Resource" uid="uid://cg4m3e00wo2x4" path="res://Chapter One/Dialogues/Kiki.dialogue" id="5_mvpr5"]
+[ext_resource type="Resource" uid="uid://cg4m3e00wo2x4" path="res://Chapter One/Dialogues/5.1 - NPC_Kiki.dialogue" id="5_mvpr5"]
 [ext_resource type="Texture2D" uid="uid://d2w5dtlo0ipc7" path="res://Redundant Assets/Character/AssetsDump/KikiSpritesheet.png" id="5_su2ye"]
 [ext_resource type="Texture2D" uid="uid://cv3nkfeb17avg" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_RIGHT.png" id="10_6jbxb"]
 

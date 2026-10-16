@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://ch5unfk7ul1p8"
+path="res://.godot/imported/11 - HOME_Waking Up After Nightmare.dialogue-9fe790eefa2c5dfaece9375a2c189031.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase1/11 - HOME_Waking Up After Nightmare.dialogue"
+dest_files=["res://.godot/imported/11 - HOME_Waking Up After Nightmare.dialogue-9fe790eefa2c5dfaece9375a2c189031.tres"]
+
+[params]
+
+defaults=true

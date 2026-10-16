@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dtptu3di3qs7i"
+path="res://.godot/imported/1-SCHOOL_Ritchie&OllieConvo.dialogue-5df0e47f5c02cf9861b513fd47c62f87.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/1-SCHOOL_Ritchie&OllieConvo.dialogue"
+dest_files=["res://.godot/imported/1-SCHOOL_Ritchie&OllieConvo.dialogue-5df0e47f5c02cf9861b513fd47c62f87.tres"]
+
+[params]
+
+defaults=true

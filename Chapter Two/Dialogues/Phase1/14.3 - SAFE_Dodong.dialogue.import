@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://d0pc8iqekukay"
+path="res://.godot/imported/14.3 - SAFE_Dodong.dialogue-1bf130ba5a69365ed7cf85aaa8320999.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase1/14.3 - SAFE_Dodong.dialogue"
+dest_files=["res://.godot/imported/14.3 - SAFE_Dodong.dialogue-1bf130ba5a69365ed7cf85aaa8320999.tres"]
+
+[params]
+
+defaults=true
