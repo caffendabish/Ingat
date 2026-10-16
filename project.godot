@@ -26,13 +26,19 @@ MinigameHud="*uid://dsljgg4ylhcy5"
 SceneFlow="*uid://dkmqnod8vqhj4"
 DialogueManager="*uid://c3rodes2l3gxb"
 
+[dialogue_manager]
+
+runtime/balloon_path="res://Redundant Assets/balloon.tscn"
+
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
-window/size/mode=3
+window/size/mode=4
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+mouse_cursor/custom_image="uid://bp7s7chwvfeuy"
+window/custom_image=""
 
 [editor_plugins]
 
