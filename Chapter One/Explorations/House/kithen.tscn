@@ -203,9 +203,12 @@ position = Vector2(3331.0002, 643)
 scale = Vector2(0.5346022, 0.639903)
 
 [node name="Sprite2D" type="Sprite2D" parent="Dining" unique_id=1965908845]
+position = Vector2(-57.57364, 55.57895)
+scale = Vector2(0.8186657, 0.81866574)
 texture = ExtResource("10_6jbxb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Dining" unique_id=570758662]
+position = Vector2(-67.34024, 70.32315)
 shape = SubResource("CircleShape2D_g4v7s")
 
 [node name="TextureRect2" type="TextureRect" parent="." unique_id=1371549104]

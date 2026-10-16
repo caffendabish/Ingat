@@ -1,6 +1,6 @@
 extends Node2D
 
-const INTRO_DIALOGUE := preload("res://Chapter One/Dialogues/SCENE 2.dialogue")
+const INTRO_DIALOGUE := preload("res://Chapter One/Dialogues/1-SCHOOL_Ritchie&OllieConvo.dialogue")
 
 static var intro_played := false
 

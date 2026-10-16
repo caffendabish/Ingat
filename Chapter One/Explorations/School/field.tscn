@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://c3vxih7jlr33n"]
 
 [ext_resource type="Script" uid="uid://cubixaa0d386n" path="res://Chapter One/Scripts/Explore/TriggersforScene/School/field.gd" id="1_8r46j"]
-[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_2opoc"]
 [ext_resource type="Texture2D" uid="uid://dn0hn13rcgn4q" path="res://Chapter One/Assets/Finalize/SCHOOL/Near_Gate_DAY.png" id="2_padx7"]
 [ext_resource type="Texture2D" uid="uid://cv3nkfeb17avg" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_RIGHT.png" id="3_7ghbl"]
 [ext_resource type="Texture2D" uid="uid://cnm5rfb0ou2i1" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_UP.png" id="4_8r46j"]
+[ext_resource type="PackedScene" uid="uid://crijlp60vst75" path="res://Redundant Assets/Character/OllieUni.tscn" id="5_padx7"]
 [ext_resource type="Texture2D" uid="uid://dwsnojum8vnqi" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM HALLWAY/HALL_OVERLAY_DAY.png" id="6_3d1va"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_padx7"]
@@ -115,9 +115,9 @@ scale = Vector2(0.16844642, 0.16105989)
 shape = SubResource("CircleShape2D_yf5fn")
 debug_color = Color(0.52242863, 0.28501797, 0.21521541, 0.41960785)
 
-[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("2_2opoc")]
-position = Vector2(2464, 951)
-scale = Vector2(0.5468013, 0.5468013)
+[node name="Olliee2" parent="." unique_id=530691139 instance=ExtResource("5_padx7")]
+position = Vector2(2458, 952)
+scale = Vector2(0.535, 0.535)
 
 [node name="TextureRect2" type="TextureRect" parent="." unique_id=1810193030]
 offset_right = 4543.0

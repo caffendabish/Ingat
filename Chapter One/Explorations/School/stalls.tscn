@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" uid="uid://dox3vma0m4u3s" path="res://Chapter One/Scripts/Explore/TriggersforScene/School/stalls.gd" id="1_vljny"]
 [ext_resource type="Texture2D" uid="uid://8un433elk4se" path="res://Chapter One/Assets/Finalize/SCHOOL/RIGHT_VENDOR/VENDOR_RIGHT_BG_DAY.png" id="2_kt1rl"]
-[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_w5moa"]
 [ext_resource type="Texture2D" uid="uid://cukel3x8uy5mg" path="res://Chapter One/Assets/Finalize/SCHOOL/RIGHT_VENDOR/VENDOR_STALL_FG.png" id="3_q2le5"]
 [ext_resource type="Texture2D" uid="uid://b5oem10thp2ff" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_LEFT.png" id="4_kt1rl"]
+[ext_resource type="PackedScene" uid="uid://crijlp60vst75" path="res://Redundant Assets/Character/OllieUni.tscn" id="5_dd6ij"]
 [ext_resource type="Texture2D" uid="uid://cavnlvltcxpe3" path="res://Chapter One/Assets/Finalize/SCHOOL/RIGHT_VENDOR/OVERLAY_NOON.png" id="5_q2le5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_q2le5"]
@@ -47,7 +47,7 @@ texture = ExtResource("4_kt1rl")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="gate" unique_id=1576227336]
 shape = SubResource("CircleShape2D_q2le5")
 
-[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("2_w5moa")]
+[node name="Olliee2" parent="." unique_id=530691139 instance=ExtResource("5_dd6ij")]
 position = Vector2(744, 763)
 
 [node name="TextureRect4" type="TextureRect" parent="." unique_id=1931054216]

@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://caf7rcljhui47" path="res://Chapter One/Scripts/Explore/TriggersforScene/School/fieldaft.gd" id="1_7dud0"]
 [ext_resource type="Texture2D" uid="uid://dn0hn13rcgn4q" path="res://Chapter One/Assets/Finalize/SCHOOL/Near_Gate_DAY.png" id="2_7dud0"]
 [ext_resource type="Texture2D" uid="uid://t73g7iob1xru" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_DOWN.png" id="3_y0nkw"]
-[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="5_jjmch"]
+[ext_resource type="PackedScene" uid="uid://crijlp60vst75" path="res://Redundant Assets/Character/OllieUni.tscn" id="4_phad0"]
 [ext_resource type="Texture2D" uid="uid://cavnlvltcxpe3" path="res://Chapter One/Assets/Finalize/SCHOOL/RIGHT_VENDOR/OVERLAY_NOON.png" id="5_phad0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_phad0"]
@@ -11,9 +11,6 @@ size = Vector2(4431, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oblj7"]
 size = Vector2(20, 1116.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
-size = Vector2(131.5, 167.75)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
 radius = 72.8011
@@ -52,10 +49,6 @@ shape = SubResource("RectangleShape2D_oblj7")
 position = Vector2(4403, 541.75)
 shape = SubResource("RectangleShape2D_oblj7")
 
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="World Borda" unique_id=1715406633]
-position = Vector2(2314, 592.875)
-shape = SubResource("RectangleShape2D_g4v7s")
-
 [node name="TextureRect2" type="TextureRect" parent="." unique_id=224311058]
 offset_left = -51.0
 offset_top = -151.99997
@@ -77,7 +70,7 @@ texture = ExtResource("3_y0nkw")
 position = Vector2(-11, 8)
 shape = SubResource("CircleShape2D_g4v7s")
 
-[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("5_jjmch")]
+[node name="Olliee2" parent="." unique_id=530691139 instance=ExtResource("4_phad0")]
 position = Vector2(2451, 560)
 scale = Vector2(0.41190988, 0.41190988)
 
@@ -91,6 +84,7 @@ texture = ExtResource("5_phad0")
 metadata/_edit_lock_ = true
 
 [node name="Go home" type="Area2D" parent="." unique_id=1160355942]
+visible = false
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="Go home" unique_id=980733172]
 shape = SubResource("SegmentShape2D_yf5fn")

@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://dnjj57s3ln5pc"]
 
+[ext_resource type="Texture2D" uid="uid://bqyn2xxsqdbhe" path="res://Chapter One/Assets/Finalize/HOUSE/LIVING ROOM/LIVINGROOM.png" id="1_68duu"]
 [ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_slxlb"]
+[ext_resource type="Texture2D" uid="uid://b1eabynm72fe5" path="res://Chapter One/Assets/Finalize/HOUSE/LIVING ROOM/LIVINGROOM_FG1.png" id="2_uf241"]
 
 [node name="Node2D" type="Node2D" unique_id=603335698]
 
@@ -9,6 +11,21 @@ offset_left = -11.0
 offset_top = -17.0
 offset_right = 4431.495
 offset_bottom = 1089.0
+texture = ExtResource("1_68duu")
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect" unique_id=161877288]
+layout_mode = 0
+offset_left = -16.0
+offset_top = 21.0
+offset_right = 4432.0
+offset_bottom = 1101.0
+texture = ExtResource("2_uf241")
 
 [node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("2_slxlb")]
 position = Vector2(2344, 797)
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1619702433]
+offset_top = -17.0
+offset_right = 4437.0
+offset_bottom = 1089.0
+color = Color(0.21568628, 0.33333334, 0.3882353, 0.58431375)

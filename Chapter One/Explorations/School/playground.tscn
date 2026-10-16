@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://svyu0h7qnwsq"]
 
 [ext_resource type="Script" uid="uid://bf07gpna0yyg8" path="res://Chapter One/Scripts/Explore/TriggersforScene/School/playground.gd" id="1_dkwxu"]
-[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_rtp3u"]
 [ext_resource type="Texture2D" uid="uid://rk7k3qdwpgfg" path="res://Chapter One/Assets/Finalize/SCHOOL/PLAYGROUND_NOON.png" id="2_up8s2"]
 [ext_resource type="Script" uid="uid://dx4726065bv37" path="res://Redundant Assets/Character/Scripts/TalkableArea.gd" id="4_jdqdo"]
 [ext_resource type="Texture2D" uid="uid://b5oem10thp2ff" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_LEFT.png" id="4_up8s2"]
 [ext_resource type="Texture2D" uid="uid://dwsnojum8vnqi" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM HALLWAY/HALL_OVERLAY_DAY.png" id="5_64j3m"]
-[ext_resource type="Resource" uid="uid://ui603ygtrrw8" path="res://Chapter One/Dialogues/NPCRitchie.dialogue" id="5_c0gb8"]
+[ext_resource type="Resource" uid="uid://ui603ygtrrw8" path="res://Chapter One/Dialogues/1.1-NPC_Ritchie.dialogue" id="5_c0gb8"]
 [ext_resource type="Texture2D" uid="uid://bvwpwr3beuqxf" path="res://Redundant Assets/Character/AssetsDump/INGAT_RitchieNormal.png" id="6_vgnsm"]
-[ext_resource type="Texture2D" uid="uid://d6463hsgpxvu" path="res://Redundant Assets/Character/AssetsDump/OllieSprites.png" id="9_c0gb8"]
+[ext_resource type="Texture2D" uid="uid://b46puu6ldk66r" path="res://Redundant Assets/Character/AssetsDump/OllieSprites_SpritesheetUniformVariant.png" id="9_c0gb8"]
+[ext_resource type="PackedScene" uid="uid://crijlp60vst75" path="res://Redundant Assets/Character/OllieUni.tscn" id="9_vgnsm"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
 radius = 57.00877
@@ -137,9 +137,6 @@ texture = ExtResource("4_up8s2")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Field" unique_id=2087399834]
 shape = SubResource("CircleShape2D_g4v7s")
 
-[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("2_rtp3u")]
-position = Vector2(2973, 779)
-
 [node name="Ritchie" type="Area2D" parent="." unique_id=391694443 node_paths=PackedStringArray("overlay")]
 position = Vector2(3695, 928)
 scale = Vector2(0.17862369, 0.18137175)
@@ -176,6 +173,10 @@ position = Vector2(1574.0001, 715.00006)
 scale = Vector2(0.49251258, 0.49251258)
 sprite_frames = SubResource("SpriteFrames_h5m6v")
 autoplay = "default"
+
+[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("9_vgnsm")]
+position = Vector2(3399.0002, 832)
+scale = Vector2(1.045, 1.045)
 
 [node name="TextureRect5" type="TextureRect" parent="." unique_id=1838654874]
 offset_left = -11.0

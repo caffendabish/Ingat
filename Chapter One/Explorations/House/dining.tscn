@@ -153,6 +153,9 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
 radius = 144.01389
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(3113, 20)
+
 [node name="Node2D" type="Node2D" unique_id=142567288]
 script = ExtResource("1_yp26a")
 
@@ -247,7 +250,7 @@ sprite_frames = SubResource("SpriteFrames_05bi5")
 autoplay = "default"
 
 [node name="Ernesto" type="Area2D" parent="." unique_id=198909233 node_paths=PackedStringArray("overlay")]
-position = Vector2(3304, 833)
+position = Vector2(3287, 713.00006)
 scale = Vector2(0.16566469, 0.16821338)
 script = ExtResource("5_qqjti")
 dialogue_resource = ExtResource("8_3gb45")
@@ -319,6 +322,12 @@ offset_top = -17.0
 offset_right = 4437.0
 offset_bottom = 1089.0
 texture = ExtResource("4_vr6nj")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1341071026]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1824237821]
+position = Vector2(2202, 671)
+shape = SubResource("RectangleShape2D_g4v7s")
 
 [connection signal="body_entered" from="Kitchen" to="." method="_on_kitchen_body_entered"]
 [connection signal="body_entered" from="Bedroom" to="." method="_on_bedroom_body_entered"]
