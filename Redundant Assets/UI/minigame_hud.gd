@@ -53,5 +53,5 @@ func _process(_delta: float) -> void:
 	var tick := Time.get_ticks_msec() / 1000.0
 	var shake := Vector2(sin(tick * 25.0) * 4.0, cos(tick * 19.0) * 4.0)
 	var center := get_viewport().get_visible_rect().size / 2.0
-	timer_label.modulate = base_color * 0.85
+	timer_label.modulate = base_color * 0.45
 	timer_label.position = center - (timer_label.size / 2.0) + shake
