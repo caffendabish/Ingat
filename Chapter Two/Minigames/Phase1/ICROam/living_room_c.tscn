@@ -27,6 +27,7 @@ texture = ExtResource("1_7ew1a")
 [node name="Rope" parent="PickUp" unique_id=392040893 instance=ExtResource("2_fq1r8")]
 position = Vector2(1603, 930)
 item = ExtResource("3_53bl7")
+pickup_id = &"rope"
 display_size = 500.0
 
 [node name="Medkit" parent="PickUp" unique_id=9376310 instance=ExtResource("2_fq1r8")]

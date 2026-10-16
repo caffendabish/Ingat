@@ -1,12 +1,20 @@
 [gd_scene format=3 uid="uid://c5jvs4k7h2f3a"]
 
 [ext_resource type="Script" uid="uid://dh7efpexirytc" path="res://Redundant Assets/Inventory/pick_up.gd" id="1_fteio"]
+[ext_resource type="Shader" uid="uid://pickup_outline_shader" path="res://Redundant Assets/Inventory/pickup_outline.gdshader" id="pickup_outline_shader"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_yf5fn"]
 radius = 60.63827
 
+[sub_resource type="ShaderMaterial" id="pickup_outline_material"]
+shader = ExtResource("pickup_outline_shader")
+
 [node name="PickUp" type="Area2D" unique_id=392040893]
 script = ExtResource("1_fteio")
+
+[node name="Outline" type="Sprite2D" parent="." unique_id=283746105]
+material = SubResource("pickup_outline_material")
+position = Vector2(0, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1624091207]
 

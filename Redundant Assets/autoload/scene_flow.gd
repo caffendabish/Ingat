@@ -31,7 +31,8 @@ func start_minigame() -> void:
 	)
 
 	GameHUD.show_hud()
-	MinigameTimer.reset()        # timer only. The first room starts the clock
+	MinigameTimer.reset()        # timer only
+	MinigameTimer.start(MINIGAME_TIME)   # starts clock + shows spooky gather text
 	_go(FIRST_ROOM)
 
 
