@@ -8,14 +8,6 @@
 radius = 36.951775
 height = 156.49269
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_7hli4"]
-atlas = ExtResource("2_syl4n")
-region = Rect2(0, 0, 1440, 1640)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rlrqb"]
-atlas = ExtResource("2_syl4n")
-region = Rect2(1440, 0, 1440, 1640)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_p6byk"]
 atlas = ExtResource("3_yc561")
 region = Rect2(7200, 3280, 1440, 1640)
@@ -114,13 +106,7 @@ region = Rect2(4320, 1640, 1440, 1640)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
 animations = [{
-"frames": [{
-"duration": 5.0,
-"texture": SubResource("AtlasTexture_7hli4")
-}, {
-"duration": 2.5,
-"texture": SubResource("AtlasTexture_rlrqb")
-}],
+"frames": [],
 "loop": 1,
 "name": &"idle",
 "speed": 5.0

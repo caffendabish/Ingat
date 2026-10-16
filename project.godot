@@ -26,6 +26,10 @@ MinigameHud="*uid://dsljgg4ylhcy5"
 SceneFlow="*uid://dkmqnod8vqhj4"
 DialogueManager="*uid://c3rodes2l3gxb"
 
+[dialogue_manager]
+
+runtime/balloon_path="res://Redundant Assets/UI/BAlloon/balloon.tscn"
+
 [display]
 
 window/size/viewport_width=1920
