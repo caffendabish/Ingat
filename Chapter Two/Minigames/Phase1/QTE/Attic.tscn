@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cu6nckcf0le84" path="res://Redundant Assets/Character/AssetsDump/INGAT_SpritesZ_Phase1_ErnestoPullingPlywood.png" id="1_dcyj0"]
 [ext_resource type="Script" uid="uid://bg6hpj3q52ty5" path="res://Chapter Two/Minigames/Phase1/QTE/attic.gd" id="1_tvmod"]
-[ext_resource type="Resource" uid="uid://bwqyapwhipy3w" path="res://Redundant Assets/Inventory/items/medkit.tres" id="2_xmqqm"]
+[ext_resource type="Texture2D" uid="uid://qshxlu3r6jjr" path="res://Chapter One/Assets/Finalize/HOUSE/DINING/DINING_NIGHT.png" id="3_4ju1j"]
 [ext_resource type="Resource" uid="uid://x7bcwgq1glmd" path="res://Chapter Two/Dialogues/Phase1/13.1.1 - TO ATTIC.dialogue" id="3_cby8r"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tvmod"]
@@ -29,21 +29,33 @@ animations = [{
 
 [node name="Attic" type="Node2D" unique_id=86973238]
 script = ExtResource("1_tvmod")
-required_item = ExtResource("2_xmqqm")
 dialogue = ExtResource("3_cby8r")
-scene_if_has = "uid://cug84r4p04ukw"
-scene_if_missing = "uid://c5qnwogcfex5y"
-flag_if_has = &"dodong_safe"
-flag_if_missing = &"dodong_injured"
+next_scene = "uid://cjy6km5183gxf"
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=421496514]
-offset_right = 1924.0
-offset_bottom = 1082.0
-color = Color(0, 0, 0, 1)
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1040838146]
+offset_left = -2713.0
+offset_top = -272.0
+offset_right = 1735.0
+offset_bottom = 808.0
+scale = Vector2(1.2904398, 1.2904398)
+texture = ExtResource("3_4ju1j")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=821586070]
-position = Vector2(894.99994, 523.00006)
-scale = Vector2(0.9315, 0.86541665)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TextureRect" unique_id=821586070]
+position = Vector2(2795.946, 616.0691)
+scale = Vector2(0.72184694, 0.67063695)
 sprite_frames = SubResource("SpriteFrames_yf5fn")
 autoplay = "default"
 frame_progress = 0.13103469
+
+[node name="ColorRect" type="ColorRect" parent="TextureRect" unique_id=1560995168]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2092.31
+offset_top = 179.00874
+offset_right = 2092.31
+offset_bottom = 179.00879
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.13725491, 0.23137255, 0.24705882, 0.5921569)

@@ -2,24 +2,25 @@
 
 [ext_resource type="Script" uid="uid://dy7xn8lg78oh3" path="res://Chapter Two/Minigames/Phase1/QTE/safe_noni.gd" id="1_8musd"]
 [ext_resource type="Resource" uid="uid://d0pc8iqekukay" path="res://Chapter Two/Dialogues/Phase1/13.1.2B - SAFE_Dodong.dialogue" id="2_7vrf4"]
-[ext_resource type="Texture2D" uid="uid://c2g8ephh62n3e" path="res://Redundant Assets/Character/AssetsDump/DodongSpritesheet.png" id="2_v00jg"]
+[ext_resource type="Texture2D" uid="uid://b8ntthwskqphh" path="res://Chapter Two/Assets/ATTIC/CEILING_BG.png" id="3_xopsv"]
+[ext_resource type="Texture2D" uid="uid://ddowvp7qlbe5c" path="res://Redundant Assets/Character/AssetsDump/INGAT_SpritesZ_Phase1_DodongOpenWound.png" id="4_ou33k"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_7vrf4"]
-atlas = ExtResource("2_v00jg")
-region = Rect2(0, 4920, 1440, 1640)
+[sub_resource type="AtlasTexture" id="AtlasTexture_t1x6e"]
+atlas = ExtResource("4_ou33k")
+region = Rect2(0, 0, 1000, 1200)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_xopsv"]
-atlas = ExtResource("2_v00jg")
-region = Rect2(1440, 4920, 1440, 1640)
+[sub_resource type="AtlasTexture" id="AtlasTexture_cnopc"]
+atlas = ExtResource("4_ou33k")
+region = Rect2(2000, 0, 1000, 1200)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7vrf4"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_7vrf4")
+"texture": SubResource("AtlasTexture_t1x6e")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_xopsv")
+"texture": SubResource("AtlasTexture_cnopc")
 }],
 "loop": 1,
 "name": &"default",
@@ -29,16 +30,23 @@ animations = [{
 [node name="TreateDodong" type="Node2D" unique_id=1477837031]
 script = ExtResource("1_8musd")
 dialogue = ExtResource("2_7vrf4")
-next_scene = "uid://bie87ho6rohej"
+next_scene = "uid://by5neced4ijpd"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1669271285]
+offset_left = -942.0
+offset_top = -8.0
+offset_right = 3506.0
+offset_bottom = 1072.0
+texture = ExtResource("3_xopsv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=895523107]
+position = Vector2(1091, 663)
+scale = Vector2(0.6674861, 0.62050617)
+sprite_frames = SubResource("SpriteFrames_7vrf4")
+autoplay = "default"
+frame_progress = 0.52233905
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1395750275]
 offset_right = 1924.0
 offset_bottom = 1082.0
-color = Color(0, 0, 0, 1)
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=895523107]
-position = Vector2(915.57996, 646.16046)
-scale = Vector2(0.7269722, 0.6758054)
-sprite_frames = SubResource("SpriteFrames_7vrf4")
-autoplay = "default"
-frame_progress = 0.07504338
+color = Color(0.21568628, 0.34509805, 0.36078432, 0.54901963)

@@ -6,10 +6,14 @@ const RESULT_DELAY := 0.8   # pause so the meter jump is seen
 @export var loss_one_insanity := 25     # lost the father OR the sibling
 @export var loss_both_insanity := 50    # lost both (ran out of time)
 
+# Choice IDs matching qte_scene.gd, used to decide which TextureRect shows
+const CHOICE_ATTIC := "attic"   # attic choice -> Dodong rect
+const CHOICE_WINDOW := "window" # window choice -> Noni rect
+
 # Which sibling appears for each Phase 1 choice.
 # true  = Attic -> Noni, Window -> Dodong
 # false = Attic -> Dodong, Window -> Noni
-@export var noni_if_attic := true
+@export var noni_if_attic := false
 
 # SAVE THE SIBLING (Papa is washed away)
 @export_file("*.tscn") var saved_noni_scene: String
@@ -58,10 +62,10 @@ func _ready() -> void:
 # Shows Noni or Dodong, depending on the Phase 1 choice
 func _pick_sibling_version() -> void:
 	sibling_is_noni = true   # default when testing this scene alone
-	if GameState.has_flag(&"chose_attic"):
-		sibling_is_noni = noni_if_attic
-	elif GameState.has_flag(&"chose_window"):
-		sibling_is_noni = not noni_if_attic
+	if GameState.has_flag(StringName("chose_" + CHOICE_ATTIC)):
+		sibling_is_noni = noni_if_attic            # attic -> noni_if_attic
+	elif GameState.has_flag(StringName("chose_" + CHOICE_WINDOW)):
+		sibling_is_noni = not noni_if_attic        # window -> not noni_if_attic
 
 	noni.visible = sibling_is_noni
 	dodong.visible = not sibling_is_noni

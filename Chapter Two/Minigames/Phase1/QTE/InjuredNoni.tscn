@@ -3,41 +3,47 @@
 [ext_resource type="Script" uid="uid://dy7xn8lg78oh3" path="res://Chapter Two/Minigames/Phase1/QTE/safe_noni.gd" id="1_gqgby"]
 [ext_resource type="Resource" uid="uid://dcuiq3iory3lv" path="res://Chapter Two/Dialogues/Phase1/13.2.2A- INJURED_Noni.dialogue" id="2_ddvyh"]
 [ext_resource type="Texture2D" uid="uid://fd4qyjs3jiyj" path="res://Redundant Assets/Character/AssetsDump/INGAT_SpritesZ_Phase1_OlliePullingUpNoni.png" id="2_w8411"]
+[ext_resource type="Texture2D" uid="uid://cu6r6lm7gafnm" path="res://Chapter Two/Assets/ROOF/ROOF.png" id="3_ddvyh"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_t32wk"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_edbs3"]
 atlas = ExtResource("2_w8411")
 region = Rect2(0, 1200, 1000, 1200)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_gqgby"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_eelf7"]
 atlas = ExtResource("2_w8411")
 region = Rect2(1000, 1200, 1000, 1200)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_ddvyh"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_w8411"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_t32wk")
+"texture": SubResource("AtlasTexture_edbs3")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_gqgby")
+"texture": SubResource("AtlasTexture_eelf7")
 }],
 "loop": 1,
 "name": &"default",
 "speed": 1.0
 }]
 
-[node name="InjuredNoni" type="Node2D" unique_id=862321756]
+[node name="InjuredNoni" type="Node2D" unique_id=62929282]
 script = ExtResource("1_gqgby")
 dialogue = ExtResource("2_ddvyh")
-next_scene = "uid://bie87ho6rohej"
+next_scene = "uid://txg3rxjhp2cx"
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=40111797]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2007037213]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_ddvyh")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=931025341]
+position = Vector2(865.99994, 834)
+scale = Vector2(0.9315, 0.86541665)
+sprite_frames = SubResource("SpriteFrames_w8411")
+autoplay = "default"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1575705180]
 offset_right = 1924.0
 offset_bottom = 1082.0
-color = Color(0, 0, 0, 1)
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=433982759]
-position = Vector2(879.99994, 593)
-scale = Vector2(0.9315, 0.86541665)
-sprite_frames = SubResource("SpriteFrames_ddvyh")
-autoplay = "default"
+color = Color(0.41568628, 0.34901962, 0.30588236, 0.5686275)

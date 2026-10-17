@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://ddgwhxud6ey5t" path="res://Chapter Two/Minigames/Phase1/QTE/window.gd" id="1_6pfjo"]
 [ext_resource type="Texture2D" uid="uid://b23a75o2sra42" path="res://Redundant Assets/Character/AssetsDump/INGAT_SpritesZ_Phase1_ErnestoPullingWindowGrill.png" id="1_lst72"]
-[ext_resource type="Resource" uid="uid://cj4074eupyg88" path="res://Redundant Assets/Inventory/items/rope.tres" id="2_k0you"]
-[ext_resource type="Resource" uid="uid://dn4j6mxpgqyy5" path="res://Chapter Two/Dialogues/Phase1/13.2.2 - ROOF_Noni.dialogue" id="3_i1rkm"]
+[ext_resource type="Resource" uid="uid://bs58u4rol0y1x" path="res://Chapter Two/Dialogues/Phase1/13.2.1 - TO ROOF.dialogue" id="2_i1rkm"]
+[ext_resource type="Texture2D" uid="uid://qshxlu3r6jjr" path="res://Chapter One/Assets/Finalize/HOUSE/DINING/DINING_NIGHT.png" id="4_6f8ya"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6pfjo"]
 atlas = ExtResource("1_lst72")
@@ -29,17 +29,16 @@ animations = [{
 
 [node name="Window" type="Node2D" unique_id=1236790264]
 script = ExtResource("1_6pfjo")
-required_item = ExtResource("2_k0you")
-dialogue = ExtResource("3_i1rkm")
-scene_if_has = "uid://h5wrbfrx2len"
-scene_if_missing = "uid://b80w1k7qdbpp8"
-flag_if_has = &"noni_safe"
-flag_if_missing = &"noni_injured"
+dialogue = ExtResource("2_i1rkm")
+next_scene = "uid://dpx8jn0y5q7m2"
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1580404947]
-offset_right = 1924.0
-offset_bottom = 1082.0
-color = Color(0, 0, 0, 1)
+[node name="TextureRect" type="TextureRect" parent="." unique_id=236701964]
+offset_left = -1868.0
+offset_top = -381.0
+offset_right = 5998.3706
+offset_bottom = 1529.0
+texture = ExtResource("4_6f8ya")
+metadata/_edit_lock_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=918802194]
 position = Vector2(891.99994, 633)
@@ -47,3 +46,8 @@ scale = Vector2(0.9315, 0.86541665)
 sprite_frames = SubResource("SpriteFrames_g4v7s")
 autoplay = "default"
 frame_progress = 0.4783522
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1580404947]
+offset_right = 1924.0
+offset_bottom = 1082.0
+color = Color(0.13733459, 0.25790787, 0.33758008, 0.5921569)
