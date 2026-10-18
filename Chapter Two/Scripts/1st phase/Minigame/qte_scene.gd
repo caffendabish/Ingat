@@ -18,9 +18,15 @@ const CHOICE_WINDOW := "window" # "Help Noni climb up"    -> Noni rect in specia
 @onready var time_bar: ProgressBar = $TimeBar
 @onready var attic_button: Button = $AtticButton
 @onready var window_button: Button = $WindowButton
+@onready var prompt_label: Label = $PromptLabel
 
 var time_left := QTE_TIME
 var done := false
+
+# Shake base positions
+var _attic_base_pos: Vector2
+var _window_base_pos: Vector2
+var _prompt_base_pos: Vector2
 
 
 func _ready() -> void:
@@ -31,12 +37,26 @@ func _ready() -> void:
 	attic_button.pressed.connect(_choose.bind(CHOICE_ATTIC))
 	window_button.pressed.connect(_choose.bind(CHOICE_WINDOW))
 
+	# Store base positions for shaking
+	_attic_base_pos = attic_button.position
+	_window_base_pos = window_button.position
+	_prompt_base_pos = prompt_label.position
+
 
 func _process(delta: float) -> void:
 	if done:
 		return
 	time_left -= delta
 	time_bar.value = time_left
+
+	# Shake buttons and label to add urgency
+	var t = Time.get_ticks_msec() / 1000.0
+	var shake_x = sin(t * 30.0) * 6.0
+	var shake_y = cos(t * 22.0) * 6.0
+	attic_button.position = _attic_base_pos + Vector2(shake_x, shake_y)
+	window_button.position = _window_base_pos + Vector2(-shake_x, shake_y)
+	prompt_label.position = _prompt_base_pos + Vector2(shake_y, shake_x)
+
 	if time_left <= 0.0:
 		GameState.add_insanity(TIMEOUT_PENALTY, "QTE timeout")
 		GameState.set_flag(&"qte_timeout")

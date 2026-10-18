@@ -7,6 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://crijlp60vst75" path="res://Redundant Assets/Character/OllieUni.tscn" id="5_padx7"]
 [ext_resource type="Texture2D" uid="uid://dwsnojum8vnqi" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM HALLWAY/HALL_OVERLAY_DAY.png" id="6_3d1va"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_yf5fn"]
+radius = 215.67656
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_padx7"]
 size = Vector2(4431, 20)
 
@@ -15,57 +18,18 @@ size = Vector2(20, 1116.5)
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_padx7"]
 a = Vector2(3808, 511)
-b = Vector2(1010, 526)
+b = Vector2(976, 520)
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_3d1va"]
-a = Vector2(3802, 507)
+a = Vector2(3773, 537)
 b = Vector2(4328, 1113)
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_iytf3"]
 a = Vector2(1032, 512)
 b = Vector2(230, 1101)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
-size = Vector2(141.5, 148.5)
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_yf5fn"]
-radius = 215.67656
-
 [node name="Field" type="Node2D" unique_id=44134083]
 script = ExtResource("1_8r46j")
-
-[node name="World Borda" type="StaticBody2D" parent="." unique_id=1322077435]
-visible = false
-disable_mode = 1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="World Borda" unique_id=1846262230]
-position = Vector2(2194, 0)
-shape = SubResource("RectangleShape2D_padx7")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="World Borda" unique_id=1882674480]
-position = Vector2(2194, 1103)
-shape = SubResource("RectangleShape2D_padx7")
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="World Borda" unique_id=390844204]
-position = Vector2(0, 539.5)
-shape = SubResource("RectangleShape2D_3d1va")
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="World Borda" unique_id=598885587]
-position = Vector2(4403, 541.75)
-shape = SubResource("RectangleShape2D_3d1va")
-
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="World Borda" unique_id=19710567]
-shape = SubResource("SegmentShape2D_padx7")
-
-[node name="CollisionShape2D7" type="CollisionShape2D" parent="World Borda" unique_id=281248866]
-shape = SubResource("SegmentShape2D_3d1va")
-
-[node name="CollisionShape2D6" type="CollisionShape2D" parent="World Borda" unique_id=1470421918]
-shape = SubResource("SegmentShape2D_iytf3")
-
-[node name="CollisionShape2D8" type="CollisionShape2D" parent="World Borda" unique_id=1724958]
-position = Vector2(2297.25, 920.25)
-shape = SubResource("RectangleShape2D_g4v7s")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=727335719]
 offset_left = -51.0
@@ -123,6 +87,35 @@ scale = Vector2(0.535, 0.535)
 offset_right = 4543.0
 offset_bottom = 1106.0
 texture = ExtResource("6_3d1va")
+
+[node name="World Borda" type="StaticBody2D" parent="." unique_id=1322077435]
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World Borda" unique_id=1846262230]
+position = Vector2(2194, 0)
+shape = SubResource("RectangleShape2D_padx7")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="World Borda" unique_id=1882674480]
+position = Vector2(2194, 1103)
+shape = SubResource("RectangleShape2D_padx7")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="World Borda" unique_id=390844204]
+position = Vector2(0, 539.5)
+shape = SubResource("RectangleShape2D_3d1va")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="World Borda" unique_id=598885587]
+position = Vector2(4403, 541.75)
+shape = SubResource("RectangleShape2D_3d1va")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="World Borda" unique_id=19710567]
+position = Vector2(-8, 33)
+shape = SubResource("SegmentShape2D_padx7")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="World Borda" unique_id=281248866]
+shape = SubResource("SegmentShape2D_3d1va")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="World Borda" unique_id=1470421918]
+shape = SubResource("SegmentShape2D_iytf3")
 
 [connection signal="body_entered" from="HALLWAY" to="." method="_on_hallway_body_entered"]
 [connection signal="body_entered" from="PLAYGROUND" to="." method="_on_playground_body_entered"]

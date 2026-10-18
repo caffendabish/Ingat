@@ -10,7 +10,7 @@ script = ExtResource("1_fhxik")
 required_item = ExtResource("2_6sn6f")
 dialogue = ExtResource("3_yu4jw")
 scene_if_has = "uid://h5wrbfrx2len"
-scene_if_missing = "uid://b80w1k7qdbpp8"
+scene_if_missing = "uid://tbq5rcrr7825"
 flag_if_has = &"YeyRope"
 flag_if_missing = &"NoRope"
 

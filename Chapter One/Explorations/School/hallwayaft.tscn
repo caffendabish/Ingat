@@ -2,13 +2,16 @@
 
 [ext_resource type="Script" uid="uid://ym0jras0qohh" path="res://Chapter One/Scripts/Explore/TriggersforScene/School/hallwayaft.gd" id="1_pf8f7"]
 [ext_resource type="Texture2D" uid="uid://gm1tm2534sxc" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM HALLWAY/HALL_BG.png" id="2_q6a6w"]
-[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="3_4p5ny"]
+[ext_resource type="PackedScene" uid="uid://crijlp60vst75" path="res://Redundant Assets/Character/OllieUni.tscn" id="3_0r2b8"]
 [ext_resource type="Texture2D" uid="uid://cx8fliw41kkhq" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM HALLWAY/HALL_FG.png" id="4_0r2b8"]
 [ext_resource type="Texture2D" uid="uid://t73g7iob1xru" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_DOWN.png" id="5_rkkni"]
 [ext_resource type="Texture2D" uid="uid://cavnlvltcxpe3" path="res://Chapter One/Assets/Finalize/SCHOOL/RIGHT_VENDOR/OVERLAY_NOON.png" id="6_0r2b8"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_so1de"]
 radius = 69.065186
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_86mg2"]
+size = Vector2(4620, 20)
 
 [node name="Node2D" type="Node2D" unique_id=1631470028]
 script = ExtResource("1_pf8f7")
@@ -20,7 +23,7 @@ offset_right = 4532.0
 offset_bottom = 1089.0
 texture = ExtResource("2_q6a6w")
 
-[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("3_4p5ny")]
+[node name="Olliee2" parent="." unique_id=530691139 instance=ExtResource("3_0r2b8")]
 position = Vector2(2338, 623)
 
 [node name="TextureRect3" type="TextureRect" parent="." unique_id=312386011]
@@ -49,5 +52,15 @@ offset_right = 4532.0
 offset_bottom = 1089.0
 texture = ExtResource("6_0r2b8")
 metadata/_edit_lock_ = true
+
+[node name="Boarder" type="StaticBody2D" parent="." unique_id=14240344]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boarder" unique_id=265926781]
+position = Vector2(2217, 896)
+shape = SubResource("RectangleShape2D_86mg2")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Boarder" unique_id=558279325]
+position = Vector2(2279, 598)
+shape = SubResource("RectangleShape2D_86mg2")
 
 [connection signal="body_entered" from="Field" to="." method="_on_field_body_entered"]

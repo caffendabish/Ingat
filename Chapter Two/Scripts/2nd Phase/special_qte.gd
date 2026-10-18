@@ -31,10 +31,16 @@ const CHOICE_WINDOW := "window" # window choice -> Noni rect
 @onready var time_bar: ProgressBar = $TimeBar
 @onready var sibling_button: Button = $Sibling
 @onready var papa_button: Button = $Papa
+@onready var prompt_label: Label = $PromptLabel
 
 var time_left := QTE_TIME
 var done := false
 var sibling_is_noni := true
+
+# Shake base positions
+var _prompt_base_pos: Vector2
+var _sibling_base_pos: Vector2
+var _papa_base_pos: Vector2
 
 
 func _ready() -> void:
@@ -49,6 +55,11 @@ func _ready() -> void:
 	time_bar.show_percentage = false
 	time_bar.max_value = QTE_TIME
 	time_bar.value = QTE_TIME
+
+	# Store base positions for shaking
+	_prompt_base_pos = prompt_label.position
+	_sibling_base_pos = sibling_button.position
+	_papa_base_pos = papa_button.position
 
 	for b in [sibling_button, papa_button]:
 		b.focus_mode = Control.FOCUS_NONE
@@ -77,6 +88,15 @@ func _process(delta: float) -> void:
 		return
 	time_left -= delta
 	time_bar.value = time_left
+
+	# Urgent shake on the label and buttons
+	var t = Time.get_ticks_msec() / 1000.0
+	var shake_x = sin(t * 35.0) * 8.0
+	var shake_y = cos(t * 27.0) * 8.0
+	prompt_label.position = _prompt_base_pos + Vector2(shake_x, shake_y)
+	sibling_button.position = _sibling_base_pos + Vector2(-shake_x, shake_y)
+	papa_button.position = _papa_base_pos + Vector2(shake_y, -shake_x)
+
 	if time_left <= 0.0:
 		GameState.set_flag(&"flood_qte_timeout")
 		_choose("none")          # running out of time = saving no one

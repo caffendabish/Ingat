@@ -82,9 +82,23 @@ animations = [{
 "speed": 3.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_nkg7s"]
+atlas = ExtResource("9_in002")
+region = Rect2(0, 0, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3jtdj"]
+atlas = ExtResource("9_in002")
+region = Rect2(1440, 0, 1440, 1640)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_af8eu"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nkg7s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3jtdj")
+}],
 "loop": 1,
 "name": &"default",
 "speed": 2.0
@@ -185,11 +199,11 @@ mouse_filter = 2
 color = Color(0.17266177, 0.3701843, 0.31223854, 0.67058825)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Ernesto/DialogueOverlay" unique_id=254455606]
-position = Vector2(1574.0001, 715.00006)
-scale = Vector2(0.49251258, 0.49251258)
+position = Vector2(1574, 686)
+scale = Vector2(0.77251256, 0.77251256)
 sprite_frames = SubResource("SpriteFrames_af8eu")
 autoplay = "default"
-frame_progress = 0.68182373
+frame_progress = 0.42307523
 
 [node name="Kitchen" type="Area2D" parent="." unique_id=282699918]
 position = Vector2(504, 845)

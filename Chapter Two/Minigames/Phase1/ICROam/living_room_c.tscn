@@ -8,8 +8,8 @@
 [ext_resource type="Resource" uid="uid://qybdpgc6fvkv" path="res://Redundant Assets/Inventory/items/clothes.tres" id="5_d4u0l"]
 [ext_resource type="Resource" uid="uid://dnjebdstrnay2" path="res://Redundant Assets/Inventory/items/candle.tres" id="6_53bl7"]
 [ext_resource type="Resource" uid="uid://cdacqttcgwmkn" path="res://Redundant Assets/Inventory/items/file.tres" id="7_y0aw4"]
-[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="8_d4u0l"]
 [ext_resource type="Texture2D" uid="uid://cnm5rfb0ou2i1" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_UP.png" id="9_1l7qs"]
+[ext_resource type="PackedScene" uid="uid://de6lwiimhbfb4" path="res://Redundant Assets/Character/OllieRun.tscn" id="10_6vrvg"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
 radius = 53.460266
@@ -76,7 +76,7 @@ texture = ExtResource("9_1l7qs")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Dining" unique_id=1286781432]
 shape = SubResource("CircleShape2D_g4v7s")
 
-[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("8_d4u0l")]
+[node name="Olliee2" parent="." unique_id=530691139 instance=ExtResource("10_6vrvg")]
 position = Vector2(3276, 871)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1378976561]
