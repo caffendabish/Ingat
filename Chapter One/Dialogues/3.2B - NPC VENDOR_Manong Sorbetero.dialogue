@@ -1,0 +1,16 @@
+~ start
+MANONG SORBETERO: [speed=1.0][shake rate=5 level=2]Sorbetes! Sorbetes![/shake][/speed] [speed=1.0]Dirty ice cream![/speed] [speed=1.0][wave amp=1 freq=2]I've got cheese, chocolate, and ube![/wave][/speed]
+
+MANONG SORBETERO: [speed=0.9]Would you like it in a crunchy cone or tucked inside a hotdog bun?[/speed] [speed=1.0]Hehehe![/speed] 
+
+MANONG SORBETERO: [speed=1.0][wave amp=1 freq=2]I recommend the ube and cheese combo.[/wave][/speed] [speed=1.0]Perfect for this hot weather, eh?[/speed]
+
+[speed=0.9][wave amp=1 freq=2]Mmm... ube and cheese...[/wave][/speed]
+
+[speed=0.9][wave amp=1 freq=2]I always buy ice cream from Manong after classes.[/wave][/speed]
+
+[speed=0.7]But I shouldn't spend my money yet...[/speed]
+
+OLLIE: [speed=0.8]...Maybe tomorrow, Manong![/speed]
+
+=> END

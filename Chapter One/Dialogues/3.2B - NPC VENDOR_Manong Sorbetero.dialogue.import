@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bj8tvtl55fulc"
+path="res://.godot/imported/3.2B - NPC VENDOR_Manong Sorbetero.dialogue-7425a92b73220bcca964c6cabbf86460.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/3.2B - NPC VENDOR_Manong Sorbetero.dialogue"
+dest_files=["res://.godot/imported/3.2B - NPC VENDOR_Manong Sorbetero.dialogue-7425a92b73220bcca964c6cabbf86460.tres"]
+
+[params]
+
+defaults=true

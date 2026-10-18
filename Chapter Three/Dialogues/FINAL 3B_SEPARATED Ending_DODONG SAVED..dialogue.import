@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://c0060mhe4yd6i"
+path="res://.godot/imported/FINAL 3B_SEPARATED Ending_DODONG SAVED..dialogue-dee9168d4612cbb46b20020cbec1a4d2.tres"
+
+[deps]
+
+source_file="res://Chapter Three/Dialogues/FINAL 3B_SEPARATED Ending_DODONG SAVED..dialogue"
+dest_files=["res://.godot/imported/FINAL 3B_SEPARATED Ending_DODONG SAVED..dialogue-dee9168d4612cbb46b20020cbec1a4d2.tres"]
+
+[params]
+
+defaults=true
