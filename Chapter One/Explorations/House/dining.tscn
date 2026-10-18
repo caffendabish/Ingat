@@ -110,7 +110,7 @@ radius = 97.62172
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
 size = Vector2(3113, 20)
 
-[node name="Node2D" type="Node2D" unique_id=142567288]
+[node name="Node2D4" type="Node2D" unique_id=142567288]
 script = ExtResource("1_yp26a")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1158420979]

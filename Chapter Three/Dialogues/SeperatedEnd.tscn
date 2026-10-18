@@ -1,11 +1,10 @@
 [gd_scene format=3 uid="uid://dj4qpbfymd7aj"]
 
-[ext_resource type="Script" uid="uid://bujqt8o2ih4kx" path="res://Chapter Three/Dialogues/EndingDialogue.gd" id="1_jwwp2"]
-[ext_resource type="Resource" uid="uid://dp6vlme28vse4" path="res://Chapter Three/Dialogues/SeperatedEnd.dialogue" id="2_ek3u1"]
-[ext_resource type="FontFile" uid="uid://cug8dvaqqi6kp" path="res://Redundant Assets/SpookworksGame (1).ttf" id="2_x318o"]
+[ext_resource type="Script" uid="uid://26lqgklhprpg" path="res://Chapter Two/Scripts/1st phase/Dialogue/parents_arguement.gd" id="1_x318o"]
+[ext_resource type="Resource" uid="uid://dp6vlme28vse4" path="res://Chapter Three/Dialogues/FINAL 3A_SEPARATED Ending_NONI SAVED.dialogue" id="2_ek3u1"]
 
 [node name="SeperatedEnd" type="Node2D" unique_id=1209199926]
-script = ExtResource("1_jwwp2")
+script = ExtResource("1_x318o")
 dialogue = ExtResource("2_ek3u1")
 next_scene = "uid://vm4g7vwkk5do"
 
@@ -27,6 +26,7 @@ mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
 [node name="FaultLabel" type="Label" parent="FadeLayer" unique_id=1768729311]
+visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -38,6 +38,5 @@ offset_right = 20.0
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("2_x318o")
 theme_override_font_sizes/font_size = 75
 text = "Seperated End"
