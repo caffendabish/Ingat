@@ -20,6 +20,36 @@ saved_papa_noni_scene = "uid://du6k0xo3h73cp"
 saved_papa_dodong_scene = "uid://dshqw2d7yiio7"
 both_lost_scene = "uid://drtdwaumtpdkq"
 
+[node name="DarkOverlay" type="ColorRect" parent="." unique_id=999999991]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.2)
+
+[node name="BloodOverlay" type="ColorRect" parent="." unique_id=999999992]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.3, 0, 0, 0)
+
+[node name="FlickerOverlay" type="ColorRect" parent="." unique_id=999999993]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+
 [node name="Noni" type="TextureRect" parent="." unique_id=305740993]
 layout_mode = 0
 offset_right = 40.0
@@ -34,15 +64,16 @@ texture = ExtResource("3_0mrg1")
 
 [node name="PromptLabel" type="Label" parent="." unique_id=2046741291]
 layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_left = -10.0
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -200.0
 offset_top = 197.0
-offset_right = -10.0
+offset_right = 200.0
 offset_bottom = 321.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 90
-text = "Who do I help?"
+text = "WHO DO I SAVE?"
 horizontal_alignment = 1
 
 [node name="TimeBar" type="ProgressBar" parent="." unique_id=25085568]

@@ -8,4 +8,4 @@ func _ready() -> void:
 	GameHUD.visible = false
 
 func _on_finished() -> void:
-	get_tree().change_scene_to_file("res://Chapter One/Explorations/School/playgroundf.tscn") 
+	get_tree().change_scene_to_file("res://Chapter One/Explorations/School/playground.tscn") 

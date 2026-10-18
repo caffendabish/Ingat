@@ -4,16 +4,12 @@ const QTE_TIME := 6.0
 const RESULT_DELAY := 0.8   # pause so the meter jump is seen
 
 @export var loss_one_insanity := 25     # lost the father OR the sibling
-@export var loss_both_insanity := 50    # lost both (ran out of time)
-
-# Choice IDs matching qte_scene.gd, used to decide which TextureRect shows
-const CHOICE_ATTIC := "attic"   # attic choice -> Dodong rect
-const CHOICE_WINDOW := "window" # window choice -> Noni rect
+@export var loss_both_insanity := 35    # lost both (ran out of time)
 
 # Which sibling appears for each Phase 1 choice.
 # true  = Attic -> Noni, Window -> Dodong
 # false = Attic -> Dodong, Window -> Noni
-@export var noni_if_attic := false
+@export var noni_if_attic := true
 
 # SAVE THE SIBLING (Papa is washed away)
 @export_file("*.tscn") var saved_noni_scene: String
@@ -32,12 +28,17 @@ const CHOICE_WINDOW := "window" # window choice -> Noni rect
 @onready var sibling_button: Button = $Sibling
 @onready var papa_button: Button = $Papa
 @onready var prompt_label: Label = $PromptLabel
+@onready var dark_overlay: ColorRect = $DarkOverlay
+@onready var blood_overlay: ColorRect = $BloodOverlay
+@onready var flicker_overlay: ColorRect = $FlickerOverlay
 
 var time_left := QTE_TIME
 var done := false
 var sibling_is_noni := true
+var flicker_timer := 0.0
+var shake_timer := 0.0
 
-# Shake base positions
+# Base positions for shake
 var _prompt_base_pos: Vector2
 var _sibling_base_pos: Vector2
 var _papa_base_pos: Vector2
@@ -56,7 +57,11 @@ func _ready() -> void:
 	time_bar.max_value = QTE_TIME
 	time_bar.value = QTE_TIME
 
-	# Store base positions for shaking
+	dark_overlay.color.a = 0.2
+	blood_overlay.color.a = 0.0
+	flicker_overlay.color.a = 0.0
+
+	# Store base positions for shake
 	_prompt_base_pos = prompt_label.position
 	_sibling_base_pos = sibling_button.position
 	_papa_base_pos = papa_button.position
@@ -73,10 +78,10 @@ func _ready() -> void:
 # Shows Noni or Dodong, depending on the Phase 1 choice
 func _pick_sibling_version() -> void:
 	sibling_is_noni = true   # default when testing this scene alone
-	if GameState.has_flag(StringName("chose_" + CHOICE_ATTIC)):
-		sibling_is_noni = noni_if_attic            # attic -> noni_if_attic
-	elif GameState.has_flag(StringName("chose_" + CHOICE_WINDOW)):
-		sibling_is_noni = not noni_if_attic        # window -> not noni_if_attic
+	if GameState.has_flag(&"chose_attic"):
+		sibling_is_noni = noni_if_attic
+	elif GameState.has_flag(&"chose_window"):
+		sibling_is_noni = not noni_if_attic
 
 	noni.visible = sibling_is_noni
 	dodong.visible = not sibling_is_noni
@@ -89,13 +94,34 @@ func _process(delta: float) -> void:
 	time_left -= delta
 	time_bar.value = time_left
 
-	# Urgent shake on the label and buttons
-	var t = Time.get_ticks_msec() / 1000.0
-	var shake_x = sin(t * 35.0) * 8.0
-	var shake_y = cos(t * 27.0) * 8.0
+	# Horror intensity grows as time runs out
+	var panic: float = 1.0 - clamp(time_left / QTE_TIME, 0.0, 1.0)
+
+	# Dark overlay gets darker as time runs out
+	dark_overlay.color.a = lerpf(0.2, 0.85, panic)
+
+	# Blood tint washes over screen as panic increases
+	blood_overlay.color.a = lerpf(0.0, 0.35, panic * panic)
+
+	# Flickering light effect
+	flicker_timer += delta
+	if flicker_timer >= randf_range(0.05, 0.25):
+		flicker_timer = 0.0
+		flicker_overlay.color.a = randf_range(0.0, 0.4) if randf() > 0.7 else 0.0
+
+	# Screen shake intensifies as panic grows
+	shake_timer += delta
+	var shake_amount: float = 4.0 + (panic * 12.0)
+	var shake_x = sin(shake_timer * 30.0 + panic * 10.0) * shake_amount
+	var shake_y = cos(shake_timer * 23.0 + panic * 8.0) * shake_amount
 	prompt_label.position = _prompt_base_pos + Vector2(shake_x, shake_y)
-	sibling_button.position = _sibling_base_pos + Vector2(-shake_x, shake_y)
-	papa_button.position = _papa_base_pos + Vector2(shake_y, -shake_x)
+	sibling_button.position = _sibling_base_pos + Vector2(shake_x, shake_y)
+	papa_button.position = _papa_base_pos + Vector2(shake_y, shake_x)
+
+	# Time bar pulses red when critical
+	if panic > 0.7:
+		time_bar.modulate.a = 0.5 + 0.5 * sin(shake_timer * 20.0)
+		time_bar.modulate = Color(1.0, 0.2, 0.2, time_bar.modulate.a)
 
 	if time_left <= 0.0:
 		GameState.set_flag(&"flood_qte_timeout")

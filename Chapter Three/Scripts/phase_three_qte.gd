@@ -14,6 +14,23 @@ const SETTINGS := {
 	"easy":   {"targets": 8,  "shrink": 1.5, "size": 100.0, "time": 20.0},
 }
 
+# Shouting phrases to get rescuers' attention
+const SHOUT_PHRASES := [
+	"HELP US!",
+	"OVER HERE!",
+	"RESCUE US!",
+	"WE'RE IN HERE!",
+	"PLEASE HELP!",
+	"IS ANYONE THERE!",
+	"HURRY!",
+	"DON'T LEAVE US!",
+	"COME BACK!",
+	"WE NEED HELP!",
+]
+
+# Jumpscare pictures shown when a target is missed (assigned in Inspector)
+@export var jumpscare_textures: Array[Texture2D] = []
+
 # Tick this in the Inspector to test the scene alone with F6
 @export var auto_start := false
 
@@ -21,17 +38,24 @@ const SETTINGS := {
 @onready var time_label: Label = $TimerLabel
 @onready var progress_label: Label = $ProgressLabel
 @onready var time_limit: Timer = $TimeLimit
+@onready var shout_label: Label = $ShoutLabel
+@onready var jumpscare_image: TextureRect = $JumpscareImage
+@onready var flash_overlay: ColorRect = $FlashOverlay
 
 var cfg: Dictionary
 var hits := 0
 var finished := true   # stays idle until start() is called
+var shout_timer := 0.0
+var shout_interval := 2.5   # seconds between random shouts
+
 
 func _ready() -> void:
 	time_limit.one_shot = true
 	time_limit.timeout.connect(_on_time_limit)
 	GameHUD.hide_hud()
-	time_limit.one_shot = true
-	time_limit.timeout.connect(_on_time_limit)
+	shout_label.visible = false
+	jumpscare_image.visible = false
+	flash_overlay.color.a = 0.0
 
 
 # Counts how many of the signaling items the player owns
@@ -64,11 +88,21 @@ func start(difficulty: String = "") -> void:
 	time_limit.start()
 	_update_progress()
 	_spawn_target()
+	shout_timer = 0.0
+	_shout_random()
 
 
 func _process(_delta: float) -> void:
 	if not finished:
 		time_label.text = "%.1f" % time_limit.time_left
+
+		# Random shouting during the QTE
+		shout_timer += _delta
+		if shout_timer >= shout_interval:
+			shout_timer = 0.0
+			shout_interval = randf_range(1.5, 4.0)
+			_shout_random()
+
 
 func _spawn_target() -> void:
 	if finished:
@@ -91,6 +125,7 @@ func _spawn_target() -> void:
 	t.hit.connect(_on_target_hit)
 	t.missed.connect(_on_target_missed)
 
+
 func _on_target_hit() -> void:
 	hits += 1
 	_update_progress()
@@ -99,14 +134,55 @@ func _on_target_hit() -> void:
 	else:
 		_spawn_target()
 
+
 func _on_target_missed() -> void:
+	# Show jumpscare + flash when a target is missed
+	_show_jumpscare()
+	_shout_random()
 	_spawn_target()
+
+
+func _show_jumpscare() -> void:
+	if jumpscare_textures.is_empty():
+		return
+	# Pick a random jumpscare image
+	var jump_tex: Texture2D = jumpscare_textures.pick_random()
+	jumpscare_image.texture = jump_tex
+	jumpscare_image.visible = true
+
+	# White flash overlay
+	flash_overlay.color.a = 0.0
+	var flash_tween := create_tween()
+	flash_tween.tween_property(flash_overlay, "color:a", 0.8, 0.05)
+	flash_tween.tween_property(flash_overlay, "color:a", 0.0, 0.15)
+
+	# Jumpscare stays briefly then disappears
+	var jump_tween := create_tween()
+	jump_tween.tween_interval(0.35)
+	jump_tween.tween_callback(func(): jumpscare_image.visible = false)
+
+
+func _shout_random() -> void:
+	var phrase: String = SHOUT_PHRASES.pick_random()
+	shout_label.text = phrase
+	shout_label.visible = true
+	shout_label.modulate.a = 1.0
+
+	# Shake + fade out the shout label
+	var t := create_tween()
+	t.tween_property(shout_label, "position:x", shout_label.position.x + randf_range(-30, 30), 0.1)
+	t.tween_property(shout_label, "position:x", shout_label.position.x, 0.1)
+	t.tween_property(shout_label, "modulate:a", 0.0, 1.0)
+	t.tween_callback(func(): shout_label.visible = false)
+
 
 func _on_time_limit() -> void:
 	_end(false)
 
+
 func _update_progress() -> void:
 	progress_label.text = "%d / %d" % [hits, cfg["targets"]]
+
 
 func _end(won: bool) -> void:
 	if finished:
