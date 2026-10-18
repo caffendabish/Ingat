@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://rap2pepsrj2n"]
 
 [ext_resource type="Script" uid="uid://26lqgklhprpg" path="res://Chapter Two/Scripts/1st phase/Dialogue/parents_arguement.gd" id="1_50a5p"]
-[ext_resource type="Resource" uid="uid://cxbw7ake0l6px" path="res://Chapter Three/Dialogues/SafeEnd.dialogue" id="2_4jbpe"]
+[ext_resource type="Resource" uid="uid://cxbw7ake0l6px" path="res://Chapter Three/Dialogues/FINAL 2_SAFE Ending.dialogue" id="2_4jbpe"]
 [ext_resource type="Texture2D" uid="uid://ble3h0bp1cm8n" path="res://Redundant Assets/Character/AssetsDump/family_huddling2_wOllie.png" id="2_ewn50"]
 
 [node name="SafeEnd" type="Node2D" unique_id=1005730522]

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bvioif52ay7xl"
+path="res://.godot/imported/FINAL 1_ISOLATED Ending.dialogue-71136dfd7d8391647a666aaab82de2b8.tres"
+
+[deps]
+
+source_file="res://Chapter Three/Dialogues/FINAL 1_ISOLATED Ending.dialogue"
+dest_files=["res://.godot/imported/FINAL 1_ISOLATED Ending.dialogue-71136dfd7d8391647a666aaab82de2b8.tres"]
+
+[params]
+
+defaults=true

@@ -153,7 +153,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
 radius = 144.01389
 
-[node name="Node2D" type="Node2D" unique_id=142567288]
+[node name="Node2D4" type="Node2D" unique_id=142567288]
 script = ExtResource("1_yp26a")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1158420979]

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dj4qpbfymd7aj"]
 
 [ext_resource type="Script" uid="uid://26lqgklhprpg" path="res://Chapter Two/Scripts/1st phase/Dialogue/parents_arguement.gd" id="1_x318o"]
-[ext_resource type="Resource" uid="uid://dp6vlme28vse4" path="res://Chapter Three/Dialogues/SeperatedEnd.dialogue" id="2_ek3u1"]
+[ext_resource type="Resource" uid="uid://dp6vlme28vse4" path="res://Chapter Three/Dialogues/FINAL 3A_SEPARATED Ending_NONI SAVED.dialogue" id="2_ek3u1"]
 
 [node name="SeperatedEnd" type="Node2D" unique_id=1209199926]
 script = ExtResource("1_x318o")
