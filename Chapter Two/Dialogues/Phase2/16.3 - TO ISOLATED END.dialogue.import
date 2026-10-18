@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://djd23kumtgfuu"
+path="res://.godot/imported/16.3 - TO ISOLATED END.dialogue-5a0a1a299f44866da84a2ee33a826b4c.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase2/16.3 - TO ISOLATED END.dialogue"
+dest_files=["res://.godot/imported/16.3 - TO ISOLATED END.dialogue-5a0a1a299f44866da84a2ee33a826b4c.tres"]
+
+[params]
+
+defaults=true
