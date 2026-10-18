@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://caxd0408monkv"
+path="res://.godot/imported/17.4A - SCHOOL_PARTIAL_DODONG WASHED AWAY.dialogue-1f3e5eead1496b07bba360e4a7bbc446.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase3/17.4A - SCHOOL_PARTIAL_DODONG WASHED AWAY.dialogue"
+dest_files=["res://.godot/imported/17.4A - SCHOOL_PARTIAL_DODONG WASHED AWAY.dialogue-1f3e5eead1496b07bba360e4a7bbc446.tres"]
+
+[params]
+
+defaults=true

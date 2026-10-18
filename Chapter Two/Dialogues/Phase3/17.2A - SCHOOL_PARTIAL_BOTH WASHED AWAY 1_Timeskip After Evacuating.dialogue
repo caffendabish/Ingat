@@ -1,0 +1,110 @@
+~ start
+[speed=0.7]...Huh?[/speed]
+
+[speed=0.6]Oww... everything hurts...[/speed]
+
+[speed=0.9][wave amp=1 freq=2]...The water![/wave][/speed]
+
+OLLIE: [speed=0.8]Nanay?[/speed]
+
+OLLIE: [speed=0.8]Tatay?[/speed]
+
+OLLIE: [speed=0.9]Kuya Dodong? Noni? Ate Valerie? Kiki?[/speed]
+
+[speed=0.6]Where is everyone?[/speed]
+
+[speed=0.7]...[/speed]
+
+PILI: [speed=1.0][b]Oh, anak! You're awake![/b][/speed]
+
+OLLIE: [speed=1.2][shake rate=16 level=7][b]NANAY![/b][/shake][/speed]
+
+OLLIE: [speed=0.6][shake rate=10 level=5]I... I was so scared![/shake][/speed]
+
+PILI: [speed=0.7]Shhh... I'm here, anak. I'm right here.[/speed]
+
+OLLIE: [speed=0.6][shake rate=8 level=4]I thought... I thought I couldn't find you anymore...[/shake][/speed]
+
+PILI: [speed=0.8]It's okay. You're safe now.[/speed]
+
+OLLIE: [speed=0.8]Where's everyone else?[/speed]
+
+PILI: [speed=0.9]They're here, anak.[/speed]
+
+OLLIE: [speed=0.7]...Really?[/speed]
+
+OLLIE: [speed=0.7]...What about Tatay?[/speed]
+
+OLLIE: [speed=0.8]Where's Noni?[/speed]
+
+OLLIE: [speed=0.6][shake rate=7 level=3]Nanay?[/shake][/speed]
+
+OLLIE: [speed=0.7][shake rate=9 level=4]Where are they?[/shake][/speed]
+
+PILI: [speed=0.6]We're still looking for them, anak...[/speed]
+
+OLLIE: [speed=0.7]...Still looking?[/speed]
+
+OLLIE: [speed=1.0][shake rate=12 level=6]Maybe they're over there![/shake][/speed]
+
+PILI: [speed=1.0][b]Ollie, careful! You need to rest first![/b][/speed]
+
+OLLIE: [speed=1.1][shake rate=16 level=8][b]But I have to find them![/b][/shake][/speed]
+
+OLLIE: [speed=1.0][shake rate=14 level=7][b]Tatay was right there! And Noni too![/b][/shake][/speed]
+
+OLLIE: [speed=0.8][shake rate=20 level=8][b]I tried to grab them, Nanay! I really tried![/b][/shake][/speed]
+
+PILI: [speed=0.6]Oh, anak...[/speed]
+
+OLLIE: [speed=0.7][shake rate=10 level=5]The water took them away...[/shake][/speed]
+
+OLLIE: [speed=0.6][shake rate=9 level=4]I couldn't reach them...[/shake][/speed]
+
+OLLIE: [speed=0.8][shake rate=25 level=8][b]I'm sorry, Nay! I-I'm so sorry...I..[/b][/shake][/speed]
+
+PILI: [speed=0.8]It's not your fault, Ollie. You hear me? It's not your fault.[/speed]
+
+OLLIE: [speed=0.7][shake rate=8 level=4]But I was right there![/shake][/speed]
+
+OLLIE: [speed=0.6][shake rate=9 level=4]I was supposed to help them...I was so close...[/shake][/speed]
+
+VALERIE: [speed=0.7]Ollie...[/speed]
+
+KIKI: [speed=0.7]Uya![/speed]
+
+OLLIE: [speed=0.8]Ate...Kiki...Kuya...[/speed]
+
+OLLIE: [speed=0.7]Where's Noni? Isn't he with you?[/speed]
+
+DODONG: [speed=0.6]...We haven't found him yet, Ollie.[/speed]
+
+OLLIE: [speed=0.6]Oh...[/speed]
+
+[speed=0.6]He should be here...[/speed]
+
+[speed=0.6]He always follows Kuya everywhere...[/speed]
+
+[speed=0.6][shake rate=5 level=3]Maybe Noni's just lost...[/shake][/speed]
+
+[speed=0.6][shake rate=5 level=3]Maybe Tatay's looking for him...[/shake][/speed]
+
+[speed=0.7]Tatay always knows what to do...[/speed]
+
+OLLIE: [speed=0.7]They'll come back, right, Nanay?[/speed]
+
+OLLIE: [speed=0.5][shake rate=6 level=3]...Right?[/shake][/speed]
+
+OLLIE: [speed=0.6][shake rate=7 level=3]Nanay... Can we keep looking for them? Please?[/shake][/speed]
+
+PILI: [speed=0.8]We'll keep looking, anak.[/speed]
+
+[speed=0.6][shake rate=5 level=3]Tatay...[/shake][/speed]
+
+[speed=0.6][shake rate=5 level=3]Noni...[/shake][/speed]
+
+[speed=0.5][shake rate=4 level=2]We're here...[/shake][/speed]
+
+[speed=0.5][shake rate=6 level=3]Please come back...[/shake][/speed]
+
+=> END

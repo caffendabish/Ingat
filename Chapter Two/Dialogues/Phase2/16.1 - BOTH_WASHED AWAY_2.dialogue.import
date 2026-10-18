@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bnbs08gckgswt"
+path="res://.godot/imported/16.1 - BOTH_WASHED AWAY_2.dialogue-642a662edfadda1b66130d624e985be8.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase2/16.1 - BOTH_WASHED AWAY_2.dialogue"
+dest_files=["res://.godot/imported/16.1 - BOTH_WASHED AWAY_2.dialogue-642a662edfadda1b66130d624e985be8.tres"]
+
+[params]
+
+defaults=true

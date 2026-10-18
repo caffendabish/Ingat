@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://do0tdbqvrg57y"
+path="res://.godot/imported/16.2A - DODONG_WASHED AWAY.dialogue-5a007baa00419cfd7e5c49b8da87abeb.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase2/16.2A - DODONG_WASHED AWAY.dialogue"
+dest_files=["res://.godot/imported/16.2A - DODONG_WASHED AWAY.dialogue-5a007baa00419cfd7e5c49b8da87abeb.tres"]
+
+[params]
+
+defaults=true
