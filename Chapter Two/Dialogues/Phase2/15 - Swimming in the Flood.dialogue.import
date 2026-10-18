@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://vlx7d1vr75ev"
+path="res://.godot/imported/15 - Swimming in the Flood.dialogue-877bca306ee5258afea3d9bcee8ec213.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase2/15 - Swimming in the Flood.dialogue"
+dest_files=["res://.godot/imported/15 - Swimming in the Flood.dialogue-877bca306ee5258afea3d9bcee8ec213.tres"]
+
+[params]
+
+defaults=true

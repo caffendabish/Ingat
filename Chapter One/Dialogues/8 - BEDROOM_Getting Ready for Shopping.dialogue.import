@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cnew4nx16ra6m"
+path="res://.godot/imported/8 - BEDROOM_Getting Ready for Shopping.dialogue-13ce3ca5fbce816a78009c0fc5411ef9.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/8 - BEDROOM_Getting Ready for Shopping.dialogue"
+dest_files=["res://.godot/imported/8 - BEDROOM_Getting Ready for Shopping.dialogue-13ce3ca5fbce816a78009c0fc5411ef9.tres"]
+
+[params]
+
+defaults=true

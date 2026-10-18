@@ -1,0 +1,35 @@
+~ start
+[speed=0.6]There's no other choice...[/speed]
+
+OLLIE: [speed=1.2][shake rate=8 level=5][b]Climb, Noni! I've got you![/b][/shake][/speed]
+
+NONI: [speed=0.8][shake rate=5 level=3]I can't![/shake][/speed]
+
+OLLIE: [speed=1.1][shake rate=6 level=4][b]You can do it! Just reach out to me![/b][/shake][/speed]
+
+NONI: [speed=1.2][shake rate=8 level=5][b]Ow! Ollie, you're pulling too hard![/b][/shake][/speed]
+
+OLLIE: [speed=1.2][shake rate=7 level=4]I'm sorry! Just a little more![/shake][/speed]
+
+NONI: [speed=0.9][shake rate=20 level=9][b]AHH! MY ARM! MY ARM![/b][/shake][/speed]
+
+OLLIE: [speed=0.7][shake rate=10 level=6][b]Noni?![/b][/shake][/speed]
+
+NONI: [speed=0.7][shake rate=10 level=6][b]It hurts! Kuya, it hurts so much![/b][/shake][/speed]
+
+OLLIE: [speed=1.0][shake rate=9 level=5][b]I'm sorry! I'm sorry, Noni! I didn't mean to![/b][/shake][/speed]
+
+[speed=0.6][shake rate=4 level=3]Why does it look like that?[/shake][/speed]
+
+[speed=0.6][shake rate=5 level=3]I didn't mean to hurt him...[/shake][/speed]
+
+NONI: [speed=0.7][shake rate=5 level=3]...I'm up. It hurts so much.[/shake][/speed]
+
+[speed=0.6][shake rate=3 level=2]If I'd brought the rope... I could've pulled you up without hurting you.[/shake][/speed]
+
+[speed=0.6][shake rate=3 level=2]I should've brought it.[/shake][/speed]
+
+[speed=0.5][shake rate=4 level=3]I should've been more careful.[/shake][/speed]
+
+[speed=0.5][shake rate=6 level=4][b]It's my fault.[/b][/shake][/speed]
+=> END

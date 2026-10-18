@@ -1,0 +1,20 @@
+~ start
+OLLIE: [speed=0.7][shake rate=3 level=2]I know. I'm sorry. Just... hold on a little longer.[/shake][/speed]
+
+DODONG: [speed=0.7]Is it gonna be okay?[/speed]
+
+OLLIE: [speed=0.6][shake rate=2 level=1]...I think so.[/shake][/speed]
+
+DODONG: [speed=0.7][shake rate=3 level=2]It's wet... Ollie, why won't it stop?[/shake][/speed]
+
+OLLIE: [speed=0.9][b]Don't look at it. Look at me.[/b][/speed]
+
+DODONG: [speed=0.6][shake rate=3 level=2]I'm cold.[/shake][/speed]
+
+OLLIE: [speed=0.6][shake rate=4 level=3]I know. I'm sorry. I'm sorry.[/shake][/speed]
+
+[speed=0.6][shake rate=3 level=2]I should have brought something. Anything.[/shake][/speed]
+
+[speed=0.5][shake rate=6 level=4][b]It's my fault.[/b][/shake][/speed]
+
+=> END

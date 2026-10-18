@@ -29,7 +29,7 @@ animations = [{
 [node name="SafeScene" type="Node2D" unique_id=1579987229]
 script = ExtResource("1_qdhb5")
 dialogue = ExtResource("2_rbekg")
-next_scene = "uid://bie87ho6rohej"
+next_scene = "uid://dm0vrgq243weu"
 
 [node name="Dim" type="ColorRect" parent="." unique_id=235143248]
 offset_right = 1921.0

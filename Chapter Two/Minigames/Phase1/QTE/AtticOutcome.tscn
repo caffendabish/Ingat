@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://by5neced4ijpd"]
+
+[ext_resource type="Script" uid="uid://bg6hpj3q52ty5" path="res://Chapter Two/Minigames/Phase1/QTE/attic.gd" id="1_1uqy3"]
+[ext_resource type="Texture2D" uid="uid://b8ntthwskqphh" path="res://Chapter Two/Assets/ATTIC/CEILING_BG.png" id="1_tj8js"]
+[ext_resource type="Resource" uid="uid://bkf11u8pcmfm4" path="res://Chapter Two/Dialogues/Phase1/14.1 - ATTIC_Outcome.dialogue" id="2_dojr1"]
+
+[node name="AtticOutcome" type="Node2D" unique_id=679539272]
+script = ExtResource("1_1uqy3")
+dialogue = ExtResource("2_dojr1")
+next_scene = "uid://bie87ho6rohej"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=116030963]
+offset_left = -942.0
+offset_top = -8.0
+offset_right = 3506.0
+offset_bottom = 1072.0
+texture = ExtResource("1_tj8js")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2062937308]
+offset_right = 1924.0
+offset_bottom = 1082.0
+color = Color(0.21568628, 0.34509805, 0.36078432, 0.54901963)

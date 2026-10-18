@@ -8,12 +8,18 @@
 [ext_resource type="Resource" uid="uid://dyb7helegyaib" path="res://Redundant Assets/Inventory/items/plastic.tres" id="5_xji8x"]
 [ext_resource type="Resource" uid="uid://b12s2l4l3g2n8" path="res://Redundant Assets/Inventory/items/whistle.tres" id="6_nckhb"]
 [ext_resource type="Resource" uid="uid://bj1p7wxium5ln" path="res://Redundant Assets/Inventory/items/sanitary.tres" id="7_gr35w"]
-[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="8_nckhb"]
 [ext_resource type="Texture2D" uid="uid://b5oem10thp2ff" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_LEFT.png" id="9_gr35w"]
 [ext_resource type="Texture2D" uid="uid://t73g7iob1xru" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_DOWN.png" id="11_3ub43"]
+[ext_resource type="PackedScene" uid="uid://de6lwiimhbfb4" path="res://Redundant Assets/Character/OllieRun.tscn" id="11_stra1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
 radius = 106.320274
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(3894, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_stra1"]
+size = Vector2(830, 672)
 
 [node name="Dining" type="Node2D" unique_id=1955163007 groups=["player"]]
 script = ExtResource("1_stra1")
@@ -52,7 +58,7 @@ item = ExtResource("7_gr35w")
 display_size = 100.0
 
 [node name="To Kitchen" type="Area2D" parent="." unique_id=1907965009]
-position = Vector2(382, 764)
+position = Vector2(495, 841)
 
 [node name="Sprite2D" type="Sprite2D" parent="To Kitchen" unique_id=185256978]
 scale = Vector2(0.40497553, 0.40497553)
@@ -71,9 +77,19 @@ texture = ExtResource("11_3ub43")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sala" unique_id=949081467]
 shape = SubResource("CircleShape2D_g4v7s")
 
-[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("8_nckhb")]
+[node name="Olliee2" parent="." unique_id=530691139 instance=ExtResource("11_stra1")]
 position = Vector2(2062, 801)
 scale = Vector2(0.6085651, 0.6085651)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1504619214]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1681338846]
+position = Vector2(2477, 659)
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=885728512]
+position = Vector2(4021, 942)
+shape = SubResource("RectangleShape2D_stra1")
 
 [connection signal="body_entered" from="To Kitchen" to="." method="_on_to_kitchen_body_entered"]
 [connection signal="body_entered" from="Sala" to="." method="_on_sala_body_entered"]

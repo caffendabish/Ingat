@@ -1,0 +1,24 @@
+~ start
+DODONG: [speed=0.9][shake rate=5 level=3]Ow![/shake][/speed]
+
+OLLIE: [speed=0.9][shake rate=3 level=2]Sorry, Kuya! Almost done![/shake][/speed]
+
+OLLIE: [speed=0.9]There. Is it still hurting?[/speed]
+
+DODONG: [speed=0.8]It doesn't hurt as much now.[/speed]
+
+OLLIE: [speed=1.0][wave amp=1.2 freq=2]See? You're tougher than you think.[/wave][/speed]
+
+DODONG: [speed=0.7]...I still want my Game Boy back.[/speed]
+
+[speed=0.6]He's still thinking about it...[/speed]
+
+[speed=0.6]I wish I could get it back for him.[/speed]
+
+[speed=0.6][shake rate=3 level=2]But I can't even make the flood stop.[/shake][/speed]
+
+OLLIE: [speed=0.6][shake rate=4 level=3]...I'm sorry, Kuya.[/shake][/speed]
+
+[speed=0.5][shake rate=5 level=3][b]Please let us be okay...[/b][/shake][/speed]
+
+=> END

@@ -3,10 +3,10 @@
 [ext_resource type="Script" uid="uid://doc44eigfgnji" path="res://Chapter One/Scripts/Explore/TriggersforScene/School/classroomaft.gd" id="1_t17np"]
 [ext_resource type="Texture2D" uid="uid://c1b3b3m1yskft" path="res://Chapter One/Assets/PlaceholderDump/School/school_classroom.png" id="2_coonx"]
 [ext_resource type="Texture2D" uid="uid://cntc0c0wxhq3" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM/MAINCLASSROOM.png" id="3_8col5"]
-[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="3_ajw6v"]
 [ext_resource type="Texture2D" uid="uid://c8ldpr6dmfult" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM/CHAIR1.png" id="4_5o84h"]
 [ext_resource type="Texture2D" uid="uid://t73g7iob1xru" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_DOWN.png" id="4_mm87n"]
 [ext_resource type="Texture2D" uid="uid://djw6fsxqibfe2" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM/CHAIR2.png" id="5_nnxry"]
+[ext_resource type="PackedScene" uid="uid://crijlp60vst75" path="res://Redundant Assets/Character/OllieUni.tscn" id="7_8col5"]
 [ext_resource type="Texture2D" uid="uid://bl42yghcbb6s8" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM/CHAIR3.png" id="8_sqiry"]
 [ext_resource type="Texture2D" uid="uid://cavnlvltcxpe3" path="res://Chapter One/Assets/Finalize/SCHOOL/RIGHT_VENDOR/OVERLAY_NOON.png" id="9_8col5"]
 
@@ -159,7 +159,7 @@ texture = ExtResource("4_mm87n")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HallwayaFT" unique_id=210374526]
 shape = SubResource("CircleShape2D_fo7ib")
 
-[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("3_ajw6v")]
+[node name="Olliee2" parent="." unique_id=530691139 instance=ExtResource("7_8col5")]
 position = Vector2(1634, 742)
 scale = Vector2(0.99999994, 0.99999994)
 

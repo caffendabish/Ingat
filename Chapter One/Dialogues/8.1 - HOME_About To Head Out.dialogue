@@ -1,0 +1,24 @@
+~ start
+PILI: [speed=1.0]There you are, anak. Tie your shoes quickly. We should head to the supermarket while it's still early and the stores aren't too crowded.[/speed]
+
+OLLIE: [speed=1.0]Where are Tatay and Kuya Dodong? And Noni?[/speed]
+
+VALERIE: [speed=1.0]They went to the fields early this morning, Ollie. Tatay said they needed to check the ropes on the tarpaulin roofs after last night's wind. They're staying behind to finish securing the copra beds.[/speed]
+
+PILI: [speed=0.9]I hope your Tatay and Kuya Dodong are doing alright at the farm. And Noni... I still can't believe he insisted on staying with them instead of coming with us. You know how tiring it is to tie down those heavy tarpaulins.[/speed]
+
+PILI: [speed=1.0]We should buy some extra snacks for them. They'll be hungry by the time they finish.[/speed]
+
+VALERIE: [speed=1.0]You know how Noni is, Nay. He wants to follow Dodong everywhere.[/speed]
+
+PILI: [speed=0.9]I know, anak. I just hope they don't push themselves too hard.[/speed]
+
+VALERIE: [speed=1.0]Don't worry, Nay. I'm sure they'll be fine. Come on, Ollie, carry the big eco-bag for us. We still need to find the ingredients for your birthday cake tomorrow![/speed]
+
+KIKI: [speed=1.0][wave amp=2 freq=3]Cake! Go out! Vroom-vroom! Tricycle![/wave][/speed]
+
+PILI: [speed=1.0]Alright, alright! Let's get going. Valerie, hold your sister's hand, please. And Ollie, stay close to us, okay?[/speed]
+
+OLLIE: [speed=1.0]Okay, Nanay![/speed]
+
+=> END

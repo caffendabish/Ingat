@@ -4,13 +4,74 @@
 [ext_resource type="Texture2D" uid="uid://6frlq5ww5j50" path="res://Chapter One/Assets/Finalize/HOUSE/KITCHEN/KITCHEN.png" id="1_ves6a"]
 [ext_resource type="Script" uid="uid://dx4726065bv37" path="res://Redundant Assets/Character/Scripts/TalkableArea.gd" id="2_4dlqq"]
 [ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_ves6a"]
-[ext_resource type="Resource" uid="uid://c72tfpke74ftn" path="res://Chapter One/Dialogues/Pili.dialogue" id="3_4dlqq"]
+[ext_resource type="Resource" uid="uid://c72tfpke74ftn" path="res://Chapter One/Dialogues/5.1 - NPC_Pili.dialogue" id="3_4dlqq"]
 [ext_resource type="Texture2D" uid="uid://d1d6wwj4o5mal" path="res://Chapter One/Assets/Finalize/HOUSE/KITCHEN/KITCHEN_FG.png" id="3_qxprx"]
+[ext_resource type="Resource" uid="uid://7h5exijnjpm" path="res://Chapter One/Dialogues/5.1 - NPC_Noni.dialogue" id="4_a4v2t"]
 [ext_resource type="Texture2D" uid="uid://cgefj64mgvkjo" path="res://Redundant Assets/Character/AssetsDump/PiliSpritesheet.png" id="4_mvpr5"]
 [ext_resource type="Texture2D" uid="uid://ljyov55d5kow" path="res://Chapter One/Assets/Finalize/HOUSE/KITCHEN/KITCHEN_LIGHT_OVERLAY.png" id="4_qxprx"]
-[ext_resource type="Resource" uid="uid://cg4m3e00wo2x4" path="res://Chapter One/Dialogues/Kiki.dialogue" id="5_mvpr5"]
-[ext_resource type="Texture2D" uid="uid://d2w5dtlo0ipc7" path="res://Redundant Assets/Character/AssetsDump/KikiSpritesheet.png" id="5_su2ye"]
+[ext_resource type="Texture2D" uid="uid://xy7p3fnwoxvf" path="res://Redundant Assets/Character/AssetsDump/NoniSpritesheet.png" id="5_o0mks"]
 [ext_resource type="Texture2D" uid="uid://cv3nkfeb17avg" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_RIGHT.png" id="10_6jbxb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fgu8u"]
+atlas = ExtResource("5_o0mks")
+region = Rect2(0, 0, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nkg7s"]
+atlas = ExtResource("5_o0mks")
+region = Rect2(1440, 0, 1440, 1640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nqmfq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fgu8u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nkg7s")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tquus"]
+size = Vector2(948.5, 1212.9785)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3jtdj"]
+atlas = ExtResource("5_o0mks")
+region = Rect2(0, 0, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wbjvu"]
+atlas = ExtResource("5_o0mks")
+region = Rect2(1440, 0, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mthup"]
+atlas = ExtResource("5_o0mks")
+region = Rect2(1440, 1640, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0f8xf"]
+atlas = ExtResource("5_o0mks")
+region = Rect2(0, 1640, 1440, 1640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tsscx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3jtdj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wbjvu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mthup")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0f8xf")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 2.0
+}]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6jbxb"]
 atlas = ExtResource("4_mvpr5")
@@ -59,52 +120,14 @@ animations = [{
 "speed": 2.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mvpr5"]
-atlas = ExtResource("5_su2ye")
-region = Rect2(0, 0, 1440, 1640)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_o0mks"]
-atlas = ExtResource("5_su2ye")
-region = Rect2(1440, 0, 1440, 1640)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_nqmfq"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mvpr5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_o0mks")
-}],
-"loop": 1,
-"name": &"default",
-"speed": 2.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tquus"]
-atlas = ExtResource("5_su2ye")
-region = Rect2(0, 0, 1440, 1640)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tsscx"]
-atlas = ExtResource("5_su2ye")
-region = Rect2(1440, 0, 1440, 1640)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_gali2"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tquus")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tsscx")
-}],
-"loop": 1,
-"name": &"default",
-"speed": 2.0
-}]
-
 [sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
 radius = 174.26991
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(3145, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a4v2t"]
+size = Vector2(805.7693, 32)
 
 [node name="Node2D" type="Node2D" unique_id=1254470183]
 script = ExtResource("1_a4v2t")
@@ -115,6 +138,42 @@ offset_top = -17.0
 offset_right = 4431.495
 offset_bottom = 1089.0
 texture = ExtResource("1_ves6a")
+
+[node name="Noni" type="Area2D" parent="." unique_id=1907952078 node_paths=PackedStringArray("overlay")]
+position = Vector2(1996.0001, 738)
+scale = Vector2(0.16566469, 0.16821338)
+script = ExtResource("2_4dlqq")
+dialogue_resource = ExtResource("4_a4v2t")
+overlay = NodePath("DialogueOverlay")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Noni" unique_id=949189554]
+position = Vector2(1334.0198, -850.1111)
+scale = Vector2(1.4291728, 1.4291728)
+sprite_frames = SubResource("SpriteFrames_nqmfq")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Noni" unique_id=1976394966]
+position = Vector2(1444.3779, -738.81396)
+shape = SubResource("RectangleShape2D_tquus")
+
+[node name="DialogueOverlay" type="CanvasLayer" parent="Noni" unique_id=1443033804]
+layer = 5
+visible = false
+
+[node name="Blur" type="ColorRect" parent="Noni/DialogueOverlay" unique_id=374767129]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.17266177, 0.3701843, 0.31223854, 0.67058825)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Noni/DialogueOverlay" unique_id=212954415]
+position = Vector2(1574.0001, 715.00006)
+scale = Vector2(0.49251258, 0.49251258)
+sprite_frames = SubResource("SpriteFrames_tsscx")
+autoplay = "default"
 
 [node name="Pili" type="Area2D" parent="." unique_id=152302733 node_paths=PackedStringArray("overlay")]
 position = Vector2(1636.0001, 661)
@@ -156,45 +215,6 @@ sprite_frames = SubResource("SpriteFrames_8i7oa")
 autoplay = "default"
 frame_progress = 0.0007950501
 
-[node name="Kiki" type="Area2D" parent="." unique_id=1753864125 node_paths=PackedStringArray("overlay")]
-position = Vector2(657.0001, 560)
-scale = Vector2(0.16566469, 0.16821338)
-script = ExtResource("2_4dlqq")
-dialogue_resource = ExtResource("5_mvpr5")
-overlay = NodePath("DialogueOverlay")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Kiki" unique_id=1991140306]
-position = Vector2(241.45068, -326.96582)
-scale = Vector2(1.4206094, 1.4206094)
-sprite_frames = SubResource("SpriteFrames_nqmfq")
-autoplay = "default"
-frame_progress = 0.30410647
-flip_h = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Kiki" unique_id=255984029]
-position = Vector2(307.84998, -303.1864)
-shape = SubResource("RectangleShape2D_nqmfq")
-
-[node name="DialogueOverlay" type="CanvasLayer" parent="Kiki" unique_id=334435904]
-layer = 5
-visible = false
-
-[node name="Blur" type="ColorRect" parent="Kiki/DialogueOverlay" unique_id=361045214]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-color = Color(0.17266177, 0.3701843, 0.31223854, 0.67058825)
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Kiki/DialogueOverlay" unique_id=65393415]
-position = Vector2(1562, 683)
-scale = Vector2(0.52465713, 0.524657)
-sprite_frames = SubResource("SpriteFrames_gali2")
-autoplay = "default"
-frame_progress = 0.12241581
-
 [node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("2_ves6a")]
 position = Vector2(2904, 744)
 
@@ -203,9 +223,12 @@ position = Vector2(3331.0002, 643)
 scale = Vector2(0.5346022, 0.639903)
 
 [node name="Sprite2D" type="Sprite2D" parent="Dining" unique_id=1965908845]
+position = Vector2(-57.57364, 55.57895)
+scale = Vector2(0.8186657, 0.81866574)
 texture = ExtResource("10_6jbxb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Dining" unique_id=570758662]
+position = Vector2(-67.34024, 70.32315)
 shape = SubResource("CircleShape2D_g4v7s")
 
 [node name="TextureRect2" type="TextureRect" parent="." unique_id=1371549104]
@@ -227,5 +250,16 @@ offset_top = -17.0
 offset_right = 4437.0
 offset_bottom = 1089.0
 texture = ExtResource("4_qxprx")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1303174396]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=760313798]
+position = Vector2(1559.5, 523)
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1360901345]
+position = Vector2(1135, 807.9999)
+rotation = -0.9339039
+shape = SubResource("RectangleShape2D_a4v2t")
 
 [connection signal="body_entered" from="Dining" to="." method="_on_dining_body_entered"]

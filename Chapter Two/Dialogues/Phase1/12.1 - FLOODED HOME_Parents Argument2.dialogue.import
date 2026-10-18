@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bh2i5a2ep887u"
+path="res://.godot/imported/12.1 - FLOODED HOME_Parents Argument2.dialogue-349fbc4203811d512bc2c11744a4d739.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase1/12.1 - FLOODED HOME_Parents Argument2.dialogue"
+dest_files=["res://.godot/imported/12.1 - FLOODED HOME_Parents Argument2.dialogue-349fbc4203811d512bc2c11744a4d739.tres"]
+
+[params]
+
+defaults=true

@@ -8,11 +8,11 @@
 radius = 36.951775
 height = 156.49269
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_7hli4"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_syl4n"]
 atlas = ExtResource("2_syl4n")
 region = Rect2(0, 0, 1440, 1640)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_rlrqb"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_yc561"]
 atlas = ExtResource("2_syl4n")
 region = Rect2(1440, 0, 1440, 1640)
 
@@ -115,11 +115,11 @@ region = Rect2(4320, 1640, 1440, 1640)
 [sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
 animations = [{
 "frames": [{
-"duration": 5.0,
-"texture": SubResource("AtlasTexture_7hli4")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_syl4n")
 }, {
-"duration": 2.5,
-"texture": SubResource("AtlasTexture_rlrqb")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yc561")
 }],
 "loop": 1,
 "name": &"idle",
@@ -230,7 +230,7 @@ scale = Vector2(1.4072394, 1.111873)
 shape = SubResource("CapsuleShape2D_g4v7s")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=463480755]
-position = Vector2(-2, -1.0000001)
+position = Vector2(2, 29)
 scale = Vector2(0.23090278, 0.23090278)
 sprite_frames = SubResource("SpriteFrames_g4v7s")
 animation = &"idle"

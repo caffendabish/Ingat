@@ -2,13 +2,14 @@
 
 [ext_resource type="Script" uid="uid://dy7xn8lg78oh3" path="res://Chapter Two/Minigames/Phase1/QTE/safe_noni.gd" id="1_67p4h"]
 [ext_resource type="Texture2D" uid="uid://fd4qyjs3jiyj" path="res://Redundant Assets/Character/AssetsDump/INGAT_SpritesZ_Phase1_OlliePullingUpNoni.png" id="1_pyuma"]
-[ext_resource type="Resource" uid="uid://bo73bign716ag" path="res://Chapter Two/Dialogues/Phase1/safenoni.dialogue" id="2_tf4dv"]
+[ext_resource type="Resource" uid="uid://bo73bign716ag" path="res://Chapter Two/Dialogues/Phase1/13.2.2B - SAFE_Noni.dialogue" id="2_tf4dv"]
+[ext_resource type="Texture2D" uid="uid://cu6r6lm7gafnm" path="res://Chapter Two/Assets/ROOF/ROOF.png" id="3_hvb4c"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_tf4dv"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_hvb4c"]
 atlas = ExtResource("1_pyuma")
 region = Rect2(0, 0, 1000, 1200)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_hvb4c"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_q07ty"]
 atlas = ExtResource("1_pyuma")
 region = Rect2(1000, 0, 1000, 1200)
 
@@ -16,10 +17,10 @@ region = Rect2(1000, 0, 1000, 1200)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_tf4dv")
+"texture": SubResource("AtlasTexture_hvb4c")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_hvb4c")
+"texture": SubResource("AtlasTexture_q07ty")
 }],
 "loop": 1,
 "name": &"default",
@@ -29,16 +30,21 @@ animations = [{
 [node name="SafeNoni" type="Node2D" unique_id=113837115]
 script = ExtResource("1_67p4h")
 dialogue = ExtResource("2_tf4dv")
-next_scene = "uid://bie87ho6rohej"
+next_scene = "uid://txg3rxjhp2cx"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=482239782]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_hvb4c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1532336628]
+position = Vector2(865.99994, 834)
+scale = Vector2(0.9315, 0.86541665)
+sprite_frames = SubResource("SpriteFrames_67p4h")
+autoplay = "default"
+frame_progress = 0.41611916
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=889607409]
 offset_right = 1924.0
 offset_bottom = 1082.0
-color = Color(0, 0, 0, 1)
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1532336628]
-position = Vector2(879.99994, 593)
-scale = Vector2(0.9315, 0.86541665)
-sprite_frames = SubResource("SpriteFrames_67p4h")
-autoplay = "default"
-frame_progress = 0.8237857
+color = Color(0.41568628, 0.34901962, 0.30588236, 0.5686275)

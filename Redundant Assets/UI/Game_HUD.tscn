@@ -22,32 +22,35 @@ script = ExtResource("1_sinpm")
 meter_frames = Array[Texture2D]([ExtResource("2_f2pah"), ExtResource("3_yda8a"), ExtResource("4_o6rve"), ExtResource("5_sjvc3"), ExtResource("6_cfjw0"), ExtResource("7_hlxov"), ExtResource("8_khm2n"), ExtResource("9_l5e6q"), ExtResource("10_8ed8g"), ExtResource("11_u04c2")])
 
 [node name="InsanityBar" type="TextureRect" parent="." unique_id=717233087]
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -960.0
-offset_top = 32.0
-offset_right = -60.0
-offset_bottom = 182.0
-grow_horizontal = 0
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -450.0
+offset_right = 450.0
+offset_bottom = 150.0
+grow_horizontal = 2
 texture = ExtResource("2_f2pah")
 expand_mode = 1
 
 [node name="BagButton" type="Button" parent="." unique_id=10744906]
-offset_left = 56.0
-offset_top = 840.0
-offset_right = 263.0
-offset_bottom = 1061.0
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -245.0
+offset_top = 32.0
+offset_right = -38.0
+offset_bottom = 253.0
+grow_horizontal = 0
 action_mode = 0
 icon = ExtResource("12_o6rve")
 flat = true
 expand_icon = true
 
 [node name="QuestButton" type="Button" parent="." unique_id=1736207004]
-offset_left = 64.0
-offset_top = 64.0
-offset_right = 256.0
-offset_bottom = 256.0
+offset_left = 70.0
+offset_top = 49.0
+offset_right = 262.0
+offset_bottom = 241.0
 icon = ExtResource("4_1rtnh")
 flat = true
 expand_icon = true

@@ -6,4 +6,4 @@ func _on_kitchen_body_entered(body: Node2D) -> void:
 
 
 func _on_bedroom_body_entered(body: Node2D) -> void:
-	get_tree().change_scene_to_file("res://Chapter One/Explorations/House/bedroom.tscn")
+	get_tree().change_scene_to_file("res://Chapter One/Explorations/House/livingroom.tscn")

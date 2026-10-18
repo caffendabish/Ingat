@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cxieb566w11do"
+path="res://.godot/imported/9.3 - HOME_Parents Argument.dialogue-f0e354cac56d1eda279ef3cbd6dd87ef.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/9.3 - HOME_Parents Argument.dialogue"
+dest_files=["res://.godot/imported/9.3 - HOME_Parents Argument.dialogue-f0e354cac56d1eda279ef3cbd6dd87ef.tres"]
+
+[params]
+
+defaults=true

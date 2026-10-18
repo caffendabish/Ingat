@@ -1,0 +1,13 @@
+~ start
+NONI: It's too high! I can't reach the ledge!
+
+OLLIE: I'll lift you. Hold on to me.
+
+if Inventory.has_item("rope")
+	OLLIE: [speed=0.9][wave amp=1.2 freq=2]The rope. Good thing I grabbed it.[/wave][/speed]
+	OLLIE: [speed=0.9][shake rate=3 level=2]Tie it around your waist. I won't let you fall.[/shake][/speed]
+else
+	OLLIE: [speed=0.7][shake rate=3 level=2]No rope... I never thought to bring one...[/shake][/speed]
+	OLLIE: [speed=0.8][shake rate=4 level=2]Okay... I'll pull you up myself.[/shake][/speed]
+
+=> END

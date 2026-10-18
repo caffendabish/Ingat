@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://c1a4umwpay1ph"
+path="res://.godot/imported/Dump5_OtherNightmare.dialogue-6913999ba0ade9dc9a012e888955961a.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/Dump5_OtherNightmare.dialogue"
+dest_files=["res://.godot/imported/Dump5_OtherNightmare.dialogue-6913999ba0ade9dc9a012e888955961a.tres"]
+
+[params]
+
+defaults=true

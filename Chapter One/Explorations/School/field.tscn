@@ -1,14 +1,11 @@
 [gd_scene format=3 uid="uid://c3vxih7jlr33n"]
 
 [ext_resource type="Script" uid="uid://cubixaa0d386n" path="res://Chapter One/Scripts/Explore/TriggersforScene/School/field.gd" id="1_8r46j"]
-[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_2opoc"]
 [ext_resource type="Texture2D" uid="uid://dn0hn13rcgn4q" path="res://Chapter One/Assets/Finalize/SCHOOL/Near_Gate_DAY.png" id="2_padx7"]
 [ext_resource type="Texture2D" uid="uid://cv3nkfeb17avg" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_RIGHT.png" id="3_7ghbl"]
 [ext_resource type="Texture2D" uid="uid://cnm5rfb0ou2i1" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_UP.png" id="4_8r46j"]
-[ext_resource type="Script" uid="uid://dx4726065bv37" path="res://Redundant Assets/Character/Scripts/TalkableArea.gd" id="5_iytf3"]
-[ext_resource type="Resource" uid="uid://ui603ygtrrw8" path="res://Chapter One/Dialogues/NPCRitchie.dialogue" id="6_1a6v6"]
+[ext_resource type="PackedScene" uid="uid://crijlp60vst75" path="res://Redundant Assets/Character/OllieUni.tscn" id="5_padx7"]
 [ext_resource type="Texture2D" uid="uid://dwsnojum8vnqi" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM HALLWAY/HALL_OVERLAY_DAY.png" id="6_3d1va"]
-[ext_resource type="Texture2D" uid="uid://bvwpwr3beuqxf" path="res://Redundant Assets/Character/AssetsDump/INGAT_RitchieNormal.png" id="6_qdyl1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_padx7"]
 size = Vector2(4431, 20)
@@ -34,57 +31,11 @@ size = Vector2(141.5, 148.5)
 [sub_resource type="CircleShape2D" id="CircleShape2D_yf5fn"]
 radius = 215.67656
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1a6v6"]
-atlas = ExtResource("6_qdyl1")
-region = Rect2(0, 0, 1440, 1640)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ix03l"]
-atlas = ExtResource("6_qdyl1")
-region = Rect2(1440, 0, 1440, 1640)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1a6v6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ix03l")
-}],
-"loop": 1,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yf5fn"]
-size = Vector2(531, 639)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mt5xg"]
-atlas = ExtResource("6_qdyl1")
-region = Rect2(0, 0, 1440, 1640)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_aflyb"]
-atlas = ExtResource("6_qdyl1")
-region = Rect2(1440, 0, 1440, 1640)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_yf5fn"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mt5xg")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_aflyb")
-}],
-"loop": 1,
-"name": &"default",
-"speed": 5.0
-}]
-
 [node name="Field" type="Node2D" unique_id=44134083]
 script = ExtResource("1_8r46j")
 
 [node name="World Borda" type="StaticBody2D" parent="." unique_id=1322077435]
+visible = false
 disable_mode = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="World Borda" unique_id=1846262230]
@@ -164,46 +115,9 @@ scale = Vector2(0.16844642, 0.16105989)
 shape = SubResource("CircleShape2D_yf5fn")
 debug_color = Color(0.52242863, 0.28501797, 0.21521541, 0.41960785)
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1212618621 node_paths=PackedStringArray("overlay")]
-position = Vector2(2295, 900)
-scale = Vector2(0.17862369, 0.18137175)
-script = ExtResource("5_iytf3")
-dialogue_resource = ExtResource("6_1a6v6")
-overlay = NodePath("DialogueOverlay")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D" unique_id=1479690200]
-sprite_frames = SubResource("SpriteFrames_g4v7s")
-autoplay = "default"
-flip_h = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=416828099]
-position = Vector2(-40, 71)
-shape = SubResource("RectangleShape2D_yf5fn")
-
-[node name="DialogueOverlay" type="CanvasLayer" parent="Area2D" unique_id=1596083303]
-unique_name_in_owner = true
-layer = 5
-visible = false
-
-[node name="Blur" type="ColorRect" parent="Area2D/DialogueOverlay" unique_id=1771839143]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-color = Color(1.2985702, 2.4737813, 2.545006, 0.6392157)
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D/DialogueOverlay" unique_id=2106073657]
-position = Vector2(1574.0001, 715.00006)
-scale = Vector2(0.49251258, 0.49251258)
-sprite_frames = SubResource("SpriteFrames_yf5fn")
-autoplay = "default"
-frame_progress = 0.9447151
-
-[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("2_2opoc")]
-position = Vector2(2464, 951)
-scale = Vector2(0.5468013, 0.5468013)
+[node name="Olliee2" parent="." unique_id=530691139 instance=ExtResource("5_padx7")]
+position = Vector2(2458, 952)
+scale = Vector2(0.535, 0.535)
 
 [node name="TextureRect2" type="TextureRect" parent="." unique_id=1810193030]
 offset_right = 4543.0

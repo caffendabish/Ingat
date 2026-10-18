@@ -5,15 +5,13 @@
 [ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_o1at6"]
 [ext_resource type="Texture2D" uid="uid://lylgoc3se3f5" path="res://Chapter One/Assets/Finalize/HOUSE/DINING/DINING_TABLE.png" id="2_vr6nj"]
 [ext_resource type="Texture2D" uid="uid://cndgxvdababxy" path="res://Chapter One/Assets/Finalize/HOUSE/BEDROOM/CHILDRENROON_LIGHTOVERLAY.png" id="4_vr6nj"]
-[ext_resource type="Resource" uid="uid://dwn54j1m02npw" path="res://Chapter One/Dialogues/Valerie.dialogue" id="5_36crv"]
+[ext_resource type="Resource" uid="uid://dwn54j1m02npw" path="res://Chapter One/Dialogues/5.1 - NPC_Valerie.dialogue" id="5_36crv"]
 [ext_resource type="Script" uid="uid://dx4726065bv37" path="res://Redundant Assets/Character/Scripts/TalkableArea.gd" id="5_qqjti"]
-[ext_resource type="Texture2D" uid="uid://xy7p3fnwoxvf" path="res://Redundant Assets/Character/AssetsDump/NoniSpritesheet.png" id="6_36crv"]
-[ext_resource type="Resource" uid="uid://7h5exijnjpm" path="res://Chapter One/Dialogues/Noni.dialogue" id="6_fgu8u"]
 [ext_resource type="Texture2D" uid="uid://che030dhmlh56" path="res://Redundant Assets/Character/AssetsDump/ValerieSpritesheet.png" id="7_fgu8u"]
-[ext_resource type="Resource" uid="uid://baiy6nhv7mnty" path="res://Chapter One/Dialogues/Ernesto.dialogue" id="8_3gb45"]
+[ext_resource type="Resource" uid="uid://baiy6nhv7mnty" path="res://Chapter One/Dialogues/5.1 - NPC_Ernesto.dialogue" id="8_3gb45"]
 [ext_resource type="Texture2D" uid="uid://g2mqg6tlyfb2" path="res://Redundant Assets/Character/AssetsDump/ErnestoSpritesheet.png" id="9_in002"]
+[ext_resource type="Texture2D" uid="uid://t73g7iob1xru" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_DOWN.png" id="10_nkg7s"]
 [ext_resource type="Texture2D" uid="uid://b5oem10thp2ff" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_LEFT.png" id="11_rop6n"]
-[ext_resource type="Texture2D" uid="uid://cv3nkfeb17avg" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_RIGHT.png" id="14_rop6n"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3gb45"]
 atlas = ExtResource("7_fgu8u")
@@ -62,64 +60,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_fgu8u"]
-atlas = ExtResource("6_36crv")
-region = Rect2(0, 0, 1440, 1640)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nkg7s"]
-atlas = ExtResource("6_36crv")
-region = Rect2(1440, 0, 1440, 1640)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_yp26a"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fgu8u")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nkg7s")
-}],
-"loop": 1,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3jtdj"]
-atlas = ExtResource("6_36crv")
-region = Rect2(0, 0, 1440, 1640)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wbjvu"]
-atlas = ExtResource("6_36crv")
-region = Rect2(1440, 0, 1440, 1640)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mthup"]
-atlas = ExtResource("6_36crv")
-region = Rect2(1440, 1640, 1440, 1640)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0f8xf"]
-atlas = ExtResource("6_36crv")
-region = Rect2(0, 1640, 1440, 1640)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_05bi5"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3jtdj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wbjvu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mthup")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0f8xf")
-}],
-"loop": 1,
-"name": &"default",
-"speed": 2.0
-}]
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_yp26a"]
 atlas = ExtResource("9_in002")
 region = Rect2(0, 0, 1440, 1640)
@@ -151,7 +91,10 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
-radius = 144.01389
+radius = 97.62172
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(3113, 20)
 
 [node name="Node2D" type="Node2D" unique_id=142567288]
 script = ExtResource("1_yp26a")
@@ -210,44 +153,8 @@ sprite_frames = SubResource("SpriteFrames_3jtdj")
 autoplay = "default"
 frame_progress = 0.39644137
 
-[node name="Noni" type="Area2D" parent="." unique_id=53806272 node_paths=PackedStringArray("overlay")]
-position = Vector2(848, 808.00006)
-scale = Vector2(0.16566469, 0.16821338)
-script = ExtResource("5_qqjti")
-dialogue_resource = ExtResource("6_fgu8u")
-overlay = NodePath("DialogueOverlay")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Noni" unique_id=1649642910]
-position = Vector2(1334.0198, -850.1111)
-scale = Vector2(1.4291728, 1.4291728)
-sprite_frames = SubResource("SpriteFrames_yp26a")
-autoplay = "default"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Noni" unique_id=1452029629]
-position = Vector2(1444.3779, -738.81396)
-shape = SubResource("RectangleShape2D_yp26a")
-
-[node name="DialogueOverlay" type="CanvasLayer" parent="Noni" unique_id=485375832]
-layer = 5
-visible = false
-
-[node name="Blur" type="ColorRect" parent="Noni/DialogueOverlay" unique_id=390472514]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-color = Color(0.17266177, 0.3701843, 0.31223854, 0.67058825)
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Noni/DialogueOverlay" unique_id=294749518]
-position = Vector2(1574.0001, 715.00006)
-scale = Vector2(0.49251258, 0.49251258)
-sprite_frames = SubResource("SpriteFrames_05bi5")
-autoplay = "default"
-
 [node name="Ernesto" type="Area2D" parent="." unique_id=198909233 node_paths=PackedStringArray("overlay")]
-position = Vector2(3304, 833)
+position = Vector2(3287, 713.00006)
 scale = Vector2(0.16566469, 0.16821338)
 script = ExtResource("5_qqjti")
 dialogue_resource = ExtResource("8_3gb45")
@@ -285,7 +192,7 @@ autoplay = "default"
 frame_progress = 0.68182373
 
 [node name="Kitchen" type="Area2D" parent="." unique_id=282699918]
-position = Vector2(364, 697)
+position = Vector2(504, 845)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Kitchen" unique_id=1063076759]
 shape = SubResource("CircleShape2D_g4v7s")
@@ -295,14 +202,16 @@ scale = Vector2(0.53596544, 0.53596544)
 texture = ExtResource("11_rop6n")
 
 [node name="Bedroom" type="Area2D" parent="." unique_id=299614543]
-position = Vector2(4010, 893)
+position = Vector2(3513, 916)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bedroom" unique_id=1874403927]
+position = Vector2(2, 89)
 shape = SubResource("CircleShape2D_g4v7s")
 
 [node name="Sprite2D" type="Sprite2D" parent="Bedroom" unique_id=410367944]
-scale = Vector2(0.53596544, 0.53596544)
-texture = ExtResource("14_rop6n")
+position = Vector2(4, 66)
+scale = Vector2(0.4014213, 0.4014213)
+texture = ExtResource("10_nkg7s")
 
 [node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("2_o1at6")]
 position = Vector2(3054, 813)
@@ -319,6 +228,12 @@ offset_top = -17.0
 offset_right = 4437.0
 offset_bottom = 1089.0
 texture = ExtResource("4_vr6nj")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1341071026]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1824237821]
+position = Vector2(2202, 671)
+shape = SubResource("RectangleShape2D_g4v7s")
 
 [connection signal="body_entered" from="Kitchen" to="." method="_on_kitchen_body_entered"]
 [connection signal="body_entered" from="Bedroom" to="." method="_on_bedroom_body_entered"]

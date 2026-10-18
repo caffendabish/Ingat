@@ -2,13 +2,13 @@
 
 [ext_resource type="Script" uid="uid://cum3c1bta7h2f" path="res://Chapter One/Scripts/Explore/TriggersforScene/School/classroom.gd" id="1_v8ebr"]
 [ext_resource type="Texture2D" uid="uid://cntc0c0wxhq3" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM/MAINCLASSROOM.png" id="2_d5stx"]
-[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_wcrft"]
 [ext_resource type="Texture2D" uid="uid://c8ldpr6dmfult" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM/CHAIR1.png" id="3_vksk6"]
 [ext_resource type="Texture2D" uid="uid://t73g7iob1xru" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_DOWN.png" id="4_d5stx"]
 [ext_resource type="Texture2D" uid="uid://djw6fsxqibfe2" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM/CHAIR2.png" id="4_rq82e"]
+[ext_resource type="PackedScene" uid="uid://crijlp60vst75" path="res://Redundant Assets/Character/OllieUni.tscn" id="6_6rx0t"]
 [ext_resource type="Script" uid="uid://dx4726065bv37" path="res://Redundant Assets/Character/Scripts/TalkableArea.gd" id="7_0d72b"]
 [ext_resource type="Texture2D" uid="uid://c7hp3josqlqvo" path="res://Redundant Assets/Character/AssetsDump/TeacherSpritesheet.png" id="7_vksk6"]
-[ext_resource type="Resource" uid="uid://cu185wcjpq4mj" path="res://Chapter One/Dialogues/SCENE 3.dialogue" id="8_0d72b"]
+[ext_resource type="Resource" uid="uid://cu185wcjpq4mj" path="res://Chapter One/Dialogues/2 -CLASSROOM_Maam Santos.dialogue" id="8_0d72b"]
 [ext_resource type="Texture2D" uid="uid://bl42yghcbb6s8" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM/CHAIR3.png" id="8_6rx0t"]
 [ext_resource type="Texture2D" uid="uid://dwsnojum8vnqi" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM HALLWAY/HALL_OVERLAY_DAY.png" id="9_0d72b"]
 
@@ -213,7 +213,7 @@ texture = ExtResource("4_d5stx")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hallway" unique_id=210374526]
 shape = SubResource("CircleShape2D_fo7ib")
 
-[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("2_wcrft")]
+[node name="Olliee2" parent="." unique_id=530691139 instance=ExtResource("6_6rx0t")]
 position = Vector2(1474.0001, 657)
 scale = Vector2(0.88273704, 0.88273704)
 

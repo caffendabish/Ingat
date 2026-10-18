@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://b4nxnawvbd75n"
+path="res://.godot/imported/9.2 - HOME_Brgy Interruption.dialogue-8302fdbd5e5d69eabe0a91a675ad462d.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/9.2 - HOME_Brgy Interruption.dialogue"
+dest_files=["res://.godot/imported/9.2 - HOME_Brgy Interruption.dialogue-8302fdbd5e5d69eabe0a91a675ad462d.tres"]
+
+[params]
+
+defaults=true

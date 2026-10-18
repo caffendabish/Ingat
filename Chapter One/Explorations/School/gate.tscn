@@ -2,14 +2,14 @@
 
 [ext_resource type="Script" uid="uid://u5y4dguyrsev" path="res://Chapter One/Scripts/Explore/TriggersforScene/School/gate.gd" id="1_ebcs8"]
 [ext_resource type="Texture2D" uid="uid://c85h0r7eqnj54" path="res://Chapter One/Assets/Finalize/SCHOOL/FRONT_GATE_DAY.png" id="2_81tku"]
-[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_t28x0"]
 [ext_resource type="Texture2D" uid="uid://b5oem10thp2ff" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_LEFT.png" id="4_hqvnr"]
 [ext_resource type="Texture2D" uid="uid://cv3nkfeb17avg" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_RIGHT.png" id="5_rbevu"]
 [ext_resource type="Script" uid="uid://cv4ptpbisdm24" path="res://Chapter One/Scripts/Dialogues/test.gd" id="6_rbevu"]
-[ext_resource type="Resource" uid="uid://dqebcyodwwtnp" path="res://Chapter One/Dialogues/SCENE 6.dialogue" id="6_vtsm0"]
-[ext_resource type="Texture2D" uid="uid://c2g8ephh62n3e" path="res://Redundant Assets/Character/AssetsDump/DodongSpritesheet.png" id="7_vtsm0"]
-[ext_resource type="Texture2D" uid="uid://xy7p3fnwoxvf" path="res://Redundant Assets/Character/AssetsDump/NoniSpritesheet.png" id="8_77tpg"]
-[ext_resource type="Texture2D" uid="uid://bk30yesmvo3ex" path="res://Redundant Assets/Character/PlaceholderDump/insanitymeter_notsane.png" id="9_bqnfx"]
+[ext_resource type="Resource" uid="uid://dqebcyodwwtnp" path="res://Chapter One/Dialogues/3.1 - OUTSIDE SCHOOL_Tatay Pick Up.dialogue" id="6_vtsm0"]
+[ext_resource type="Texture2D" uid="uid://4r8k8mw33bpb" path="res://Redundant Assets/Character/AssetsDump/INGAT_FamilySprites_DodongUniform.png" id="7_81tku"]
+[ext_resource type="Texture2D" uid="uid://btvanbl2mo4wg" path="res://Redundant Assets/Character/AssetsDump/INGAT_FamilySprites_NoniUniform.png" id="8_81tku"]
+[ext_resource type="Texture2D" uid="uid://g2mqg6tlyfb2" path="res://Redundant Assets/Character/AssetsDump/ErnestoSpritesheet.png" id="9_81tku"]
+[ext_resource type="PackedScene" uid="uid://crijlp60vst75" path="res://Redundant Assets/Character/OllieUni.tscn" id="10_vtsm0"]
 [ext_resource type="Texture2D" uid="uid://cavnlvltcxpe3" path="res://Chapter One/Assets/Finalize/SCHOOL/RIGHT_VENDOR/OVERLAY_NOON.png" id="11_vtsm0"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
@@ -18,62 +18,70 @@ radius = 71.021126
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_57qmd"]
 size = Vector2(353, 372)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_cqug6"]
-atlas = ExtResource("7_vtsm0")
+[sub_resource type="AtlasTexture" id="AtlasTexture_77tpg"]
+atlas = ExtResource("7_81tku")
 region = Rect2(0, 0, 1440, 1640)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mjq1h"]
-atlas = ExtResource("7_vtsm0")
+[sub_resource type="AtlasTexture" id="AtlasTexture_cqug6"]
+atlas = ExtResource("7_81tku")
 region = Rect2(1440, 0, 1440, 1640)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
 animations = [{
 "frames": [{
-"duration": 5.0,
-"texture": SubResource("AtlasTexture_cqug6")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_77tpg")
 }, {
-"duration": 5.0,
-"texture": SubResource("AtlasTexture_mjq1h")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cqug6")
 }],
 "loop": 1,
 "name": &"idle",
-"speed": 5.0
+"speed": 3.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_aakgf"]
-atlas = ExtResource("8_77tpg")
+[sub_resource type="AtlasTexture" id="AtlasTexture_vtsm0"]
+atlas = ExtResource("8_81tku")
 region = Rect2(0, 0, 1440, 1640)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_0pn6l"]
-atlas = ExtResource("8_77tpg")
+[sub_resource type="AtlasTexture" id="AtlasTexture_mjq1h"]
+atlas = ExtResource("8_81tku")
 region = Rect2(1440, 0, 1440, 1640)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bi4b0"]
-atlas = ExtResource("8_77tpg")
-region = Rect2(0, 1640, 1440, 1640)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6ujkh"]
-atlas = ExtResource("8_77tpg")
-region = Rect2(1440, 1640, 1440, 1640)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yf5fn"]
 animations = [{
 "frames": [{
-"duration": 5.0,
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vtsm0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mjq1h")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 3.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aakgf"]
+atlas = ExtResource("9_81tku")
+region = Rect2(0, 0, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0pn6l"]
+atlas = ExtResource("9_81tku")
+region = Rect2(1440, 0, 1440, 1640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_57qmd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_aakgf")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_0pn6l")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bi4b0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6ujkh")
 }],
 "loop": 1,
-"name": &"idle",
-"speed": 5.0
+"name": &"default",
+"speed": 3.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_81tku"]
@@ -140,7 +148,8 @@ position = Vector2(-5.865097e-05, 41.999992)
 scale = Vector2(0.26328117, 0.26328108)
 sprite_frames = SubResource("SpriteFrames_g4v7s")
 animation = &"idle"
-frame_progress = 0.41117722
+autoplay = "idle"
+frame_progress = 0.22003348
 
 [node name="Noni" type="CharacterBody2D" parent="Siblings" unique_id=1783074847]
 position = Vector2(45.000004, 91.00001)
@@ -152,12 +161,11 @@ scale = Vector2(0.22465286, 0.22465284)
 sprite_frames = SubResource("SpriteFrames_yf5fn")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.93266904
+frame_progress = 0.17572713
 
 [node name="DialogueOverlay" type="CanvasLayer" parent="Siblings" unique_id=1906331442]
 unique_name_in_owner = true
 layer = 5
-visible = false
 
 [node name="Blur" type="ColorRect" parent="Siblings/DialogueOverlay" unique_id=1506097206]
 anchors_preset = 15
@@ -168,24 +176,31 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0.9137255, 0.7137255, 0.59607846, 0.31764707)
 
-[node name="Portrait" type="TextureRect" parent="Siblings/DialogueOverlay" unique_id=1983131596]
-visible = false
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -308.0
-offset_top = -20.0
-offset_bottom = 288.0
-grow_horizontal = 0
-grow_vertical = 2
-mouse_filter = 2
-texture = ExtResource("9_bqnfx")
-expand_mode = 1
-stretch_mode = 5
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Siblings/DialogueOverlay/Blur" unique_id=930508674]
+position = Vector2(1713.135, 839.7112)
+scale = Vector2(0.3748125, 0.3760708)
+sprite_frames = SubResource("SpriteFrames_yf5fn")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.17572713
 
-[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("2_t28x0")]
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Siblings/DialogueOverlay/Blur" unique_id=1057046512]
+position = Vector2(1383, 775)
+scale = Vector2(0.4690912, 0.469091)
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.21454342
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Siblings/DialogueOverlay/Blur" unique_id=1084220452]
+position = Vector2(382, 610)
+scale = Vector2(0.68923616, 0.6892361)
+sprite_frames = SubResource("SpriteFrames_57qmd")
+autoplay = "default"
+frame_progress = 0.14034808
+flip_h = true
+
+[node name="Olliee2" parent="." unique_id=530691139 instance=ExtResource("10_vtsm0")]
 position = Vector2(1993.0001, 763.99994)
 scale = Vector2(0.85989344, 0.85989344)
 

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://c72tfpke74ftn"
+path="res://.godot/imported/5.1 - NPC_Pili.dialogue-a12d5e3375aba9f4f5f3f1cf0f03ccad.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/5.1 - NPC_Pili.dialogue"
+dest_files=["res://.godot/imported/5.1 - NPC_Pili.dialogue-a12d5e3375aba9f4f5f3f1cf0f03ccad.tres"]
+
+[params]
+
+defaults=true

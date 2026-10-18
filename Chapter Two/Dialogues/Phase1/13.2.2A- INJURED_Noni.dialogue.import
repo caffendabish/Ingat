@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dcuiq3iory3lv"
+path="res://.godot/imported/13.2.2A- INJURED_Noni.dialogue-a511605684c57e60fe0753197a0f1062.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase1/13.2.2A- INJURED_Noni.dialogue"
+dest_files=["res://.godot/imported/13.2.2A- INJURED_Noni.dialogue-a511605684c57e60fe0753197a0f1062.tres"]
+
+[params]
+
+defaults=true

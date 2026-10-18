@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://brdadt62d8r2q"
+path="res://.godot/imported/Dump3_Meeting Neighbors in the Supermarket.dialogue-09e272e74b5bba9d4b4bcdba247ed2dc.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/Dump3_Meeting Neighbors in the Supermarket.dialogue"
+dest_files=["res://.godot/imported/Dump3_Meeting Neighbors in the Supermarket.dialogue-09e272e74b5bba9d4b4bcdba247ed2dc.tres"]
+
+[params]
+
+defaults=true

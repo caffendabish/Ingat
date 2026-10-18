@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://7h5exijnjpm"
+path="res://.godot/imported/5.1 - NPC_Noni.dialogue-b1917a0bffe1e808ce5725a1e6d04edf.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/5.1 - NPC_Noni.dialogue"
+dest_files=["res://.godot/imported/5.1 - NPC_Noni.dialogue-b1917a0bffe1e808ce5725a1e6d04edf.tres"]
+
+[params]
+
+defaults=true

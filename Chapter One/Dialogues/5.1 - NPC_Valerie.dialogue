@@ -1,0 +1,13 @@
+~ start
+VALERIE: [speed=1.0]There! This latch just needed a good push.[/speed]
+
+OLLIE: [speed=1.0]Ate Valerie? Are you okay?[/speed]
+
+VALERIE: [speed=1.0][shake rate=3 level=2]Ollie! Susmariosep![/shake] You always sneak up on people like a ghost. Stop blending into the wall and help me check the other windows!
+
+VALERIE: [speed=1.0]I'm fine, Ollie. Just making sure everything's in order. I was talking to Nanay earlier and once the Millgate deal goes through, we're definitely baking you that special birthday cake on Sunday! [wave amp=1 freq=2]We might even have enough left over for new school bags![/wave]
+
+VALERIE: [speed=1.0]Tatay's right. Our coconut trees have always protected us. We just need to do our part and keep everything in order tonight.[/speed]
+
+VALERIE: [speed=0.9]See? Everything's going to be fine.[/speed]
+=> END
