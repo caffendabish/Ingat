@@ -1,0 +1,52 @@
+~ start
+OLLIE: [speed=1.2][shake rate=25 level=10][b]I got you, Tatay! Hold on![/b][/shake][/speed]
+
+[speed=0.7][shake rate=8 level=5]Wait... What about-[/shake][/speed]
+
+NONI: [speed=1.2][shake rate=30 level=10][b]KUYAAAAA!![/b][/shake][/speed]
+
+OLLIE: [speed=1.2][shake rate=30 level=10][b]WAIT! NONI![/b][/shake][/speed]
+
+[speed=1.2][shake rate=35 level=8][b]NO! NO, PLEASE![/b][/shake][/speed]
+
+ERNESTO: [speed=1.2][shake rate=30 level=11][b]NONI! GRAB MY HAND![/b][/shake][/speed]
+
+NONI: [speed=1.2][shake rate=35 level=11][b]TATAY! KUYAAAAA![/b][/shake][/speed]
+
+ERNESTO: [speed=1.2][shake rate=30 level=10][b]ANAK, I CAN'T REACH HIM! HOLD ON![/b][/shake][/speed]
+
+OLLIE: [speed=1.2][shake rate=35 level=11][b]NONI! I'M HERE! I'M HERE! PLEASE REACH FOR ME![/b][/shake][/speed]
+
+ERNESTO: [speed=1.2][shake rate=30 level=10][b]NONI! KEEP YOUR HEAD ABOVE THE WATER![/b][/shake][/speed]
+
+[speed=0.5][shake rate=8 level=5]...[/shake][/speed]
+
+OLLIE: [speed=0.7][shake rate=15 level=9][b]NONI?![/b][/shake][/speed]
+
+OLLIE: [speed=1.2][shake rate=30 level=11][b]NO! WHERE IS HE?![/b][/shake][/speed]
+
+ERNESTO: [speed=1.2][shake rate=30 level=11][b]NONI! NONI, ANSWER ME![/b][/shake][/speed]
+
+[speed=0.6][shake rate=10 level=6]...Where did he go?[/shake][/speed]
+
+OLLIE: [speed=0.6][shake rate=12 level=7]Tatay... where is he?[/shake][/speed]
+
+OLLIE: [speed=0.8][shake rate=15 level=9][b]We have to go back...[/b][/shake][/speed]
+
+ERNESTO: [speed=1.2][shake rate=25 level=9][b]Ollie, we have to keep moving! The current will take us too![/b][/shake][/speed]
+
+OLLIE: [speed=1.2][shake rate=35 level=11][b]BUT NONI'S STILL THERE![/b][/shake][/speed]
+
+OLLIE: [speed=1.2][shake rate=35 level=11][b]PLEASE, TATAY! WE CAN'T LEAVE HIM![/b][/shake][/speed]
+
+[speed=0.6][shake rate=15 level=9]I told Noni I'd keep him safe...[/shake][/speed]
+
+[speed=0.6][shake rate=18 level=10]I was supposed to look after him...[/shake][/speed]
+
+[speed=0.5][shake rate=20 level=8]I promised...[/shake][/speed]
+
+[speed=0.5][shake rate=15 level=9]Please...[/shake][/speed]
+
+[speed=0.5][shake rate=20 level=6][b]Someone find him...[/b][/shake][/speed]
+
+=> END

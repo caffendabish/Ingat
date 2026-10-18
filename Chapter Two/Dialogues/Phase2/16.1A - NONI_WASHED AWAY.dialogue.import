@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://c82nndh4b1tq3"
+path="res://.godot/imported/16.1A - NONI_WASHED AWAY.dialogue-af39b678e0806a3142552003e9a68101.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase2/16.1A - NONI_WASHED AWAY.dialogue"
+dest_files=["res://.godot/imported/16.1A - NONI_WASHED AWAY.dialogue-af39b678e0806a3142552003e9a68101.tres"]
+
+[params]
+
+defaults=true

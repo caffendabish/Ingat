@@ -40,7 +40,7 @@ anchor_right = 1.0
 offset_bottom = 23.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 90
-text = "Who Do You Save?"
+text = "Who do I help?"
 horizontal_alignment = 1
 
 [node name="TimeBar" type="ProgressBar" parent="." unique_id=25085568]

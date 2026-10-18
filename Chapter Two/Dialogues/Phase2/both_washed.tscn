@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://drtdwaumtpdkq"]
 
 [ext_resource type="Script" uid="uid://baml5ndnu1evw" path="res://Chapter Two/Scripts/2nd Phase/both_washed.gd" id="1_4py5c"]
-[ext_resource type="Resource" uid="uid://b7uw7lp5s2yss" path="res://Chapter Two/Dialogues/Phase2/Bothwashed.dialogue" id="2_37h3p"]
+[ext_resource type="Resource" uid="uid://b7uw7lp5s2yss" path="res://Chapter Two/Dialogues/Phase2/16.1 - BOTH_WASHED AWAY.dialogue" id="2_37h3p"]
 [ext_resource type="Texture2D" uid="uid://f0lp3msuyyr2" path="res://Chapter Two/Assets/SPECIALQTE/washedaway.png" id="2_blai1"]
 
 [node name="BothWashed" type="Node2D" unique_id=1983171448]
