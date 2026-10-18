@@ -1,6 +1,8 @@
 ~ start
 OLLIE: [speed=1.2][shake rate=25 level=11][b]WAIT! PLEASE![/b][/shake][/speed]
 
+OLLIE: [speed=1.2][shake rate=30 level=10][b]TATAY! KUYA![/b][/shake][/speed]
+
 OLLIE: [speed=1.2][shake rate=30 level=10][b]NO! NO, NO, NO![/b][/shake][/speed]
 
 OLLIE: [speed=1.2][shake rate=28 level=11][b]WHERE ARE YOU?![/b][/shake][/speed]
