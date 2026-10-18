@@ -146,13 +146,16 @@ func _set_frame(i: int) -> void:
 func hide_hud() -> void:          # nothing shows (cutscenes, QTE)
 	hud_enabled = false
 	meter_only = false
+	visible = false                 # hide the CanvasLayer itself
 
 
 func show_hud() -> void:          # everything shows (exploring)
 	hud_enabled = true
 	meter_only = false
+	visible = true                  # show the CanvasLayer itself
 
 
 func show_meter_only() -> void:   # just the insanity meter
 	hud_enabled = true
 	meter_only = true
+	visible = true                  # show the CanvasLayer itself

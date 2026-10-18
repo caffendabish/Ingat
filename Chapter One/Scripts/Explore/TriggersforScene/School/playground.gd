@@ -38,7 +38,7 @@ func _ready() -> void:
 	# Re-enable field interaction once the intro is done
 	if field:
 		field.monitoring = true
-
+	GameHUD.show_hud()
 
 func _input(event: InputEvent) -> void:
 	if not waiting_for_instructions:
