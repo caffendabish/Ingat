@@ -29,7 +29,7 @@ func _ready() -> void:
 
 # Picks the meter image that matches the player's real insanity
 func _show_current_frame() -> void:
-	var frames := GameHUD.meter_frames
+	var frames: Array = GameHUD.meter_frames
 	if frames.is_empty():
 		return
 	var i := roundi(float(GameState.insanity) / GameState.MAX_INSANITY * (frames.size() - 1))

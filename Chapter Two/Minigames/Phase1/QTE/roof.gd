@@ -30,7 +30,7 @@ func resolve() -> void:
 		return
 	resolved = true
 
-	var has_it := required_item == null or Inventory.has_item(required_item.id)
+	var has_it: bool = required_item == null or Inventory.has_item(required_item.id)
 
 	if has_it:
 		GameState.set_flag(&"phase2_start", "low")
