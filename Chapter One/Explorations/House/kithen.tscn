@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://ljyov55d5kow" path="res://Chapter One/Assets/Finalize/HOUSE/KITCHEN/KITCHEN_LIGHT_OVERLAY.png" id="4_qxprx"]
 [ext_resource type="Texture2D" uid="uid://xy7p3fnwoxvf" path="res://Redundant Assets/Character/AssetsDump/NoniSpritesheet.png" id="5_o0mks"]
 [ext_resource type="Texture2D" uid="uid://cv3nkfeb17avg" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_RIGHT.png" id="10_6jbxb"]
+[ext_resource type="AudioStream" uid="uid://audio_kitchen_neighbour" path="res://Chapter One/Sound/423515__martinsadoux__inside-a-house-neighbourhood.wav" id="audio_kitchen_neighbour"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fgu8u"]
 atlas = ExtResource("5_o0mks")
@@ -261,5 +262,10 @@ shape = SubResource("RectangleShape2D_g4v7s")
 position = Vector2(1135, 807.9999)
 rotation = -0.9339039
 shape = SubResource("RectangleShape2D_a4v2t")
+
+[node name="AmbientPlayer" type="AudioStreamPlayer" parent="." unique_id=900000017]
+stream = ExtResource("audio_kitchen_neighbour")
+autoplay = true
+volume_db = -8.0
 
 [connection signal="body_entered" from="Dining" to="." method="_on_dining_body_entered"]

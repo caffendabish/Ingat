@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cdbvkk8pevhuf" path="res://Chapter One/Assets/Finalize/HOUSE/PBEDROOM/PBEDROOM.png" id="1_g0bas"]
 [ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_vxxug"]
 [ext_resource type="Texture2D" uid="uid://cndgxvdababxy" path="res://Chapter One/Assets/Finalize/HOUSE/BEDROOM/CHILDRENROON_LIGHTOVERLAY.png" id="3_vxxug"]
+[ext_resource type="AudioStream" uid="uid://audio_masters_neighbour" path="res://Chapter One/Sound/423515__martinsadoux__inside-a-house-neighbourhood.wav" id="audio_masters_neighbour"]
 
 [node name="Node2D" type="Node2D" unique_id=989505016]
 
@@ -21,6 +22,11 @@ offset_top = -17.0
 offset_right = 4437.0
 offset_bottom = 1089.0
 color = Color(0.21568628, 0.33333334, 0.3882353, 0.58431375)
+
+[node name="AmbientPlayer" type="AudioStreamPlayer" parent="." unique_id=900000015]
+stream = ExtResource("audio_masters_neighbour")
+autoplay = true
+volume_db = -8.0
 
 [node name="TextureRect2" type="TextureRect" parent="." unique_id=1473100047]
 offset_left = -11.0

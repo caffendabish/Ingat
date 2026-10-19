@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://26lqgklhprpg" path="res://Chapter Two/Scripts/1st phase/Dialogue/parents_arguement.gd" id="1_x318o"]
 [ext_resource type="Resource" uid="uid://dp6vlme28vse4" path="res://Chapter Three/Dialogues/FINAL 3A_SEPARATED Ending_NONI SAVED.dialogue" id="2_ek3u1"]
+[ext_resource type="AudioStream" uid="uid://audio_seperated_crowd" path="res://Chapter One/Sound/CROWD.mp3" id="audio_seperated_crowd"]
 
 [node name="SeperatedEnd" type="Node2D" unique_id=1209199926]
 script = ExtResource("1_x318o")
@@ -40,3 +41,8 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 75
 text = "Seperated End"
+
+[node name="CrowdPlayer" type="AudioStreamPlayer" parent="." unique_id=900000051]
+stream = ExtResource("audio_seperated_crowd")
+autoplay = true
+volume_db = -6.0

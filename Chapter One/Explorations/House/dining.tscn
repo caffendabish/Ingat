@@ -12,6 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://g2mqg6tlyfb2" path="res://Redundant Assets/Character/AssetsDump/ErnestoSpritesheet.png" id="9_in002"]
 [ext_resource type="Texture2D" uid="uid://t73g7iob1xru" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_DOWN.png" id="10_nkg7s"]
 [ext_resource type="Texture2D" uid="uid://b5oem10thp2ff" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_LEFT.png" id="11_rop6n"]
+[ext_resource type="AudioStream" uid="uid://audio_dining_mumble" path="res://Chapter One/Sound/SCREMS/TV_mumble.ogg" id="audio_dining_mumble"]
+[ext_resource type="AudioStream" uid="uid://audio_dining_neighbour" path="res://Chapter One/Sound/423515__martinsadoux__inside-a-house-neighbourhood.wav" id="audio_dining_neighbour"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3gb45"]
 atlas = ExtResource("7_fgu8u")
@@ -248,6 +250,16 @@ texture = ExtResource("4_vr6nj")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1824237821]
 position = Vector2(2202, 671)
 shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="AmbientPlayer" type="AudioStreamPlayer" parent="." unique_id=900000013]
+stream = ExtResource("audio_dining_neighbour")
+autoplay = true
+volume_db = -8.0
+
+[node name="MumblePlayer" type="AudioStreamPlayer" parent="." unique_id=900000062]
+stream = ExtResource("audio_dining_mumble")
+autoplay = true
+volume_db = -12.0
 
 [connection signal="body_entered" from="Kitchen" to="." method="_on_kitchen_body_entered"]
 [connection signal="body_entered" from="Bedroom" to="." method="_on_bedroom_body_entered"]

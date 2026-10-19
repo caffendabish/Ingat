@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c0daoo15834ye" path="res://Chapter One/Assets/PlaceholderDump/Market/market_hallway2.png" id="1_gek2s"]
 [ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_rwn1c"]
+[ext_resource type="AudioStream" uid="uid://audio_market_chatter2" path="res://Chapter One/Sound/chatter2.wav" id="audio_market_chatter2"]
 
 [node name="Node2D" type="Node2D" unique_id=298708835]
 
@@ -11,6 +12,11 @@ offset_top = 9.0
 offset_right = 4438.495
 offset_bottom = 1115.0
 texture = ExtResource("1_gek2s")
+
+[node name="AmbientPlayer" type="AudioStreamPlayer" parent="." unique_id=900000020]
+stream = ExtResource("audio_market_chatter2")
+autoplay = true
+volume_db = -8.0
 
 [node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("2_rwn1c")]
 position = Vector2(3921, 791)

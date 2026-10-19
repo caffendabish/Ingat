@@ -10,6 +10,17 @@ extends CharacterBody2D
 @onready var _animated_sprite = $AnimatedSprite2D
 
 var target_position = null
+var _step_sound: AudioStreamPlayer
+var _step_timer: float = 0.0
+
+
+func _ready() -> void:
+	var step_player: AudioStreamPlayer = AudioStreamPlayer.new()
+	step_player.stream = load("res://Chapter One/Sound/step.wav")
+	step_player.name = "StepSound"
+	add_child(step_player)
+	_step_sound = step_player
+
 
 func _unhandled_input(event):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
@@ -65,3 +76,11 @@ func _physics_process(delta):
 
 	update_animation(intended_velocity, moved)
 	update_scale()
+
+	# Play step sound when walking
+	if moved.length() > 0.5:
+		_step_timer += delta
+		if _step_timer >= 0.35:
+			_step_timer = 0.0
+			if not _step_sound.playing:
+				_step_sound.play()

@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://t73g7iob1xru" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_DOWN.png" id="3_y0nkw"]
 [ext_resource type="PackedScene" uid="uid://crijlp60vst75" path="res://Redundant Assets/Character/OllieUni.tscn" id="4_phad0"]
 [ext_resource type="Texture2D" uid="uid://cavnlvltcxpe3" path="res://Chapter One/Assets/Finalize/SCHOOL/RIGHT_VENDOR/OVERLAY_NOON.png" id="5_phad0"]
+[ext_resource type="AudioStream" uid="uid://audio_field_nightly2" path="res://Chapter One/Sound/nightly2.wav" id="audio_field_nightly2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
 radius = 72.8011
@@ -75,5 +76,10 @@ shape = SubResource("RectangleShape2D_oblj7")
 position = Vector2(3851, 820.99994)
 rotation = -1.0056658
 shape = SubResource("RectangleShape2D_ncgur")
+
+[node name="AmbientPlayer" type="AudioStreamPlayer" parent="." unique_id=900000007]
+stream = ExtResource("audio_field_nightly2")
+autoplay = true
+volume_db = -6.0
 
 [connection signal="body_entered" from="Gate" to="." method="_on_gate_body_entered"]

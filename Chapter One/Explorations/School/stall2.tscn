@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cv3nkfeb17avg" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_RIGHT.png" id="4_74tbr"]
 [ext_resource type="PackedScene" uid="uid://crijlp60vst75" path="res://Redundant Assets/Character/OllieUni.tscn" id="5_onmyx"]
 [ext_resource type="Texture2D" uid="uid://cavnlvltcxpe3" path="res://Chapter One/Assets/Finalize/SCHOOL/RIGHT_VENDOR/OVERLAY_NOON.png" id="6_rplhb"]
+[ext_resource type="AudioStream" uid="uid://audio_stall2_crowd" path="res://Chapter One/Sound/CROWD.mp3" id="audio_stall2_crowd"]
 [ext_resource type="Script" uid="uid://dx4726065bv37" path="res://Redundant Assets/Character/Scripts/TalkableArea.gd" id="7_4nx3q"]
 [ext_resource type="Texture2D" uid="uid://bligpfxvcriyk" path="res://Redundant Assets/Character/AssetsDump/INGAT_BalloonLottoGuy.png" id="7_l4p10"]
 [ext_resource type="Resource" uid="uid://c07bv0fli13n6" path="res://Chapter One/Dialogues/3.2C - NPC VENDOR_Aling Marta.dialogue" id="8_kvfe6"]
@@ -288,5 +289,10 @@ shape = SubResource("SegmentShape2D_r4311")
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="World Borda" unique_id=1782808059]
 position = Vector2(299, 137)
 shape = SubResource("SegmentShape2D_rplhb")
+
+[node name="AmbientPlayer" type="AudioStreamPlayer" parent="." unique_id=900000011]
+stream = ExtResource("audio_stall2_crowd")
+autoplay = true
+volume_db = -8.0
 
 [connection signal="body_entered" from="Stall" to="." method="_on_stall_body_entered"]

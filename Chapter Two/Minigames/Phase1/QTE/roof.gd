@@ -11,6 +11,10 @@ extends Node
 @export var flag_if_has: StringName              # e.g. noni_safe
 @export var flag_if_missing: StringName          # e.g. noni_injured
 
+@onready var thunder1_player: AudioStreamPlayer = $Thunder1Player
+@onready var thunder2_player: AudioStreamPlayer = $Thunder2Player
+@onready var thunder3_player: AudioStreamPlayer = $Thunder3Player
+
 var resolved := false
 
 
@@ -21,6 +25,14 @@ func _ready() -> void:
 	if dialogue != null:
 		DialogueManager.show_dialogue_balloon(dialogue, dialogue_start)
 		await DialogueManager.dialogue_ended
+
+	# Play thunder sequence after roof choice
+	thunder1_player.play()
+	await get_tree().create_timer(1.5).finished
+	thunder2_player.play()
+	await get_tree().create_timer(1.5).finished
+	thunder3_player.play()
+
 	resolve()
 
 

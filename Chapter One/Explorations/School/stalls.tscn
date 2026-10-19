@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://ek5j0oc5e8k4" path="res://Redundant Assets/Character/AssetsDump/INGAT_IceCreamMan.png" id="8_nbonk"]
 [ext_resource type="Resource" uid="uid://df6ktyp1oro5c" path="res://Chapter One/Dialogues/3.2A - NPC VENDOR_ Mang Thomas.dialogue" id="9_dnfng"]
 [ext_resource type="Texture2D" uid="uid://crx4s52bldtu4" path="res://Redundant Assets/Character/AssetsDump/INGAT_TusokTusokVendor.png" id="10_nbonk"]
+[ext_resource type="AudioStream" uid="uid://audio_stalls_crowd" path="res://Chapter One/Sound/CROWD.mp3" id="audio_stalls_crowd"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_q2le5"]
 radius = 71.021126
@@ -250,5 +251,10 @@ shape = SubResource("RectangleShape2D_dd6ij")
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="World Borda" unique_id=1225375782]
 position = Vector2(2206, 459)
 shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="AmbientPlayer" type="AudioStreamPlayer" parent="." unique_id=900000010]
+stream = ExtResource("audio_stalls_crowd")
+autoplay = true
+volume_db = -8.0
 
 [connection signal="body_entered" from="gate" to="." method="_on_gate_body_entered"]

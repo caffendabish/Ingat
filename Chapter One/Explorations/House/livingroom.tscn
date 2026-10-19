@@ -11,6 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://d2w5dtlo0ipc7" path="res://Redundant Assets/Character/AssetsDump/KikiSpritesheet.png" id="6_cv8wh"]
 [ext_resource type="Texture2D" uid="uid://cnm5rfb0ou2i1" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_UP.png" id="9_4hcgu"]
 [ext_resource type="Texture2D" uid="uid://cv3nkfeb17avg" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_RIGHT.png" id="11_rercr"]
+[ext_resource type="AudioStream" uid="uid://audio_livingroom_mumble" path="res://Chapter One/Sound/SCREMS/TV_mumble.ogg" id="audio_livingroom_mumble"]
+[ext_resource type="AudioStream" uid="uid://audio_livingroom_neighbour" path="res://Chapter One/Sound/423515__martinsadoux__inside-a-house-neighbourhood.wav" id="audio_livingroom_neighbour"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mvpr5"]
 atlas = ExtResource("6_cv8wh")
@@ -255,6 +257,16 @@ shape = SubResource("RectangleShape2D_nkg7s")
 position = Vector2(1458, 915)
 rotation = -0.8525282
 shape = SubResource("RectangleShape2D_cv8wh")
+
+[node name="AmbientPlayer" type="AudioStreamPlayer" parent="." unique_id=900000016]
+stream = ExtResource("audio_livingroom_neighbour")
+autoplay = true
+volume_db = -8.0
+
+[node name="MumblePlayer" type="AudioStreamPlayer" parent="." unique_id=900000061]
+stream = ExtResource("audio_livingroom_mumble")
+autoplay = true
+volume_db = -12.0
 
 [connection signal="body_entered" from="Dining" to="." method="_on_dining_body_entered"]
 [connection signal="body_entered" from="Bedroom" to="." method="_on_bedroom_body_entered"]

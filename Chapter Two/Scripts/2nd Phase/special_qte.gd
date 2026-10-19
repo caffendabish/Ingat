@@ -31,6 +31,7 @@ const RESULT_DELAY := 0.8   # pause so the meter jump is seen
 @onready var dark_overlay: ColorRect = $DarkOverlay
 @onready var blood_overlay: ColorRect = $BloodOverlay
 @onready var flicker_overlay: ColorRect = $FlickerOverlay
+@onready var screams_player: AudioStreamPlayer = $ScreamsPlayer
 
 var time_left := QTE_TIME
 var done := false
@@ -135,6 +136,7 @@ func _choose(who: String) -> void:
 	Input.set_default_cursor_shape(Input.CURSOR_ARROW)
 	sibling_button.disabled = true
 	papa_button.disabled = true
+	screams_player.play()
 
 	var lost := ""
 	var penalty := 0

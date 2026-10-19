@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://c7lwtcuitgq61" path="res://Chapter Two/Scripts/1st phase/Explorations/bedroom.gd" id="1_ob3sx"]
 [ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_e8iky"]
 [ext_resource type="Texture2D" uid="uid://b5oem10thp2ff" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_LEFT.png" id="4_inrwy"]
+[ext_resource type="AudioStream" uid="uid://audio_c2_bedroom_neighbour" path="res://Chapter One/Sound/423515__martinsadoux__inside-a-house-neighbourhood.wav" id="audio_c2_bedroom_neighbour"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
 radius = 96.77293
@@ -54,5 +55,10 @@ shape = SubResource("RectangleShape2D_ob3sx")
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="BOrger" unique_id=73194992]
 position = Vector2(1499, 1080)
 shape = SubResource("RectangleShape2D_ob3sx")
+
+[node name="AmbientPlayer" type="AudioStreamPlayer" parent="." unique_id=900000023]
+stream = ExtResource("audio_c2_bedroom_neighbour")
+autoplay = true
+volume_db = -8.0
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

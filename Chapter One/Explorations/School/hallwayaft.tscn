@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cx8fliw41kkhq" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM HALLWAY/HALL_FG.png" id="4_0r2b8"]
 [ext_resource type="Texture2D" uid="uid://t73g7iob1xru" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_DOWN.png" id="5_rkkni"]
 [ext_resource type="Texture2D" uid="uid://cavnlvltcxpe3" path="res://Chapter One/Assets/Finalize/SCHOOL/RIGHT_VENDOR/OVERLAY_NOON.png" id="6_0r2b8"]
+[ext_resource type="AudioStream" uid="uid://audio_hallway_chatter2" path="res://Chapter One/Sound/chatter2.wav" id="audio_hallway_chatter2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_so1de"]
 radius = 69.065186
@@ -62,5 +63,10 @@ shape = SubResource("RectangleShape2D_86mg2")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Boarder" unique_id=558279325]
 position = Vector2(2279, 598)
 shape = SubResource("RectangleShape2D_86mg2")
+
+[node name="AmbientPlayer" type="AudioStreamPlayer" parent="." unique_id=900000004]
+stream = ExtResource("audio_hallway_chatter2")
+autoplay = true
+volume_db = -8.0
 
 [connection signal="body_entered" from="Field" to="." method="_on_field_body_entered"]
