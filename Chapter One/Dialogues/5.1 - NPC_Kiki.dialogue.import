@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cg4m3e00wo2x4"
+path="res://.godot/imported/5.1 - NPC_Kiki.dialogue-3b34e94d99cdd25b86abbd15e165d2a8.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/5.1 - NPC_Kiki.dialogue"
+dest_files=["res://.godot/imported/5.1 - NPC_Kiki.dialogue-3b34e94d99cdd25b86abbd15e165d2a8.tres"]
+
+[params]
+
+defaults=true

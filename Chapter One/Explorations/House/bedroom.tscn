@@ -28,13 +28,6 @@ offset_right = 4437.0
 offset_bottom = 1089.0
 color = Color(0.21568628, 0.33333334, 0.3882353, 0.58431375)
 
-[node name="TextureRect2" type="TextureRect" parent="." unique_id=344809864]
-offset_left = -11.0
-offset_top = -17.0
-offset_right = 4437.0
-offset_bottom = 1089.0
-texture = ExtResource("3_di6va")
-
 [node name="Area2D" type="Area2D" parent="." unique_id=1698247064]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1867972005]
@@ -45,5 +38,12 @@ shape = SubResource("RectangleShape2D_g4v7s")
 position = Vector2(1982.8038, 700.75)
 scale = Vector2(0.50489396, 0.50489396)
 texture = ExtResource("5_555he")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=344809864]
+offset_left = -11.0
+offset_top = -17.0
+offset_right = 4437.0
+offset_bottom = 1089.0
+texture = ExtResource("3_di6va")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bs58u4rol0y1x"
+path="res://.godot/imported/13.2.1 - TO ROOF.dialogue-069d9a2055ae468784c9cbcdd8ea7b7e.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase1/13.2.1 - TO ROOF.dialogue"
+dest_files=["res://.godot/imported/13.2.1 - TO ROOF.dialogue-069d9a2055ae468784c9cbcdd8ea7b7e.tres"]
+
+[params]
+
+defaults=true

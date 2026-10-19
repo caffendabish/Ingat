@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dwn54j1m02npw"
+path="res://.godot/imported/5.1 - NPC_Valerie.dialogue-c72e088797c1aacc031f0c7cb89cd49a.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/5.1 - NPC_Valerie.dialogue"
+dest_files=["res://.godot/imported/5.1 - NPC_Valerie.dialogue-c72e088797c1aacc031f0c7cb89cd49a.tres"]
+
+[params]
+
+defaults=true

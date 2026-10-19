@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://g2mqg6tlyfb2" path="res://Redundant Assets/Character/AssetsDump/ErnestoSpritesheet.png" id="1_ipytw"]
 [ext_resource type="Script" uid="uid://26lqgklhprpg" path="res://Chapter Two/Scripts/1st phase/Dialogue/parents_arguement.gd" id="1_ndpji"]
-[ext_resource type="Resource" uid="uid://bh2i5a2ep887u" path="res://Chapter Two/Dialogues/Phase1/Argue.dialogue" id="2_7reaf"]
+[ext_resource type="Resource" uid="uid://bh2i5a2ep887u" path="res://Chapter Two/Dialogues/Phase1/12.1 - FLOODED HOME_Parents Argument2.dialogue" id="2_7reaf"]
 [ext_resource type="Texture2D" uid="uid://cgefj64mgvkjo" path="res://Redundant Assets/Character/AssetsDump/PiliSpritesheet.png" id="2_se8o2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_se8o2"]
@@ -115,6 +115,7 @@ mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
 [node name="FaultLabel" type="Label" parent="FadeLayer" unique_id=1940835516]
+visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5

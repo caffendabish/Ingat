@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var dialogue_resource: DialogueResource = preload("res://Chapter Two/Dialogues/Phase1/Nanay.dialogue")
+@export var dialogue_resource: DialogueResource = preload("res://Chapter Two/Dialogues/Phase1/11.1 - HOME_Nanay Cooking.dialogue")
 @export var dialogue_start: String = "start"
 @export var change_scene_after_dialogue := true
 @export_file("*.tscn") var next_scene_path: String = ""

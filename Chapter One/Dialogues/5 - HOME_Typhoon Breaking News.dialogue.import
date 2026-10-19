@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://c4uoi7dun6p3j"
+path="res://.godot/imported/5 - HOME_Typhoon Breaking News.dialogue-4c604f34b41d052a7533a64a1b6de47a.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/5 - HOME_Typhoon Breaking News.dialogue"
+dest_files=["res://.godot/imported/5 - HOME_Typhoon Breaking News.dialogue-4c604f34b41d052a7533a64a1b6de47a.tres"]
+
+[params]
+
+defaults=true

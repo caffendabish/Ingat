@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dbj46x3prm73u"]
 
 [ext_resource type="Script" uid="uid://bax46ug4ctp72" path="res://Chapter Two/Scripts/1st phase/Dialogue/before_storm.gd" id="1_12h3x"]
-[ext_resource type="Resource" uid="uid://dcutxsri6y23n" path="res://Chapter One/Dialogues/RuinedBday.dialogue" id="2_d2ybi"]
+[ext_resource type="Resource" uid="uid://dcutxsri6y23n" path="res://Chapter Two/Dialogues/Phase1/12 - HOME_Ruined BDAY.dialogue" id="2_d2ybi"]
 [ext_resource type="Texture2D" uid="uid://cbocgdx0khjqk" path="res://Chapter One/Assets/Finalize/HOUSE/BDAYDININGROOM/SETUP_BDAYDININGROOM.png" id="2_oyf22"]
 
 [node name="BeforeStorm" type="Node2D" unique_id=2132193181]
@@ -31,6 +31,7 @@ mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
 [node name="FaultLabel" type="Label" parent="FadeLayer" unique_id=1130266172]
+visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5

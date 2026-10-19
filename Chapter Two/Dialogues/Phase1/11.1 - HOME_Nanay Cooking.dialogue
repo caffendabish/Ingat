@@ -1,0 +1,17 @@
+~ start
+PILI: [wave amp=1.2 freq=2]Well, if it isn't the birthday boy![/wave]
+
+OLLIE: [speed=1.1][wave amp=1.5 freq=3]Good morning, Nay![/wave][/speed]
+
+PILI: Someone's full of energy this morning!
+
+OLLIE: [speed=1.2][b][wave amp=2 freq=3]Of course! It's my birthday![/wave][/b][/speed]
+
+PILI: I know, I know. I'm almost done with the spaghetti.
+
+OLLIE: [speed=1.2][wave amp=2 freq=3]Yay! Spaghetti for my birthday![/wave][/speed]
+
+PILI: [speed=0.95]And don't go sneaking a taste before everyone's ready, okay?[/speed]
+
+OLLIE: [speed=0.9]...I'll try![/speed]
+=> END

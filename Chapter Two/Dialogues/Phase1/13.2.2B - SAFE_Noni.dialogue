@@ -1,0 +1,21 @@
+~ start
+NONI: [speed=1.1][shake rate=5 level=3][b]I've got it! I've got it![/b][/shake][/speed]
+
+OLLIE: [speed=1.2][shake rate=7 level=4][b]Keep climbing, Noni! Don't stop![/b][/shake][/speed]
+
+NONI: [speed=1.2][shake rate=5 level=3][b]I'm up! Kuya Ollie, I'm up![/b][/shake][/speed]
+
+OLLIE: [speed=0.9][shake rate=3 level=2]There! You're safe. Just breathe, okay?[/shake][/speed]
+
+NONI: [speed=0.8][shake rate=3 level=2]I thought I was gonna fall...[/shake][/speed]
+
+OLLIE: [speed=0.8]But you didn't. You're okay, Noni.[/speed]
+
+[speed=0.6][shake rate=3 level=2]He's shaking...[/shake][/speed]
+
+[speed=0.7][wave amp=1.2 freq=2]I'm glad I brought the rope.[/wave][/speed]
+
+[speed=0.6][shake rate=4 level=3]The flood's getting higher...[/shake][/speed]
+
+OLLIE: [speed=0.6][shake rate=4 level=3][b]...We're not done yet.[/b][/shake][/speed]
+=> END

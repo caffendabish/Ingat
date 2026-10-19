@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://b5wmjo3w4dn5e"
+path="res://.godot/imported/17.3B - SCHOOL_PARTIAL_TATAY WASHED AWAY_1.dialogue-24a965459efcc6bdb938ba13352d5976.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase3/17.3B - SCHOOL_PARTIAL_TATAY WASHED AWAY_1.dialogue"
+dest_files=["res://.godot/imported/17.3B - SCHOOL_PARTIAL_TATAY WASHED AWAY_1.dialogue-24a965459efcc6bdb938ba13352d5976.tres"]
+
+[params]
+
+defaults=true

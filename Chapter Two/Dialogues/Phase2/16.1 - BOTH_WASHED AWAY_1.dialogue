@@ -1,0 +1,27 @@
+~ start
+OLLIE: [speed=1.2][shake rate=25 level=11][b]WAIT! PLEASE![/b][/shake][/speed]
+
+OLLIE: [speed=1.2][shake rate=30 level=10][b]TATAY! NONI![/b][/shake][/speed]
+
+OLLIE: [speed=1.2][shake rate=30 level=10][b]NO! NO, NO, NO![/b][/shake][/speed]
+
+OLLIE: [speed=1.2][shake rate=28 level=11][b]WHERE ARE YOU?![/b][/shake][/speed]
+
+[speed=0.6][shake rate=8 level=5]They were just there...[/shake][/speed]
+
+[speed=0.6][shake rate=10 level=6]I saw them...[/shake][/speed]
+
+[speed=0.6][shake rate=14 level=8]I was supposed to save them...[/shake][/speed]
+
+[speed=0.6][shake rate=15 level=9]I couldn't reach them...[/shake][/speed]
+
+[speed=0.6][shake rate=12 level=7]Please come back...[/shake][/speed]
+
+[speed=0.5][shake rate=10 level=6]Please...[/shake][/speed]
+
+[speed=0.5][shake rate=8 level=5]Someone...[/shake][/speed]
+
+[speed=0.5][shake rate=10 level=6]Anyone...[/shake][/speed]
+
+[speed=0.5][shake rate=15 level=9][b]Please help us...[/b][/shake][/speed]
+=> END

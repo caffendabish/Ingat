@@ -1,17 +1,8 @@
 extends Node2D
 
-const INTRO_DIALOGUE := preload("res://Chapter One/Dialogues/SCENE 2.dialogue")
-
-static var intro_played := false
 
 func _ready() -> void:
-	if intro_played:
-		return
-	intro_played = true
-
-	DialogueManager.show_dialogue_balloon(INTRO_DIALOGUE, "start")
-	await DialogueManager.dialogue_ended
-
+	GameHUD.show_hud()
 
 #hallway 
 func _on_hallway_body_entered(body: Node2D) -> void:

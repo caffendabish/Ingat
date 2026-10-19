@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://cjy6km5183gxf"]
+
+[ext_resource type="Texture2D" uid="uid://b8ntthwskqphh" path="res://Chapter Two/Assets/ATTIC/CEILING_BG.png" id="1_5rgub"]
+[ext_resource type="Script" uid="uid://4ek4x2dwenvf" path="res://Chapter Two/Minigames/Phase1/QTE/roof.gd" id="1_tat4e"]
+[ext_resource type="Texture2D" uid="uid://mg7ghvyie32j" path="res://Chapter Two/Assets/ATTIC/CEILING_FG.png" id="2_s65mm"]
+[ext_resource type="Resource" uid="uid://bwqyapwhipy3w" path="res://Redundant Assets/Inventory/items/medkit.tres" id="2_tw0bv"]
+[ext_resource type="Resource" uid="uid://bspcxqhblymwe" path="res://Chapter Two/Dialogues/Phase1/13.1.2 - ATTIC_Dodong .dialogue" id="3_tw0bv"]
+
+[node name="AtticQ" type="Node2D" unique_id=1558432150]
+script = ExtResource("1_tat4e")
+required_item = ExtResource("2_tw0bv")
+dialogue = ExtResource("3_tw0bv")
+scene_if_has = "uid://cug84r4p04ukw"
+scene_if_missing = "uid://c5qnwogcfex5y"
+flag_if_has = &"YeyMed"
+flag_if_missing = &"NoMEd"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2031611631]
+offset_right = 4448.0
+offset_bottom = 1080.0
+texture = ExtResource("1_5rgub")
+
+[node name="CeilingFg" type="Sprite2D" parent="." unique_id=1431290546]
+position = Vector2(2224.5002, 710)
+scale = Vector2(1.0316997, 1.3148148)
+texture = ExtResource("2_s65mm")
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="CeilingFg" unique_id=1568463710]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2168.7515
+offset_top = -571.1831
+offset_right = -2168.7515
+offset_bottom = -571.1831
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.13725491, 0.23137255, 0.24705882, 0.5921569)

@@ -2,7 +2,9 @@
 
 [ext_resource type="Script" uid="uid://diy0fy8bpf8nb" path="res://Chapter Two/Scripts/1st phase/Minigame/qte_scene.gd" id="1_6k0ll"]
 [ext_resource type="Texture2D" uid="uid://qshxlu3r6jjr" path="res://Chapter One/Assets/Finalize/HOUSE/DINING/DINING_NIGHT.png" id="2_4fblx"]
+[ext_resource type="Resource" uid="uid://dilmsbh3dorq3" path="res://Chapter Two/Dialogues/Phase1/13.2 - IF ROOF.dialogue" id="2_xobpj"]
 [ext_resource type="Texture2D" uid="uid://g2mqg6tlyfb2" path="res://Redundant Assets/Character/AssetsDump/ErnestoSpritesheet.png" id="3_42pma"]
+[ext_resource type="Resource" uid="uid://c6v8712c28s1q" path="res://Chapter Two/Dialogues/Phase1/13.1 - IF ATTIC.dialogue" id="3_h5hh5"]
 [ext_resource type="Texture2D" uid="uid://cgefj64mgvkjo" path="res://Redundant Assets/Character/AssetsDump/PiliSpritesheet.png" id="4_xobpj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h5hh5"]
@@ -87,6 +89,8 @@ grow_vertical = 2
 script = ExtResource("1_6k0ll")
 window_scene = "uid://c1wnpqaw8h6os"
 attic_scene = "uid://bqcciw5dshhjy"
+window_dialogue = ExtResource("2_xobpj")
+attic_dialogue = ExtResource("3_h5hh5")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1545949891]
 layout_mode = 1
@@ -122,7 +126,7 @@ offset_right = -1.0
 offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.4825002, 0.4825002, 0.4825002, 0.77254903)
+color = Color(0.17641908, 0.17641911, 0.17641902, 0.77254903)
 
 [node name="WindowButton" type="Button" parent="." unique_id=221947155]
 layout_mode = 0

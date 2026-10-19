@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://d280okuptdsw7"
+path="res://.godot/imported/Dump2_In the Supermarket.dialogue-c0db04b6b5d1c4ebcf26de518d2894da.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/Dump2_In the Supermarket.dialogue"
+dest_files=["res://.godot/imported/Dump2_In the Supermarket.dialogue-c0db04b6b5d1c4ebcf26de518d2894da.tres"]
+
+[params]
+
+defaults=true

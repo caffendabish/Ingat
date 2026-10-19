@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://lsad5safuecn"
+path="res://.godot/imported/11.1 - HOME_Nanay Cooking.dialogue-410fdfdf7719a6fe05833fb29109823f.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase1/11.1 - HOME_Nanay Cooking.dialogue"
+dest_files=["res://.godot/imported/11.1 - HOME_Nanay Cooking.dialogue-410fdfdf7719a6fe05833fb29109823f.tres"]
+
+[params]
+
+defaults=true

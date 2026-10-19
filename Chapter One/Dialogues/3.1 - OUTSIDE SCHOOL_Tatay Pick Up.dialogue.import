@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dqebcyodwwtnp"
+path="res://.godot/imported/3.1 - OUTSIDE SCHOOL_Tatay Pick Up.dialogue-0fbfc2c12ce91ecb6084f600f6e18900.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/3.1 - OUTSIDE SCHOOL_Tatay Pick Up.dialogue"
+dest_files=["res://.godot/imported/3.1 - OUTSIDE SCHOOL_Tatay Pick Up.dialogue-0fbfc2c12ce91ecb6084f600f6e18900.tres"]
+
+[params]
+
+defaults=true

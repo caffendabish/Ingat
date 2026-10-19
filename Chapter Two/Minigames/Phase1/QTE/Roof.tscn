@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dpx8jn0y5q7m2"]
+
+[ext_resource type="Script" uid="uid://4ek4x2dwenvf" path="res://Chapter Two/Minigames/Phase1/QTE/roof.gd" id="1_fhxik"]
+[ext_resource type="Resource" uid="uid://cj4074eupyg88" path="res://Redundant Assets/Inventory/items/rope.tres" id="2_6sn6f"]
+[ext_resource type="Resource" uid="uid://dn4j6mxpgqyy5" path="res://Chapter Two/Dialogues/Phase1/13.2.2 - ROOF_Noni.dialogue" id="3_yu4jw"]
+[ext_resource type="Texture2D" uid="uid://cu6r6lm7gafnm" path="res://Chapter Two/Assets/ROOF/ROOF.png" id="4_8kh33"]
+
+[node name="Roof" type="Node2D" unique_id=640898550]
+script = ExtResource("1_fhxik")
+required_item = ExtResource("2_6sn6f")
+dialogue = ExtResource("3_yu4jw")
+scene_if_has = "uid://h5wrbfrx2len"
+scene_if_missing = "uid://tbq5rcrr7825"
+flag_if_has = &"YeyRope"
+flag_if_missing = &"NoRope"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=405858443]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("4_8kh33")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1308214119]
+offset_right = 1924.0
+offset_bottom = 1082.0
+color = Color(0.41568628, 0.34901962, 0.30588236, 0.5686275)

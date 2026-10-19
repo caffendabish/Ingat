@@ -3,8 +3,11 @@
 [ext_resource type="Script" uid="uid://caf7rcljhui47" path="res://Chapter One/Scripts/Explore/TriggersforScene/School/fieldaft.gd" id="1_7dud0"]
 [ext_resource type="Texture2D" uid="uid://dn0hn13rcgn4q" path="res://Chapter One/Assets/Finalize/SCHOOL/Near_Gate_DAY.png" id="2_7dud0"]
 [ext_resource type="Texture2D" uid="uid://t73g7iob1xru" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_DOWN.png" id="3_y0nkw"]
-[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="5_jjmch"]
+[ext_resource type="PackedScene" uid="uid://crijlp60vst75" path="res://Redundant Assets/Character/OllieUni.tscn" id="4_phad0"]
 [ext_resource type="Texture2D" uid="uid://cavnlvltcxpe3" path="res://Chapter One/Assets/Finalize/SCHOOL/RIGHT_VENDOR/OVERLAY_NOON.png" id="5_phad0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+radius = 72.8011
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_phad0"]
 size = Vector2(4431, 20)
@@ -12,49 +15,11 @@ size = Vector2(4431, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oblj7"]
 size = Vector2(20, 1116.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
-size = Vector2(131.5, 167.75)
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
-radius = 72.8011
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_yf5fn"]
-a = Vector2(3337, 509)
-b = Vector2(1010, 526)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_phad0"]
-a = Vector2(3337, 509)
-b = Vector2(4124, 1128)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_oblj7"]
-a = Vector2(1032, 512)
-b = Vector2(230, 1101)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ncgur"]
+size = Vector2(20, 1116.5)
 
 [node name="Field" type="Node2D" unique_id=44134083]
 script = ExtResource("1_7dud0")
-
-[node name="World Borda" type="StaticBody2D" parent="." unique_id=68477148]
-disable_mode = 1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="World Borda" unique_id=1138641500]
-position = Vector2(2194, 0)
-shape = SubResource("RectangleShape2D_phad0")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="World Borda" unique_id=688402260]
-position = Vector2(2172, 1035)
-shape = SubResource("RectangleShape2D_phad0")
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="World Borda" unique_id=301823409]
-position = Vector2(0, 539.5)
-shape = SubResource("RectangleShape2D_oblj7")
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="World Borda" unique_id=1534488320]
-position = Vector2(4403, 541.75)
-shape = SubResource("RectangleShape2D_oblj7")
-
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="World Borda" unique_id=1715406633]
-position = Vector2(2314, 592.875)
-shape = SubResource("RectangleShape2D_g4v7s")
 
 [node name="TextureRect2" type="TextureRect" parent="." unique_id=224311058]
 offset_left = -51.0
@@ -77,8 +42,8 @@ texture = ExtResource("3_y0nkw")
 position = Vector2(-11, 8)
 shape = SubResource("CircleShape2D_g4v7s")
 
-[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("5_jjmch")]
-position = Vector2(2451, 560)
+[node name="Olliee2" parent="." unique_id=530691139 instance=ExtResource("4_phad0")]
+position = Vector2(2448, 623)
 scale = Vector2(0.41190988, 0.41190988)
 
 [node name="TextureRect4" type="TextureRect" parent="." unique_id=136924288]
@@ -90,15 +55,25 @@ offset_bottom = 1089.0
 texture = ExtResource("5_phad0")
 metadata/_edit_lock_ = true
 
-[node name="Go home" type="Area2D" parent="." unique_id=1160355942]
+[node name="World Borda" type="StaticBody2D" parent="." unique_id=68477148]
+disable_mode = 1
 
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="Go home" unique_id=980733172]
-shape = SubResource("SegmentShape2D_yf5fn")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World Borda" unique_id=1138641500]
+position = Vector2(2194, 596)
+shape = SubResource("RectangleShape2D_phad0")
 
-[node name="CollisionShape2D7" type="CollisionShape2D" parent="Go home" unique_id=1062785360]
-shape = SubResource("SegmentShape2D_phad0")
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="World Borda" unique_id=688402260]
+position = Vector2(2172, 1035)
+shape = SubResource("RectangleShape2D_phad0")
 
-[node name="CollisionShape2D6" type="CollisionShape2D" parent="Go home" unique_id=1831085286]
-shape = SubResource("SegmentShape2D_oblj7")
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="World Borda" unique_id=301823409]
+position = Vector2(579, 805.00006)
+rotation = 1.0340675
+shape = SubResource("RectangleShape2D_oblj7")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="World Borda" unique_id=1534488320]
+position = Vector2(3851, 820.99994)
+rotation = -1.0056658
+shape = SubResource("RectangleShape2D_ncgur")
 
 [connection signal="body_entered" from="Gate" to="." method="_on_gate_body_entered"]

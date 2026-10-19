@@ -1,0 +1,63 @@
+~ start
+
+PILI: [speed=1.1][shake rate=12 level=7][b]Ernesto! Look outside! The water's already reached the porch steps! We need to get out of here![/b][/shake][/speed]
+
+ERNESTO: [speed=1.1][shake rate=12 level=7][b]Get out? Pili, have you seen the wind?! We step outside now and it'll sweep us away![/b][/shake][/speed]
+
+PILI: [speed=1.1][shake rate=14 level=8][b]The flood warning came hours ago! I told you we should've left but you kept saying the storm would turn away![/b][/shake][/speed]
+
+ERNESTO: [speed=1.0][shake rate=12 level=7][b]I thought it would! This house has stood through typhoons for twenty years! These walls are all we have between us and that storm![/b][/shake][/speed]
+
+PILI: [speed=1.1][shake rate=13 level=8][b]And they're not going to hold back the water forever! Look at the floor! It's coming in everywhere![/b][/shake][/speed]
+
+[speed=0.7]The water's inside...[/speed]
+
+[speed=0.6]But... Tatay said we'd be safe.[/speed]
+
+PILI: [speed=1.1][shake rate=12 level=7][b]If we wait any longer, we'll be trapped! We have to reach the school![/b][/shake][/speed]
+
+ERNESTO: [speed=1.1][shake rate=14 level=8][b]And how do you propose we do that?! Look outside! We won't make it down the road in this current![/b][/shake][/speed]
+
+PILI: [speed=1.2][shake rate=15 level=9][b]Then what do we do?! Just sit here and wait for the water to swallow us?![/b][/shake][/speed]
+
+NONI: [speed=1.2][shake rate=20 level=9][b]Nanay![/b][/shake][/speed]
+
+PILI: [speed=1.1][shake rate=8 level=5][b]It's alright, anak! Stay close to your siblings![/b][/shake][/speed]
+
+[speed=0.6]I want to go home...[/speed]
+
+[speed=0.6][shake rate=8 level=5]But we're already home.[/shake][/speed]
+
+PILI: [speed=1.1][shake rate=13 level=8][b]Ernesto, the water's rising! We can't stay on the ground floor![/b][/shake][/speed]
+
+ERNESTO: [speed=1.1][shake rate=12 level=7][b]Fine! Fine! We go upstairs! But we're NOT walking into that flood![/b][/shake][/speed]
+
+PILI: [speed=1.0][shake rate=9 level=5]The attic! There's a hatch leading to the roof. We could climb up and signal the rescuers![/shake][/speed]
+
+ERNESTO: [speed=1.1][shake rate=12 level=7][b]The attic?! And get trapped up there if the water reaches the second floor?![/b][/shake][/speed]
+
+PILI: [speed=1.1][shake rate=10 level=6][b]At least we'd be above the water![/b][/shake][/speed]
+
+ERNESTO: [speed=1.1][shake rate=13 level=8][b]And what happens when the roof gives way?! We need a way out![/b][/shake][/speed]
+
+PILI: [speed=1.1][shake rate=12 level=7][b]Then the window! We can get onto the roof![/b][/shake][/speed]
+
+ERNESTO: [speed=1.1][shake rate=13 level=8][b]That side faces the wind! The moment we open it, the whole room could be torn apart![/b][/shake][/speed]
+
+PILI: [speed=1.2][shake rate=16 level=9][b]So what do you want us to do, Ernesto?![/b][/shake][/speed]
+
+#[The house creaks as the water slams against the front door.]
+
+[speed=0.6]Why are they shouting?[/speed]
+
+[speed=0.6]I thought... everything would be okay...[/speed]
+
+#[Another heavy THUD shakes the door. Water rushes through the gap beneath it.]
+
+PILI: [speed=0.7][shake rate=5 level=3]Ernesto... please. We have to decide. Now.[/shake][/speed]
+
+#[Ernesto stares at the rising water, struggling to answer.]
+
+#[FADE OUT]
+
+=> END

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://d2n5odmsoh1ex"
+path="res://.godot/imported/14.2 - ROOF_Outcome.dialogue-a704babbbeabfedcd167c038841da24f.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase1/14.2 - ROOF_Outcome.dialogue"
+dest_files=["res://.godot/imported/14.2 - ROOF_Outcome.dialogue-a704babbbeabfedcd167c038841da24f.tres"]
+
+[params]
+
+defaults=true

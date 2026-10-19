@@ -8,11 +8,20 @@
 [ext_resource type="Resource" uid="uid://b4ja2eqw6yq40" path="res://Redundant Assets/Inventory/items/canned.tres" id="5_htm2w"]
 [ext_resource type="Resource" uid="uid://lhe28hh0bol7" path="res://Redundant Assets/Inventory/items/radio.tres" id="6_rry3k"]
 [ext_resource type="Resource" uid="uid://bbp5s56talmfw" path="res://Redundant Assets/Inventory/items/flashlight.tres" id="7_inlhk"]
-[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="8_456ej"]
+[ext_resource type="PackedScene" uid="uid://de6lwiimhbfb4" path="res://Redundant Assets/Character/OllieRun.tscn" id="9_podpw"]
 [ext_resource type="Texture2D" uid="uid://cv3nkfeb17avg" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_RIGHT.png" id="10_2exlc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
 radius = 92.021736
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(2166, 41)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_podpw"]
+size = Vector2(62, 1040.5322)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2exlc"]
+size = Vector2(553.5685, 1040.5322)
 
 [node name="KitchenC" type="Node2D" unique_id=670821651]
 script = ExtResource("1_podpw")
@@ -55,7 +64,7 @@ item = ExtResource("7_inlhk")
 pickup_id = &"torchs"
 display_size = 250.0
 
-[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("8_456ej")]
+[node name="Olliee2" parent="." unique_id=530691139 instance=ExtResource("9_podpw")]
 position = Vector2(3019, 744)
 
 [node name="Dining" type="Area2D" parent="." unique_id=303886765]
@@ -68,5 +77,21 @@ texture = ExtResource("10_2exlc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Dining" unique_id=1266127029]
 shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2039494816]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1910799203]
+position = Vector2(2300, 503)
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=633333534]
+position = Vector2(849.99994, 829)
+rotation = 0.8165718
+shape = SubResource("RectangleShape2D_podpw")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1167125530]
+position = Vector2(3794.1394, 979.53894)
+rotation = 0.005724609
+shape = SubResource("RectangleShape2D_2exlc")
 
 [connection signal="body_entered" from="Dining" to="." method="_on_dining_body_entered"]

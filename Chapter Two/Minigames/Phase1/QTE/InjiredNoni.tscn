@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://tbq5rcrr7825"]
+
+[ext_resource type="Script" uid="uid://dy7xn8lg78oh3" path="res://Chapter Two/Minigames/Phase1/QTE/safe_noni.gd" id="1_pwalv"]
+[ext_resource type="Resource" uid="uid://bo73bign716ag" path="res://Chapter Two/Dialogues/Phase1/13.2.2B - SAFE_Noni.dialogue" id="2_recjl"]
+[ext_resource type="Texture2D" uid="uid://cu6r6lm7gafnm" path="res://Chapter Two/Assets/ROOF/ROOF.png" id="3_aoh52"]
+[ext_resource type="Texture2D" uid="uid://fd4qyjs3jiyj" path="res://Redundant Assets/Character/AssetsDump/INGAT_SpritesZ_Phase1_OlliePullingUpNoni.png" id="4_ygxqt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pwalv"]
+atlas = ExtResource("4_ygxqt")
+region = Rect2(0, 1200, 1000, 1200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_recjl"]
+atlas = ExtResource("4_ygxqt")
+region = Rect2(1000, 1200, 1000, 1200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6kfw2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pwalv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_recjl")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.0
+}]
+
+[node name="InjiredNoni" type="Node2D" unique_id=885052393]
+script = ExtResource("1_pwalv")
+dialogue = ExtResource("2_recjl")
+next_scene = "uid://txg3rxjhp2cx"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1780268067]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_aoh52")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=861138014]
+position = Vector2(865.99994, 834)
+scale = Vector2(0.9315, 0.86541665)
+sprite_frames = SubResource("SpriteFrames_6kfw2")
+autoplay = "default"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1751663650]
+offset_right = 1924.0
+offset_bottom = 1082.0
+color = Color(0.41568628, 0.34901962, 0.30588236, 0.5686275)

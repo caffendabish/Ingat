@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://q8q4lcf445nq"
+path="res://.godot/imported/8.1 - HOME_About To Head Out.dialogue-bb251524c60702efc7435fa61d12ee27.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/8.1 - HOME_About To Head Out.dialogue"
+dest_files=["res://.godot/imported/8.1 - HOME_About To Head Out.dialogue-bb251524c60702efc7435fa61d12ee27.tres"]
+
+[params]
+
+defaults=true

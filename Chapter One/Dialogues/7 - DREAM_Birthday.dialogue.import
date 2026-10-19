@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bkr4nejhdwfn5"
+path="res://.godot/imported/7 - DREAM_Birthday.dialogue-e00eb36297f7fd571505fd4de1164856.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/7 - DREAM_Birthday.dialogue"
+dest_files=["res://.godot/imported/7 - DREAM_Birthday.dialogue-e00eb36297f7fd571505fd4de1164856.tres"]
+
+[params]
+
+defaults=true

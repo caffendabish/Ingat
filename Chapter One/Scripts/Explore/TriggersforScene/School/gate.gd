@@ -1,8 +1,9 @@
 extends Node2D
 
-const INTRO_DIALOGUE := preload("res://Chapter One/Dialogues/SCENE 4.dialogue")
+const INTRO_DIALOGUE := preload("res://Chapter One/Dialogues/3 - OUTSIDE SCHOOL_After Classes.dialogue")
 
 static var intro_played := false
+
 
 func _ready() -> void:
 	if intro_played:
@@ -11,6 +12,7 @@ func _ready() -> void:
 
 	DialogueManager.show_dialogue_balloon(INTRO_DIALOGUE, "start")
 	await DialogueManager.dialogue_ended
+
 
 
 func _on_stall_2_body_entered(body: Node2D) -> void:

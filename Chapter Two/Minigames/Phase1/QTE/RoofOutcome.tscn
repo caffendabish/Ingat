@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://txg3rxjhp2cx"]
+
+[ext_resource type="Script" uid="uid://bg6hpj3q52ty5" path="res://Chapter Two/Minigames/Phase1/QTE/attic.gd" id="1_0gh17"]
+[ext_resource type="Texture2D" uid="uid://cu6r6lm7gafnm" path="res://Chapter Two/Assets/ROOF/ROOF.png" id="1_xlr3p"]
+[ext_resource type="Resource" uid="uid://d2n5odmsoh1ex" path="res://Chapter Two/Dialogues/Phase1/14.2 - ROOF_Outcome.dialogue" id="2_l7b7r"]
+
+[node name="RoofOutcome" type="Node2D" unique_id=2073019694]
+script = ExtResource("1_0gh17")
+dialogue = ExtResource("2_l7b7r")
+next_scene = "uid://bie87ho6rohej"
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=565597131]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_xlr3p")
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=2041367933]
+offset_right = 1924.0
+offset_bottom = 1082.0
+color = Color(0.41568628, 0.34901962, 0.30588236, 0.5686275)

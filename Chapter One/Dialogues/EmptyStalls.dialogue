@@ -1,0 +1,13 @@
+~ start
+OLLIE: [speed=0.9]Where's Mang Thomas? His cart's not here...[/speed]
+
+OLLIE: [speed=0.85]And Manong Sorbetero, too?[/speed]
+
+OLLIE: [speed=0.8]Aling Marta's gone, too...[/speed]
+
+OLLIE: [speed=0.9]That's weird. They're always here after class.[/speed]
+
+OLLIE:[speed=0.7] Hmm...[/speed]
+
+OLLIE:[speed=0.9] Maybe they'll be back tomorrow.[/speed]
+=> END

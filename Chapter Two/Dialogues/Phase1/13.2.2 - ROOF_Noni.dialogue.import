@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dn4j6mxpgqyy5"
+path="res://.godot/imported/13.2.2 - ROOF_Noni.dialogue-78a077726bf530a45e5c88e460f32d3a.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase1/13.2.2 - ROOF_Noni.dialogue"
+dest_files=["res://.godot/imported/13.2.2 - ROOF_Noni.dialogue-78a077726bf530a45e5c88e460f32d3a.tres"]
+
+[params]
+
+defaults=true

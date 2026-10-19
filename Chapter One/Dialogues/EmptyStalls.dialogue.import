@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dwhy7hhtkgyet"
+path="res://.godot/imported/EmptyStalls.dialogue-46266b6f8691cc1045e7f5f0b3601190.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/EmptyStalls.dialogue"
+dest_files=["res://.godot/imported/EmptyStalls.dialogue-46266b6f8691cc1045e7f5f0b3601190.tres"]
+
+[params]
+
+defaults=true

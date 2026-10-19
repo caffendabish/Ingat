@@ -2,13 +2,109 @@
 
 [ext_resource type="Script" uid="uid://dox3vma0m4u3s" path="res://Chapter One/Scripts/Explore/TriggersforScene/School/stalls.gd" id="1_vljny"]
 [ext_resource type="Texture2D" uid="uid://8un433elk4se" path="res://Chapter One/Assets/Finalize/SCHOOL/RIGHT_VENDOR/VENDOR_RIGHT_BG_DAY.png" id="2_kt1rl"]
-[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_w5moa"]
 [ext_resource type="Texture2D" uid="uid://cukel3x8uy5mg" path="res://Chapter One/Assets/Finalize/SCHOOL/RIGHT_VENDOR/VENDOR_STALL_FG.png" id="3_q2le5"]
 [ext_resource type="Texture2D" uid="uid://b5oem10thp2ff" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_LEFT.png" id="4_kt1rl"]
+[ext_resource type="PackedScene" uid="uid://crijlp60vst75" path="res://Redundant Assets/Character/OllieUni.tscn" id="5_dd6ij"]
 [ext_resource type="Texture2D" uid="uid://cavnlvltcxpe3" path="res://Chapter One/Assets/Finalize/SCHOOL/RIGHT_VENDOR/OVERLAY_NOON.png" id="5_q2le5"]
+[ext_resource type="Script" uid="uid://dx4726065bv37" path="res://Redundant Assets/Character/Scripts/TalkableArea.gd" id="7_qoiri"]
+[ext_resource type="Resource" uid="uid://bj8tvtl55fulc" path="res://Chapter One/Dialogues/3.2B - NPC VENDOR_Manong Sorbetero.dialogue" id="8_dnfng"]
+[ext_resource type="Texture2D" uid="uid://ek5j0oc5e8k4" path="res://Redundant Assets/Character/AssetsDump/INGAT_IceCreamMan.png" id="8_nbonk"]
+[ext_resource type="Resource" uid="uid://df6ktyp1oro5c" path="res://Chapter One/Dialogues/3.2A - NPC VENDOR_ Mang Thomas.dialogue" id="9_dnfng"]
+[ext_resource type="Texture2D" uid="uid://crx4s52bldtu4" path="res://Redundant Assets/Character/AssetsDump/INGAT_TusokTusokVendor.png" id="10_nbonk"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_q2le5"]
 radius = 71.021126
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_esdpy"]
+atlas = ExtResource("8_nbonk")
+region = Rect2(0, 0, 300, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tp0u7"]
+atlas = ExtResource("8_nbonk")
+region = Rect2(300, 0, 300, 600)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gisme"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_esdpy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tp0u7")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3f4sg"]
+size = Vector2(1180.0938, 2549.268)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qoiri"]
+atlas = ExtResource("8_nbonk")
+region = Rect2(0, 0, 300, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nbonk"]
+atlas = ExtResource("8_nbonk")
+region = Rect2(300, 0, 300, 600)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hrrvm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qoiri")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nbonk")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dnfng"]
+atlas = ExtResource("10_nbonk")
+region = Rect2(0, 0, 250, 450)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gisme"]
+atlas = ExtResource("10_nbonk")
+region = Rect2(250, 0, 250, 450)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3f4sg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dnfng")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gisme")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3f4sg"]
+atlas = ExtResource("10_nbonk")
+region = Rect2(0, 0, 250, 450)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hrrvm"]
+atlas = ExtResource("10_nbonk")
+region = Rect2(250, 0, 250, 450)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tp0yd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3f4sg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hrrvm")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 2.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q2le5"]
 size = Vector2(4431, 20)
@@ -47,7 +143,83 @@ texture = ExtResource("4_kt1rl")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="gate" unique_id=1576227336]
 shape = SubResource("CircleShape2D_q2le5")
 
-[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("2_w5moa")]
+[node name="IceCream" type="Area2D" parent="." unique_id=1581420970 node_paths=PackedStringArray("overlay")]
+position = Vector2(3220, 649)
+scale = Vector2(0.1703415, 0.17296214)
+script = ExtResource("7_qoiri")
+dialogue_resource = ExtResource("8_dnfng")
+overlay = NodePath("DialogueOverlay")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="IceCream" unique_id=1200735744]
+position = Vector2(1334.0198, -850.1107)
+scale = Vector2(6.0532045, 6.0532045)
+sprite_frames = SubResource("SpriteFrames_gisme")
+autoplay = "default"
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="IceCream" unique_id=1396436213]
+position = Vector2(1560.1738, -512.5508)
+shape = SubResource("RectangleShape2D_3f4sg")
+
+[node name="DialogueOverlay" type="CanvasLayer" parent="IceCream" unique_id=333479587]
+layer = 5
+visible = false
+
+[node name="Blur" type="ColorRect" parent="IceCream/DialogueOverlay" unique_id=368868764]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.6117647, 0.35686275, 0.16078432, 0.4627451)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="IceCream/DialogueOverlay" unique_id=41268841]
+position = Vector2(402.00012, 705)
+scale = Vector2(1.7148278, 1.7148277)
+sprite_frames = SubResource("SpriteFrames_hrrvm")
+autoplay = "default"
+
+[node name="Thomas" type="Area2D" parent="." unique_id=1228244239 node_paths=PackedStringArray("overlay")]
+position = Vector2(1294, 658)
+scale = Vector2(0.1703415, 0.17296214)
+script = ExtResource("7_qoiri")
+dialogue_resource = ExtResource("9_dnfng")
+overlay = NodePath("DialogueOverlay")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Thomas" unique_id=197645405]
+position = Vector2(1332.6173, -849.89685)
+scale = Vector2(8.095528, 8.095528)
+sprite_frames = SubResource("SpriteFrames_3f4sg")
+autoplay = "default"
+frame_progress = 0.41213596
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Thomas" unique_id=796998607]
+position = Vector2(1560.1738, -512.5508)
+shape = SubResource("RectangleShape2D_3f4sg")
+
+[node name="DialogueOverlay" type="CanvasLayer" parent="Thomas" unique_id=1547634503]
+layer = 5
+visible = false
+
+[node name="Blur" type="ColorRect" parent="Thomas/DialogueOverlay" unique_id=1784438695]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.6117647, 0.35686275, 0.16078432, 0.4627451)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Thomas/DialogueOverlay" unique_id=1006555829]
+position = Vector2(1503, 712)
+scale = Vector2(2.7969344, 2.7969344)
+sprite_frames = SubResource("SpriteFrames_tp0yd")
+autoplay = "default"
+frame_progress = 0.36902925
+
+[node name="Olliee2" parent="." unique_id=530691139 instance=ExtResource("5_dd6ij")]
 position = Vector2(744, 763)
 
 [node name="TextureRect4" type="TextureRect" parent="." unique_id=1931054216]
@@ -60,13 +232,8 @@ texture = ExtResource("5_q2le5")
 metadata/_edit_lock_ = true
 
 [node name="World Borda" type="StaticBody2D" parent="." unique_id=1897451727]
-visible = false
 position = Vector2(-11, -17)
 disable_mode = 1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="World Borda" unique_id=341136043]
-position = Vector2(2194, 0)
-shape = SubResource("RectangleShape2D_q2le5")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="World Borda" unique_id=268091490]
 position = Vector2(2172, 1035)

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dp6vlme28vse4"
+path="res://.godot/imported/FINAL 3A_SEPARATED Ending_NONI SAVED.dialogue-fea225b237dc9ba9ecb7f9f2acb13f36.tres"
+
+[deps]
+
+source_file="res://Chapter Three/Dialogues/FINAL 3A_SEPARATED Ending_NONI SAVED.dialogue"
+dest_files=["res://.godot/imported/FINAL 3A_SEPARATED Ending_NONI SAVED.dialogue-fea225b237dc9ba9ecb7f9f2acb13f36.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,70 @@
+~ start
+[speed=0.6]It’s so cold…[/speed]
+
+OLLIE: [speed=0.7]Ate... What do we do now?[/speed]
+
+VALERIE: [speed=0.8]We wait for help, okay? Someone will come.[/speed]
+
+OLLIE: [speed=0.6][shake rate=6 level=3]...But what if they don't?[/shake][/speed]
+
+VALERIE: [speed=0.8]They will. They have to.[/speed]
+
+OLLIE: [speed=0.6][shake rate=8 level=4]Ate... I'm scared.[/shake][/speed]
+
+VALERIE: [speed=0.6]I know… I'm scared too.[/speed]
+
+OLLIE: [speed=0.7]...You are?[/speed]
+
+VALERIE: [speed=0.9]Of course I am, silly. I'm not made of stone.[/speed]
+
+OLLIE: [speed=0.7]But... you're always the one who knows what to do.[/speed]
+
+VALERIE: [speed=0.6]...[/speed]
+
+VALERIE: [speed=0.7]I don't always know what to do, Ollie. I'm just trying my best.[/speed]
+
+[speed=0.6][shake rate=4 level=2]I wish I knew what to do too...[/shake][/speed]
+
+[speed=0.6][shake rate=5 level=2]I wish I could make everything go back to normal.[/shake][/speed]
+
+KIKI: [speed=0.6]Ate... cold...[/speed]
+
+VALERIE: [speed=0.8]It's okay, bunso. Stay close to Ate, alright?[/speed]
+
+OLLIE: [speed=0.7]Will Kiki be okay?[/speed]
+
+VALERIE: [speed=0.8]Yes. We'll keep her warm.[/speed]
+
+???: [speed=1.2][shake rate=18 level=9][b]HELLO! ANYONE STILL OUT THERE?![/b][/shake][/speed]
+
+[speed=1.0][shake rate=8 level=4]Huh?![/shake][/speed]
+
+OLLIE: [speed=1.0][b]Ate! Look! Over there![/b][/speed]
+
+VALERIE: [speed=0.7]...Is that...?[/speed]
+
+OLLIE: [speed=1.2][shake rate=14 level=7][b]Rescue![/b][/shake][/speed]
+
+VALERIE: [speed=0.8][shake rate=6 level=3]Oh, thank goodness...[/shake][/speed]
+
+OLLIE: [speed=1.2][shake rate=18 level=9][b]HEY! OVER HERE![/b][/shake][/speed]
+
+VALERIE: [speed=1.2][shake rate=18 level=9][b]HELP! WE'RE OVER HERE![/b][/shake][/speed]
+
+OLLIE: [speed=1.2][shake rate=20 level=10][b]PLEASE! HELP US![/b][/shake][/speed]
+
+OLLIE: [speed=0.7][shake rate=9 level=4]...Ate, they're not looking this way![/shake][/speed]
+
+VALERIE: [speed=1.1][shake rate=14 level=7][b]Keep calling, Ollie! We have to get their attention![/b][/shake][/speed]
+
+OLLIE: [speed=0.8][shake rate=8 level=4]But they're so far away![/shake][/speed]
+
+VALERIE: [speed=1.0][shake rate=12 level=6][b]I know! Just keep trying! As loud as you can![/b][/shake][/speed]
+
+[speed=0.7][shake rate=8 level=4]I have to keep calling...[/shake][/speed]
+
+[speed=0.7][shake rate=9 level=4]I have to make them see us...[/shake][/speed]
+
+[speed=0.6][shake rate=10 level=5]Please... please look this way![/shake][/speed]
+
+=> END

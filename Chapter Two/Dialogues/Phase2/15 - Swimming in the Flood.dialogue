@@ -1,0 +1,51 @@
+~ start
+OLLIE: [shake rate=12 level=4] Ah...![/shake]
+
+[wave amp=1 freq=2] The water's so high...[/wave]
+
+[wave amp=1 freq=2]I can't even see the street... It's all water.[/wave]
+
+[shake rate=5 level=2] Our house...[/shake]
+
+OLLIE: [shake rate=12 level=4] Whoa-![/shake]
+
+ERNESTO: [shake rate=15 level=5][speed=1.2]OLLIE! Over here! Don't just stay still! Keep moving![/speed][/shake] 
+
+OLLIE: [shake rate=10 level=3] Tay![/shake]
+
+if GameState.has_flag("noni_injured")
+	[speed=0.6]Noni's still holding his arm...[/speed]
+	[speed=0.6][shake rate=3 level=2]He got hurt because of me.[/shake][/speed]
+	[speed=0.6][shake rate=4 level=3]I have to be more careful this time.[/shake][/speed]
+	
+elif GameState.has_flag("noni_safe")
+	[speed=0.6][shake rate=3 level=2]Noni's still shaking...[/shake][/speed]
+	[speed=0.7]But he's okay. I got him up here.[/speed]
+	[speed=0.7][shake rate=3 level=2]I have to keep him safe.[/shake][/speed]
+
+elif GameState.has_flag("dodong_injured")
+	[speed=0.6][shake rate=3 level=2]Kuya Dodong's leg is still bleeding...[/shake][/speed]
+	[speed=0.6][shake rate=2 level=1]I hope it doesn't get worse.[/shake][/speed]
+	[speed=0.7][shake rate=3 level=2]I have to help him.[/shake][/speed]
+
+elif GameState.has_flag("dodong_safe")
+	[speed=0.7]Kuya Dodong's leg is still wrapped. Thank goodness.[/speed]
+	[speed=0.6][shake rate=3 level=2]He'll be okay... He has to be.[/shake][/speed]
+
+else
+	OLLIE: [speed=0.7][shake rate=3 level=2]Everyone is in front of me. I have to keep them close.[/shake][/speed]
+
+OLLIE: [speed=1.2][shake rate=10 level=6][b]Gah! I can't swim properly![/b][/shake][/speed]
+
+[speed=0.8][shake rate=6 level=4]The water keeps pushing me...[/shake][/speed]
+
+ERNESTO: [speed=1.2][shake rate=12 level=7][b]Watch out! Keep your eyes on the water! Move when I tell you![/b][/shake][/speed]
+
+[speed=0.6]Tatay's right...[/speed]
+
+[speed=0.6][shake rate=4 level=3]If I stop, the water will pull me away.[/shake][/speed]
+
+[speed=0.6][shake rate=5 level=3]I can't let anything hit me...[/shake][/speed]
+
+[speed=1.0][shake rate=6 level=4][b]I have to keep moving![/b][/shake][/speed]
+=> END

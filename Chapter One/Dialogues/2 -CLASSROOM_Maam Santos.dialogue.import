@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cu185wcjpq4mj"
+path="res://.godot/imported/2 -CLASSROOM_Maam Santos.dialogue-5b56bf9ab79948dee8cc3a923e7c1db1.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/2 -CLASSROOM_Maam Santos.dialogue"
+dest_files=["res://.godot/imported/2 -CLASSROOM_Maam Santos.dialogue-5b56bf9ab79948dee8cc3a923e7c1db1.tres"]
+
+[params]
+
+defaults=true

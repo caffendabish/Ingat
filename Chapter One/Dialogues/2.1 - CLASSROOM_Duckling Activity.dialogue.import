@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bxdrr3yhxo4dv"
+path="res://.godot/imported/2.1 - CLASSROOM_Duckling Activity.dialogue-5e400eda6456658a581fb0ecc0b910bd.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/2.1 - CLASSROOM_Duckling Activity.dialogue"
+dest_files=["res://.godot/imported/2.1 - CLASSROOM_Duckling Activity.dialogue-5e400eda6456658a581fb0ecc0b910bd.tres"]
+
+[params]
+
+defaults=true
