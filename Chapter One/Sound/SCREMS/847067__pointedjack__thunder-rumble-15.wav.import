@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://clklkdritn6ti"
+path="res://.godot/imported/847067__pointedjack__thunder-rumble-15.wav-4b0944b3da19e917b4cc814d503dbd3f.sample"
+
+[deps]
+
+source_file="res://Chapter One/Sound/SCREMS/847067__pointedjack__thunder-rumble-15.wav"
+dest_files=["res://.godot/imported/847067__pointedjack__thunder-rumble-15.wav-4b0944b3da19e917b4cc814d503dbd3f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cg5cfum74nd3y"
+path="res://.godot/imported/836753__kevp888__250815_151347_ph_strong_waves_at_masasa_beach.wav-dde327aa40cacf3e34ae5c3bcd407463.sample"
+
+[deps]
+
+source_file="res://Chapter One/Sound/SCREMS/836753__kevp888__250815_151347_ph_strong_waves_at_masasa_beach.wav"
+dest_files=["res://.godot/imported/836753__kevp888__250815_151347_ph_strong_waves_at_masasa_beach.wav-dde327aa40cacf3e34ae5c3bcd407463.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

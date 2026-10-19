@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bsvylyeli8map"
+path="res://.godot/imported/829715__kevp888__250731_175435_ph_lively_afternoon_in_filipino_suburb.wav-6d9890d9cfe7b7c1db45dddeb59338a1.sample"
+
+[deps]
+
+source_file="res://Chapter One/Sound/829715__kevp888__250731_175435_ph_lively_afternoon_in_filipino_suburb.wav"
+dest_files=["res://.godot/imported/829715__kevp888__250731_175435_ph_lively_afternoon_in_filipino_suburb.wav-6d9890d9cfe7b7c1db45dddeb59338a1.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

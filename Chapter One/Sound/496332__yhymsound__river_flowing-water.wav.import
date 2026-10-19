@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bjofmfuqfwoat"
+path="res://.godot/imported/496332__yhymsound__river_flowing-water.wav-a0cde0fc520d0e9fb66b87867509244f.sample"
+
+[deps]
+
+source_file="res://Chapter One/Sound/496332__yhymsound__river_flowing-water.wav"
+dest_files=["res://.godot/imported/496332__yhymsound__river_flowing-water.wav-a0cde0fc520d0e9fb66b87867509244f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

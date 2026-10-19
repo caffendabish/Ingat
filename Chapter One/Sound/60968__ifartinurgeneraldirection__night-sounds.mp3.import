@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bsengie7opvxs"
+path="res://.godot/imported/60968__ifartinurgeneraldirection__night-sounds.mp3-5c9049d1d0fa1cc2c96e7532e8ff03b3.mp3str"
+
+[deps]
+
+source_file="res://Chapter One/Sound/60968__ifartinurgeneraldirection__night-sounds.mp3"
+dest_files=["res://.godot/imported/60968__ifartinurgeneraldirection__night-sounds.mp3-5c9049d1d0fa1cc2c96e7532e8ff03b3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

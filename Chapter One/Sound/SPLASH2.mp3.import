@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c85se40iwhbnk"
+path="res://.godot/imported/SPLASH2.mp3-202397315237707497a99d9867381edf.mp3str"
+
+[deps]
+
+source_file="res://Chapter One/Sound/SPLASH2.mp3"
+dest_files=["res://.godot/imported/SPLASH2.mp3-202397315237707497a99d9867381edf.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bho43dujcfp8u"
+path="res://.godot/imported/866253__alexdarek__storm-over-warsaw-august-8-2026.wav-c737dc175eaa75e5778c6d7e6fb98232.sample"
+
+[deps]
+
+source_file="res://Chapter One/Sound/866253__alexdarek__storm-over-warsaw-august-8-2026.wav"
+dest_files=["res://.godot/imported/866253__alexdarek__storm-over-warsaw-august-8-2026.wav-c737dc175eaa75e5778c6d7e6fb98232.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

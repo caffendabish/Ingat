@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dwjaqgdj32h01"
+path="res://.godot/imported/826052__kevp888__250714_085351_ph_traffic_in_a_street_of_calapan.wav-4f50d9f1e0dc10fa2122b64f68993734.sample"
+
+[deps]
+
+source_file="res://Chapter One/Sound/826052__kevp888__250714_085351_ph_traffic_in_a_street_of_calapan.wav"
+dest_files=["res://.godot/imported/826052__kevp888__250714_085351_ph_traffic_in_a_street_of_calapan.wav-4f50d9f1e0dc10fa2122b64f68993734.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

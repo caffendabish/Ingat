@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bkvrqrfhddpar"
+path="res://.godot/imported/CROWD.mp3-38ad294d11338d2e5f337ca4497a860f.mp3str"
+
+[deps]
+
+source_file="res://Chapter One/Sound/CROWD.mp3"
+dest_files=["res://.godot/imported/CROWD.mp3-38ad294d11338d2e5f337ca4497a860f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

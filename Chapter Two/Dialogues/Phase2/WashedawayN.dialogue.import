@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://c82nndh4b1tq3"
+path="res://.godot/imported/WashedawayN.dialogue-8adeb026543d38a68d7872565217f6e9.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase2/WashedawayN.dialogue"
+dest_files=["res://.godot/imported/WashedawayN.dialogue-8adeb026543d38a68d7872565217f6e9.tres"]
+
+[params]
+
+defaults=true

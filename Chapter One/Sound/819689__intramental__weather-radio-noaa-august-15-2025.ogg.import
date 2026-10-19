@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dgwf6wne8ofw1"
+path="res://.godot/imported/819689__intramental__weather-radio-noaa-august-15-2025.ogg-d2f3e60e85427a99730972f058c0807b.oggvorbisstr"
+
+[deps]
+
+source_file="res://Chapter One/Sound/819689__intramental__weather-radio-noaa-august-15-2025.ogg"
+dest_files=["res://.godot/imported/819689__intramental__weather-radio-noaa-august-15-2025.ogg-d2f3e60e85427a99730972f058c0807b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

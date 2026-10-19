@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://chvmlle2erimn"
+path="res://.godot/imported/519006__sheyvan__dunking-in-water.wav-312e636356f9c9e3da2e6a24558ce722.sample"
+
+[deps]
+
+source_file="res://Chapter One/Sound/519006__sheyvan__dunking-in-water.wav"
+dest_files=["res://.godot/imported/519006__sheyvan__dunking-in-water.wav-312e636356f9c9e3da2e6a24558ce722.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://uuwad6j7potl"
+path="res://.godot/imported/186748__rombart__splash-eau-goudron1.wav-29b9a71c8a35a60fa9db801c43d7c264.sample"
+
+[deps]
+
+source_file="res://Chapter One/Sound/SCREMS/186748__rombart__splash-eau-goudron1.wav"
+dest_files=["res://.godot/imported/186748__rombart__splash-eau-goudron1.wav-29b9a71c8a35a60fa9db801c43d7c264.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

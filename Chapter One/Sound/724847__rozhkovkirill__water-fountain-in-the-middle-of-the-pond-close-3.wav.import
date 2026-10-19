@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ddp2cj1wk1is2"
+path="res://.godot/imported/724847__rozhkovkirill__water-fountain-in-the-middle-of-the-pond-close-3.wav-fe7758f9a87ed19081680596d035480a.sample"
+
+[deps]
+
+source_file="res://Chapter One/Sound/724847__rozhkovkirill__water-fountain-in-the-middle-of-the-pond-close-3.wav"
+dest_files=["res://.godot/imported/724847__rozhkovkirill__water-fountain-in-the-middle-of-the-pond-close-3.wav-fe7758f9a87ed19081680596d035480a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

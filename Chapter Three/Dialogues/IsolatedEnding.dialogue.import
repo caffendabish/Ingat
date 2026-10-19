@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bvioif52ay7xl"
+path="res://.godot/imported/IsolatedEnding.dialogue-e900aef32a9c13be9aca609d40d1408c.tres"
+
+[deps]
+
+source_file="res://Chapter Three/Dialogues/IsolatedEnding.dialogue"
+dest_files=["res://.godot/imported/IsolatedEnding.dialogue-e900aef32a9c13be9aca609d40d1408c.tres"]
+
+[params]
+
+defaults=true

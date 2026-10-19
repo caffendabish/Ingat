@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cxbw7ake0l6px"
+path="res://.godot/imported/SafeEnd.dialogue-c61439c926378a85beb540bc5229438b.tres"
+
+[deps]
+
+source_file="res://Chapter Three/Dialogues/SafeEnd.dialogue"
+dest_files=["res://.godot/imported/SafeEnd.dialogue-c61439c926378a85beb540bc5229438b.tres"]
+
+[params]
+
+defaults=true

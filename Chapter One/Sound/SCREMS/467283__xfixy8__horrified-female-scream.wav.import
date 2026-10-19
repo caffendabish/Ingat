@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://er7kkhg7rpp"
+path="res://.godot/imported/467283__xfixy8__horrified-female-scream.wav-b275950c8e68f64113494aae1478126f.sample"
+
+[deps]
+
+source_file="res://Chapter One/Sound/SCREMS/467283__xfixy8__horrified-female-scream.wav"
+dest_files=["res://.godot/imported/467283__xfixy8__horrified-female-scream.wav-b275950c8e68f64113494aae1478126f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

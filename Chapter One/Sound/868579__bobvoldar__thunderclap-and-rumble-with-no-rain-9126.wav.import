@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ceu34y5rmp5pk"
+path="res://.godot/imported/868579__bobvoldar__thunderclap-and-rumble-with-no-rain-9126.wav-95c5dda426b348004a346b0ac354b322.sample"
+
+[deps]
+
+source_file="res://Chapter One/Sound/868579__bobvoldar__thunderclap-and-rumble-with-no-rain-9126.wav"
+dest_files=["res://.godot/imported/868579__bobvoldar__thunderclap-and-rumble-with-no-rain-9126.wav-95c5dda426b348004a346b0ac354b322.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

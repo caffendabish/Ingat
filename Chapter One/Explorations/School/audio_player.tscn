@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://c5ilgay77l200"]
+
+[ext_resource type="AudioStream" uid="uid://bsvylyeli8map" path="res://Chapter One/Sound/829715__kevp888__250731_175435_ph_lively_afternoon_in_filipino_suburb.wav" id="2_iny8w"]
+[ext_resource type="AudioStream" uid="uid://dedsixw1fnwv1" path="res://Chapter One/Sound/110919__felixblume__forest-in-tierra-del-fuego-argentina-trees-are-cracking-wind-is-strong.wav" id="3_jgiv6"]
+
+[sub_resource type="GDScript" id="GDScript_tavsp"]
+script/source = "extends Node
+
+@onready var player: AudioStreamPlayer = $AudioStreamPlayer
+var current_track: AudioStream = null
+var tween: Tween
+
+func play_music(track: AudioStream, fade_time := 1.0) -> void:
+	if track == current_track and player.playing:
+		return  # same track: keep playing across scenes
+	current_track = track
+
+	if tween:
+		tween.kill()
+	tween = create_tween()
+
+	if player.playing:
+		tween.tween_property(player, \"volume_db\", -40.0, fade_time)
+	tween.tween_callback(_swap.bind(track))
+	tween.tween_property(player, \"volume_db\", 0.0, fade_time)
+
+func _swap(track: AudioStream) -> void:
+	player.volume_db = -40.0
+	player.stream = track
+	player.play()
+
+func stop_music(fade_time := 1.0) -> void:
+	current_track = null
+	if tween:
+		tween.kill()
+	tween = create_tween()
+	tween.tween_property(player, \"volume_db\", -40.0, fade_time)
+	tween.tween_callback(player.stop)
+"
+
+[node name="AudioPlayer" type="Node" unique_id=219323551]
+script = SubResource("GDScript_tavsp")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=508975834]
+stream = ExtResource("2_iny8w")
+autoplay = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="AudioStreamPlayer" unique_id=1796145294]
+stream = ExtResource("3_jgiv6")

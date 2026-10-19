@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cbqigqhgxo7xw"
+path="res://.godot/imported/474155__chris_schum__soft-neighbourhood-sounds.mp3-0a10b24331c5ec1e8af66eb31366b5b9.mp3str"
+
+[deps]
+
+source_file="res://Chapter One/Sound/474155__chris_schum__soft-neighbourhood-sounds.mp3"
+dest_files=["res://.godot/imported/474155__chris_schum__soft-neighbourhood-sounds.mp3-0a10b24331c5ec1e8af66eb31366b5b9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

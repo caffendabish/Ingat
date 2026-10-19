@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d2mneobgl4nja"
+path="res://.godot/imported/702305__neartheatmoshphere__city-rain-04.wav-5d07e5bc476b5c5caf971f7f12ea0f66.sample"
+
+[deps]
+
+source_file="res://Chapter One/Sound/702305__neartheatmoshphere__city-rain-04.wav"
+dest_files=["res://.godot/imported/702305__neartheatmoshphere__city-rain-04.wav-5d07e5bc476b5c5caf971f7f12ea0f66.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

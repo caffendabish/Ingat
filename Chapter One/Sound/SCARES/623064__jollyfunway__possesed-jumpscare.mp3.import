@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c4nhaxke5w80a"
+path="res://.godot/imported/623064__jollyfunway__possesed-jumpscare.mp3-944b22c0e25478668196e9bb85da82b1.mp3str"
+
+[deps]
+
+source_file="res://Chapter One/Sound/SCARES/623064__jollyfunway__possesed-jumpscare.mp3"
+dest_files=["res://.godot/imported/623064__jollyfunway__possesed-jumpscare.mp3-944b22c0e25478668196e9bb85da82b1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
