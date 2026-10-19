@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://c07bv0fli13n6"
+path="res://.godot/imported/3.2C - NPC VENDOR_Aling Marta.dialogue-022c7beca4a93b44d5e19285f3f32d34.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/3.2C - NPC VENDOR_Aling Marta.dialogue"
+dest_files=["res://.godot/imported/3.2C - NPC VENDOR_Aling Marta.dialogue-022c7beca4a93b44d5e19285f3f32d34.tres"]
+
+[params]
+
+defaults=true

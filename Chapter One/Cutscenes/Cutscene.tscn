@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c2k37jl3myb1w"]
 
-[ext_resource type="VideoStream" uid="uid://dv1waw4sh0fmj" path="res://Chapter One/Cutscenes/Stuff/cutscne_audiofix.ogv" id="1_1srds"]
+[ext_resource type="VideoStream" uid="uid://dv8iotflvlgw6" path="res://Chapter One/Cutscenes/INTROSCENE.ogv" id="1_eqyh6"]
 [ext_resource type="Script" uid="uid://nw0csd0nnkfu" path="res://Chapter One/Cutscenes/video_stream_player.gd" id="2_eqyh6"]
 
 [node name="Control" type="Control" unique_id=516247019]
@@ -22,7 +22,7 @@ offset_right = -958.0
 offset_bottom = -539.0
 grow_horizontal = 2
 grow_vertical = 2
-stream = ExtResource("1_1srds")
+stream = ExtResource("1_eqyh6")
 autoplay = true
 expand = true
 script = ExtResource("2_eqyh6")

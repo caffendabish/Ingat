@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cxbw7ake0l6px"
+path="res://.godot/imported/FINAL 2_SAFE Ending.dialogue-db75ce65d104dbea9698dd3066602285.tres"
+
+[deps]
+
+source_file="res://Chapter Three/Dialogues/FINAL 2_SAFE Ending.dialogue"
+dest_files=["res://.godot/imported/FINAL 2_SAFE Ending.dialogue-db75ce65d104dbea9698dd3066602285.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bdxg14xk2hxyk"
+path="res://.godot/imported/16.2B - TATAY_WASHED AWAY_2.dialogue-cb454a0dfe1a177f70fc29066d7658bf.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase2/16.2B - TATAY_WASHED AWAY_2.dialogue"
+dest_files=["res://.godot/imported/16.2B - TATAY_WASHED AWAY_2.dialogue-cb454a0dfe1a177f70fc29066d7658bf.tres"]
+
+[params]
+
+defaults=true

@@ -5,6 +5,7 @@ const INTRO_DIALOGUE := preload("res://Chapter One/Dialogues/6 - BEDROOM_Sleepy 
 static var intro_played := false
 
 func _ready() -> void:
+	GameHUD.show_hud()
 	if intro_played:
 		return
 	intro_played = true

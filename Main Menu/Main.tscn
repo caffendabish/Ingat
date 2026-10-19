@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cnwpodhy135r4"]
 
-[ext_resource type="VideoStream" uid="uid://btbroxh3gsxc" path="res://Redundant Assets/Character/AssetsDump/MENU.ogv" id="1_klssu"]
+[ext_resource type="VideoStream" uid="uid://dfmjg12wsjpu3" path="res://Chapter One/Cutscenes/MENU.ogv" id="1_klssu"]
 [ext_resource type="Script" uid="uid://b7wr1yq2gxx85" path="res://Chapter One/Cutscenes/Scripts/cutscene.gd" id="2_6v6oc"]
 
 [node name="Main" type="Control" unique_id=1348205863]

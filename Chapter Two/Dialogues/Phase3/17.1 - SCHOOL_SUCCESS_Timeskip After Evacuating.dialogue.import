@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://k74kse87ll3a"
+path="res://.godot/imported/17.1 - SCHOOL_SUCCESS_Timeskip After Evacuating.dialogue-1703b58ee94e87066e9a589aa1593148.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase3/17.1 - SCHOOL_SUCCESS_Timeskip After Evacuating.dialogue"
+dest_files=["res://.godot/imported/17.1 - SCHOOL_SUCCESS_Timeskip After Evacuating.dialogue-1703b58ee94e87066e9a589aa1593148.tres"]
+
+[params]
+
+defaults=true

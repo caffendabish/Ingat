@@ -3,11 +3,17 @@ extends CanvasLayer
 @export var meter_frames: Array[Texture2D]   # the 10 meter images, in order
 
 @onready var insanity_bar: TextureRect = $InsanityBar
+@onready var vignette: ColorRect = $Vignette
 @onready var bag_button: Button = $BagButton
 @onready var quest_button: Button = $QuestButton
 @onready var quest_toast: Label = $QuestToast
 @onready var inventory_ui: Control = $InventoryUI
 @onready var quest_log_ui: Control = $QuestLogUI
+
+# Vignette intensity at max insanity (0.0 = none, 1.0 = fully black)
+const VIGNETTE_MAX_ALPHA := 0.7
+# Slight red tint at high insanity for a more oppressive feel
+const VIGNETTE_MAX_RED := 0.15
 
 var hud_enabled := true     # master switch for the whole HUD
 var meter_only := false     # true = only the insanity meter is allowed to show
@@ -30,7 +36,13 @@ func _process(_delta: float) -> void:
 	var full_hud := hud_enabled and not meter_only
 	bag_button.visible = full_hud
 	quest_button.visible = full_hud
-	insanity_bar.visible = hud_enabled and GameState.insanity_revealed
+	insanity_bar.visible = hud_enabled and (GameState.insanity_revealed or meter_only)
+
+	# Vignette grows darker and slightly redder as insanity rises
+	var insanity_ratio := float(GameState.insanity) / float(GameState.MAX_INSANITY)
+	var vignette_alpha := lerpf(0.0, VIGNETTE_MAX_ALPHA, insanity_ratio)
+	var vignette_red := lerpf(0.0, VIGNETTE_MAX_RED, insanity_ratio)
+	vignette.color = Color(vignette_red, 0.0, 0.0, vignette_alpha)
 
 	# never leave a screen open when buttons are hidden
 	if not full_hud:
@@ -134,13 +146,16 @@ func _set_frame(i: int) -> void:
 func hide_hud() -> void:          # nothing shows (cutscenes, QTE)
 	hud_enabled = false
 	meter_only = false
+	visible = false                 # hide the CanvasLayer itself
 
 
 func show_hud() -> void:          # everything shows (exploring)
 	hud_enabled = true
 	meter_only = false
+	visible = true                  # show the CanvasLayer itself
 
 
 func show_meter_only() -> void:   # just the insanity meter
 	hud_enabled = true
 	meter_only = true
+	visible = true                  # show the CanvasLayer itself

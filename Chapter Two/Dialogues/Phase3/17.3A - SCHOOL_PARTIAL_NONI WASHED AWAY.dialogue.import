@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://boue1nuvdoqg2"
+path="res://.godot/imported/17.3A - SCHOOL_PARTIAL_NONI WASHED AWAY.dialogue-bbdbf5944a3a1bfcbe4c2fc539f066bf.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase3/17.3A - SCHOOL_PARTIAL_NONI WASHED AWAY.dialogue"
+dest_files=["res://.godot/imported/17.3A - SCHOOL_PARTIAL_NONI WASHED AWAY.dialogue-bbdbf5944a3a1bfcbe4c2fc539f066bf.tres"]
+
+[params]
+
+defaults=true

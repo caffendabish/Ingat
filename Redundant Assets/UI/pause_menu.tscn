@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://clbctm7nv3lkm"]
+
+[ext_resource type="Script" uid="uid://beqspsy8wxojm" path="res://Redundant Assets/UI/pause_menu.gd" id="1_uncnd"]
+[ext_resource type="Texture2D" uid="uid://rtgis7aagrqm" path="res://Redundant Assets/UI/PAUSE_MENU.png" id="2_ok8ol"]
+[ext_resource type="FontFile" uid="uid://cug8dvaqqi6kp" path="res://Redundant Assets/SpookworksGame (1).ttf" id="3_xoa1t"]
+
+[node name="PauseMenu" type="CanvasLayer" unique_id=1183665142]
+script = ExtResource("1_uncnd")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1480547501]
+offset_right = 1962.0
+offset_bottom = 1098.0
+color = Color(1, 1, 1, 0.6666667)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1326775580]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_ok8ol")
+
+[node name="Label" type="Label" parent="." unique_id=1969428816]
+offset_left = 816.0
+offset_top = 382.0
+offset_right = 1441.0
+offset_bottom = 517.0
+theme_override_colors/font_color = Color(0.16206557, 0.1620656, 0.16206557, 1)
+theme_override_fonts/font = ExtResource("3_xoa1t")
+theme_override_font_sizes/font_size = 120
+text = "PAUSED"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Resume" type="Button" parent="." unique_id=613709400]
+offset_left = 643.0
+offset_top = 552.0
+offset_right = 1144.0
+offset_bottom = 663.0
+theme_override_colors/font_color = Color(0.27387235, 0.27387294, 0.27387252, 1)
+theme_override_fonts/font = ExtResource("3_xoa1t")
+theme_override_font_sizes/font_size = 90
+text = "Resume"
+flat = true
+
+[node name="Main Menu" type="Button" parent="." unique_id=1318473843]
+offset_left = 643.0
+offset_top = 693.0
+offset_right = 1144.0
+offset_bottom = 813.0
+theme_override_colors/font_color = Color(0.27387235, 0.27387294, 0.27387252, 1)
+theme_override_fonts/font = ExtResource("3_xoa1t")
+theme_override_font_sizes/font_size = 90
+text = "Main Menu"
+flat = true
+
+[node name="Quit" type="Button" parent="." unique_id=1550953597]
+offset_left = 643.0
+offset_top = 834.0
+offset_right = 1144.0
+offset_bottom = 945.0
+theme_override_colors/font_color = Color(0.27387235, 0.27387294, 0.27387252, 1)
+theme_override_fonts/font = ExtResource("3_xoa1t")
+theme_override_font_sizes/font_size = 90
+text = "Quit"
+flat = true
+
+[connection signal="pressed" from="Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="Main Menu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

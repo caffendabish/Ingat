@@ -8,7 +8,7 @@
 [ext_resource type="Resource" uid="uid://b4ja2eqw6yq40" path="res://Redundant Assets/Inventory/items/canned.tres" id="5_htm2w"]
 [ext_resource type="Resource" uid="uid://lhe28hh0bol7" path="res://Redundant Assets/Inventory/items/radio.tres" id="6_rry3k"]
 [ext_resource type="Resource" uid="uid://bbp5s56talmfw" path="res://Redundant Assets/Inventory/items/flashlight.tres" id="7_inlhk"]
-[ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="8_456ej"]
+[ext_resource type="PackedScene" uid="uid://de6lwiimhbfb4" path="res://Redundant Assets/Character/OllieRun.tscn" id="9_podpw"]
 [ext_resource type="Texture2D" uid="uid://cv3nkfeb17avg" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_RIGHT.png" id="10_2exlc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
@@ -64,7 +64,7 @@ item = ExtResource("7_inlhk")
 pickup_id = &"torchs"
 display_size = 250.0
 
-[node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("8_456ej")]
+[node name="Olliee2" parent="." unique_id=530691139 instance=ExtResource("9_podpw")]
 position = Vector2(3019, 744)
 
 [node name="Dining" type="Area2D" parent="." unique_id=303886765]

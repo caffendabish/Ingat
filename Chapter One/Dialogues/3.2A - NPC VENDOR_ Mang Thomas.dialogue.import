@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://df6ktyp1oro5c"
+path="res://.godot/imported/3.2A - NPC VENDOR_ Mang Thomas.dialogue-207364c17362dd0047d7f83a2c15fd31.tres"
+
+[deps]
+
+source_file="res://Chapter One/Dialogues/3.2A - NPC VENDOR_ Mang Thomas.dialogue"
+dest_files=["res://.godot/imported/3.2A - NPC VENDOR_ Mang Thomas.dialogue-207364c17362dd0047d7f83a2c15fd31.tres"]
+
+[params]
+
+defaults=true

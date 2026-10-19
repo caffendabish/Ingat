@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bhgo03ij3t44w"
+path="res://.godot/imported/17.2B - SCHOOL_PARTIAL_BOTH WASHED AWAY 2_Timeskip After Evacuating.dialogue-9edd2d90417a72a8feca446efa1d08aa.tres"
+
+[deps]
+
+source_file="res://Chapter Two/Dialogues/Phase3/17.2B - SCHOOL_PARTIAL_BOTH WASHED AWAY 2_Timeskip After Evacuating.dialogue"
+dest_files=["res://.godot/imported/17.2B - SCHOOL_PARTIAL_BOTH WASHED AWAY 2_Timeskip After Evacuating.dialogue-9edd2d90417a72a8feca446efa1d08aa.tres"]
+
+[params]
+
+defaults=true
