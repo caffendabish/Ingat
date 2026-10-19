@@ -10,8 +10,6 @@ extends Node2D
 @export_range(-40.0, 6.0) var thunder_loud_db := -4.0     # where it swells to
 @export var thunder_swell_after_lines := 2                # dialogue lines after the trigger before it gets louder
 @export var fade_out_time := 4.0                          # seconds for neighbour/chatter to fade away
-@export_range(-40.0, 6.0) var suspense_db := -6.0         # suspense music that starts once this scene is over
-@export var suspense_fade := 3.0
 
 var _thunder_played := false
 var _lines_since_thunder := 0
@@ -92,9 +90,6 @@ func _outro() -> void:
 	var t := create_tween()
 	t.tween_property(fade, "color:a", 1.0, END_FADE_OUT)
 	await t.finished
-	# the home music stopped at the thunder; after this scene the suspense music takes over
-	# and plays through everything until one of the endings (which switches to the endings track)
-	AudioManager.play_music("suspense", suspense_fade, suspense_db)
 
 
 func _next() -> void:

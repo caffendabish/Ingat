@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="3_04ckn"]
 [ext_resource type="Texture2D" uid="uid://cgefj64mgvkjo" path="res://Redundant Assets/Character/AssetsDump/PiliSpritesheet.png" id="4_3wt03"]
 [ext_resource type="Texture2D" uid="uid://v03o6udgh7vb" path="res://Redundant Assets/Character/AssetsDump/PiliSpaghetti.png" id="4_gyqe5"]
-[ext_resource type="Script" uid="uid://brlgkkroannnj" path="res://Chapter One/Sound/scene_music.gd" id="7_3wt03"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_us8ia"]
 atlas = ExtResource("4_gyqe5")
@@ -135,6 +134,3 @@ shape = SubResource("RectangleShape2D_gyqe5")
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Border" unique_id=2927270]
 position = Vector2(1228, 564)
 shape = SubResource("RectangleShape2D_57qmd")
-
-[node name="SceneMusic" type="Node" parent="." unique_id=994547776]
-script = ExtResource("7_3wt03")

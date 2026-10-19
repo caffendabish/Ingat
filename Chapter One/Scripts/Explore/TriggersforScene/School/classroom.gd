@@ -10,11 +10,11 @@ extends Node2D
 func _ready() -> void:
 	AudioManager.sfx_offset_db = sfx_db
 	AudioManager.play_ambient("classroom", ambient_db, 1.0)
-	AudioManager.play_music("schoolmusic", 1.0, school_bg_db)
+	AudioManager.play_music("school", 1.0, school_bg_db)
 
 #hallway
 func _on_hallway_body_entered(body: Node2D) -> void:
 	AudioManager.stop_ambient(1.0)
-	AudioManager.play_music("schoolmusic", 0.5, music_db)
+	AudioManager.play_music("school", 0.5, music_db)
 	
 	get_tree().change_scene_to_file("res://Chapter One/Explorations/School/hallway.tscn")

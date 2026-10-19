@@ -8,7 +8,6 @@ script = ExtResource("1_x318o")
 dialogue = ExtResource("2_ek3u1")
 next_scene = "uid://vm4g7vwkk5do"
 stop_screams_on_start = true
-start_music = "endings"
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1034087368]
 offset_right = 1932.0

@@ -12,10 +12,6 @@ const SFX_LIBRARY := {
 }
 const MUSIC_LIBRARY := {
 	"school": "res://Chapter One/Sound/829715__kevp888__250731_175435_ph_lively_afternoon_in_filipino_suburb.wav",
-	"schoolmusic": "res://Chapter One/Sound/BG_MUSIC/shcoolbg.mp3",
-	"home":"res://Chapter One/Sound/BG_MUSIC/home.mp3",
-	"suspense": "res://Chapter One/Sound/BG_MUSIC/suspense.mp3",
-	"endings": "res://Chapter One/Sound/BG_MUSIC/sadtime.mp3"
 }
 const AMBIENT_LIBRARY := {
 	"school": "res://Chapter One/Sound/829715__kevp888__250731_175435_ph_lively_afternoon_in_filipino_suburb.wav",
@@ -39,8 +35,6 @@ const AMBIENT_LIBRARY := {
 	}
 
 var sfx_offset_db := 0.0
-# applied to every background music track (school, home, suspense, endings). More negative = quieter.
-var music_offset_db := -3.0
 
 var _cache: Dictionary = {}
 var _music_players: Array[AudioStreamPlayer] = []
@@ -62,8 +56,6 @@ func _ready() -> void:
 		p.volume_db = SILENT_DB
 		add_child(p)
 		_music_players.append(p)
-		# the music mp3s import without looping, so restart the active track when it ends
-		p.finished.connect(_on_music_finished.bind(p))
 
 	for i in SFX_POOL_SIZE:
 		var p := AudioStreamPlayer.new()
@@ -97,7 +89,6 @@ func play_music(track: String, fade_time := 1.0, volume_db := 0.0) -> void:
 		push_warning("Unknown music: " + track)
 		return
 
-	volume_db += music_offset_db
 	var stream := _get_stream(MUSIC_LIBRARY[track])
 	var current := _music_players[_active_music]
 
@@ -171,11 +162,6 @@ func stop_ambient(fade_time := 1.0) -> void:
 	_ambient_tween = create_tween()
 	_ambient_tween.tween_property(_ambient_player, "volume_db", SILENT_DB, fade_time)
 	_ambient_tween.tween_callback(_ambient_player.stop)
-
-
-func _on_music_finished(player: AudioStreamPlayer) -> void:
-	if player == _music_players[_active_music]:
-		player.play()
 
 
 func _on_ambient_finished() -> void:

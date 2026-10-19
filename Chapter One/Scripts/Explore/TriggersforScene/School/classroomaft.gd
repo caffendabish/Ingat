@@ -14,7 +14,7 @@ static var intro_played := false
 func _ready() -> void:
 	AudioManager.sfx_offset_db = sfx_db
 	AudioManager.play_ambient("classroom", ambient_db, 1.0)
-	AudioManager.play_music("schoolmusic", 1.0, school_bg_db)
+	AudioManager.play_music("school", 1.0, school_bg_db)
 	if intro_played:
 		return
 	intro_played = true

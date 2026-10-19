@@ -5,7 +5,6 @@ const INTRO_DIALOGUE := preload("res://Chapter One/Dialogues/EmptyStalls.dialogu
 static var intro_played := false
 
 func _ready() -> void:
-	AudioManager.play_music("schoolmusic", 2.0)
 	if intro_played:
 		return
 	intro_played = true
