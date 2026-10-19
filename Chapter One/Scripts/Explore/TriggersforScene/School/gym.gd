@@ -7,7 +7,7 @@ extends Node2D
 #hallway
 func _ready():
 	AudioManager.sfx_offset_db = sfx_db
-	AudioManager.play_music("school", 12, ambient_db)
+	AudioManager.play_music("schoolmusic", 12, ambient_db)
 
 
 func _on_gym_2_body_entered(body: Node2D) -> void:

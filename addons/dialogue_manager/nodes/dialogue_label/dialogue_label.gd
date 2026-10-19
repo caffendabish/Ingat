@@ -104,10 +104,6 @@ func type_out() -> void:
 	_last_mutation_index = -1
 	_already_mutated_indices.clear()
 
-	# Ensure typing has a minimum speed so text doesn't appear all at once
-	if seconds_per_step <= 0:
-		seconds_per_step = 0.02
-
 	is_typing = true
 	started_typing.emit()
 
@@ -116,12 +112,10 @@ func type_out() -> void:
 
 	if get_total_character_count() == 0:
 		is_typing = false
-
-## Play dialogue tick sound when a letter is spoken
-func _on_spoke(_letter: String, _index: int, _speed: float) -> void:
-	var tick_player: AudioStreamPlayer = get_node("DialogueTickPlayer")
-	if tick_player and not tick_player.playing:
-		tick_player.play()
+	elif seconds_per_step == 0:
+		_mutate_remaining_mutations()
+		visible_characters = get_total_character_count()
+		is_typing = false
 
 
 ## Stop typing out the text and jump right to the end

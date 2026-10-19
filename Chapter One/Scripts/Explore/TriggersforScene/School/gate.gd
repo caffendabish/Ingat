@@ -6,7 +6,7 @@ static var intro_played := false
 
 
 func _ready() -> void:
-	AudioManager.play_music("school")
+	AudioManager.play_music("schoolmusic")
 	if intro_played:
 		return
 	intro_played = true

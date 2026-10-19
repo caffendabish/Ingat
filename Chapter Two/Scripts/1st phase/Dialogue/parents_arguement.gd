@@ -9,6 +9,10 @@ extends Node2D
 # turn on for the ending scenes: fades out the flood screams as soon as the scene starts
 @export var stop_screams_on_start := false
 @export var screams_fade_out := 1.5
+# ending scenes: background music to start (name from AudioManager.MUSIC_LIBRARY); empty = leave music alone
+@export var start_music := ""
+@export_range(-40.0, 6.0) var start_music_db := -6.0
+@export var start_music_fade := 2.0
 
 # timings in seconds
 const BLACK_HOLD := 0.8      # black screen before the text
@@ -26,6 +30,8 @@ func _ready() -> void:
 	GameHUD.hide_hud()
 	if stop_screams_on_start:
 		AudioManager.stop_layer("screams", screams_fade_out)
+	if start_music != "":
+		AudioManager.play_music(start_music, start_music_fade, start_music_db)
 	fade.show()
 	fade.color.a = 1.0
 	fault_label.modulate.a = 0.0

@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cdbvkk8pevhuf" path="res://Chapter One/Assets/Finalize/HOUSE/PBEDROOM/PBEDROOM.png" id="1_g0bas"]
 [ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_vxxug"]
 [ext_resource type="Texture2D" uid="uid://cndgxvdababxy" path="res://Chapter One/Assets/Finalize/HOUSE/BEDROOM/CHILDRENROON_LIGHTOVERLAY.png" id="3_vxxug"]
+[ext_resource type="Script" uid="uid://brlgkkroannnj" path="res://Chapter One/Sound/scene_music.gd" id="4_hpg7q"]
 
 [node name="Node2D" type="Node2D" unique_id=989505016]
 
@@ -28,3 +29,6 @@ offset_top = -17.0
 offset_right = 4437.0
 offset_bottom = 1089.0
 texture = ExtResource("3_vxxug")
+
+[node name="SceneMusic" type="Node" parent="." unique_id=504606656]
+script = ExtResource("4_hpg7q")

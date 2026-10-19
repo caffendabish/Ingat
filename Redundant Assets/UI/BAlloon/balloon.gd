@@ -20,6 +20,11 @@ extends CanvasLayer
 ## The action to use to skip typing the dialogue
 @export var skip_action: StringName = &"ui_cancel"
 
+## Typing sound (dialogue.wav): plays on every Nth letter, with a little pitch variation
+@export var text_sound_every := 2
+@export_range(-40.0, 6.0) var text_sound_db := -12.0
+@export_range(0.0, 0.3) var text_sound_pitch_variation := 0.06
+
 ## A sound player for voice lines (if they exist).
 @onready var audio_stream_player: AudioStreamPlayer = %AudioStreamPlayer
 
@@ -81,6 +86,9 @@ func _ready() -> void:
 
 	mutation_cooldown.timeout.connect(_on_mutation_cooldown_timeout)
 	add_child(mutation_cooldown)
+
+	# typing sound: a short blip as the letters appear
+	dialogue_label.spoke.connect(_on_dialogue_label_spoke)
 
 	if auto_start:
 		if not is_instance_valid(dialogue_resource):
@@ -174,6 +182,13 @@ func next(next_id: String) -> void:
 
 
 #region Signals
+
+
+func _on_dialogue_label_spoke(letter: String, letter_index: int, _speed: float) -> void:
+	# no sound for spaces, and only every 2nd letter so it doesn't machine-gun
+	if letter_index % text_sound_every != 0 or letter.strip_edges().is_empty():
+		return
+	AudioManager.play_sfx("dialogue", text_sound_pitch_variation, text_sound_db)
 
 
 func _on_mutation_cooldown_timeout() -> void:

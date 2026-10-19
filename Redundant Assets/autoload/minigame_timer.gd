@@ -6,6 +6,9 @@ signal inventory_complete  # emitted when all 10 items are gathered
 const DEFAULT_TIME := 60.0
 const REQUIRED_ITEMS := 10
 const GATHER_MOVE_INTERVAL := 1.5   # seconds between random jumps
+const TICK_DB := -8.0               # tick-tock volume while the clock runs
+const TICK_FADE_IN := 0.5
+const TICK_FADE_OUT := 0.3
 
 var time_left: float = 0.0
 var running := false
@@ -27,6 +30,7 @@ func start(seconds: float = DEFAULT_TIME) -> void:
 	finished = false
 	_inventory_proceeded = false
 	_gather_move_timer = 0.0
+	AudioManager.play_layer("ticktock", "ticktock", TICK_DB, TICK_FADE_IN)
 
 	# Show the spooky gather text for the whole minigame sequence
 	MinigameHud.show_gather_text()
@@ -60,10 +64,12 @@ func reset() -> void:
 	_inventory_proceeded = false
 	time_left = 0.0
 	MinigameHud.hide_gather_text()
+	AudioManager.stop_layer("ticktock", TICK_FADE_OUT)
 
 func stop() -> void:
 	running = false
 	paused = false
+	AudioManager.stop_layer("ticktock", TICK_FADE_OUT)
 
 func _on_item_added(_item: ItemData) -> void:
 	if finished or Inventory.items.size() >= REQUIRED_ITEMS:
@@ -77,6 +83,7 @@ func _proceed_to_next_scene() -> void:
 	finished = true
 	running = false
 	MinigameHud.hide_gather_text()
+	AudioManager.stop_layer("ticktock", TICK_FADE_OUT)
 	inventory_complete.emit()
 	SceneFlow._go(SceneFlow.AFTER_MINIGAME)
 
@@ -114,4 +121,5 @@ func _process(delta: float) -> void:
 		running = false
 		finished = true
 		MinigameHud.hide_gather_text()
+		AudioManager.stop_layer("ticktock", TICK_FADE_OUT)
 		time_up.emit()

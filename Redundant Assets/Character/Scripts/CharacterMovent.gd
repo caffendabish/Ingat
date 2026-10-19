@@ -6,20 +6,14 @@ extends CharacterBody2D
 @export var top_y = 200.0      # Y position where he's smallest
 @export var bottom_y = 900.0   # Y position where he's biggest
 @export var click_stop_distance = 5.0
+@export var step_interval = 0.4   # seconds between footstep sounds
+@export_range(-40.0, 6.0) var step_db = -6.0
+@export_range(0.0, 0.3) var step_pitch_variation = 0.05
 
 @onready var _animated_sprite = $AnimatedSprite2D
 
 var target_position = null
-var _step_sound: AudioStreamPlayer
-var _step_timer: float = 0.0
-
-
-func _ready() -> void:
-	var step_player: AudioStreamPlayer = AudioStreamPlayer.new()
-	step_player.stream = load("res://Chapter One/Sound/step.wav")
-	step_player.name = "StepSound"
-	add_child(step_player)
-	_step_sound = step_player
+var _step_timer := 0.0
 
 func _unhandled_input(event):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
@@ -75,11 +69,14 @@ func _physics_process(delta):
 
 	update_animation(intended_velocity, moved)
 	update_scale()
+	update_steps(delta, moved)
 
-	# Play step sound when walking
-	if moved.length() > 0.5:
-		_step_timer += delta
-		if _step_timer >= 0.35:
-			_step_timer = 0.0
-			if not _step_sound.playing:
-				_step_sound.play()
+# footsteps: plays while he actually moves (the first step right away, then one per step_interval)
+func update_steps(delta: float, moved: Vector2) -> void:
+	if moved.length() < 0.5:
+		_step_timer = 0.0
+		return
+	_step_timer -= delta
+	if _step_timer <= 0.0:
+		AudioManager.play_sfx("step", step_pitch_variation, step_db)
+		_step_timer = step_interval

@@ -66,29 +66,29 @@ region = Rect2(7200, 3280, 1440, 1640)
 atlas = ExtResource("2_t55fg")
 region = Rect2(4320, 3280, 1440, 1640)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_unb65"]
-atlas = ExtResource("5_l60ut")
-region = Rect2(7200, 1640, 1440, 1640)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_l60ut"]
-atlas = ExtResource("5_l60ut")
-region = Rect2(5760, 1640, 1440, 1640)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_fdiy2"]
 atlas = ExtResource("5_l60ut")
-region = Rect2(4320, 1640, 1440, 1640)
+region = Rect2(0, 1640, 1440, 1640)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f6bh3"]
 atlas = ExtResource("5_l60ut")
-region = Rect2(2880, 1640, 1440, 1640)
+region = Rect2(1440, 1640, 1440, 1640)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k3sp2"]
 atlas = ExtResource("5_l60ut")
-region = Rect2(1440, 1640, 1440, 1640)
+region = Rect2(2880, 1640, 1440, 1640)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pua7a"]
 atlas = ExtResource("5_l60ut")
-region = Rect2(0, 1640, 1440, 1640)
+region = Rect2(4320, 1640, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_br5h5"]
+atlas = ExtResource("5_l60ut")
+region = Rect2(5760, 1640, 1440, 1640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5g1q1"]
+atlas = ExtResource("5_l60ut")
+region = Rect2(7200, 1640, 1440, 1640)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6isyp"]
 atlas = ExtResource("2_unb65")
@@ -175,12 +175,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_unb65")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_l60ut")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_fdiy2")
 }, {
 "duration": 1.0,
@@ -191,6 +185,12 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_pua7a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_br5h5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5g1q1")
 }],
 "loop": 1,
 "name": &"walkleft",
@@ -237,7 +237,7 @@ scale = Vector2(0.23090278, 0.23090278)
 sprite_frames = SubResource("SpriteFrames_g4v7s")
 animation = &"walkleft"
 autoplay = "idle"
-frame_progress = 0.099767186
+frame_progress = 0.39975184
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=127961142]
 scale = Vector2(0.99869156, 1)
