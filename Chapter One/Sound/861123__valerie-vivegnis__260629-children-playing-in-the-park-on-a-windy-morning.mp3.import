@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://detfxa21gi3ss"
+path="res://.godot/imported/861123__valerie-vivegnis__260629-children-playing-in-the-park-on-a-windy-morning.mp3-0b2479116a4d8e1fec2f16eaad88301d.mp3str"
+
+[deps]
+
+source_file="res://Chapter One/Sound/861123__valerie-vivegnis__260629-children-playing-in-the-park-on-a-windy-morning.mp3"
+dest_files=["res://.godot/imported/861123__valerie-vivegnis__260629-children-playing-in-the-park-on-a-windy-morning.mp3-0b2479116a4d8e1fec2f16eaad88301d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
