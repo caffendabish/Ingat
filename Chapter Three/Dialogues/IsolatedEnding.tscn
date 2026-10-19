@@ -1,14 +1,15 @@
 [gd_scene format=3 uid="uid://ddhdslyr15ucu"]
 
 [ext_resource type="Script" uid="uid://26lqgklhprpg" path="res://Chapter Two/Scripts/1st phase/Dialogue/parents_arguement.gd" id="1_x0wvd"]
-[ext_resource type="Resource" uid="uid://bvioif52ay7xl" path="res://Chapter Three/Dialogues/FINAL 1_ISOLATED Ending.dialogue" id="2_o04qe"]
+[ext_resource type="Resource" uid="uid://bvioif52ay7xl" path="res://Chapter Three/Dialogues/IsolatedEnding.dialogue" id="2_o04qe"]
 [ext_resource type="Texture2D" uid="uid://bv0igmgo0yohv" path="res://Redundant Assets/Character/AssetsDump/family_huddling2_woOllie.png" id="3_mo7lq"]
-[ext_resource type="AudioStream" uid="uid://audio_ending_crowd" path="res://Chapter One/Sound/CROWD.mp3" id="audio_ending_crowd"]
 
 [node name="IsolatedEnding" type="Node2D" unique_id=2074815579]
 script = ExtResource("1_x0wvd")
 dialogue = ExtResource("2_o04qe")
 next_scene = "uid://vm4g7vwkk5do"
+stop_screams_on_start = true
+start_music = "endings"
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1779444068]
 offset_right = 1932.0
@@ -34,7 +35,6 @@ mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
 [node name="FaultLabel" type="Label" parent="FadeLayer" unique_id=1572849468]
-visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -48,8 +48,3 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 75
 text = "Isolated Ending"
-
-[node name="CrowdPlayer" type="AudioStreamPlayer" parent="." unique_id=900000050]
-stream = ExtResource("audio_ending_crowd")
-autoplay = true
-volume_db = -6.0

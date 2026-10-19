@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://b8k7lpwccwtqo" path="res://Chapter One/Assets/PlaceholderDump/Market/market_frint.png" id="1_1uu11"]
 [ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_3sa3x"]
-[ext_resource type="AudioStream" uid="uid://audio_market_crowd" path="res://Chapter One/Sound/CROWD.mp3" id="audio_market_crowd"]
 
 [node name="Node2D" type="Node2D" unique_id=1394459037]
 
@@ -12,11 +11,6 @@ offset_top = 9.0
 offset_right = 4438.495
 offset_bottom = 1115.0
 texture = ExtResource("1_1uu11")
-
-[node name="AmbientPlayer" type="AudioStreamPlayer" parent="." unique_id=900000018]
-stream = ExtResource("audio_market_crowd")
-autoplay = true
-volume_db = -8.0
 
 [node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("2_3sa3x")]
 position = Vector2(2307, 837)

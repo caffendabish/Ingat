@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ckwlxdlt6m2fl"
+path="res://.godot/imported/suspense.mp3-7b53f8b8944e1bff5a65b5a8009a9f28.mp3str"
+
+[deps]
+
+source_file="res://Chapter One/Sound/BG_MUSIC/suspense.mp3"
+dest_files=["res://.godot/imported/suspense.mp3-7b53f8b8944e1bff5a65b5a8009a9f28.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

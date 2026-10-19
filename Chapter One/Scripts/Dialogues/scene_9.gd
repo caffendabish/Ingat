@@ -3,6 +3,10 @@ extends Node2D
 @export var dialogue: DialogueResource       # drag the .dialogue file here
 @export var dialogue_start := "start"
 @export_file("*.tscn") var next_scene: String   # leave empty to start the minigame
+# neighbour carries over from cutscene 8; the TV layers are added on top
+@export_range(-40.0, 6.0) var neighbour_db := 4.0
+@export_range(-40.0, 6.0) var tv_static_db := -6.0
+@export_range(-40.0, 6.0) var tv_mumble_db := -14.0   # quieter than the static
 
 # timings in seconds
 const BLACK_HOLD := 0.8      # black screen before the text
@@ -18,6 +22,9 @@ const END_FADE_OUT := 1.5
 
 func _ready() -> void:
 	GameHUD.hide_hud()
+	AudioManager.play_ambient("neighbour", neighbour_db, 1.0)
+	AudioManager.play_layer("tv_static", "tv_static", tv_static_db, 2.0)
+	AudioManager.play_layer("tv_mumble", "mumble", tv_mumble_db, 2.0, "SFX")
 	fade.show()
 	fade.color.a = 1.0
 	fault_label.modulate.a = 0.0
@@ -50,6 +57,8 @@ func _run_dialogue() -> void:
 
 # fade back to black when the dialogue ends
 func _outro() -> void:
+	# neighbour keeps playing into the dining room; only the TV layers stop
+	AudioManager.stop_all_layers(END_FADE_OUT)
 	fade.show()
 	var t := create_tween()
 	t.tween_property(fade, "color:a", 1.0, END_FADE_OUT)

@@ -3,24 +3,17 @@ extends Node2D
 @export var dialogue: DialogueResource
 @export var dialogue_start := "start"
 @export_file("*.tscn") var next_scene: String
-
-@onready var thunder1_player: AudioStreamPlayer = $Thunder1Player
-@onready var thunder2_player: AudioStreamPlayer = $Thunder2Player
-@onready var thunder3_player: AudioStreamPlayer = $Thunder3Player
+@export_range(-40.0, 6.0) var thunder3_db := -4.0   # thunder3 comes in right away here and stays for every scene after
+@export var thunder3_fade_in := 0.5
 
 
 func _ready() -> void:
 	GameHUD.hide_hud()
+	# safe to repeat on the outcome scenes: same sound already playing just stays at this volume
+	AudioManager.play_layer("storm_thunder3", "thunder3", thunder3_db, thunder3_fade_in)
 	if dialogue != null:
 		DialogueManager.show_dialogue_balloon(dialogue, dialogue_start)
 		await DialogueManager.dialogue_ended
-
-	# Play thunder sequence after attic choice
-	thunder1_player.play()
-	await get_tree().create_timer(1.5).finished
-	thunder2_player.play()
-	await get_tree().create_timer(1.5).finished
-	thunder3_player.play()
 
 	if next_scene != "" and ResourceLoader.exists(next_scene):
 		get_tree().change_scene_to_file.call_deferred(next_scene)

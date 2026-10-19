@@ -4,7 +4,6 @@
 [ext_resource type="Script" uid="uid://26lqgklhprpg" path="res://Chapter Two/Scripts/1st phase/Dialogue/parents_arguement.gd" id="1_ndpji"]
 [ext_resource type="Resource" uid="uid://bh2i5a2ep887u" path="res://Chapter Two/Dialogues/Phase1/12.1 - FLOODED HOME_Parents Argument2.dialogue" id="2_7reaf"]
 [ext_resource type="Texture2D" uid="uid://cgefj64mgvkjo" path="res://Redundant Assets/Character/AssetsDump/PiliSpritesheet.png" id="2_se8o2"]
-[ext_resource type="AudioStream" uid="uid://audio_parents_arguement_cries" path="res://Chapter One/Sound/cries.wav" id="audio_parents_arguement_cries"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_se8o2"]
 atlas = ExtResource("1_ipytw")
@@ -116,7 +115,6 @@ mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
 [node name="FaultLabel" type="Label" parent="FadeLayer" unique_id=1940835516]
-visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -130,8 +128,3 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 75
 text = "It's your Fault!"
-
-[node name="AmbientPlayer" type="AudioStreamPlayer" parent="." unique_id=900000024]
-stream = ExtResource("audio_parents_arguement_cries")
-autoplay = true
-volume_db = -8.0

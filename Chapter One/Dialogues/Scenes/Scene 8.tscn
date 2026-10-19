@@ -10,6 +10,9 @@
 script = ExtResource("1_u0omd")
 dialogue = ExtResource("2_fbjkx")
 next_scene = "uid://cbkswc45aamvh"
+ambient_sound = "neighbour"
+ambient_sound_db = 4.0
+stop_music_on_start = true
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=362397012]
 offset_left = -614.0

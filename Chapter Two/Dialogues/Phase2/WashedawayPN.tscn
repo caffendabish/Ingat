@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dd3lel5mp65ve" path="res://Chapter Two/Assets/SPECIALQTE/NoniVerChoicesPapa.png" id="1_pclk8"]
 [ext_resource type="Script" uid="uid://cfywed3q7r6ry" path="res://Chapter Two/Scripts/2nd Phase/washedaway_pn.gd" id="1_sifxm"]
-[ext_resource type="Resource" uid="uid://p41pmsiniiuf" path="res://Chapter Two/Dialogues/Phase2/16.1B - TATAY_WASHED AWAY_1.dialogue" id="2_goen3"]
+[ext_resource type="Resource" uid="uid://p41pmsiniiuf" path="res://Chapter Two/Dialogues/Phase2/WashedawayPN.dialogue" id="2_goen3"]
 
 [node name="WashedawayPn" type="Node2D" unique_id=780353075]
 script = ExtResource("1_sifxm")

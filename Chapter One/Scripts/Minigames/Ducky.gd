@@ -1,4 +1,3 @@
-class_name Ducky
 extends CharacterBody2D
 
 @export var speed := 400.0
@@ -10,7 +9,6 @@ extends CharacterBody2D
 
 var screen_target: Vector2
 var is_holding := false
-var can_drag := false   # set to true by duck_act.gd after the intro dialogue ends
 
 
 func _ready():
@@ -20,8 +18,6 @@ func _ready():
 
 
 func _input(event):
-	if not can_drag:
-		return
 	if event is InputEventScreenTouch:
 		is_holding = event.pressed
 		screen_target = event.position

@@ -13,6 +13,8 @@ extends Node2D
 @export var hit_cooldown := 0.6        # grace period so a cluster isn't 3 hits
 @export var water_rise := 180.0        # pixels the Water rectangle rises (visual only)
 @export var debug_keys := true         # H = fake a hit. Turn off when done.
+@export_range(-40.0, 6.0) var screams_db := -8.0   # screams start with the dodge and carry on until the ending scene fades them out
+@export var screams_fade_in := 2.0
 
 const END_DELAY := 1.2   # pause so the player sees the last hit
 
@@ -57,6 +59,8 @@ func _start_game() -> void:
 	started = true
 	player.enabled = true
 	spawner.start()
+	# thunder3 now starts earlier, in the attic/roof scenes (see attic.gd / window.gd)
+	AudioManager.play_layer("screams", "screams", screams_db, screams_fade_in)
 	if water:
 		create_tween().tween_property(water, "position:y", water.position.y - water_rise, duration)
 

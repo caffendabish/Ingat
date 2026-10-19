@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bdklberu7oays"
+path="res://.godot/imported/shcoolbg.mp3-51856d619968d10a9cac6f86cd5bbed9.mp3str"
+
+[deps]
+
+source_file="res://Chapter One/Sound/BG_MUSIC/shcoolbg.mp3"
+dest_files=["res://.godot/imported/shcoolbg.mp3-51856d619968d10a9cac6f86cd5bbed9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -12,8 +12,6 @@
 [ext_resource type="Texture2D" uid="uid://g2mqg6tlyfb2" path="res://Redundant Assets/Character/AssetsDump/ErnestoSpritesheet.png" id="9_in002"]
 [ext_resource type="Texture2D" uid="uid://t73g7iob1xru" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_DOWN.png" id="10_nkg7s"]
 [ext_resource type="Texture2D" uid="uid://b5oem10thp2ff" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_LEFT.png" id="11_rop6n"]
-[ext_resource type="AudioStream" uid="uid://audio_dining_mumble" path="res://Chapter One/Sound/SCREMS/TV_mumble.ogg" id="audio_dining_mumble"]
-[ext_resource type="AudioStream" uid="uid://audio_dining_neighbour" path="res://Chapter One/Sound/423515__martinsadoux__inside-a-house-neighbourhood.wav" id="audio_dining_neighbour"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3gb45"]
 atlas = ExtResource("7_fgu8u")
@@ -84,23 +82,9 @@ animations = [{
 "speed": 3.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_nkg7s"]
-atlas = ExtResource("9_in002")
-region = Rect2(0, 0, 1440, 1640)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3jtdj"]
-atlas = ExtResource("9_in002")
-region = Rect2(1440, 0, 1440, 1640)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_af8eu"]
 animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nkg7s")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3jtdj")
-}],
+"frames": [],
 "loop": 1,
 "name": &"default",
 "speed": 2.0
@@ -112,7 +96,7 @@ radius = 97.62172
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
 size = Vector2(3113, 20)
 
-[node name="Node2D4" type="Node2D" unique_id=142567288]
+[node name="Node2D" type="Node2D" unique_id=142567288]
 script = ExtResource("1_yp26a")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1158420979]
@@ -201,11 +185,11 @@ mouse_filter = 2
 color = Color(0.17266177, 0.3701843, 0.31223854, 0.67058825)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Ernesto/DialogueOverlay" unique_id=254455606]
-position = Vector2(1574, 686)
-scale = Vector2(0.77251256, 0.77251256)
+position = Vector2(1574.0001, 715.00006)
+scale = Vector2(0.49251258, 0.49251258)
 sprite_frames = SubResource("SpriteFrames_af8eu")
 autoplay = "default"
-frame_progress = 0.42307523
+frame_progress = 0.68182373
 
 [node name="Kitchen" type="Area2D" parent="." unique_id=282699918]
 position = Vector2(504, 845)
@@ -250,16 +234,6 @@ texture = ExtResource("4_vr6nj")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1824237821]
 position = Vector2(2202, 671)
 shape = SubResource("RectangleShape2D_g4v7s")
-
-[node name="AmbientPlayer" type="AudioStreamPlayer" parent="." unique_id=900000013]
-stream = ExtResource("audio_dining_neighbour")
-autoplay = true
-volume_db = -8.0
-
-[node name="MumblePlayer" type="AudioStreamPlayer" parent="." unique_id=900000062]
-stream = ExtResource("audio_dining_mumble")
-autoplay = true
-volume_db = -12.0
 
 [connection signal="body_entered" from="Kitchen" to="." method="_on_kitchen_body_entered"]
 [connection signal="body_entered" from="Bedroom" to="." method="_on_bedroom_body_entered"]

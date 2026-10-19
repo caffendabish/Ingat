@@ -11,7 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://g2mqg6tlyfb2" path="res://Redundant Assets/Character/AssetsDump/ErnestoSpritesheet.png" id="9_81tku"]
 [ext_resource type="PackedScene" uid="uid://crijlp60vst75" path="res://Redundant Assets/Character/OllieUni.tscn" id="10_vtsm0"]
 [ext_resource type="Texture2D" uid="uid://cavnlvltcxpe3" path="res://Chapter One/Assets/Finalize/SCHOOL/RIGHT_VENDOR/OVERLAY_NOON.png" id="11_vtsm0"]
-[ext_resource type="AudioStream" uid="uid://audio_gate_nightly" path="res://Chapter One/Sound/nightly.wav" id="audio_gate_nightly"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
 radius = 71.021126
@@ -241,11 +240,6 @@ shape = SubResource("RectangleShape2D_vtsm0")
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="World Borda" unique_id=1908459754]
 position = Vector2(2889, 656)
 shape = SubResource("RectangleShape2D_g4v7s")
-
-[node name="AmbientPlayer" type="AudioStreamPlayer" parent="." unique_id=900000008]
-stream = ExtResource("audio_gate_nightly")
-autoplay = true
-volume_db = -6.0
 
 [connection signal="body_entered" from="Stall2" to="." method="_on_stall_2_body_entered"]
 [connection signal="body_entered" from="Stall" to="." method="_on_stall_body_entered"]

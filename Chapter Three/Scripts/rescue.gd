@@ -9,6 +9,9 @@ extends Node2D
 @export_file("*.tscn") var safe_ending_scene: String
 @export_file("*.tscn") var separated_ending_scene: String
 
+# how much quieter all thunder gets while the water softens
+@export var thunder_lower_db := -4.0
+@export var thunder_lower_fade := 3.0
 const QTE_SCENE := preload("res://Chapter Three/Minigames/PhaseThreeQTE.tscn")
 
 # timings in seconds
@@ -58,6 +61,8 @@ func _run_dialogue() -> void:
 		push_warning("ParentsArguement: no dialogue file assigned in the Inspector.")
 		return
 	DialogueManager.show_dialogue_balloon(dialogue, dialogue_start)
+	# "the roar of the water softens": every thunder layer drops a little
+	AudioManager.shift_layers_db("storm_thunder", thunder_lower_db, thunder_lower_fade)
 	await DialogueManager.dialogue_ended
 
 

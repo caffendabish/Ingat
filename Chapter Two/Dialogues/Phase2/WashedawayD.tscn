@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cwp1mn3alhmyy" path="res://Chapter Two/Assets/SPECIALQTE/DodongVerChoicesDodong.png" id="1_4l7bl"]
 [ext_resource type="Script" uid="uid://013cvpubtd8g" path="res://Chapter Two/Scripts/2nd Phase/washedaway_d.gd" id="1_k6w0o"]
-[ext_resource type="Resource" uid="uid://do0tdbqvrg57y" path="res://Chapter Two/Dialogues/Phase2/16.2A - DODONG_WASHED AWAY.dialogue" id="2_ag8k6"]
+[ext_resource type="Resource" uid="uid://do0tdbqvrg57y" path="res://Chapter Two/Dialogues/Phase2/WashedawayD.dialogue" id="2_ag8k6"]
 
 [node name="WashedawayD" type="Node2D" unique_id=1296239364]
 script = ExtResource("1_k6w0o")

@@ -5,11 +5,15 @@ extends CharacterBody2D
 @export var min_x := 80.0      # left limit
 @export var max_x := 1840.0    # right limit
 @export var allow_keys := true # A/D and arrow keys
+@export var step_interval := 0.35   # seconds between footstep sounds while walking
+@export_range(-40.0, 6.0) var step_db := -6.0
+@export_range(0.0, 0.3) var step_pitch_variation := 0.05
 
 var enabled := true
 var target_x := 0.0
 var moving := false
 var lock_y := 0.0
+var _step_timer := 0.0
 
 @onready var sprite := get_node_or_null("AnimatedSprite2D") as AnimatedSprite2D
 
@@ -30,6 +34,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func _physics_process(_delta: float) -> void:
 	if not enabled:
+		_step_timer = 0.0
 		velocity = Vector2.ZERO
 		move_and_slide()
 		return

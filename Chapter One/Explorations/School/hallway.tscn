@@ -7,16 +7,12 @@
 [ext_resource type="PackedScene" uid="uid://crijlp60vst75" path="res://Redundant Assets/Character/OllieUni.tscn" id="5_r6bxc"]
 [ext_resource type="Texture2D" uid="uid://t73g7iob1xru" path="res://Chapter One/Assets/PlaceholderDump/Guides/DIRECTIONAL_DOWN.png" id="5_x63g3"]
 [ext_resource type="Texture2D" uid="uid://dwsnojum8vnqi" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM HALLWAY/HALL_OVERLAY_DAY.png" id="6_27crj"]
-[ext_resource type="AudioStream" uid="uid://audio_hallway_chatter" path="res://Chapter One/Sound/chatter.wav" id="audio_hallway_chatter"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_x63g3"]
 radius = 66.48876
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_so1de"]
 radius = 69.065186
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_27crj"]
-size = Vector2(4620, 20)
 
 [node name="Node2D" type="Node2D" unique_id=1631470028]
 script = ExtResource("1_ffmh0")
@@ -27,7 +23,6 @@ offset_top = -17.0
 offset_right = 4532.0
 offset_bottom = 1089.0
 texture = ExtResource("2_so1de")
-metadata/_edit_lock_ = true
 
 [node name="Classroom" type="Area2D" parent="." unique_id=760637307]
 position = Vector2(2335.0002, 578.00006)
@@ -73,17 +68,6 @@ offset_right = 4532.0
 offset_bottom = 1089.0
 texture = ExtResource("6_27crj")
 metadata/_edit_lock_ = true
-
-[node name="Boarder" type="StaticBody2D" parent="." unique_id=719139057]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Boarder" unique_id=1488706434]
-position = Vector2(2217, 896)
-shape = SubResource("RectangleShape2D_27crj")
-
-[node name="AmbientPlayer" type="AudioStreamPlayer" parent="." unique_id=900000003]
-stream = ExtResource("audio_hallway_chatter")
-autoplay = true
-volume_db = -8.0
 
 [connection signal="body_entered" from="Classroom" to="." method="_on_classroom_body_entered"]
 [connection signal="body_entered" from="Field" to="." method="_on_field_body_entered"]

@@ -4,9 +4,6 @@
 [ext_resource type="Script" uid="uid://bg6hpj3q52ty5" path="res://Chapter Two/Minigames/Phase1/QTE/attic.gd" id="1_tvmod"]
 [ext_resource type="Texture2D" uid="uid://qshxlu3r6jjr" path="res://Chapter One/Assets/Finalize/HOUSE/DINING/DINING_NIGHT.png" id="3_4ju1j"]
 [ext_resource type="Resource" uid="uid://x7bcwgq1glmd" path="res://Chapter Two/Dialogues/Phase1/13.1.1 - TO ATTIC.dialogue" id="3_cby8r"]
-[ext_resource type="AudioStream" uid="uid://audio_attic_thunder1" path="res://Chapter One/Sound/thunder1.wav" id="audio_attic_thunder1"]
-[ext_resource type="AudioStream" uid="uid://audio_attic_thunder2" path="res://Chapter One/Sound/thunder2.wav" id="audio_attic_thunder2"]
-[ext_resource type="AudioStream" uid="uid://audio_attic_thunder3" path="res://Chapter One/Sound/thunder3.wav" id="audio_attic_thunder3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tvmod"]
 atlas = ExtResource("1_dcyj0")
@@ -62,18 +59,3 @@ offset_bottom = 179.00879
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.13725491, 0.23137255, 0.24705882, 0.5921569)
-
-[node name="Thunder1Player" type="AudioStreamPlayer" parent="." unique_id=900000030]
-stream = ExtResource("audio_attic_thunder1")
-autoplay = false
-volume_db = -6.0
-
-[node name="Thunder2Player" type="AudioStreamPlayer" parent="." unique_id=900000031]
-stream = ExtResource("audio_attic_thunder2")
-autoplay = false
-volume_db = -6.0
-
-[node name="Thunder3Player" type="AudioStreamPlayer" parent="." unique_id=900000032]
-stream = ExtResource("audio_attic_thunder3")
-autoplay = false
-volume_db = -6.0

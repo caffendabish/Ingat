@@ -5,7 +5,14 @@ const INTRO_DIALOGUE := preload("res://Chapter Two/Scripts/1st phase/Dialogue/Li
 
 static var intro_played := false
 
+@export_range(-40.0, 6.0) var neighbour_db := 4.0
+@export_range(-40.0, 6.0) var chatter_db := -11.0
+@export_range(-40.0, 6.0) var home_music_db := -6.0
+
 func _ready() -> void:
+	AudioManager.play_music("home", 2.0, home_music_db)
+	AudioManager.play_ambient("neighbour", neighbour_db, 1.0)
+	AudioManager.play_layer("after_layer", "chatter2", chatter_db, 1.0)
 	if intro_played:
 		return
 	intro_played = true

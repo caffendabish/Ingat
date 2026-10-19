@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dj2unone5cqxb"]
 
 [ext_resource type="Script" uid="uid://twxk1v3lhxru" path="res://Chapter Two/Scripts/2nd Phase/washedaway_pd.gd" id="1_8rc46"]
-[ext_resource type="Resource" uid="uid://bdxg14xk2hxyk" path="res://Chapter Two/Dialogues/Phase2/16.2B - TATAY_WASHED AWAY_2.dialogue" id="2_fc1sj"]
+[ext_resource type="Resource" uid="uid://bdxg14xk2hxyk" path="res://Chapter Two/Dialogues/Phase2/WashedawayPD.dialogue" id="2_fc1sj"]
 [ext_resource type="Texture2D" uid="uid://c0d1h6dcj12ih" path="res://Chapter Two/Assets/SPECIALQTE/DodongVerChoicesPapa.png" id="3_fc1sj"]
 
 [node name="WashedawayPd" type="Node2D" unique_id=1030258777]

@@ -62,3 +62,5 @@ offset_top = -350.0
 offset_right = 3124.0
 offset_bottom = 1144.0
 texture = ExtResource("5_d2wbi")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1087065515]

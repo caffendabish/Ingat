@@ -1,14 +1,15 @@
 [gd_scene format=3 uid="uid://rap2pepsrj2n"]
 
 [ext_resource type="Script" uid="uid://26lqgklhprpg" path="res://Chapter Two/Scripts/1st phase/Dialogue/parents_arguement.gd" id="1_50a5p"]
-[ext_resource type="Resource" uid="uid://cxbw7ake0l6px" path="res://Chapter Three/Dialogues/FINAL 2_SAFE Ending.dialogue" id="2_4jbpe"]
+[ext_resource type="Resource" uid="uid://cxbw7ake0l6px" path="res://Chapter Three/Dialogues/SafeEnd.dialogue" id="2_4jbpe"]
 [ext_resource type="Texture2D" uid="uid://ble3h0bp1cm8n" path="res://Redundant Assets/Character/AssetsDump/family_huddling2_wOllie.png" id="2_ewn50"]
-[ext_resource type="AudioStream" uid="uid://audio_safe_crowd" path="res://Chapter One/Sound/CROWD.mp3" id="audio_safe_crowd"]
 
 [node name="SafeEnd" type="Node2D" unique_id=1005730522]
 script = ExtResource("1_50a5p")
 dialogue = ExtResource("2_4jbpe")
 next_scene = "uid://vm4g7vwkk5do"
+stop_screams_on_start = true
+start_music = "endings"
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1429578870]
 offset_right = 1932.0
@@ -34,7 +35,6 @@ mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
 [node name="FaultLabel" type="Label" parent="FadeLayer" unique_id=1991878549]
-visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -48,8 +48,3 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 75
 text = "Safe End"
-
-[node name="CrowdPlayer" type="AudioStreamPlayer" parent="." unique_id=900000052]
-stream = ExtResource("audio_safe_crowd")
-autoplay = true
-volume_db = -6.0

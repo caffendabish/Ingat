@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bkco3jvyk8sfy" path="res://Chapter One/Assets/PlaceholderDump/House/house_dining(dream).png" id="1_41lsl"]
 [ext_resource type="PackedScene" uid="uid://4y8sd6eqcigl" path="res://Redundant Assets/Character/Ollie.tscn" id="2_s08a1"]
-[ext_resource type="AudioStream" uid="uid://audio_dream_horror" path="res://Chapter One/Sound/horr_ambience.wav" id="audio_dream_horror"]
+[ext_resource type="Script" uid="uid://brlgkkroannnj" path="res://Chapter One/Sound/scene_music.gd" id="3_s08a1"]
 
 [node name="Node2D" type="Node2D" unique_id=1810651187]
 
@@ -13,10 +13,8 @@ offset_right = 4438.495
 offset_bottom = 1115.0
 texture = ExtResource("1_41lsl")
 
-[node name="AmbientPlayer" type="AudioStreamPlayer" parent="." unique_id=900000014]
-stream = ExtResource("audio_dream_horror")
-autoplay = true
-volume_db = -8.0
-
 [node name="Olliee" parent="." unique_id=530691139 instance=ExtResource("2_s08a1")]
 position = Vector2(2849, 819)
+
+[node name="SceneMusic" type="Node" parent="." unique_id=75747059]
+script = ExtResource("3_s08a1")

@@ -9,7 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://crijlp60vst75" path="res://Redundant Assets/Character/OllieUni.tscn" id="7_8col5"]
 [ext_resource type="Texture2D" uid="uid://bl42yghcbb6s8" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM/CHAIR3.png" id="8_sqiry"]
 [ext_resource type="Texture2D" uid="uid://cavnlvltcxpe3" path="res://Chapter One/Assets/Finalize/SCHOOL/RIGHT_VENDOR/OVERLAY_NOON.png" id="9_8col5"]
-[ext_resource type="AudioStream" uid="uid://audio_classroom_ambience_aft" path="res://Chapter One/Sound/765192__janica_uys241180__classroom-ambience.wav" id="audio_classroom_aft"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8col5"]
 size = Vector2(4431, 20)
@@ -180,10 +179,5 @@ offset_right = 4532.0
 offset_bottom = 1089.0
 texture = ExtResource("9_8col5")
 metadata/_edit_lock_ = true
-
-[node name="AmbientPlayer" type="AudioStreamPlayer" parent="." unique_id=900000002]
-stream = ExtResource("audio_classroom_aft")
-autoplay = true
-volume_db = -6.0
 
 [connection signal="body_entered" from="HallwayaFT" to="." method="_on_hallwaya_ft_body_entered"]

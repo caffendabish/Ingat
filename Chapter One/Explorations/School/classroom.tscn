@@ -11,7 +11,7 @@
 [ext_resource type="Resource" uid="uid://cu185wcjpq4mj" path="res://Chapter One/Dialogues/2 -CLASSROOM_Maam Santos.dialogue" id="8_0d72b"]
 [ext_resource type="Texture2D" uid="uid://bl42yghcbb6s8" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM/CHAIR3.png" id="8_6rx0t"]
 [ext_resource type="Texture2D" uid="uid://dwsnojum8vnqi" path="res://Chapter One/Assets/Finalize/SCHOOL/CLASSROOM HALLWAY/HALL_OVERLAY_DAY.png" id="9_0d72b"]
-[ext_resource type="AudioStream" uid="uid://audio_classroom_ambience" path="res://Chapter One/Sound/765192__janica_uys241180__classroom-ambience.wav" id="audio_classroom"]
+[ext_resource type="AudioStream" uid="uid://bon7ugdpdml53" path="res://Chapter One/Sound/765192__janica_uys241180__classroom-ambience.wav" id="12_0d72b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vksk6"]
 size = Vector2(4431, 20)
@@ -277,9 +277,7 @@ offset_bottom = 1089.0
 texture = ExtResource("9_0d72b")
 metadata/_edit_lock_ = true
 
-[node name="AmbientPlayer" type="AudioStreamPlayer" parent="." unique_id=900000001]
-stream = ExtResource("audio_classroom")
-autoplay = true
-volume_db = -6.0
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=360134350]
+stream = ExtResource("12_0d72b")
 
 [connection signal="body_entered" from="Hallway" to="." method="_on_hallway_body_entered"]

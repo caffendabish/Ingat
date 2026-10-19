@@ -8,6 +8,12 @@
 script = ExtResource("1_paeo7")
 dialogue = ExtResource("2_cf5pw")
 next_scene = "uid://iglrlwr4cnnu"
+ambient_sound = "horror"
+layer_1_sound = "nightly"
+layer_2_sound = "nightly2"
+after_sound_db = -10.0
+after_layer_db = -15.0
+stop_ambient_on_end = true
 
 [node name="TextureRect3" type="TextureRect" parent="." unique_id=624833487]
 offset_right = 1920.0

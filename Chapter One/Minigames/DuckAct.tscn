@@ -3,9 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://bo0kr7tfejnyl" path="res://Chapter One/Assets/PlaceholderDump/Pathfinding/maze.png" id="1_f2svl"]
 [ext_resource type="Script" uid="uid://tg8u7hdcl6bu" path="res://Chapter One/Scripts/Minigames/duck_act.gd" id="1_t34ve"]
 [ext_resource type="Script" uid="uid://l0aiyx3lbs2f" path="res://Chapter One/Scripts/Minigames/Ducky.gd" id="2_cpaoe"]
+[ext_resource type="Texture2D" uid="uid://16g8mciivxci" path="res://Redundant Assets/Character/PlaceholderDump/insanitymeter_sane.png" id="3_min2y"]
 [ext_resource type="Script" uid="uid://drd0o0ujj08fs" path="res://Chapter One/Minigames/TrailCanvas.gd" id="4_min2y"]
-[ext_resource type="Texture2D" uid="uid://c8bly0d182o2u" path="res://Chapter One/Assets/Finalize/SCHOOL/llittle_duckling.png" id="5_t34ve"]
-[ext_resource type="Texture2D" uid="uid://nn5i2la48jrp" path="res://Chapter Two/Assets/LVL 2 QTE EVENT/JUMPSCARE1.png" id="jump_duck"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_33x8s"]
 size = Vector2(3.3959045, 36.48114)
@@ -1843,32 +1842,11 @@ script = ExtResource("2_cpaoe")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1752819740]
 position = Vector2(-1.0000038, -2.0000038)
-scale = Vector2(0.09949255, 0.09949255)
-texture = ExtResource("5_t34ve")
+scale = Vector2(0.226, 0.226)
+texture = ExtResource("3_min2y")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=400781221]
 shape = SubResource("CircleShape2D_g4v7s")
-
-[node name="FlashOverlay" type="ColorRect" parent="." unique_id=777777771]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-color = Color(1, 1, 1, 0)
-
-[node name="JumpscareImage" type="TextureRect" parent="." unique_id=777777772]
-visible = false
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-texture = ExtResource("jump_duck")
-expand_mode = 3
-stretch_mode = 2
 
 [node name="Area2D" type="Area2D" parent="." unique_id=2085807782]
 

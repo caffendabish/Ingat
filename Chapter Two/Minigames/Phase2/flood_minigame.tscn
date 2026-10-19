@@ -5,23 +5,7 @@
 [ext_resource type="Resource" uid="uid://c8fbm1s5e7vi2" path="res://Chapter Two/Dialogues/Phase3/DodgeInstruc.dialogue" id="2_0ubsx"]
 [ext_resource type="PackedScene" uid="uid://cwphsp8fveijh" path="res://Chapter Two/Minigames/Phase2/flood_player.tscn" id="2_tauxo"]
 [ext_resource type="Script" uid="uid://dwp730jij6ou4" path="res://Chapter Two/Scripts/2nd Phase/debris_spawner.gd" id="4_0ubsx"]
-[ext_resource type="Texture2D" uid="uid://ccvwibdku54pn" path="res://Chapter Two/Assets/LVL 2 QTE EVENT/flood1.png" id="4_t7f48"]
 [ext_resource type="PackedScene" uid="uid://hf4t1ncqlqu5" path="res://Chapter Two/Minigames/Phase2/debris.tscn" id="5_6uwgg"]
-[ext_resource type="Texture2D" uid="uid://byox03egpopot" path="res://Chapter Two/Assets/LVL 2 QTE EVENT/flood2.png" id="5_vaed3"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_86mg2"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("4_t7f48")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_vaed3")
-}],
-"loop": 1,
-"name": &"default",
-"speed": 5.0
-}]
 
 [node name="FloodMinigame" type="Node2D" unique_id=1054838750]
 script = ExtResource("1_f5a3y")
@@ -44,11 +28,6 @@ offset_right = 1920.0
 offset_bottom = 1169.0
 mouse_filter = 2
 color = Color(0.24313726, 0.22352941, 0.20392157, 1)
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1942885729]
-position = Vector2(954, 545)
-sprite_frames = SubResource("SpriteFrames_86mg2")
-autoplay = "default"
 
 [node name="Player" parent="." unique_id=763054807 instance=ExtResource("2_tauxo")]
 position = Vector2(913, 1075)
