@@ -25,6 +25,7 @@ GameHUD="*uid://61hlkk76vun2"
 MinigameHud="*uid://dsljgg4ylhcy5"
 SceneFlow="*uid://dkmqnod8vqhj4"
 DialogueManager="*uid://c3rodes2l3gxb"
+PauseMenu="*uid://clbctm7nv3lkm"
 
 [dialogue_manager]
 
